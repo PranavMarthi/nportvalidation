@@ -1,0 +1,25 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+American Battery Technology Co,N/A,American Battery Technology Co,02451V309,,ABAT,US,EC,CORP
+AES Corp/The,N/A,AES Corp/The,00130H105,,AES,US,EC,CORP
+Albemarle Corp,N/A,Albemarle Corp,012653101,,ALB,US,EC,CORP
+Amprius Technologies Inc,N/A,Amprius Technologies Inc,03214Q108,,AMPX,US,EC,CORP
+American Superconductor Corp,N/A,American Superconductor Corp,030111207,,AMSC,US,EC,CORP
+Atkore Inc,N/A,Atkore Inc,047649108,,ATKR,US,EC,CORP
+Bloom Energy Corp,549300XB5J9BFW5JXV97,Bloom Energy Corp,093712107,US0937121079,BE,US,EC,CORP
+Enphase Energy Inc,N/A,Enphase Energy Inc,29355A107,,ENPH,US,EC,CORP
+EnerSys,N/A,EnerSys,29275Y102,,ENS,US,EC,CORP
+Enovix Corp,N/A,Enovix Corp,293594107,,ENVX,US,EC,CORP
+Eos Energy Enterprises Inc,N/A,Eos Energy Enterprises Inc,29415C101,,EOSE,US,EC,CORP
+Fluence Energy Inc,N/A,Fluence Energy Inc,34379V103,,FLNC,US,EC,CORP
+Generac Holdings Inc,N/A,Generac Holdings Inc,368736104,,GNRC,US,EC,CORP
+Microvast Holdings Inc,N/A,Microvast Holdings Inc,59516C106,,MVST,US,EC,CORP
+Energy Vault Holdings Inc,N/A,Energy Vault Holdings Inc,29280W109,,NRGV,US,EC,CORP
+Sunrun Inc,N/A,Sunrun Inc,86771W105,,RUN,US,EC,CORP
+SolarEdge Technologies Inc,N/A,SolarEdge Technologies Inc,83417M104,,SEDG,US,EC,CORP
+SES AI Corp,N/A,SES AI Corp,78397Q109,,SES,US,EC,CORP
+Solid Power Inc,N/A,Solid Power Inc,83422N105,,SLDP,US,EC,CORP
+Sociedad Quimica y Minera de C,N/A,Sociedad Quimica y Minera de Chile SA,833635105,,SQM,US,EC,CORP
+Stem Inc,N/A,Stem Inc,85859N300,,STEM,US,EC,CORP
+T1 Energy Inc,N/A,T1 Energy Inc,35834F104,,TE,US,EC,CORP
+Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

@@ -1,0 +1,58 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+Amentum Holdings Inc,N/A,Amentum Holdings Inc,023939101,,AMTM,US,EC,CORP
+ATI Inc,N/A,ATI Inc,01741R102,,ATI,US,EC,CORP
+AeroVironment Inc,N/A,AeroVironment Inc,008073108,,AVAV,US,EC,CORP
+Booz Allen Hamilton Holding Co,N/A,Booz Allen Hamilton Holding Corp,099502106,,BAH,US,EC,CORP
+Baker Hughes Co,N/A,Baker Hughes Co,05722G100,,BKR,US,EC,CORP
+BWX Technologies Inc,N/A,BWX Technologies Inc,05605H100,,BWXT,US,EC,CORP
+CACI International Inc,N/A,CACI International Inc,127190304,,CACI,US,EC,CORP
+Cadre Holdings Inc,N/A,Cadre Holdings Inc,12763L105,,CDRE,US,EC,CORP
+ConocoPhillips,N/A,ConocoPhillips,20825C104,,COP,US,EC,CORP
+Chevron Corp,N/A,Chevron Corp,166764100,,CVX,US,EC,CORP
+Leonardo DRS Inc,N/A,Leonardo DRS Inc,52661A108,,DRS,US,EC,CORP
+Devon Energy Corp,N/A,Devon Energy Corp,25179M103,,DVN,US,EC,CORP
+EOG Resources Inc,N/A,EOG Resources Inc,26875P101,,EOG,US,EC,CORP
+EQT Corp,N/A,EQT Corp,26884L109,,EQT,US,EC,CORP
+Diamondback Energy Inc,N/A,Diamondback Energy Inc,25278X109,,FANG,US,EC,CORP
+General Dynamics Corp,N/A,General Dynamics Corp,369550108,,GD,US,EC,CORP
+Halliburton Co,N/A,Halliburton Co,406216101,,HAL,US,EC,CORP
+Huntington Ingalls Industries ,N/A,Huntington Ingalls Industries Inc,446413106,,HII,US,EC,CORP
+Helmerich & Payne Inc,N/A,Helmerich & Payne Inc,423452101,,HP,US,EC,CORP
+Howmet Aerospace Inc,N/A,Howmet Aerospace Inc,443201108,,HWM,US,EC,CORP
+Hexcel Corp,N/A,Hexcel Corp,428291108,,HXL,US,EC,CORP
+Kinder Morgan Inc,N/A,Kinder Morgan Inc,49456B101,,KMI,US,EC,CORP
+Karman Holdings Inc,N/A,Karman Holdings Inc,485924104,,KRMN,US,EC,CORP
+Kratos Defense & Security Solu,N/A,Kratos Defense & Security Solutions Inc,50077B207,,KTOS,US,EC,CORP
+Liberty Energy Inc,N/A,Liberty Energy Inc,53115L104,,LBRT,US,EC,CORP
+Leidos Holdings Inc,N/A,Leidos Holdings Inc,525327102,,LDOS,US,EC,CORP
+Lockheed Martin Corp,N/A,Lockheed Martin Corp,539830109,,LMT,US,EC,CORP
+Cheniere Energy Inc,N/A,Cheniere Energy Inc,16411R208,,LNG,US,EC,CORP
+Loar Holdings Inc,N/A,Loar Holdings Inc,53947R105,,LOAR,US,EC,CORP
+Moog Inc,N/A,Moog Inc,615394202,,MOG/A,US,EC,CORP
+Marathon Petroleum Corp,N/A,Marathon Petroleum Corp,56585A102,,MPC,US,EC,CORP
+Mercury Systems Inc,N/A,Mercury Systems Inc,589378108,,MRCY,US,EC,CORP
+Matador Resources Co,N/A,Matador Resources Co,576485205,,MTDR,US,EC,CORP
+National Presto Industries Inc,N/A,National Presto Industries Inc,637215104,,NPK,US,EC,CORP
+ONEOK Inc,N/A,ONEOK Inc,682680103,,OKE,US,EC,CORP
+Olin Corp,N/A,Olin Corp,680665205,,OLN,US,EC,CORP
+Ondas Inc,N/A,Ondas Inc,68236H204,,ONDS,US,EC,CORP
+Occidental Petroleum Corp,N/A,Occidental Petroleum Corp,674599105,,OXY,US,EC,CORP
+Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP
+Permian Resources Corp,N/A,Permian Resources Corp,71424F105,,PR,US,EC,CORP
+Phillips 66,N/A,Phillips 66,718546104,,PSX,US,EC,CORP
+Patterson-UTI Energy Inc,N/A,Patterson-UTI Energy Inc,703481101,,PTEN,US,EC,CORP
+Red Cat Holdings Inc,N/A,Red Cat Holdings Inc,75644T100,,RCAT,US,EC,CORP
+Rocket Lab Corp,254900LNRW7906KUMM93,Rocket Lab Corp,773121108,US7731211089,RKLB,US,EC,CORP
+RTX Corp,N/A,RTX Corp,75513E101,,RTX,US,EC,CORP
+Science Applications Internati,N/A,Science Applications International Corp,808625107,,SAIC,US,EC,CORP
+SLB Ltd,N/A,SLB Ltd,806857108,,SLB,US,EC,CORP
+Smith & Wesson Brands Inc,N/A,Smith & Wesson Brands Inc,831754106,,SWBI,US,EC,CORP
+TransDigm Group Inc,N/A,TransDigm Group Inc,893641100,,TDG,US,EC,CORP
+Targa Resources Corp,N/A,Targa Resources Corp,87612G101,,TRGP,US,EC,CORP
+Venture Global Inc,N/A,Venture Global Inc,92333F101,,VG,US,EC,CORP
+Valero Energy Corp,N/A,Valero Energy Corp,91913Y100,,VLO,US,EC,CORP
+V2X Inc,N/A,V2X Inc,92242T101,,VVX,US,EC,CORP
+Weatherford International PLC,N/A,Weatherford International PLC,N/A,,WFRD,US,EC,CORP
+Williams Cos Inc/The,N/A,Williams Cos Inc/The,969457100,,WMB,US,EC,CORP
+Exxon Mobil Corp,N/A,Exxon Mobil Corp,30231G102,,XOM,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

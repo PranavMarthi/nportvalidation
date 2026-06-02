@@ -1,0 +1,18 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+BRC Inc,N/A,BRC Inc,05601U105,,BRCC,US,EC,CORP
+Dutch Bros Inc,N/A,Dutch Bros Inc,26701L100,,BROS,US,EC,CORP
+Celsius Holdings Inc,N/A,Celsius Holdings Inc,15118V207,,CELH,US,EC,CORP
+Krispy Kreme Inc,N/A,Krispy Kreme Inc,50101L106,,DNUT,US,EC,CORP
+International Flavors & Fragra,N/A,International Flavors & Fragrances Inc,459506101,,IFF,US,EC,CORP
+Ingredion Inc,N/A,Ingredion Inc,457187102,,INGR,US,EC,CORP
+Keurig Dr Pepper Inc,N/A,Keurig Dr Pepper Inc,49271V100,,KDP,US,EC,CORP
+Coca-Cola Co/The,N/A,Coca-Cola Co/The,191216100,,KO,US,EC,CORP
+Monster Beverage Corp,N/A,Monster Beverage Corp,61174X109,,MNST,US,EC,CORP
+PepsiCo Inc,N/A,PepsiCo Inc,713448108,,PEP,US,EC,CORP
+Restaurant Brands Internationa,N/A,Restaurant Brands International Inc,76131D103,,QSR,US,EC,CORP
+Starbucks Corp,N/A,Starbucks Corp,855244109,,SBUX,US,EC,CORP
+J M Smucker Co/The,N/A,J M Smucker Co/The,832696405,,SJM,US,EC,CORP
+Sensient Technologies Corp,N/A,Sensient Technologies Corp,81725T100,,SXT,US,EC,CORP
+Westrock Coffee Co,N/A,Westrock Coffee Co,96145W103,,WEST,US,EC,CORP
+Zevia PBC,N/A,Zevia PBC,98955K104,,ZVIA,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

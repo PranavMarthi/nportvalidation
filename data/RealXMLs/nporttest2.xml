@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>XXXXXXXX</ccc>
+        </issuerCredentials>
+      </filer>
+
+
+      <seriesClassInfo>
+        <seriesId>S000096626</seriesId>
+        <classId>C000265521</classId>
+      </seriesClassInfo>
+
+
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Founder-Led 2x Daily ETF</seriesName>
+      <seriesId>S000096626</seriesId>
+      <seriesLei>5299009IIPGGROZ8QW15</seriesLei>
+      <repPdEnd>2026-12-31</repPdEnd>
+      <repPdDate>2026-03-31</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>7351643.830000000000</totAssets>
+      <totLiabs>972426.910000000000</totLiabs>
+      <netAssets>6379216.920000000000</netAssets>
+      <assetsAttrMiscSec>0.000000000000</assetsAttrMiscSec>
+      <assetsInvested>0.000000000000</assetsInvested>
+      <amtPayOneYrBanksBorr>0.000000000000</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0.000000000000</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0.000000000000</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>0.000000000000</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0.000000000000</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0.000000000000</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0.000000000000</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0.000000000000</amtPayAftOneYrOther>
+      <delayDeliv>0.000000000000</delayDeliv>
+      <standByCommit>0.000000000000</standByCommit>
+      <liquidPref>0.000000000000</liquidPref>
+      <cshNotRptdInCorD>6860000.000000000000</cshNotRptdInCorD>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000265521" rtn1="-9.680000000000" rtn2="-17.300000000000" rtn3="-10.100000000000"/>
+        </monthlyTotReturns>
+        <monthlyReturnCats>
+          <equityContracts>
+            <mon1 netRealizedGain="-32170.280000000000" netUnrealizedAppr="-13672.880000000000"/>
+            <mon2 netRealizedGain="-156947.430000000000" netUnrealizedAppr="-169025.410000000000"/>
+            <mon3 netRealizedGain="-276659.490000000000" netUnrealizedAppr="-429668.330000000000"/>
+            <swapCategory>
+              <instrMon1 netRealizedGain="-32170.280000000000" netUnrealizedAppr="-13672.880000000000"/>
+              <instrMon2 netRealizedGain="-156947.430000000000" netUnrealizedAppr="-169025.410000000000"/>
+              <instrMon3 netRealizedGain="-276659.490000000000" netUnrealizedAppr="-429668.330000000000"/>
+            </swapCategory>
+          </equityContracts>
+        </monthlyReturnCats>
+        <othMon1 netRealizedGain="0" netUnrealizedAppr="0"/>
+        <othMon2 netRealizedGain="0" netUnrealizedAppr="0"/>
+        <othMon3 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+      </returnInfo>
+      <mon1Flow redemption="697971.000000000000" reinvestment=".000000000000" sales="1646910.000000000000"/>
+      <mon2Flow redemption="930380.000000000000" reinvestment=".000000000000" sales="7823976.000000000000"/>
+      <mon3Flow redemption="379756.000000000000" reinvestment=".000000000000" sales=".000000000000"/>
+
+
+      <varInfo>
+
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>Founder-Led Index (Price Return)</nameDesignatedIndex>
+          <indexIdentifier>FDRI</indexIdentifier>
+
+        </fundsDesignatedInfo>
+
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>CORGI ETF TR SWAP CS</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <other otherDesc="USER DEFINED" value="218946101-TRS-01/19/28-L"/>
+        </identifiers>
+        <balance>1.000000000000</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>-631574.020000000000</valUSD>
+        <pctVal>-9.9004944952</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>CLEAR STREET LLC</counterpartyName>
+              <counterpartyLei>549300KNQS43Y7TO3X67</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>Founder-Led ETF</issuerName>
+                <issueTitle>Founder-Led ETF</issueTitle>
+                <identifiers>
+                  <cusip value="218946101"/>
+                  <isin value="US2189461013"/>
+                  <ticker value="FDRS"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">UNREALIZED GAIN/LOSS AND INCOME/EXPENSE FROM UNDERLYING</otherRecDesc>
+            <floatingPmntDesc curCd="USD" fixedOrFloating="Floating" floatingRtIndex="OBFR01 INDEX" floatingRtSpread="1.250000000000" pmntAmt="131539.280000000000">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2028-01-19</terminationDt>
+            <upfrontPmnt>0.000000000000</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0.000000000000</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>12213889.130000000000</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-631574.020000000000</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>601780.120000000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>601780.120000000000</valUSD>
+        <pctVal>9.4334481418</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-05-29</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+  <documents>XXXX</documents>
+</edgarSubmission>

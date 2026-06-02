@@ -1,0 +1,44 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+Amazon.com Inc,N/A,Amazon.com Inc,023135106,,AMZN,US,EC,CORP
+Ardmore Shipping Corp,N/A,Ardmore Shipping Corp,N/A,,ASC,MH,EC,CORP
+CH Robinson Worldwide Inc,N/A,CH Robinson Worldwide Inc,12541W209,,CHRW,US,EC,CORP
+CMB Tech NV,N/A,CMB Tech NV,N/A,,CMBT,BE,EC,CORP
+Costamare Inc,N/A,Costamare Inc,N/A,,CMRE,US,EC,CORP
+Danaos Corp,N/A,Danaos Corp,N/A,,DAC,US,EC,CORP
+DHT Holdings Inc,N/A,DHT Holdings Inc,N/A,,DHT,US,EC,CORP
+Descartes Systems Group Inc/Th,N/A,Descartes Systems Group Inc/The,249906108,,DSGX,US,EC,CORP
+Diana Shipping Inc,N/A,Diana Shipping Inc,N/A,,DSX,US,EC,CORP
+Excelerate Energy Inc,N/A,Excelerate Energy Inc,30069T101,,EE,US,EC,CORP
+Euroseas Ltd,N/A,Euroseas Ltd,N/A,,ESEA,US,EC,CORP
+Expeditors International of Wa,N/A,Expeditors International of Washington Inc,302130109,,EXPD,US,EC,CORP
+FedEx Corp,N/A,FedEx Corp,31428X106,,FDX,US,EC,CORP
+Fedex Freight Holding Co Inc,N/A,Fedex Freight Holding Co Inc,314352105,,FDXF-W,US,EC,CORP
+FLEX LNG Ltd,N/A,FLEX LNG Ltd,N/A,,FLNG,US,EC,CORP
+Frontline PLC,N/A,Frontline PLC,N/A,,FRO,US,EC,CORP
+StealthGas Inc,N/A,StealthGas Inc,N/A,,GASS,US,EC,CORP
+Golar LNG Ltd,N/A,Golar LNG Ltd,N/A,,GLNG,US,EC,CORP
+Genco Shipping & Trading Ltd,N/A,Genco Shipping & Trading Ltd,N/A,,GNK,US,EC,CORP
+Global Ship Lease Inc,N/A,Global Ship Lease Inc,N/A,,GSL,US,EC,CORP
+GXO Logistics Inc,N/A,GXO Logistics Inc,36262G101,,GXO,US,EC,CORP
+Hafnia Ltd,N/A,Hafnia Ltd,N/A,,HAFN,US,EC,CORP
+Himalaya Shipping Ltd,N/A,Himalaya Shipping Ltd,N/A,,HSHP,US,EC,CORP
+International Seaways Inc,N/A,International Seaways Inc,N/A,,INSW,US,EC,CORP
+JB Hunt Transport Services Inc,N/A,JB Hunt Transport Services Inc,445658107,,JBHT,US,EC,CORP
+KNOT Offshore Partners LP,N/A,KNOT Offshore Partners LP,N/A,,KNOP,US,EC,CORP
+Dorian LPG Ltd,N/A,Dorian LPG Ltd,N/A,,LPG,US,EC,CORP
+Matson Inc,N/A,Matson Inc,57686G105,,MATX,US,EC,CORP
+Nordic American Tankers Ltd,N/A,Nordic American Tankers Ltd,N/A,,NAT,US,EC,CORP
+Navigator Holdings Ltd,N/A,Navigator Holdings Ltd,N/A,,NVGS,US,EC,CORP
+Old Dominion Freight Line Inc,N/A,Old Dominion Freight Line Inc,679580100,,ODFL,US,EC,CORP
+PANGAEA LOGISTICS SOLUTIONS LT,N/A,PANGAEA LOGISTICS SOLUTIONS LT,N/A,,PANL,US,EC,CORP
+Star Bulk Carriers Corp,N/A,Star Bulk Carriers Corp,N/A,,SBLK,US,EC,CORP
+SFL Corp Ltd,N/A,SFL Corp Ltd,N/A,,SFL,US,EC,CORP
+Seanergy Maritime Holdings Cor,N/A,Seanergy Maritime Holdings Corp,N/A,,SHIP,US,EC,CORP
+Scorpio Tankers Inc,N/A,Scorpio Tankers Inc,N/A,,STNG,US,EC,CORP
+Tsakos Energy Navigation Ltd,N/A,Tsakos Energy Navigation Ltd,N/A,,TEN,US,EC,CORP
+Teekay Tankers Ltd,N/A,Teekay Tankers Ltd,N/A,,TNK,US,EC,CORP
+TORM PLC,N/A,TORM PLC,N/A,,TRMD,US,EC,CORP
+United Parcel Service Inc,N/A,United Parcel Service Inc,911312106,,UPS,US,EC,CORP
+XPO Inc,N/A,XPO Inc,983793100,,XPO,US,EC,CORP
+ZIM Integrated Shipping Servic,N/A,ZIM Integrated Shipping Services Ltd,N/A,,ZIM,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

@@ -1,0 +1,60 @@
+# FDRS December 2025 Filing Data
+# Update these values each reporting period
+
+# Submission
+submissionType=NPORT-P
+# liveTestFlag: TEST = sandbox/dev (Beta endpoint), LIVE = real EDGAR filing.
+# Default is TEST so that accidental runs cannot disseminate. Flip to LIVE
+# only at submission time, after spot-check.
+liveTestFlag=TEST
+repPdEnd=2025-12-31
+repPdDate=2025-12-31
+isFinalFiling=N
+dateSigned=2026-02-24
+
+# Fund Financials
+totAssets=19914806.890000000000
+totLiabs=9903037.790000000000
+netAssets=10011769.100000000000
+
+# Balance Sheet Items
+assetsAttrMiscSec=0.000000000000
+assetsInvested=0.000000000000
+amtPayOneYrBanksBorr=0.000000000000
+amtPayOneYrCtrldComp=0.000000000000
+amtPayOneYrOthAffil=0.000000000000
+amtPayOneYrOther=0.000000000000
+amtPayAftOneYrBanksBorr=0.000000000000
+amtPayAftOneYrCtrldComp=0.000000000000
+amtPayAftOneYrOthAffil=0.000000000000
+amtPayAftOneYrOther=0.000000000000
+delayDeliv=0.000000000000
+standByCommit=0.000000000000
+liquidPref=0.000000000000
+isNonCashCollateral=N
+
+# Returns (N/A if not applicable for that month)
+rtn1=N/A
+rtn2=N/A
+rtn3=-1.34
+netRealizedGainMon1=0
+netUnrealizedApprMon1=0
+netRealizedGainMon2=0
+netUnrealizedApprMon2=0
+netRealizedGainMon3=-872.520000000000
+netUnrealizedApprMon3=-108350.400000000000
+
+# Flows
+mon1Sales=0
+mon1Redemption=0
+mon1Reinvestment=0
+mon2Sales=0
+mon2Redemption=0
+mon2Reinvestment=0
+mon3Sales=10120740.000000000000
+mon3Redemption=.000000000000
+mon3Reinvestment=.000000000000
+
+# Designated Index
+nameDesignatedIndex=N/A
+indexIdentifier=N/A

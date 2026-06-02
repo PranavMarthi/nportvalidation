@@ -1,0 +1,1079 @@
+
+
+
+
+N-PORT In-House Filing Tool
+Technical Specification
+
+
+
+
+Prepared for: Corgi Engineering Team
+Date: April 21, 2026
+Status: Ready for Architecture Review
+
+
+1. What This Tool Does
+Every Corgi ETF must file a monthly portfolio holdings report (Form N-PORT) with the SEC. The filing is a structured XML document containing every holding, fund financials, risk metrics, and securities lending data.
+This tool takes a canonical set of fund parameters (registrant identity, filing-period financials, and a list of holdings) as input, converts them to SEC-compliant N-PORT XML, validates the result against the SEC's XSD schema, and submits it to EDGAR via the SEC's Submission API.
+The canonical input schema is defined and owned by us — it is intentionally decoupled from any single data source. A US Bank Excel file is one upstream source we will adapt into canonical inputs; it is not the tool's contract. Other sources (a different administrator, our own books and records, a PMS export, hand-authored test fixtures, or amendments reconstructed after the fact) feed the same canonical inputs through their own adapters.
+We currently outsource this to a third-party vendor. We're bringing it in-house because we're scaling from 2 funds to 300+, and per-fund vendor costs don't scale.
+
+2. Functional Requirements
+The tool MUST:
+1. Accept canonical fund inputs — FundConfig (registrant identity, series/class IDs, signer, EDGAR credentials), FilingData (period, NAV, balance sheet, returns, flows, risk metrics), and Holdings (one record per position) — in a stable, source-agnostic schema we own
+2. Generate XML conforming to the SEC's N-PORT XSD schema (v1.13) byte-for-byte equivalent (modulo whitespace) to a known-good reference filing when fed the same canonical inputs
+3. Validate the XML against the XSD locally before submission
+4. Auto-determine submission type: NPORT-P (public, quarter-end) or NPORT-NP (non-public, other months)
+5. Submit to EDGAR via the Submission API using JWE auth tokens
+6. Track filing status (accepted vs. suspended) via the EDGAR Status API
+7. Support amendments (NPORT-P/A, NPORT-NP/A)
+8. Run in batch across 100-337 funds in a single execution
+9. Archive every XML with hash, log every submission with accession number and status
+10. Support test mode (EDGAR Beta environment, liveTestFlag=TEST)
+The tool SHOULD:
+11. Provide source-specific adapters (US Bank xlsx, future BNY xlsx, JSON, database) that produce canonical inputs — kept strictly separate from the XML generator
+12. Be schema-version-aware (swap XSD files without code changes)
+13. Manage a shared counterparty registry (name + LEI) across funds
+
+3. Inputs
+Primary: Canonical Fund Data (the tool's input contract)
+The tool consumes three structured inputs that together fully specify one fund/month filing. Field names below are the canonical names; the on-disk representation is a key=value txt file plus a CSV for holdings (see `data/samples/` for the working examples used to round-trip-test the FDRS Dec 2025 filing).
+Input
+Purpose
+Roughly how many fields
+FundConfig
+Registrant identity that doesn't change month to month: CIK, CCC, regName / regCik / regLei, full registrant address, regPhone, seriesName / seriesId / seriesLei, classId, signerOrg / signerName / signerTitle. Maintained by us per trust/series.
+~22
+FilingData
+Per-period values: submissionType, repPdEnd, repPdDate, isFinalFiling, dateSigned; balance-sheet (totAssets, totLiabs, netAssets, payables 1Y/>1Y by counterparty class, delayDeliv, standByCommit, liquidPref, assetsAttrMiscSec, assetsInvested); fund-level securities-lending flag; monthly returns (rtn1/rtn2/rtn3, netRealizedGain/netUnrealizedAppr for each of the 3 months); monthly flows (sales/redemption/reinvestment); VaR / designated-index info (nameDesignatedIndex, indexIdentifier).
+~40
+Holdings
+One record per position. Identification (name, lei, title, cusip, optional isin/ticker), quantity (balance, units, curCd), value (valUSD, pctVal), classification (payoffProfile, assetCat, issuerCat, invCountry, isRestrictedSec, fairValLevel), per-holding securityLending block. Bond/derivative/option fields extend this record in later phases (debtSec, derivativeInfo, etc.).
+~16 base, more for non-equity
+Source-Specific Adapters (NOT part of the core tool's input contract)
+Adapters are responsible for turning some upstream representation into the canonical inputs above. The XML generator never sees the upstream artifact.
+Adapter
+Status
+Notes
+US Bank xlsx adapter
+Future
+10-tab format from the current administrator. Column-to-canonical mapping in Appendix B. Optional, used when we receive a US Bank file.
+Manual / fixture
+Implemented
+Hand-authored fund_config.txt + filing_data.txt + holdings.csv. Used for the FDRS Dec 2025 ground-truth round-trip and ongoing tests.
+JSON / database
+Future
+For programmatic ingestion from our own systems.
+Other admin xlsx (BNY, etc.)
+Future
+Each new admin = one new adapter, no changes to the generator.
+Tertiary: EDGAR Auth Tokens
+Token
+Lifespan
+Notes
+Filer API Token (JWE)
+1 year
+Created by tech admin in EDGAR Next
+User API Token (JWE)
+30 days
+Auto-rotate; one active per user
+CIK + CCC
+Permanent / until changed
+Per trust
+
+
+4. Outputs
+Output
+Format
+Description
+N-PORT XML
+UTF-8 XML per SEC XSD v1.13
+One file per fund per month. 10 KB to 2+ MB depending on holdings count. Max 600 MB.
+EDGAR confirmation
+JSON from API
+Accession number on success, error codes on failure
+Audit log
+Per filing
+Fund, period, submission type, accession number, status, timestamp, SHA-256 of XML
+
+
+5. Operational Cadence
+Filing Volume
+Scale
+Monthly Filings
+Annual
+Today (2 funds)
+2
+24
+Near-term (~40 funds)
+40
+480
+Full scale (337 funds)
+337
+4,044
+
+Deadlines
+Current rules: All 3 monthly reports for a fiscal quarter filed together, due within 60 days of quarter-end. Quarter-end month = public (NPORT-P); other two = non-public (NPORT-NP).
+Coming (Nov 2027 / May 2028): Monthly filing, each due within 30 days of month-end. Build for this.
+Submission Type Logic
+The tool auto-determines this from fiscal year end + reporting period:
+Month 3 of fiscal quarter = NPORT-P (public)
+Month 1 or 2 = NPORT-NP (non-public)
+Monthly Timeline
+Day 0:     Month ends
+Day 1-10:  US Bank produces client files
+Day 10-20: Tool ingests, generates XML, validates
+Day 20-25: Human spot-check (optional)
+Day 25-30: Submit to EDGAR, confirm acceptance
+
+6. End-to-End Workflow
+ADAPT (optional)  -->  LOAD CANONICAL  -->  VALIDATE INPUT  -->  GENERATE XML  -->  VALIDATE XML  -->  SUBMIT  -->  CONFIRM  -->  ARCHIVE
+       |                     |                    |                  |                  |              |            |             |
+ Source-specific        Read FundConfig +     Business rules:    Build Parts        Run against    POST to      Poll Status   Save XML +
+ adapter (e.g. US       FilingData +          NAV identity,      A/B/C/E/F +        XSD schema.    EDGAR API    API. Log      hash + log
+ Bank xlsx) writes      Holdings from         pctVal sums,       Signature from     Stop on fail.  with JWE     accepted/
+ canonical inputs.      stable schema we      identifier         the canonical                     tokens       suspended
+ Skipped when           own. Same shape       formats,           inputs.
+ inputs are already     regardless of         conditional
+ canonical.             upstream source.      requirements.
+The core tool starts at LOAD CANONICAL. ADAPT is a separate concern: any code that turns an upstream artifact into canonical inputs. The generator has zero knowledge of US Bank, Excel, or any other source.
+Batch mode: Loop over a directory of canonical input bundles (or run an adapter over a directory of upstream files first to produce them). Generate + validate each. Submit valid ones sequentially (max 8 req/sec). Produce summary: X succeeded, Y failed validation, Z suspended.
+
+7. Our Fund Universe
+Trusts
+
+Trust I
+Trust II
+Trust III
+CIK
+0002078265
+0002096087
+0002100194
+File #
+811-24117
+811-24136
+811-24157
+Series
+328 registered, 2 live
+8 registered, 0 live
+1 registered, 0 live
+
+Live Funds (N-PORT required now)
+Series ID
+Class ID
+Fund
+Ticker
+S000096625
+C000265520
+Founder-Led ETF
+FDRS
+S000096626
+C000265521
+Founder-Led 2x Daily ETF
+FDRX
+
+Fund Types and N-PORT Complexity
+Type
+Count
+Complexity
+Why
+Thematic equity (1x)
+29
+Low
+Stocks only. No derivatives.
+Leveraged 2x Daily
+149
+High
+Total return swaps: C.11.f swap legs, counterparties, reference instruments
+Buffer ETFs
+108
+Very High
+FLEX options: C.11.c put/call, strike, expiry, delta, written/purchased. Multiple legs per fund.
+Bond / Fixed Income
+TBD (coming soon)
+High
+C.9 debt fields (maturity, coupon type/rate, default). B.3 risk metrics (DV01, DV100, credit spread by tenor). Multiple asset types (DBT, ABS-MBS, ABS-CBDO, ABS-O). Units = PA (principal).
+Trust II/III
+9
+Medium
+Mix of equity + derivatives
+
+~75% of our funds hold derivatives. Bond funds add a different axis of complexity: C.9 debt securities and B.3 risk metrics, which equity/derivative funds skip entirely.
+Ground Truth for Testing
+FDRS Dec 2025 NPORT-P, filed under Corgi ETF Trust I (accession 0000894189-26-004341), is the acceptance benchmark.
+
+The canonical inputs (FundConfig, FilingData, Holdings) for this filing have been hand-extracted from the as-filed XML and committed at:
+  data/samples/fund_config.txt
+  data/samples/filing_data.txt
+  data/samples/holdings.csv
+  reference_nport.xml          ← the as-filed document
+
+Acceptance criterion: running the generator against `data/samples/*` MUST produce XML that is element-, attribute-, and text-equivalent to `reference_nport.xml` (whitespace and attribute ordering aside). The round-trip test in `tests/test_roundtrip.py` enforces this. Any future feature work — derivatives, debt, batch, etc. — must keep this round-trip green.
+
+8. Fund Type Requirements (with Real EDGAR Examples)
+Each fund type uses different parts of the N-PORT XML schema. This section shows exactly what differs, using real filings pulled from EDGAR.
+8.1 Requirements Matrix
+
+Equity (1x)
+Leveraged 2x
+Buffer
+Single-Stock 2x
+**Bond / Fixed Income**
+Our funds
+29 thematic
+69 index + 28 affiliated
+108 monthly series
+80+
+TBD (coming soon)
+Example fund
+FDRS (our own)
+Direxion TSLA Bull 2X
+FT Vest Buffer ETF
+GraniteShares 2x NVDA
+PIMCO ESG Short Mat.
+Holdings count
+30-60 stocks
+5-15 (swaps + collateral)
+10-20 (options + cash)
+10-15 (swaps + T-bills)
+50-500+ bonds
+Part B: Risk metrics (B.3)
+Skip (no debt)
+Skip (no debt)
+Maybe (if >25% T-bills)
+Maybe (if >25% T-bills)
+Yes, always (DV01, DV100, CS01 per currency per tenor)
+Part C: Core fields
+All
+All
+All
+All
+All
+C.9: Debt securities
+No
+No
+No (unless T-bills)
+Yes (T-bill collateral)
+Yes, every holding (maturity, coupon type/rate, default flags)
+C.11: Derivatives
+No
+swapDeriv
+optionSwaptionWarrantDeriv
+swapDeriv
+Maybe (interest rate swaps, CDS)
+Counterparties needed
+No
+Yes (5-10 dealers)
+Yes (1, usually CBOE)
+Yes (5-10 dealers)
+Maybe (if derivatives)
+Reference instruments
+No
+Yes (ticker via indexBasketInfo)
+Yes (SPY via otherRefInst)
+Yes (stock via otherRefInst)
+No (unless derivatives)
+Asset types used
+`EC`
+`DE`, `EC`, `STIV`
+`DE`, `STIV`
+`DE`, `DBT`
+`DBT`, `ABS-MBS`, `ABS-CBDO`, `ABS-O`, `RA`, `DFE`
+Issuer types used
+`CORP`
+`CORP`
+`CORP`
+`CORP`
+`CORP`, `UST`, `USGSE`, `USGA`, `NUSS`
+Units
+`NS` (shares)
+`NC` (contracts)
+`NC` (contracts)
+`NC` (contracts)
+`PA` (principal amount)
+Typical file size
+~50 KB
+~30 KB
+~50 KB
+~30 KB
+100-500 KB
+
+8.2 Equity-Only Fund (FDRS, our actual filing)
+Source: FDRS Dec 2025, accession 0000894189-26-004341. 54 equity holdings. No derivatives.
+What's used: Core Part C fields only. No C.9, C.10, C.11. Simple securityLending block at the end.
+<!-- REAL: Corgi FDRS filing, MercadoLibre holding -->
+<invstOrSec>
+  <name>MercadoLibre Inc</name>
+  <lei>549300DKPDN9M5S8GB14</lei>
+  <title>MercadoLibre Inc</title>
+  <cusip>58733R102</cusip>
+  <identifiers>
+    <isin value="US58733R1023"/>
+    <ticker value="MELI"/>
+  </identifiers>
+  <balance>91.000000000000</balance>
+  <units>NS</units>
+  <curCd>USD</curCd>
+  <valUSD>183297.660000000000</valUSD>
+  <pctVal>1.8308218874</pctVal>
+  <payoffProfile>Long</payoffProfile>
+  <assetCat>EC</assetCat>
+  <issuerCat>CORP</issuerCat>
+  <invCountry>UY</invCountry>
+  <isRestrictedSec>N</isRestrictedSec>
+  <fairValLevel>1</fairValLevel>
+  <securityLending>
+    <isCashCollateral>N</isCashCollateral>
+    <isNonCashCollateral>N</isNonCashCollateral>
+    <isLoanByFund>N</isLoanByFund>
+  </securityLending>
+</invstOrSec>
+What's absent vs. other fund types: No fundCat (liquidity, non-public), no derivativeInfo, no debtSec. Straightforward.
+8.3 Leveraged 2x Daily Fund (Direxion TSLA Bull 2X, $5.8B AUM)
+Source: Direxion TSLA 2X, Jan 2026, accession 0001193125-26-137760. 13 holdings: 7 total return swaps + 1 TSLA equity position + 5 money market funds.
+What's different: Each swap is its own invstOrSec with a swapDeriv block inside derivativeInfo. Key patterns:
+name = N/A, lei = N/A, cusip = N/A (swaps don't have standard identifiers)
+units = NC (number of contracts, balance = 1)
+payoffProfile = N/A
+assetCat = DE (derivative-equity)
+issuerConditional desc="Other - Swap" (not a standard issuer category)
+fairValLevel = 2 (OTC, model-priced)
+valUSD can be negative (unrealized loss on the swap)
+<!-- REAL: Direxion TSLA 2X filing, Barclays swap -->
+<invstOrSec>
+  <name>N/A</name>
+  <lei>N/A</lei>
+  <title>TESLA INC Swap</title>
+  <cusip>N/A</cusip>
+  <identifiers>
+    <other otherDesc="Internal ID" value="TSLABC"/>
+  </identifiers>
+  <balance>1</balance>
+  <units>NC</units>
+  <curCd>USD</curCd>
+  <valUSD>-166353555.71</valUSD>
+  <pctVal>-2.8638240453</pctVal>
+  <payoffProfile>N/A</payoffProfile>
+  <assetCat>DE</assetCat>
+  <issuerConditional desc="Other - Swap" issuerCat="OTHER"/>
+  <invCountry>US</invCountry>
+  <isRestrictedSec>N</isRestrictedSec>
+  <fairValLevel>2</fairValLevel>
+  <derivativeInfo>
+    <swapDeriv derivCat="SWP">
+      <counterparties>
+        <counterpartyName>Barclays Bank PLC</counterpartyName>
+        <counterpartyLei>G5GSEF7VJP5I7OUK5573</counterpartyLei>
+      </counterparties>
+      <descRefInstrmnt>
+        <indexBasketInfo>
+          <indexName>N/A</indexName>
+          <indexIdentifier>TSLA</indexIdentifier>
+        </indexBasketInfo>
+      </descRefInstrmnt>
+      <swapFlag>Y</swapFlag>
+      <!-- Receive leg: total return on TSLA -->
+      <floatingRecDesc curCd="USD" fixedOrFloating="Floating"
+        floatingRtIndex="Total Return Swap Contract of Common Shares of Tesla, Inc."
+        floatingRtSpread="0.000000000000" pmntAmt="0.000000000000">
+        <rtResetTenors>
+          <rtResetTenor rateTenor="Day" rateTenorUnit="1" resetDt="Day" resetDtUnit="1"/>
+        </rtResetTenors>
+      </floatingRecDesc>
+      <!-- Pay leg: SOFR + spread -->
+      <floatingPmntDesc curCd="USD" fixedOrFloating="Floating"
+        floatingRtIndex="1 month Sofr + spread"
+        floatingRtSpread="7.630000000000" pmntAmt="7.630000000000">
+        <rtResetTenors>
+          <rtResetTenor rateTenor="Day" rateTenorUnit="1" resetDt="Day" resetDtUnit="1"/>
+        </rtResetTenors>
+      </floatingPmntDesc>
+      <terminationDt>2049-12-31</terminationDt>
+      <upfrontPmnt>0.000000000000</upfrontPmnt>
+      <pmntCurCd>USD</pmntCurCd>
+      <upfrontRcpt>0.000000000000</upfrontRcpt>
+      <rcptCurCd>USD</rcptCurCd>
+      <notionalAmt>1590706265.13</notionalAmt>
+      <curCd>USD</curCd>
+      <unrealizedAppr>-166353555.71</unrealizedAppr>
+    </swapDeriv>
+  </derivativeInfo>
+  <securityLending>
+    <isCashCollateral>N</isCashCollateral>
+    <isNonCashCollateral>N</isNonCashCollateral>
+    <isLoanByFund>N</isLoanByFund>
+  </securityLending>
+</invstOrSec>
+Key observations for SWEs:
+Direxion uses indexBasketInfo (not otherRefInst) for the reference stock, with ticker as indexIdentifier
+The receive leg is floatingRecDesc with fixedOrFloating="Floating", not the nested receipt/floatingRcpt structure from our sample XML; real filings use attributes, not child elements for swap legs
+floatingRtSpread is in basis points (7.63 = SOFR + 0.0763%)
+7 separate swap entries across 7 different counterparties (Barclays, BNP, Citi, Goldman, JPM, BofA, Nomura), each with its own notional
+Total notional across all swaps = ~$11.3B on $5.8B NAV (roughly 2x)
+8.4 Buffer / Defined Outcome Fund (FT Vest Buffer ETF, $199M AUM)
+Source: FT Vest U.S. Equity Enhance & Moderate Buffer ETF, Nov 2025, accession 0000940400-26-002430. 16 holdings: 15 FLEX options + 1 money market fund.
+What's different: Uses optionSwaptionWarrantDeriv with derivCat="OPT". A buffer fund has 4 option legs per outcome period:
+1. Purchased Call (deep ITM) -- provides upside participation
+2. Written Call (OTM) -- caps the upside ("cap")
+3. Purchased Put (ATM) -- provides downside buffer
+4. Written Put (OTM) -- defines the buffer floor
+<!-- REAL: FT Vest Buffer ETF, Written Put at $502.49 strike (buffer floor) -->
+<invstOrSec>
+  <name>CBOE GLOBAL MARKETS, INC.</name>
+  <lei>529900RLNSGA90UPEH54</lei>
+  <title>SPDR S&amp;P 500 ETF TRUST</title>
+  <cusip>000000000</cusip>
+  <identifiers>
+    <ticker value="SPY 12 P502.49"/>
+    <other otherDesc="INTERNAL" value="YP19D53X"/>
+  </identifiers>
+  <balance>-2573.00000000</balance>
+  <units>NC</units>
+  <curCd>USD</curCd>
+  <valUSD>-25138.21000000</valUSD>
+  <pctVal>-0.01261078074</pctVal>
+  <payoffProfile>N/A</payoffProfile>
+  <assetCat>DE</assetCat>
+  <issuerCat>CORP</issuerCat>
+  <invCountry>US</invCountry>
+  <isRestrictedSec>N</isRestrictedSec>
+  <fairValLevel>2</fairValLevel>
+  <derivativeInfo>
+    <optionSwaptionWarrantDeriv derivCat="OPT">
+      <counterparties>
+        <counterpartyName>CBOE GLOBAL MARKETS, INC.</counterpartyName>
+        <counterpartyLei>529900RLNSGA90UPEH54</counterpartyLei>
+      </counterparties>
+      <putOrCall>Put</putOrCall>
+      <writtenOrPur>Written</writtenOrPur>
+      <descRefInstrmnt>
+        <otherRefInst>
+          <issuerName>SPDR S&amp;P 500 ETF Trust</issuerName>
+          <issueTitle>SPDR S&amp;P 500 ETF Trust</issueTitle>
+          <identifiers>
+            <cusip value="78462F103"/>
+            <isin value="US78462F1030"/>
+            <ticker value="SPY"/>
+          </identifiers>
+        </otherRefInst>
+      </descRefInstrmnt>
+      <shareNo>100.00000000</shareNo>
+      <exercisePrice>502.49000000</exercisePrice>
+      <exercisePriceCurCd>USD</exercisePriceCurCd>
+      <expDt>2025-12-19</expDt>
+      <delta>XXXX</delta>
+      <unrealizedAppr>2976280.47000000</unrealizedAppr>
+    </optionSwaptionWarrantDeriv>
+  </derivativeInfo>
+  <securityLending>
+    <isCashCollateral>N</isCashCollateral>
+    <isNonCashCollateral>N</isNonCashCollateral>
+    <isLoanByFund>N</isLoanByFund>
+  </securityLending>
+</invstOrSec>
+Key observations for SWEs:
+Written options have negative balance (-2573 contracts) and negative valUSD
+delta = XXXX (non-public, redacted in public NPORT-P filing)
+Counterparty is CBOE (exchange-cleared FLEX options)
+Reference instrument uses otherRefInst with full CUSIP/ISIN/ticker for SPY
+name field = counterparty name (CBOE), not the option name
+title field = underlying name (SPDR S&P 500)
+Ticker in identifiers encodes the option details: SPY 12 P502.49 (SPY, December, Put, $502.49 strike)
+All 15 options reference the same underlying (SPY) but differ in put/call, written/purchased, and strike
+8.5 Single-Stock Leveraged Fund (GraniteShares 2x NVDA, $4.7B AUM)
+Source: GraniteShares 2x Long NVDA, Dec 2025, accession 0001049169-26-000597. 12 holdings: 10 swaps + 2 T-bills.
+What's different from index-leveraged: Uses otherRefInst (not indexBasketInfo) for the reference stock. Holds T-bills as collateral (not money market funds). More counterparties.
+<!-- REAL: GraniteShares 2x NVDA, Cantor Fitzgerald swap -->
+<invstOrSec>
+  <name>Cantor Fitzgerald</name>
+  <lei>N/A</lei>
+  <title>NVDA EQUITY SWAP 5</title>
+  <cusip>N/A</cusip>
+  <identifiers>
+    <other otherDesc="INTERNAL IDENTIFIER" value="NVDA_CA1_1"/>
+  </identifiers>
+  <balance>1.00000000</balance>
+  <units>NC</units>
+  <curCd>USD</curCd>
+  <valUSD>356718550.00000000</valUSD>
+  <pctVal>7.531046744004</pctVal>
+  <payoffProfile>N/A</payoffProfile>
+  <assetCat>DE</assetCat>
+  <issuerCat>CORP</issuerCat>
+  <invCountry>US</invCountry>
+  <isRestrictedSec>N</isRestrictedSec>
+  <fairValLevel>2</fairValLevel>
+  <derivativeInfo>
+    <swapDeriv derivCat="SWP">
+      <counterparties>
+        <counterpartyName>Cantor Fitzgerald</counterpartyName>
+        <counterpartyLei>549300DWZ3YOKJO5X179</counterpartyLei>
+      </counterparties>
+      <descRefInstrmnt>
+        <otherRefInst>
+          <issuerName>NVIDIA Corp.</issuerName>
+          <issueTitle>NVIDIA Corp.</issueTitle>
+          <identifiers>
+            <isin value="US67066G1040"/>
+          </identifiers>
+        </otherRefInst>
+      </descRefInstrmnt>
+      <swapFlag>Y</swapFlag>
+      <!-- Receive leg: "Other" = underlying performance -->
+      <otherRecDesc fixedOrFloating="Other">Underlying Performance</otherRecDesc>
+      <!-- Pay leg: OBFR + spread -->
+      <floatingPmntDesc curCd="USD" fixedOrFloating="Floating"
+        floatingRtIndex="OBFR01" floatingRtSpread="3.50000000"
+        pmntAmt="1061852.52000000">
+        <rtResetTenors>
+          <rtResetTenor rateTenor="Day" rateTenorUnit="1" resetDt="Day" resetDtUnit="1"/>
+        </rtResetTenors>
+      </floatingPmntDesc>
+      <terminationDt>2026-08-10</terminationDt>
+      <upfrontPmnt>0.00000000</upfrontPmnt>
+      <pmntCurCd>USD</pmntCurCd>
+      <upfrontRcpt>0.00000000</upfrontRcpt>
+      <rcptCurCd>USD</rcptCurCd>
+      <notionalAmt>277940130.01000000</notionalAmt>
+      <curCd>USD</curCd>
+      <unrealizedAppr>78778419.99000000</unrealizedAppr>
+    </swapDeriv>
+  </derivativeInfo>
+  <securityLending>
+    <isCashCollateral>N</isCashCollateral>
+    <isNonCashCollateral>N</isNonCashCollateral>
+    <isLoanByFund>N</isLoanByFund>
+  </securityLending>
+</invstOrSec>
+Key differences from Direxion (section 8.3):
+Reference instrument uses otherRefInst (with ISIN), not indexBasketInfo
+Receive leg uses otherRecDesc fixedOrFloating="Other", not floatingRecDesc
+Pay leg uses OBFR01 (overnight bank funding rate), not SOFR -- varies by counterparty
+name = counterparty name (not N/A); lei = N/A
+issuerCat = CORP (not issuerConditional)
+No equity holdings at all; 100% swap exposure + T-bill collateral
+8.6 Bond / Fixed Income Fund (PIMCO ESG Short Maturity, $211M AUM)
+Source: PIMCO Enhanced Short Maturity Active ESG ETF, Dec 2025, accession 0001099263-26-003086. 205 holdings: 98 corporate bonds, 51 ABS-MBS, 37 ABS-other, 11 derivatives, 6 CLOs, 2 repos.
+What's different from equity funds: Bond funds activate two major sections that equity funds skip entirely:
+1. B.3 Risk Metrics (DV01 / DV100 / Credit Spread): Required when >25% of NAV is in debt. Reported per currency, across 5 maturity buckets.
+<!-- REAL: PIMCO bond fund risk metrics -->
+<curMetrics>
+  <curMetric>
+    <curCd>USD</curCd>
+    <intrstRtRiskdv01 period3Mon="1767.376546" period1Yr="4566.384290"
+      period5Yr="1542.793927" period10Yr="74.362185" period30Yr="0.000000"/>
+    <intrstRtRiskdv100 period3Mon="214605.998142" period1Yr="488429.705264"
+      period5Yr="157228.279871" period10Yr="7842.868616" period30Yr="0.000000"/>
+  </curMetric>
+  <curMetric>
+    <curCd>EUR</curCd>
+    <intrstRtRiskdv01 period3Mon="56.769852" period1Yr="42.247330"
+      period5Yr="0.000000" period10Yr="0.000000" period30Yr="0.000000"/>
+    <intrstRtRiskdv100 period3Mon="5644.656505" period1Yr="4200.674445"
+      period5Yr="0.000000" period10Yr="0.000000" period30Yr="0.000000"/>
+  </curMetric>
+  <!-- Also JPY, CAD entries for this fund -->
+</curMetrics>
+<creditSprdRiskInvstGrade period3Mon="8651.973000" period1Yr="6022.853500"
+  period5Yr="1319.633300" period10Yr="72.833400" period30Yr="0.000000"/>
+<creditSprdRiskNonInvstGrade period3Mon="0.000000" period1Yr="0.000000"
+  period5Yr="0.000000" period10Yr="0.000000" period30Yr="0.000000"/>
+Key observations: One curMetric block per currency where the fund has 1%+ of NAV. Each has DV01 (1 bp rate change) and DV100 (100 bp). Credit spread risk is separate, IG vs. non-IG. Equity funds have none of this.
+2. C.9 Debt Security Fields: Every bond holding gets a debtSec block.
+<!-- REAL: Fixed-rate corporate bond -->
+<invstOrSec>
+  <name>KEYSPAN GAS EAST CORPORATION</name>
+  <lei>K8TS3HOE1568DUBUJL44</lei>
+  <title>KEYSPAN GAS EAST CORP UNSECURED 144A 08/26 2.742</title>
+  <cusip>49338CAB9</cusip>
+  <identifiers><isin value="US49338CAB90"/></identifiers>
+  <balance>940000.000000</balance>
+  <units>PA</units>           <!-- PA = principal amount, not NS -->
+  <curCd>USD</curCd>
+  <valUSD>930544.220000</valUSD>
+  <pctVal>0.441016</pctVal>
+  <payoffProfile>Long</payoffProfile>
+  <assetCat>DBT</assetCat>    <!-- DBT, not EC -->
+  <issuerCat>CORP</issuerCat>
+  <invCountry>US</invCountry>
+  <isRestrictedSec>N</isRestrictedSec>
+  <fairValLevel>2</fairValLevel>  <!-- Bonds are typically Level 2 -->
+  <debtSec>
+    <maturityDt>2026-08-15</maturityDt>
+    <couponKind>Fixed</couponKind>
+    <annualizedRt>2.742</annualizedRt>
+    <isDefault>N</isDefault>
+    <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+    <isPaidKind>N</isPaidKind>
+  </debtSec>
+  <securityLending>
+    <isCashCollateral>N</isCashCollateral>
+    <isNonCashCollateral>N</isNonCashCollateral>
+    <isLoanByFund>N</isLoanByFund>
+  </securityLending>
+</invstOrSec>
+<!-- REAL: Floating-rate ABS-MBS (Ginnie Mae) -->
+<invstOrSec>
+  <name>GOVERNMENT NATIONAL MORTGAGE ASSOCIATION 2025-H20</name>
+  <lei>N/A</lei>
+  <title>GOVERNMENT NATIONAL MORTGAGE A GNR 2025 H20 FA</title>
+  <cusip>38384LB73</cusip>
+  <identifiers><isin value="US38384LB736"/></identifiers>
+  <balance>1003043.540000</balance>
+  <units>PA</units>
+  <curCd>USD</curCd>
+  <valUSD>1006400.930000</valUSD>
+  <pctVal>0.476967</pctVal>
+  <payoffProfile>Long</payoffProfile>
+  <assetCat>ABS-MBS</assetCat>   <!-- Not DBT; mortgage-backed -->
+  <issuerCat>USGSE</issuerCat>   <!-- Gov't sponsored entity -->
+  <invCountry>US</invCountry>
+  <isRestrictedSec>N</isRestrictedSec>
+  <fairValLevel>2</fairValLevel>
+  <debtSec>
+    <maturityDt>2075-09-20</maturityDt>   <!-- Long maturity for MBS -->
+    <couponKind>Floating</couponKind>      <!-- Floating rate -->
+    <annualizedRt>4.68765</annualizedRt>
+    <isDefault>N</isDefault>
+    <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+    <isPaidKind>N</isPaidKind>
+  </debtSec>
+  <securityLending>
+    <isCashCollateral>N</isCashCollateral>
+    <isNonCashCollateral>N</isNonCashCollateral>
+    <isLoanByFund>N</isLoanByFund>
+  </securityLending>
+</invstOrSec>
+Key differences from equity holdings:
+units = PA (principal amount), not NS (shares)
+balance = face/par value (e.g., $940,000), not share count
+assetCat varies: DBT, ABS-MBS, ABS-CBDO, ABS-O (not just EC)
+issuerCat varies: CORP, UST, USGSE, USGA, NUSS (not just CORP)
+fairValLevel = 2 for most bonds (dealer-quoted, not exchange-traded)
+debtSec block is mandatory with: maturity date, coupon kind (Fixed/Floating/Variable/None), annualized rate, default/arrears/PIK flags
+couponKind = Floating for variable-rate bonds (PIMCO fund has 76 floating, 85 fixed, 28 zero-coupon)
+lei = N/A is common for structured products (MBS, ABS)
+8.7 Patterns Across Fund Types (Summary for SWEs)
+Things that vary by filer, not by schema:
+Field
+Direxion pattern
+GraniteShares pattern
+FT Vest pattern
+`name` on derivatives
+`N/A`
+Counterparty name
+Counterparty name
+`cusip` on derivatives
+`N/A`
+`N/A`
+`000000000`
+`issuerCat` on derivatives
+`issuerConditional`
+`CORP`
+`CORP`
+Swap receive leg
+`floatingRecDesc`
+`otherRecDesc`
+N/A
+Swap pay index
+SOFR
+OBFR01 / SOFRRATE / FEDL01
+N/A
+Option reference instrument
+N/A
+N/A
+`otherRefInst` (SPY)
+Swap reference instrument
+`indexBasketInfo` (ticker)
+`otherRefInst` (ISIN)
+N/A
+
+The schema allows multiple valid ways to express the same data. The SWE team should follow whatever pattern US Bank produces in the client file. The real examples above show that EDGAR accepts all these variations.
+Real filing XMLs saved for reference:
+File
+Fund Type
+Location
+FDRS (our filing)
+Equity-only
+`~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/FDRS_equity_only_Dec2025.xml`
+Direxion TSLA 2X
+Leveraged swap
+`~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/Direxion_TSLA_2X_leveraged_swap_Jan2026.xml`
+FT Vest Buffer
+FLEX options
+`~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/FTVest_Buffer_FLEX_options_Nov2025.xml`
+GraniteShares 2x NVDA
+Single-stock swap
+`~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/GraniteShares_2x_NVDA_single_stock_Dec2025.xml`
+PIMCO ESG Short Mat.
+Bond / fixed income
+`~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/PIMCO_Bond_ETF_debt_securities_Dec2025.xml`
+
+
+9. Implementation Roadmap
+Phase
+Weeks
+Goal
+Deliverable
+1: Core Generator
+1-3
+Generate valid N-PORT XML from canonical inputs for an equity-only fund (FDRS). Round-trip the FDRS Dec 2025 reference filing exactly.
+CLI: `nport generate --config fund_config.txt --filing filing_data.txt --holdings holdings.csv --output file.xml`. Round-trip test against reference_nport.xml passes.
+2: Debt + Derivatives
+3-5
+Extend canonical Holdings schema and generator to handle C.9 debt securities (bond funds), B.3 risk metrics, swaps (leveraged), FLEX options (buffer). Round-trip a reference filing for each fund type.
+Generator handles all holding types
+3: Adapters
+5-7
+US Bank xlsx → canonical inputs adapter. Verified by feeding US Bank Dec 2025 FDRS file through the adapter and confirming generator output still matches reference_nport.xml.
+`nport adapt-usbank file.xlsx --out-dir ./canonical/`
+4: EDGAR API
+7-9
+Submit programmatically. Test env first. Dry-run mode.
+End-to-end: canonical inputs in, EDGAR accepted
+5: Batch + Scale
+9-11
+Process 100-337 funds in one run. Auto submission type logic.
+`nport batch --input-dir ./month/ --config trusts.json`
+6: Ops
+11-13
+Audit trail, amendments, deadline alerts, schema versioning
+Production-ready system
+
+
+9. Tech Stack
+Component
+Choice
+Why
+Language
+Python 3.11+
+Best XML/XSD (lxml), Excel (openpyxl), EDGAR ecosystem
+XML
+`lxml.etree`
+XSD validation, namespace support
+Excel
+`openpyxl`
+Native .xlsx parsing
+HTTP
+`httpx`
+Async for batch, connection pooling
+JWE
+`python-jose` or `jwcrypto`
+EDGAR Next auth tokens
+Tests
+`pytest`
+XSD compliance + round-trip tests
+
+
+10. EDGAR Submission API
+Endpoints
+Env
+URL
+Production
+`https://api.edgarfiling.sec.gov/`
+Beta/Test
+`https://api-bravo.edgarfiling.sec.gov/`
+
+Submit
+POST /submissions
+Content-Type: application/xml
+X-Filer-Api-Token: <JWE, annual>
+X-User-Api-Token: <JWE, 30-day>
+User-Agent: Corgi Capital research@corgi.insure
+ 
+<body: N-PORT XML>
+Returns accession number on success, error codes on failure.
+Check Status
+GET /submissions/status/{accession_number}
+X-Filer-Api-Token: <JWE>
+Accepted: live on EDGAR
+Suspended: validation errors; deleted after 6 business days if not fixed
+Rate Limit
+10 req/sec per IP. Exceeding = 403 + 10-min block. Target 8 req/sec max.
+Test Mode
+Set `liveTestFlag=TEST` in `filing_data.txt`; the generator emits `<liveTestFlag>TEST</liveTestFlag>` as the first child of `filerInfo`. Use the Beta endpoint for dev. `liveTestFlag=LIVE` omits the element entirely (matches how production filings, including our FDRS Dec 2025 reference, are submitted — EDGAR treats omission as live). All current canonical-input fixtures default to `TEST` so accidental runs cannot disseminate; flipping to `LIVE` is a deliberate per-filing action at submission time.
+
+11. Validation
+Layer 1: XSD Schema
+from lxml import etree
+schema = etree.XMLSchema(etree.parse("eis_NPORT_Filer.xsd"))
+if not schema.validate(etree.parse("filing.xml")):
+    for e in schema.error_log:
+        print(f"Line {e.line}: {e.message}")
+Layer 2: Business Logic
+Check
+Rule
+NAV
+`netAssets` = `totAssets` - `totLiabs`
+Holdings
+Sum of `pctVal` ~ 100%
+Identifiers
+CUSIP 9 chars or `000000000`; LEI 20 chars or `N/A`
+Derivatives
+Every derivative holding has counterparty name + LEI
+Submission type
+NPORT-P only for quarter-end months
+
+APPENDICES
+
+Appendix A: XML Structure and Schema
+Schema: v1.13
+Download: https://www.sec.gov/files/edgar/filer-information/specifications/edgar-form-n-port-xml-tech-spec-113.zip
+Local copy: ~/Desktop/N-PORT_Schema_and_Samples/
+5 XSD files: eis_NPORT_Filer.xsd (root), eis_NPORT_common.xsd, eis_Common.xsd, eis_ISO_StateCodes.xsd, eis_stateCodes.xsd
+XML Root
+<?xml version="1.0" encoding="UTF-8"?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport"
+  xmlns:com="http://www.sec.gov/edgar/common"
+  xmlns:ncom="http://www.sec.gov/edgar/nportcommon"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sec.gov/edgar/nport eis_NPORT_Filer.xsd">
+  <headerData>...</headerData>
+  <formData>
+    <genInfo>...</genInfo>           <!-- Part A: registrant, series, period -->
+    <fundInfo>...</fundInfo>         <!-- Part B: NAV, risk metrics, returns, flows -->
+    <invstOrSecs>                    <!-- Part C: one element per holding -->
+      <invstOrSec>...</invstOrSec>
+    </invstOrSecs>
+    <explntrNotes>...</explntrNotes> <!-- Part E: optional notes -->
+    <signature>...</signature>
+  </formData>
+</edgarSubmission>
+Rules: No <?xml-stylesheet?> (EDGAR suspends it). UTF-8 only. Max 600 MB. Escape < > & ". Booleans: lowercase true/false for XML, Y/N for form fields.
+Key Data Types
+Type
+Pattern
+Example
+CIK
+Max 10 digits, zero-padded
+`0002078265`
+LEI
+`[0-9A-Z]{18}[0-9]{2}` or `N/A`
+`529900Y4TPD7LE3K2C21`
+CUSIP
+`[0-9A-HJ-NP-Z]{5}[0-9A-HJ-NP-Z#*@]{3}[0-9]`
+`037833100`
+SERIES_ID
+`S` + 9 digits
+`S000096625`
+CLASS_ID
+`C` + 9 digits
+`C000265520`
+DECIMAL
+Up to 24 integer + 12 decimal digits
+`19914806.890000000000`
+DATE
+`YYYY-MM-DD`
+`2026-01-31`
+
+Key Enumerations
+Asset: EC (equity-common), EP (preferred), DBT (debt), DE (deriv-equity), DFE (deriv-FX), DIR (deriv-IR), DCO/DCR/DO (deriv-other), STIV, RA, SN, LON, ABS-MBS/ABS-APCP/ABS-CBDO/ABS-O, COMM, RE
+Issuer: CORP, UST, USGA, USGSE, MUN, NUSS, PF, RF
+Units: NS (shares), PA (principal), NC (contracts), OU (other)
+Derivative type (xs:choice): fwdDeriv, futrDeriv, swapDeriv, optionSwaptionWarrantDeriv, othDeriv
+Key Choice Rules
+The schema uses xs:choice (pick exactly one branch) in 18 places. Critical ones:
+What
+Options
+US vs. foreign registrant
+`regStateConditional` vs. `regCountry`
+USD vs. non-USD holding
+`curCd` vs. `currencyConditional` (with exchange rate)
+Derivative type
+5 sub-types above
+Asset/issuer category
+Standard code vs. `*Conditional` with description
+
+Conditional Rules
+All our funds are N-1A, so seriesId and classId are always mandatory. Every derivative holding requires counterparty name + LEI. Full list of 71 rules is in the tech spec PDF.
+
+Appendix B: US Bank xlsx Adapter — Column Mapping (Section CD, 110 columns)
+This appendix specifies *one* adapter — the US Bank xlsx adapter (Phase 3). It maps US Bank's Section CD columns to the canonical Holdings schema defined in §3. It is NOT part of the core tool's input contract; the generator never reads these columns. New administrators will get their own adapter appendix.
+Cols
+Item
+XML Element
+What
+C-J
+C.1
+`name`, `lei`, `title`, `cusip`, `identifiers/*`
+Security identification
+K-M
+C.2.a
+`balance`, `units`, `descOthUnits`
+Quantity
+N-Q
+C.2.b-e
+`curCd`/`currencyConditional`, `valUSD`, `pctVal`
+Value
+S
+C.3
+`payoffProfile`
+Long/Short/N/A
+T-W
+C.4
+`assetCat`/`issuerCat`
+Classification
+X-Y
+C.5
+`invCountry`
+Country
+Z
+C.6
+`isRestrictedSec`
+Restricted Y/N
+AA-AG
+C.7
+`fundCat`
+Liquidity (non-public)
+AH
+C.8
+`fairValLevel`
+Fair value 1/2/3
+AI-AQ
+C.9
+`debtSec/*`
+Debt: maturity, coupon, default, convertible
+AR-AW
+C.10
+`repurchaseAgrmt/*`
+Repo: type, counterparty, rate, maturity
+AX-AY
+C.11.a
+Derivative category
+FWD/FUT/SWP/OPT/SWO/WAR/OTH
+AZ-BH
+C.11.c
+Option/warrant fields
+Put/call, strike, expiry, delta
+BI
+C.11
+`unrealizedAppr`
+Unrealized P&L
+BJ-BR
+C.11.d-e
+Forward/future/FX fields
+Payoff, expiry, notional, currencies
+BS-CZ
+C.11.f
+Swap fields
+Fixed/floating legs, termination, notional
+DA-DF
+C.12
+`securityLending/*`
+Collateral, loan status
+
+
+Appendix C: XML Examples
+Real EDGAR-accepted XML examples for each fund type are in Section 8 (annotated inline) and as full files at:
+~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/
+  FDRS_equity_only_Dec2025.xml                    -- Our filing. Equity-only, 54 holdings.
+  Direxion_TSLA_2X_leveraged_swap_Jan2026.xml     -- 7 total return swaps + collateral.
+  FTVest_Buffer_FLEX_options_Nov2025.xml           -- 15 FLEX options (puts + calls, written + purchased).
+  GraniteShares_2x_NVDA_single_stock_Dec2025.xml  -- 10 single-stock swaps + T-bills.
+  PIMCO_Bond_ETF_debt_securities_Dec2025.xml      -- 205 bond holdings, risk metrics, 6 asset types.
+SEC official sample XMLs (6 files, from simple to complex derivatives) are at:
+~/Desktop/N-PORT_Schema_and_Samples/EDGAR Form N-PORT XML Sample files/
+
+Appendix D: Reference Links
+Document
+URL
+Schema + Samples ZIP (v1.13)
+`https://www.sec.gov/files/edgar/filer-information/specifications/edgar-form-n-port-xml-tech-spec-113.zip`
+Form N-PORT Instructions
+`https://www.sec.gov/files/formn-port.pdf`
+EDGAR Submission API Spec
+`https://www.sec.gov/files/edgar/filer-information/specifications/en-api-specs073123.pdf`
+API Toolkit (Beta)
+`https://api-bravo.edgarfiling.sec.gov/`
+EDGAR Next Testing Guide
+`https://www.sec.gov/files/edgar-next-filer-testing-guidance.pdf`
+Token Management
+`https://www.sec.gov/submit-filings/filer-support-resources/how-do-i-guides/create-manage-filer-user-api-tokens`
+Error Messages
+`https://www.sec.gov/submit-filings/filer-support-resources/how-do-i-guides/understand-messages-reported-edgar`
+Tech Specs Index
+`https://www.sec.gov/submit-filings/technical-specifications`
+EDGAR Filing Manual Vol. II
+`https://www.sec.gov/files/edgar/filermanual/efmvol2.pdf`
+N-PORT Bulk Data Sets
+`https://www.sec.gov/data-research/sec-markets-data/form-n-port-data-sets`
+
+Local files:
+Schema + SEC samples: ~/Desktop/N-PORT_Schema_and_Samples/
+Real EDGAR examples (4 fund types): ~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/
+US Bank client files: ~/Desktop/USBank-Reports/N-PORT/
+Ground truth (our filing): ~/Desktop/N-PORT_Schema_and_Samples/Real_Filing_Examples/FDRS_equity_only_Dec2025.xml
+No open-source tool exists for constructing or submitting N-PORT. This is greenfield.
+
+Appendix E: Schema Versions and Regulatory Change Tracking
+Where to Get the Schema (Single Source of Truth)
+What
+Where
+Current schema (v1.13)
+`https://www.sec.gov/files/edgar/filer-information/specifications/edgar-form-n-port-xml-tech-spec-113.zip`
+Check for new versions
+`https://www.sec.gov/submit-filings/technical-specifications` (scroll to "Form N-PORT")
+EDGAR release schedule
+`https://www.sec.gov/submit-filings/filer-support-resources/edgar-release-schedule`
+Local copy (v1.13)
+`~/Desktop/N-PORT_Schema_and_Samples/` (5 XSD files, 6 sample XMLs, tech spec PDF)
+
+The SEC publishes a new schema ZIP each time the XSD changes. Version number is in the filename (edgar-form-n-port-xml-tech-spec-113.zip = v1.13). Schema updates accompany EDGAR system releases.
+Schema Version History
+Version
+Date
+Key Changes
+v1.3
+2019
+Initial production schema
+v1.7
+2023
+Max holdings: 1,000 to 500,000; Names Rule fields added
+v1.13
+March 2025
+Current. EDGAR Next auth fields; refined conditional rules
+v1.14+
+TBD
+Will implement 2024 amendments when compliance dates hit
+
+Rule Changes That Will Change the Schema
+Adopted (IC-35308), compliance delayed to Nov 2027 / May 2028:
+Change
+Schema Impact
+Monthly filing within 30 days
+None (cadence, not structure)
+All months become public
+None (submission type choice, not XSD)
+
+Proposed (Feb 2026, NOT adopted yet; if adopted, XSD will change):
+Change
+XSD Impact
+SWE Guidance
+Eliminate DV01
+Remove `intrstRtRiskdv01`
+Build DV01 behind a config flag
+Aggregate DV100 across currencies
+Flatten `curMetrics`
+Keep per-currency, add aggregation option
+Raise debt threshold 25% to 50%
+None (business logic)
+Make threshold configurable
+Eliminate payoff profile (non-derivatives)
+Remove `payoffProfile` conditionally
+Already conditional
+Eliminate Names Rule (B.11)
+Remove `namesRuleInvstPolicy`
+Don't invest in B.11
+Add ETF share class NAV, flows, tickers
+New elements in `fundInfo`
+Will need new code when schema ships
+
+How to Handle Schema Updates
+1. Monitor: Check the tech specs page monthly (or subscribe to SEC email alerts)
+2. Download: New ZIP, extract XSD files
+3. Diff: diff eis_NPORT_Filer.xsd eis_NPORT_Filer_new.xsd
+4. Swap: Drop new XSDs into schema directory. Update config version pointer.
+5. Test: Validate generated XML against new schema. Fix new/removed elements.
+Schema version should be a config value, not hardcoded. XSD files should be swappable without code changes.
+*End of Document*

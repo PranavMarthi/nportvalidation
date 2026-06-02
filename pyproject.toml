@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nport"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "lxml>=5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+# bloomberg: requires blpapi>=3.0 (not on PyPI — install via Bloomberg's index:
+#   pip install --index-url=https://blpapi.bloomberg.com/release blpapi)
+
+[project.scripts]
+nport = "nport.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nport"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

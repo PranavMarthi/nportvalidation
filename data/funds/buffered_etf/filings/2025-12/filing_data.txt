@@ -1,0 +1,55 @@
+# Corgi S&P 500 Buffer ETF - December 2025 Filing
+
+submissionType=NPORT-P
+liveTestFlag=TEST
+repPdEnd=2025-12-31
+repPdDate=2025-12-31
+isFinalFiling=N
+dateSigned=2026-02-24
+
+# Fund Financials
+totAssets=25100000.00
+totLiabs=100000.00
+netAssets=25000000.00
+
+# Balance Sheet Items
+assetsAttrMiscSec=0.00
+assetsInvested=0.00
+amtPayOneYrBanksBorr=0.00
+amtPayOneYrCtrldComp=0.00
+amtPayOneYrOthAffil=0.00
+amtPayOneYrOther=0.00
+amtPayAftOneYrBanksBorr=0.00
+amtPayAftOneYrCtrldComp=0.00
+amtPayAftOneYrOthAffil=0.00
+amtPayAftOneYrOther=0.00
+delayDeliv=0.00
+standByCommit=0.00
+liquidPref=0.00
+isNonCashCollateral=N
+
+# Returns
+rtn1=0.80
+rtn2=1.20
+rtn3=-0.50
+netRealizedGainMon1=0.00
+netUnrealizedApprMon1=50000.00
+netRealizedGainMon2=0.00
+netUnrealizedApprMon2=75000.00
+netRealizedGainMon3=0.00
+netUnrealizedApprMon3=-30000.00
+
+# Flows
+mon1Sales=500000.00
+mon1Redemption=200000.00
+mon1Reinvestment=0.00
+mon2Sales=600000.00
+mon2Redemption=300000.00
+mon2Reinvestment=0.00
+mon3Sales=400000.00
+mon3Redemption=100000.00
+mon3Reinvestment=0.00
+
+# Designated Index
+nameDesignatedIndex=S&P 500 Index
+indexIdentifier=SPX

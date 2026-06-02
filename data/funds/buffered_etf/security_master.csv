@@ -1,0 +1,9 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+SPX Call Purchased 4800,W22LROWP2IHZNBB6K528,SPX Call 4800 Dec26,N/A,,SPX-C4800,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Call,Purchased,4800.00,USD,2026-12-18,0.72,indexBasket,S&P 500 Index,SPX
+SPX Call Purchased 5000,W22LROWP2IHZNBB6K528,SPX Call 5000 Dec26,N/A,,SPX-C5000,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Call,Purchased,5000.00,USD,2026-12-18,0.62,indexBasket,S&P 500 Index,SPX
+SPX Call Written 5500,W22LROWP2IHZNBB6K528,SPX Call 5500 Dec26 Written,N/A,,SPX-C5500W,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Call,Written,5500.00,USD,2026-12-18,-0.45,indexBasket,S&P 500 Index,SPX
+SPX Call Written 5800,W22LROWP2IHZNBB6K528,SPX Call 5800 Dec26 Written,N/A,,SPX-C5800W,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Call,Written,5800.00,USD,2026-12-18,-0.30,indexBasket,S&P 500 Index,SPX
+SPX Put Purchased 4800,W22LROWP2IHZNBB6K528,SPX Put 4800 Dec26,N/A,,SPX-P4800,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Put,Purchased,4800.00,USD,2026-12-18,-0.28,indexBasket,S&P 500 Index,SPX
+SPX Put Purchased 4500,W22LROWP2IHZNBB6K528,SPX Put 4500 Dec26,N/A,,SPX-P4500,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Put,Purchased,4500.00,USD,2026-12-18,-0.18,indexBasket,S&P 500 Index,SPX
+SPX Put Written 4800,W22LROWP2IHZNBB6K528,SPX Put 4800 Dec26 Written,N/A,,SPX-P4800W,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Put,Written,4800.00,USD,2026-12-18,0.28,indexBasket,S&P 500 Index,SPX
+SPX Put Written 4500,W22LROWP2IHZNBB6K528,SPX Put 4500 Dec26 Written,N/A,,SPX-P4500W,US,DE,CORP,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,Put,Written,4500.00,USD,2026-12-18,0.18,indexBasket,S&P 500 Index,SPX

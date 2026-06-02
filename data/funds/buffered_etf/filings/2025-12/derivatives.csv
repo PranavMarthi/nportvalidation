@@ -1,0 +1,9 @@
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+SPX-C4800-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,250000.00,Call,Purchased,5000,4800.00,USD,2026-12-18,0.72,indexBasket,S&P 500 Index,SPX
+SPX-C5000-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,150000.00,Call,Purchased,5000,5000.00,USD,2026-12-18,0.62,indexBasket,S&P 500 Index,SPX
+SPX-C5500W-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,-100000.00,Call,Written,5000,5500.00,USD,2026-12-18,-0.45,indexBasket,S&P 500 Index,SPX
+SPX-C5800W-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,-50000.00,Call,Written,5000,5800.00,USD,2026-12-18,-0.30,indexBasket,S&P 500 Index,SPX
+SPX-P4800-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,75000.00,Put,Purchased,5000,4800.00,USD,2026-12-18,-0.28,indexBasket,S&P 500 Index,SPX
+SPX-P4500-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,25000.00,Put,Purchased,5000,4500.00,USD,2026-12-18,-0.18,indexBasket,S&P 500 Index,SPX
+SPX-P4800W-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,-75000.00,Put,Written,5000,4800.00,USD,2026-12-18,0.28,indexBasket,S&P 500 Index,SPX
+SPX-P4500W-DEC26,OPT,Goldman Sachs International,W22LROWP2IHZNBB6K528,-25000.00,Put,Written,5000,4500.00,USD,2026-12-18,0.18,indexBasket,S&P 500 Index,SPX

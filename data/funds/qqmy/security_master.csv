@@ -1,0 +1,7 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,
+QQQ 04/30/2027 133.55 C,N/A,QQQ 04/30/2027 133.55 C,N/A,,QQQ-C133.55-20270430,US,DE,CORP,OPT,,,Call,Purchased,133.55,USD,2027-04-30,,indexBasket,NASDAQ 100 Index,NDX
+QQQ 04/30/2027 767.9 C,N/A,QQQ 04/30/2027 767.9 C,N/A,,QQQ-C767.9-20270430,US,DE,CORP,OPT,,,Call,Written,767.9,USD,2027-04-30,,indexBasket,NASDAQ 100 Index,NDX
+QQQ 04/30/2027 567.58 P,N/A,QQQ 04/30/2027 567.58 P,N/A,,QQQ-P567.58-20270430,US,DE,CORP,OPT,,,Put,Written,567.58,USD,2027-04-30,,indexBasket,NASDAQ 100 Index,NDX
+QQQ 04/30/2027 667.74 P,N/A,QQQ 04/30/2027 667.74 P,N/A,,QQQ-P667.74-20270430,US,DE,CORP,OPT,,,Put,Purchased,667.74,USD,2027-04-30,,indexBasket,NASDAQ 100 Index,NDX
+United States Treasury Note/Bo,254900HROIFWPRGM1V77,United States Treasury Note/Bond 0.5% 04/30/2027,912828ZN3,,,US,DBT,UST,,,,,,,,,,,,

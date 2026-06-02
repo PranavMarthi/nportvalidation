@@ -1,0 +1,8 @@
+holdingId,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+AAPL29,2029-02-09,Fixed,3.25,N,N,N
+MSFT30,2030-06-01,Fixed,2.525,N,N,N
+JPM32,2032-08-10,Fixed,4.125,N,N,N
+AMZN37,2037-08-22,Fixed,3.875,N,N,N
+PG29,2029-08-11,Fixed,2.85,N,N,N
+T428,2028-11-15,Fixed,4.25,N,N,N
+T3833,2033-08-15,Fixed,3.875,N,N,N

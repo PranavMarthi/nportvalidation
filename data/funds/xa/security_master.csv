@@ -1,0 +1,27 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+Akamai Technologies Inc,N/A,Akamai Technologies Inc,00971T101,,AKAM,US,EC,CORP
+Arqit Quantum Inc,N/A,Arqit Quantum Inc,N/A,,ARQQ,KY,EC,CORP
+A10 Networks Inc,N/A,A10 Networks Inc,002121101,,ATEN,US,EC,CORP
+CACI International Inc,N/A,CACI International Inc,127190304,,CACI,US,EC,CORP
+Check Point Software Technolog,N/A,Check Point Software Technologies Ltd,N/A,,CHKP,IL,EC,CORP
+Crowdstrike Holdings Inc,549300YBY08K9KM4HX32,Crowdstrike Holdings Inc,22788C105,US22788C1053,CRWD,US,EC,CORP
+Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
+Elastic NV,N/A,Elastic NV,N/A,,ESTC,US,EC,CORP
+F5 Inc,N/A,F5 Inc,315616102,,FFIV,US,EC,CORP
+Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP
+GEN DIGITAL INC,N/A,GEN DIGITAL INC,668771108,,GEN,US,EC,CORP
+Cloudflare Inc,5493007DY18BGNLDWU14,Cloudflare Inc,18915M107,US18915M1071,NET,US,EC,CORP
+Netskope Inc,N/A,Netskope Inc,64119N608,,NTSK,US,EC,CORP
+Okta Inc,N/A,Okta Inc,679295105,,OKTA,US,EC,CORP
+OneSpan Inc,N/A,OneSpan Inc,68287N100,,OSPN,US,EC,CORP
+Palo Alto Networks Inc,N/A,Palo Alto Networks Inc,697435105,,PANW,US,EC,CORP
+Qualys Inc,N/A,Qualys Inc,74758T303,,QLYS,US,EC,CORP
+Rubrik Inc,N/A,Rubrik Inc,781154109,,RBRK,US,EC,CORP
+Radware Ltd,N/A,Radware Ltd,N/A,,RDWR,IL,EC,CORP
+Rapid7 Inc,N/A,Rapid7 Inc,753422104,,RPD,US,EC,CORP
+SailPoint Inc,N/A,SailPoint Inc,78781J109,,SAIL,US,EC,CORP
+Tenable Holdings Inc,N/A,Tenable Holdings Inc,88025T102,,TENB,US,EC,CORP
+Telos Corp,N/A,Telos Corp,87969B101,,TLS,US,EC,CORP
+Varonis Systems Inc,N/A,Varonis Systems Inc,922280102,,VRNS,US,EC,CORP
+Zscaler Inc,529900MZ0RTK1BWRNF46,Zscaler Inc,98980G102,US98980G1022,ZS,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

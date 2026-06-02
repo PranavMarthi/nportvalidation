@@ -1,0 +1,60 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+Absci Corp,N/A,Absci Corp,00091E109,,ABSI,US,EC,CORP
+Adaptive Biotechnologies Corp,N/A,Adaptive Biotechnologies Corp,00650F109,,ADPT,US,EC,CORP
+Alnylam Pharmaceuticals Inc,N/A,Alnylam Pharmaceuticals Inc,02043Q107,,ALNY,US,EC,CORP
+Arcturus Therapeutics Holdings,N/A,Arcturus Therapeutics Holdings Inc,03969T109,,ARCT,US,EC,CORP
+Arrowhead Pharmaceuticals Inc,N/A,Arrowhead Pharmaceuticals Inc,04280A100,,ARWR,US,EC,CORP
+Azenta Inc,N/A,Azenta Inc,114340102,,AZTA,US,EC,CORP
+Biodesix Inc,N/A,Biodesix Inc,09075X207,,BDSX,US,EC,CORP
+Beam Therapeutics Inc,N/A,Beam Therapeutics Inc,07373V105,,BEAM,US,EC,CORP
+BioMarin Pharmaceutical Inc,N/A,BioMarin Pharmaceutical Inc,09061G101,,BMRN,US,EC,CORP
+Caris Life Sciences Inc,N/A,Caris Life Sciences Inc,142152107,,CAI,US,EC,CORP
+CareDx Inc,N/A,CareDx Inc,14167L103,,CDNA,US,EC,CORP
+Certara Inc,N/A,Certara Inc,15687V109,,CERT,US,EC,CORP
+Caribou Biosciences Inc,N/A,Caribou Biosciences Inc,142038108,,CRBU,US,EC,CORP
+CRISPR Therapeutics AG,N/A,CRISPR Therapeutics AG,N/A,,CRSP,US,EC,CORP
+Castle Biosciences Inc,N/A,Castle Biosciences Inc,14843C105,,CSTL,US,EC,CORP
+Precision BioSciences Inc,N/A,Precision BioSciences Inc,74019P207,,DTIL,US,EC,CORP
+Editas Medicine Inc,N/A,Editas Medicine Inc,28106W103,,EDIT,US,EC,CORP
+4D Molecular Therapeutics Inc,N/A,4D Molecular Therapeutics Inc,35104E100,,FDMT,US,EC,CORP
+Fulgent Genetics Inc,N/A,Fulgent Genetics Inc,359664109,,FLGT,US,EC,CORP
+Generate Biomedicines Inc,N/A,Generate Biomedicines Inc,370920100,,GENB,US,EC,CORP
+Guardant Health Inc,N/A,Guardant Health Inc,40131M109,,GH,US,EC,CORP
+Genmab A/S,N/A,Genmab A/S,372303206,,GMAB,US,EC,CORP
+GRAIL Inc,N/A,GRAIL Inc,384747101,,GRAL,US,EC,CORP
+Ideaya Biosciences Inc,N/A,Ideaya Biosciences Inc,45166A102,,IDYA,US,EC,CORP
+Illumina Inc,N/A,Illumina Inc,452327109,,ILMN,US,EC,CORP
+Incyte Corp,N/A,Incyte Corp,45337C102,,INCY,US,EC,CORP
+Ionis Pharmaceuticals Inc,N/A,Ionis Pharmaceuticals Inc,462222100,,IONS,US,EC,CORP
+Iovance Biotherapeutics Inc,N/A,Iovance Biotherapeutics Inc,462260100,,IOVA,US,EC,CORP
+Krystal Biotech Inc,N/A,Krystal Biotech Inc,501147102,,KRYS,US,EC,CORP
+STANDARD BIOTOOLS INC,N/A,STANDARD BIOTOOLS INC,34385P108,,LAB,US,EC,CORP
+Moderna Inc,N/A,Moderna Inc,60770K107,,MRNA,US,EC,CORP
+Myriad Genetics Inc,N/A,Myriad Genetics Inc,62855J104,,MYGN,US,EC,CORP
+NeoGenomics Inc,N/A,NeoGenomics Inc,64049M209,,NEO,US,EC,CORP
+Nurix Therapeutics Inc,N/A,Nurix Therapeutics Inc,67080M103,,NRIX,US,EC,CORP
+Intellia Therapeutics Inc,N/A,Intellia Therapeutics Inc,45826J105,,NTLA,US,EC,CORP
+Nuvalent Inc,N/A,Nuvalent Inc,670703107,,NUVL,US,EC,CORP
+Pacific Biosciences of Califor,N/A,Pacific Biosciences of California Inc,69404D108,,PACB,US,EC,CORP
+Prime Medicine Inc,N/A,Prime Medicine Inc,74168J101,,PRME,US,EC,CORP
+Personalis Inc,N/A,Personalis Inc,71535D106,,PSNL,US,EC,CORP
+QIAGEN NV,N/A,QIAGEN NV,N/A,,QGEN,US,EC,CORP
+uniQure NV,N/A,uniQure NV,N/A,,QURE,US,EC,CORP
+Ultragenyx Pharmaceutical Inc,N/A,Ultragenyx Pharmaceutical Inc,90400D108,,RARE,US,EC,CORP
+Rocket Pharmaceuticals Inc,N/A,Rocket Pharmaceuticals Inc,77313F106,,RCKT,US,EC,CORP
+Relay Therapeutics Inc,N/A,Relay Therapeutics Inc,75943R102,,RLAY,US,EC,CORP
+Revolution Medicines Inc,N/A,Revolution Medicines Inc,76155X100,,RVMD,US,EC,CORP
+Recursion Pharmaceuticals Inc,N/A,Recursion Pharmaceuticals Inc,75629V104,,RXRX,US,EC,CORP
+Schrodinger Inc/United States,N/A,Schrodinger Inc/United States,80810D103,,SDGR,US,EC,CORP
+Solid Biosciences Inc,N/A,Solid Biosciences Inc,83422E204,,SLDB,US,EC,CORP
+Sophia Genetics SA,N/A,Sophia Genetics SA,N/A,,SOPH,US,EC,CORP
+Sarepta Therapeutics Inc,N/A,Sarepta Therapeutics Inc,803607100,,SRPT,US,EC,CORP
+Bio-Techne Corp,N/A,Bio-Techne Corp,09073M104,,TECH,US,EC,CORP
+Tempus AI Inc,N/A,Tempus AI Inc,88023B103,,TEM,US,EC,CORP
+Thermo Fisher Scientific Inc,N/A,Thermo Fisher Scientific Inc,883556102,,TMO,US,EC,CORP
+Twist Bioscience Corp,N/A,Twist Bioscience Corp,90184D100,,TWST,US,EC,CORP
+10X Genomics Inc,N/A,10X Genomics Inc,88025U109,,TXG,US,EC,CORP
+Veracyte Inc,N/A,Veracyte Inc,92337F107,,VCYT,US,EC,CORP
+Vertex Pharmaceuticals Inc,N/A,Vertex Pharmaceuticals Inc,92532F100,,VRTX,US,EC,CORP
+GeneDx Holdings Corp,N/A,GeneDx Holdings Corp,81663L200,,WGS,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

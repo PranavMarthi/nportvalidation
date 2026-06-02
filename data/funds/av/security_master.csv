@@ -1,0 +1,41 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+American Airlines Group Inc,N/A,American Airlines Group Inc,02376R102,,AAL,US,EC,CORP
+AerCap Holdings NV,N/A,AerCap Holdings NV,N/A,,AER,NL,EC,CORP
+AAR Corp,N/A,AAR Corp,000361105,,AIR,US,EC,CORP
+Allegiant Travel Co,N/A,Allegiant Travel Co,01748X102,,ALGT,US,EC,CORP
+Alaska Air Group Inc,N/A,Alaska Air Group Inc,011659109,,ALK,US,EC,CORP
+Grupo Aeroportuario del Surest,N/A,Grupo Aeroportuario del Sureste SAB de CV,40051E202,,ASR,US,EC,CORP
+ATI Inc,N/A,ATI Inc,01741R102,,ATI,US,EC,CORP
+Boeing Co/The,N/A,Boeing Co/The,097023105,,BA,US,EC,CORP
+CAE Inc,N/A,CAE Inc,124765108,,CAE,US,EC,CORP
+Copa Holdings SA,N/A,Copa Holdings SA,N/A,,CPA,US,EC,CORP
+Carpenter Technology Corp,N/A,Carpenter Technology Corp,144285103,,CRS,US,EC,CORP
+Delta Air Lines Inc,N/A,Delta Air Lines Inc,247361702,,DAL,US,EC,CORP
+Ducommun Inc,N/A,Ducommun Inc,264147109,,DCO,US,EC,CORP
+Embraer SA,N/A,Embraer SA,29082A107,,EMBJ,US,EC,CORP
+FedEx Corp,N/A,FedEx Corp,31428X106,,FDX,US,EC,CORP
+Fedex Freight Holding Co Inc,N/A,Fedex Freight Holding Co Inc,314352105,,FDXF-W,US,EC,CORP
+FTAI Aviation Ltd,N/A,FTAI Aviation Ltd,N/A,,FTAI,US,EC,CORP
+General Dynamics Corp,N/A,General Dynamics Corp,369550108,,GD,US,EC,CORP
+GE AEROSPACE,N/A,GE AEROSPACE,369604301,,GE,US,EC,CORP
+HEICO Corp,N/A,HEICO Corp,422806109,,HEI,US,EC,CORP
+Howmet Aerospace Inc,N/A,Howmet Aerospace Inc,443201108,,HWM,US,EC,CORP
+Hexcel Corp,N/A,Hexcel Corp,428291108,,HXL,US,EC,CORP
+JetBlue Airways Corp,N/A,JetBlue Airways Corp,477143101,,JBLU,US,EC,CORP
+Joby Aviation Inc,N/A,Joby Aviation Inc,N/A,,JOBY,US,EC,CORP
+Lockheed Martin Corp,N/A,Lockheed Martin Corp,539830109,,LMT,US,EC,CORP
+Loar Holdings Inc,N/A,Loar Holdings Inc,53947R105,,LOAR,US,EC,CORP
+Southwest Airlines Co,N/A,Southwest Airlines Co,844741108,,LUV,US,EC,CORP
+Moog Inc,N/A,Moog Inc,615394202,,MOG/A,US,EC,CORP
+Northrop Grumman Corp,N/A,Northrop Grumman Corp,666807102,,NOC,US,EC,CORP
+Grupo Aeroportuario del Pacifi,N/A,Grupo Aeroportuario del Pacifico SAB de CV,400506101,,PAC,US,EC,CORP
+RTX Corp,N/A,RTX Corp,75513E101,,RTX,US,EC,CORP
+Ryanair Holdings PLC,N/A,Ryanair Holdings PLC,783513203,,RYAAY,US,EC,CORP
+SkyWest Inc,N/A,SkyWest Inc,830879102,,SKYW,US,EC,CORP
+TransDigm Group Inc,N/A,TransDigm Group Inc,893641100,,TDG,US,EC,CORP
+Textron Inc,N/A,Textron Inc,883203101,,TXT,US,EC,CORP
+United Airlines Holdings Inc,N/A,United Airlines Holdings Inc,910047109,,UAL,US,EC,CORP
+Frontier Group Holdings Inc,N/A,Frontier Group Holdings Inc,35909R108,,ULCC,US,EC,CORP
+United Parcel Service Inc,N/A,United Parcel Service Inc,911312106,,UPS,US,EC,CORP
+Woodward Inc,N/A,Woodward Inc,980745103,,WWD,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

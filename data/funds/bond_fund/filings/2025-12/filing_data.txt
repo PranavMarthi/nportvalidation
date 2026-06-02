@@ -1,0 +1,55 @@
+# Corgi Investment Grade Bond ETF - December 2025 Filing
+
+submissionType=NPORT-P
+liveTestFlag=TEST
+repPdEnd=2025-12-31
+repPdDate=2025-12-31
+isFinalFiling=N
+dateSigned=2026-02-24
+
+# Fund Financials
+totAssets=50200000.00
+totLiabs=200000.00
+netAssets=50000000.00
+
+# Balance Sheet Items
+assetsAttrMiscSec=0.00
+assetsInvested=0.00
+amtPayOneYrBanksBorr=0.00
+amtPayOneYrCtrldComp=0.00
+amtPayOneYrOthAffil=0.00
+amtPayOneYrOther=0.00
+amtPayAftOneYrBanksBorr=0.00
+amtPayAftOneYrCtrldComp=0.00
+amtPayAftOneYrOthAffil=0.00
+amtPayAftOneYrOther=0.00
+delayDeliv=0.00
+standByCommit=0.00
+liquidPref=0.00
+isNonCashCollateral=N
+
+# Returns
+rtn1=0.35
+rtn2=0.42
+rtn3=0.28
+netRealizedGainMon1=15000.00
+netUnrealizedApprMon1=25000.00
+netRealizedGainMon2=12000.00
+netUnrealizedApprMon2=30000.00
+netRealizedGainMon3=18000.00
+netUnrealizedApprMon3=-10000.00
+
+# Flows
+mon1Sales=1000000.00
+mon1Redemption=500000.00
+mon1Reinvestment=0.00
+mon2Sales=800000.00
+mon2Redemption=400000.00
+mon2Reinvestment=0.00
+mon3Sales=1200000.00
+mon3Redemption=600000.00
+mon3Reinvestment=0.00
+
+# Designated Index
+nameDesignatedIndex=Bloomberg US Aggregate Bond Index
+indexIdentifier=LBUSTRUU

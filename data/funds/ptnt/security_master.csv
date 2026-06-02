@@ -1,0 +1,32 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+Acacia Research Corp,N/A,Acacia Research Corp,003881307,,ACTG,US,EC,CORP
+Adeia Inc,N/A,Adeia Inc,00676P107,,ADEA,US,EC,CORP
+ARM Holdings PLC,N/A,ARM Holdings PLC,042068205,,ARM,US,EC,CORP
+Cadence Design Systems Inc,N/A,Cadence Design Systems Inc,127387108,,CDNS,US,EC,CORP
+CEVA Inc,N/A,CEVA Inc,157210105,,CEVA,US,EC,CORP
+Walt Disney Co/The,N/A,Walt Disney Co/The,254687106,,DIS,US,EC,CORP
+Dolby Laboratories Inc,N/A,Dolby Laboratories Inc,25659T107,,DLB,US,EC,CORP
+Domino's Pizza Inc,N/A,Domino's Pizza Inc,25754A201,,DPZ,US,EC,CORP
+Liberty Media Corp-Liberty For,N/A,Liberty Media Corp-Liberty Formula One,531229755,,FWONK,US,EC,CORP
+Hasbro Inc,N/A,Hasbro Inc,418056107,,HAS,US,EC,CORP
+International Business Machine,N/A,International Business Machines Corp,459200101,,IBM,US,EC,CORP
+InterDigital Inc,N/A,InterDigital Inc,45867G101,,IDCC,US,EC,CORP
+Ligand Pharmaceuticals Inc,N/A,Ligand Pharmaceuticals Inc,53220K504,,LGND,US,EC,CORP
+Mattel Inc,N/A,Mattel Inc,577081102,,MAT,US,EC,CORP
+McDonald's Corp,N/A,McDonald's Corp,580135101,,MCD,US,EC,CORP
+Netflix Inc,N/A,Netflix Inc,64110L106,,NFLX,US,EC,CORP
+Nokia Oyj,N/A,Nokia Oyj,654902204,,NOK,US,EC,CORP
+QUALCOMM Inc,N/A,QUALCOMM Inc,747525103,,QCOM,US,EC,CORP
+Rambus Inc,N/A,Rambus Inc,750917106,,RMBS,US,EC,CORP
+Royalty Pharma PLC,549300FGFN7VOK8BZR03,Royalty Pharma PLC,N/A,GB00BMVP7Y09,RPRX,US,EC,CORP
+Synopsys Inc,N/A,Synopsys Inc,871607107,,SNPS,US,EC,CORP
+Silvaco Group Inc,N/A,Silvaco Group Inc,82728C102,,SVCO,US,EC,CORP
+TKO Group Holdings Inc,N/A,TKO Group Holdings Inc,87256C101,,TKO,US,EC,CORP
+Take-Two Interactive Software ,N/A,Take-Two Interactive Software Inc,874054109,,TTWO,US,EC,CORP
+VeriSign Inc,LMPL4N8ZOJRMF0KOF759,VeriSign Inc,92343E102,US92343E1029,VRSN,US,EC,CORP
+Wingstop Inc,N/A,Wingstop Inc,974155103,,WING,US,EC,CORP
+Warner Music Group Corp,N/A,Warner Music Group Corp,934550203,,WMG,US,EC,CORP
+XOMA Royalty Corp,N/A,XOMA Royalty Corp,98419J206,,XOMA,US,EC,CORP
+Xperi Inc,N/A,Xperi Inc,98423J101,,XPER,US,EC,CORP
+Yum! Brands Inc,N/A,Yum! Brands Inc,988498101,,YUM,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF

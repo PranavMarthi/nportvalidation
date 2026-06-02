@@ -1,0 +1,56 @@
+# FDRS June 2026 Filing Data
+# Net assets from custodian: 95,625,678.00
+
+submissionType=NPORT-P
+liveTestFlag=TEST
+repPdEnd=2026-06-30
+repPdDate=2026-06-30
+isFinalFiling=N
+dateSigned=2026-08-28
+
+# Fund Financials (from fund accounting)
+totAssets=95660038.93
+totLiabs=34360.93
+netAssets=95625678.00
+
+# Balance Sheet Items
+assetsAttrMiscSec=0
+assetsInvested=0
+amtPayOneYrBanksBorr=0
+amtPayOneYrCtrldComp=0
+amtPayOneYrOthAffil=0
+amtPayOneYrOther=0
+amtPayAftOneYrBanksBorr=0
+amtPayAftOneYrCtrldComp=0
+amtPayAftOneYrOthAffil=0
+amtPayAftOneYrOther=0
+delayDeliv=0
+standByCommit=0
+liquidPref=0
+isNonCashCollateral=N
+
+# Returns
+rtn1=N/A
+rtn2=N/A
+rtn3=N/A
+netRealizedGainMon1=0
+netUnrealizedApprMon1=0
+netRealizedGainMon2=0
+netUnrealizedApprMon2=0
+netRealizedGainMon3=0
+netUnrealizedApprMon3=0
+
+# Flows
+mon1Sales=0
+mon1Redemption=0
+mon1Reinvestment=0
+mon2Sales=0
+mon2Redemption=0
+mon2Reinvestment=0
+mon3Sales=0
+mon3Redemption=0
+mon3Reinvestment=0
+
+# Designated Index
+nameDesignatedIndex=N/A
+indexIdentifier=N/A

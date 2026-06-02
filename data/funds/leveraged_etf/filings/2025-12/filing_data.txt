@@ -1,0 +1,55 @@
+# Corgi 2x S&P 500 ETF - December 2025 Filing
+
+submissionType=NPORT-P
+liveTestFlag=TEST
+repPdEnd=2025-12-31
+repPdDate=2025-12-31
+isFinalFiling=N
+dateSigned=2026-02-24
+
+# Fund Financials
+totAssets=75500000.00
+totLiabs=500000.00
+netAssets=75000000.00
+
+# Balance Sheet Items
+assetsAttrMiscSec=0.00
+assetsInvested=0.00
+amtPayOneYrBanksBorr=0.00
+amtPayOneYrCtrldComp=0.00
+amtPayOneYrOthAffil=0.00
+amtPayOneYrOther=0.00
+amtPayAftOneYrBanksBorr=0.00
+amtPayAftOneYrCtrldComp=0.00
+amtPayAftOneYrOthAffil=0.00
+amtPayAftOneYrOther=0.00
+delayDeliv=0.00
+standByCommit=0.00
+liquidPref=0.00
+isNonCashCollateral=N
+
+# Returns
+rtn1=2.50
+rtn2=3.10
+rtn3=-2.80
+netRealizedGainMon1=100000.00
+netUnrealizedApprMon1=500000.00
+netRealizedGainMon2=150000.00
+netUnrealizedApprMon2=600000.00
+netRealizedGainMon3=-50000.00
+netUnrealizedApprMon3=-800000.00
+
+# Flows
+mon1Sales=2000000.00
+mon1Redemption=1000000.00
+mon1Reinvestment=0.00
+mon2Sales=3000000.00
+mon2Redemption=1500000.00
+mon2Reinvestment=0.00
+mon3Sales=2500000.00
+mon3Redemption=1200000.00
+mon3Reinvestment=0.00
+
+# Designated Index
+nameDesignatedIndex=S&P 500 Index
+indexIdentifier=SPX
