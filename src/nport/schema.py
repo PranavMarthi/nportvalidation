@@ -118,6 +118,7 @@ _SPEC_DEFS: list[tuple[str, str, str, str, str, str]] = [
     ("pmnt_rate_unit", "swap", "never", "", "str", "Pay rate unit"),
     ("pmnt_reset_dt", "swap", "never", "", "str", "Pay reset date"),
     ("pmnt_reset_unit", "swap", "never", "", "str", "Pay reset unit"),
+    ("pmnt_desc", "swap", "never", "", "str", "Pay leg description"),
     # ── forward (2) ──
     ("payoff_prof_deriv", "forward", "conditional", "derivCat in FWD/FUT", "enum", "Long, Short, or N/A"),
     # ── other_deriv (1) ──

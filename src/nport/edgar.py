@@ -7,11 +7,15 @@ Rate-limited to 100ms between requests per SEC fair-use policy.
 from __future__ import annotations
 
 import json
+import logging
 import time
+import urllib.error
 import urllib.request
 from dataclasses import dataclass
 
 from lxml import etree
+
+logger = logging.getLogger(__name__)
 
 from nport.constants import NS_NPORT
 
@@ -40,21 +44,48 @@ class EdgarClient:
         self._user_agent = user_agent
         self._last_request: float = 0.0
 
+    _TIMEOUT = 30  # seconds
+    _MAX_RETRIES = 3
+
     def _get(self, url: str) -> bytes:
-        """HTTP GET with rate limiting and required headers."""
+        """HTTP GET with rate limiting, timeout, retries, and error handling."""
         elapsed = time.monotonic() - self._last_request
         if elapsed < _MIN_REQUEST_INTERVAL:
             time.sleep(_MIN_REQUEST_INTERVAL - elapsed)
 
         req = urllib.request.Request(url)
         req.add_header("User-Agent", self._user_agent)
-        req.add_header("Accept-Encoding", "gzip, deflate")
 
-        with urllib.request.urlopen(req) as resp:
-            data = resp.read()
-
-        self._last_request = time.monotonic()
-        return data
+        last_exc: Exception | None = None
+        for attempt in range(self._MAX_RETRIES):
+            try:
+                with urllib.request.urlopen(req, timeout=self._TIMEOUT) as resp:
+                    data = resp.read()
+                self._last_request = time.monotonic()
+                return data
+            except urllib.error.HTTPError as e:
+                self._last_request = time.monotonic()
+                if e.code in (429, 503) and attempt < self._MAX_RETRIES - 1:
+                    wait = 2 ** attempt
+                    logger.warning("EDGAR returned %d, retrying in %ds...", e.code, wait)
+                    time.sleep(wait)
+                    last_exc = e
+                    continue
+                raise ConnectionError(
+                    f"EDGAR request failed: HTTP {e.code} for {url}"
+                ) from e
+            except (urllib.error.URLError, TimeoutError, OSError) as e:
+                self._last_request = time.monotonic()
+                if attempt < self._MAX_RETRIES - 1:
+                    wait = 2 ** attempt
+                    logger.warning("EDGAR request error (%s), retrying in %ds...", e, wait)
+                    time.sleep(wait)
+                    last_exc = e
+                    continue
+                raise ConnectionError(
+                    f"EDGAR request failed for {url}: {e}"
+                ) from e
+        raise ConnectionError(f"EDGAR request failed after {self._MAX_RETRIES} retries") from last_exc
 
     def _get_json(self, url: str) -> dict:
         return json.loads(self._get(url))

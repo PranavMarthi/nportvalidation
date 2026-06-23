@@ -131,6 +131,7 @@ _HOLDINGS_KEY_MAP = {
     "recResetDt": "rec_reset_dt",
     "recResetUnit": "rec_reset_unit",
     "recDesc": "rec_desc",
+    "pmntDesc": "pmnt_desc",
     # Pay leg
     "pmntFixedOrFloating": "pmnt_fixed_or_floating",
     "pmntFixedRt": "pmnt_fixed_rt",
@@ -162,7 +163,7 @@ _OPTIONAL_HOLDINGS_KEYS = {
     "upfront_rcpt", "rcpt_cur_cd", "notional_amt", "swap_cur_cd",
     "rec_fixed_or_floating", "rec_fixed_rt", "rec_floating_rt_index",
     "rec_floating_rt_spread", "rec_pmnt_amt", "rec_cur_cd",
-    "rec_rate_tenor", "rec_rate_unit", "rec_reset_dt", "rec_reset_unit", "rec_desc",
+    "rec_rate_tenor", "rec_rate_unit", "rec_reset_dt", "rec_reset_unit", "rec_desc", "pmnt_desc",
     "pmnt_fixed_or_floating", "pmnt_fixed_rt", "pmnt_floating_rt_index",
     "pmnt_floating_rt_spread", "pmnt_pmnt_amt", "pmnt_cur_cd_leg",
     "pmnt_rate_tenor", "pmnt_rate_unit", "pmnt_reset_dt", "pmnt_reset_unit",
@@ -179,7 +180,7 @@ _OPTIONAL_CONFIG_KEYS = {"reg_street2"}
 def _parse_kv_file(path: Path) -> dict[str, str]:
     """Parse a key=value text file, skipping comments and blank lines."""
     data = {}
-    with open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8-sig") as f:
         for lineno, line in enumerate(f, 1):
             line = line.strip()
             if not line or line.startswith("#"):

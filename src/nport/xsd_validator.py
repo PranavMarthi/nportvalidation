@@ -23,7 +23,7 @@ class NportValidator:
             )
         try:
             self.schema = etree.XMLSchema(etree.parse(str(schema_path)))
-        except etree.XMLSyntaxError as e:
+        except (etree.XMLSyntaxError, etree.XMLSchemaParseError) as e:
             raise ValueError(f"Malformed XSD schema at {schema_path}: {e}")
 
     def validate_xsd(self, xml_bytes: bytes) -> list[str]:

@@ -1010,6 +1010,25 @@ class TestGenerateFilingTemplate:
         # Should copy from 2026-05, not 2026-03
         assert "repPdEnd=2026-06-30" in content
 
+    def test_live_flag_reset_to_test(self, tmp_path):
+        """liveTestFlag=LIVE is reset to TEST when copying from previous period."""
+        fund_dir = tmp_path / "test"
+        prev_dir = fund_dir / "filings" / "2026-05"
+        prev_dir.mkdir(parents=True)
+        prev_dir.joinpath("filing_data.txt").write_text(
+            "liveTestFlag=LIVE\n"
+            "repPdEnd=2026-05-31\n"
+            "repPdDate=2026-05-31\n"
+            "totAssets=100\n"
+            "rtn1=1.0\n"
+            "mon1Sales=500\n"
+        )
+
+        path = generate_filing_template(fund_dir, "2026-06")
+        content = path.read_text()
+        assert "liveTestFlag=TEST" in content
+        assert "liveTestFlag=LIVE" not in content
+
     def test_previous_todo_not_duplicated(self, tmp_path):
         """TODO comments from previous filing are not carried over."""
         fund_dir = tmp_path / "test"

@@ -91,13 +91,11 @@ def _lazy_import_blpapi():
         import blpapi
         return blpapi
     except ImportError:
-        print(
-            "ERROR: blpapi is required for Bloomberg enrichment.\n"
-            "Install with: pip install blpapi\n"
-            "Requires Bloomberg Terminal running on localhost:8194.",
-            file=sys.stderr,
+        raise ImportError(
+            "blpapi is required for Bloomberg enrichment. "
+            "Install with: pip install blpapi  "
+            "Requires Bloomberg Terminal running on localhost:8194."
         )
-        sys.exit(1)
 
 
 class BloombergSession:

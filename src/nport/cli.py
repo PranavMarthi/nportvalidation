@@ -2,6 +2,7 @@
 
 import argparse
 import csv
+import re
 import sys
 import tempfile
 from pathlib import Path
@@ -126,6 +127,16 @@ def main(argv: list[str] | None = None) -> None:
         "guide": _guide,
     }
     dispatch[args.command](args)
+
+
+_PERIOD_RE = re.compile(r"^\d{4}-(0[1-9]|1[0-2])$")
+
+
+def _validate_period(period: str) -> None:
+    """Validate --period is YYYY-MM with valid month, exit on bad input."""
+    if not _PERIOD_RE.match(period):
+        print(f"ERROR: Invalid --period '{period}'. Expected YYYY-MM (e.g. 2026-06).", file=sys.stderr)
+        sys.exit(1)
 
 
 def _log_issues(errors: list[str], warnings: list[str], label: str = "") -> None:
@@ -291,6 +302,9 @@ def _merge(args) -> None:
     for e in merge_errors:
         print(f"  ERROR: {e}", file=sys.stderr)
 
+    if merge_errors:
+        sys.exit(1)
+
     if args.split:
         output_dir = Path(args.output)
         written = write_split_csv(enriched, output_dir)
@@ -330,6 +344,7 @@ def _resolve_fund_dir(fund_dir: str, account: str | None) -> tuple[Path, str]:
 
 def _ingest(args) -> None:
     """Ingest custodian CSV → enriched holdings → N-PORT XML."""
+    _validate_period(args.period)
     # 1. Parse custodian CSV
     try:
         all_rows = parse_custodian_csv(Path(args.custodian))
@@ -531,8 +546,13 @@ def _update_masters(args) -> None:
 
 def _new_filing(args) -> None:
     """Create filing_data.txt template(s) for a new period."""
+    _validate_period(args.period)
     fund_dir = Path(args.fund_dir)
     period = args.period
+
+    if not fund_dir.is_dir():
+        print(f"ERROR: Fund directory not found: {fund_dir}", file=sys.stderr)
+        sys.exit(1)
 
     # Determine which fund dirs to process
     if args.account:

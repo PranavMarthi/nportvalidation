@@ -259,7 +259,7 @@ def merge_positions_with_master(
 
         merged = dict(pos)
         for field, value in ref.items():
-            if not merged.get(field) and value:
+            if merged.get(field, "") == "" and value:
                 merged[field] = value
         enriched.append(merged)
 

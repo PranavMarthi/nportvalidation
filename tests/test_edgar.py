@@ -30,7 +30,7 @@ class _MockResponse:
 
 def _patch_urlopen(monkeypatch, response_data: bytes):
     """Monkey-patch urllib.request.urlopen to return fixed data."""
-    def mock_urlopen(req):
+    def mock_urlopen(req, **kwargs):
         return _MockResponse(response_data)
     monkeypatch.setattr("urllib.request.urlopen", mock_urlopen)
 

@@ -165,6 +165,7 @@ class Holding:
     rec_reset_unit: str = ""
     rec_desc: str = ""
     # Pay leg
+    pmnt_desc: str = ""
     pmnt_fixed_or_floating: str = ""
     pmnt_fixed_rt: str = ""
     pmnt_floating_rt_index: str = ""

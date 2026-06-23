@@ -60,19 +60,23 @@ class SecurityMaster:
         isin: str | None = None,
         ticker: str | None = None,
     ) -> dict[str, str] | None:
-        """Look up a security by CUSIP first, then ISIN, then ticker."""
+        """Look up a security by CUSIP first, then ISIN, then ticker.
+
+        Returns a copy of the record to prevent accidental mutation of
+        internal state.
+        """
         if cusip and cusip not in ("N/A", "000000000", ""):
             hit = self._by_cusip.get(cusip)
             if hit:
-                return hit
+                return dict(hit)
         if isin and isin not in ("N/A", ""):
             hit = self._by_isin.get(isin)
             if hit:
-                return hit
+                return dict(hit)
         if ticker and ticker not in ("N/A", ""):
             hit = self._by_ticker.get(ticker)
             if hit:
-                return hit
+                return dict(hit)
         return None
 
     def validate(self) -> list[str]:

@@ -194,8 +194,8 @@ def build_equity_entry(
     ticker: str, name: str, cusip: str, ref: dict[str, dict[str, str]],
 ) -> dict[str, str]:
     """Build a security master entry for an equity."""
-    xml_cusip = cusip if cusip[0].isdigit() else "N/A"
-    hit = ref.get(cusip) or ref.get(f"T:{ticker}")
+    xml_cusip = cusip if cusip and cusip[0].isdigit() else "N/A"
+    hit = ref.get(cusip) or ref.get(f"T:{ticker}") if cusip else ref.get(f"T:{ticker}")
 
     if hit:
         return {
@@ -210,7 +210,7 @@ def build_equity_entry(
             "issuerCat": "CORP",
         }
 
-    if cusip[0].isalpha():
+    if cusip and cusip[0].isalpha():
         country = FOREIGN_COUNTRY.get(ticker, "US")
     else:
         country = "US"
@@ -531,6 +531,11 @@ def filter_by_account(
 # ── Classification ────────────────────────────────────────────
 
 
+_OPTION_NAME_RE = re.compile(
+    r"^.+\s+\d{2}/\d{2}/\d{4}\s+\d+(?:\.\d+)?\s+[CP]$"
+)
+
+
 def classify_holding(row: CustodianRow) -> HoldingType:
     """Detect holding type from custodian row fields."""
     if row.stock_ticker == "Cash&Other":
@@ -540,9 +545,9 @@ def classify_holding(row: CustodianRow) -> HoldingType:
     if "-TRS-" in row.stock_ticker:
         return HoldingType.SWAP
     name = row.security_name.rstrip()
-    if name.endswith(" C") or name.endswith(" P"):
+    if (name.endswith(" C") or name.endswith(" P")) and _OPTION_NAME_RE.match(name):
         return HoldingType.OPTION
-    if "United States Treasury" in row.security_name:
+    if "United States Treasury Note/Bond" in row.security_name:
         return HoldingType.TREASURY
     return HoldingType.EQUITY
 
@@ -905,6 +910,9 @@ def generate_filing_template(
     return target_path
 
 
+_PERIOD_RE = re.compile(r"^\d{4}-\d{2}$")
+
+
 def _find_previous_filing(filings_dir: Path, current_period: str) -> Path | None:
     """Find the most recent filing_data.txt before current_period."""
     if not filings_dir.is_dir():
@@ -912,7 +920,7 @@ def _find_previous_filing(filings_dir: Path, current_period: str) -> Path | None
 
     candidates = []
     for p in filings_dir.iterdir():
-        if p.is_dir() and p.name != current_period:
+        if p.is_dir() and p.name != current_period and _PERIOD_RE.match(p.name):
             fd = p / "filing_data.txt"
             if fd.is_file():
                 candidates.append(fd)
@@ -921,7 +929,11 @@ def _find_previous_filing(filings_dir: Path, current_period: str) -> Path | None
         return None
 
     # Sort by directory name (YYYY-MM) descending, take most recent
+    # Only pick periods before the current one (not future)
     candidates.sort(key=lambda p: p.parent.name, reverse=True)
+    for c in candidates:
+        if c.parent.name < current_period:
+            return c
     return candidates[0]
 
 
@@ -963,6 +975,9 @@ def _copy_with_updates(
             continue
         if stripped.startswith("dateSigned="):
             out.append("dateSigned=YYYY-MM-DD")
+            continue
+        if stripped.startswith("liveTestFlag="):
+            out.append("liveTestFlag=TEST")
             continue
 
         # Zero out returns/flows
@@ -1006,7 +1021,10 @@ def ingest_account(
         if ht == HoldingType.CASH:
             messages.append(f"Skipped Cash&Other row: ${row.market_value}")
             continue
-        holdings.append(transform_to_holding_dict(row, ht))
+        try:
+            holdings.append(transform_to_holding_dict(row, ht))
+        except (ValueError, IndexError) as e:
+            messages.append(f"ERROR: skipped {row.stock_ticker} ({ht.value}): {e}")
 
     # Merge with security master if present
     sm_path = fund_dir / "security_master.csv"

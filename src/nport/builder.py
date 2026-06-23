@@ -529,10 +529,9 @@ class NportBuilder:
                     "resetDtUnit": h.pmnt_reset_unit or h.pmnt_rate_unit,
                 })
         elif h.pmnt_fixed_or_floating == "Other":
-            # Fix 11: fixedOrFloating="Other" attribute
             SubElement(swap, "otherPmntDesc", attrib={
                 "fixedOrFloating": "Other",
-            }).text = h.rec_desc
+            }).text = h.pmnt_desc
 
     # ── Part F: Signature ───────────────────────────────────
 
