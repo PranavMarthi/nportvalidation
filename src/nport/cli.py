@@ -50,7 +50,8 @@ def main(argv: list[str] | None = None) -> None:
     gen.add_argument("--verbose", action="store_true")
     gen.add_argument("--strict", action="store_true", help="Treat warnings as errors")
 
-    val = sub.add_parser("validate", help="Validate inputs without generating XML")
+    val = sub.add_parser("validate", help="Validate a fund's inputs: `nport validate fdrs [2026-06]`")
+    val.add_argument("pos", nargs="*", help="<fund> [period] — what to validate")
     _add_input_args(val)
     val.add_argument("--schema-dir", default=None)
 
@@ -71,11 +72,12 @@ def main(argv: list[str] | None = None) -> None:
     mg.add_argument("--output", required=True, help="Output canonical holdings CSV path (or directory with --split)")
     mg.add_argument("--split", action="store_true", help="Write split CSVs (base + debt + derivatives) instead of one flat file")
 
-    ig = sub.add_parser("ingest", help="Ingest custodian CSV and generate N-PORT XML")
-    ig.add_argument("--custodian", required=True, help="US Bank custodian CSV path")
-    ig.add_argument("--fund-dir", required=True, help="Fund directory (or parent with subdirs per fund)")
-    ig.add_argument("--period", required=True, help="Filing period (e.g. 2026-06)")
-    ig.add_argument("--account", default=None, help="Account ticker to process (default: auto-detect from fund-dir name)")
+    ig = sub.add_parser("ingest", aliases=["build"], help="Generate N-PORT XML for a fund: `nport build fdrs [2026-06]`")
+    ig.add_argument("pos", nargs="*", help="<fund> [period] — e.g. `fdrs 2026-06` (period defaults to latest)")
+    ig.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
+    ig.add_argument("--fund-dir", default=None, help="Fund directory (default: data/funds/<fund>)")
+    ig.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
+    ig.add_argument("--account", default=None, help="Account ticker override")
     ig.add_argument("--output", default=None, help="Output XML path (default: output/<ACCOUNT>_<PERIOD>.xml)")
     ig.add_argument("--schema-dir", default=None, help="XSD schema directory")
     ig.add_argument("--skip-validation", action="store_true", help="Skip XSD validation")
@@ -92,16 +94,18 @@ def main(argv: list[str] | None = None) -> None:
     pl.add_argument("--list", action="store_true", dest="list_filings", help="List recent filings")
     pl.add_argument("--count", type=int, default=5, help="Number of filings to list (default: 5)")
 
-    um = sub.add_parser("update-masters", help="Update security masters from custodian CSV")
-    um.add_argument("--custodian", required=True, help="US Bank custodian CSV path")
+    um = sub.add_parser("update-masters", aliases=["masters"], help="Update security masters: `nport masters [2026-06] [fund]`")
+    um.add_argument("pos", nargs="*", help="[period] [fund] — period defaults to latest, fund defaults to all")
+    um.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
     um.add_argument("--fund-dir", default="data/funds", help="Fund directory (default: data/funds)")
     um.add_argument("--account", default=None, help="Account ticker to update (default: all accounts)")
     um.add_argument("--all", action="store_true", dest="all_accounts", help="Update all accounts found in custodian")
     um.add_argument("--xml-dir", default="data/RealXMLs", help="Directory with reference N-PORT XMLs")
     um.add_argument("--dry-run", action="store_true", help="Show changes without writing")
 
-    nf = sub.add_parser("new-filing", help="Create a filing_data.txt template for a new period")
-    nf.add_argument("--period", required=True, help="Filing period (e.g. 2026-06)")
+    nf = sub.add_parser("new-filing", aliases=["filing"], help="Create filing_data.txt template(s): `nport filing [2026-06] [fund]`")
+    nf.add_argument("pos", nargs="*", help="[period] [fund] — period defaults to latest, fund defaults to all")
+    nf.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
     nf.add_argument("--fund-dir", default="data/funds", help="Fund directory (default: data/funds)")
     nf.add_argument("--account", default=None, help="Account ticker (default: all fund subdirs)")
     nf.add_argument("--all", action="store_true", dest="all_accounts", help="Process all fund subdirs")
@@ -120,10 +124,13 @@ def main(argv: list[str] | None = None) -> None:
         "enrich": _enrich,
         "merge": _merge,
         "ingest": _ingest,
+        "build": _ingest,          # alias
         "schema": _schema,
         "pull": _pull,
         "update-masters": _update_masters,
+        "masters": _update_masters,  # alias
         "new-filing": _new_filing,
+        "filing": _new_filing,       # alias
         "guide": _guide,
     }
     dispatch[args.command](args)
@@ -133,10 +140,60 @@ _PERIOD_RE = re.compile(r"^\d{4}-(0[1-9]|1[0-2])$")
 
 
 def _validate_period(period: str) -> None:
-    """Validate --period is YYYY-MM with valid month, exit on bad input."""
+    """Validate period is YYYY-MM with valid month, exit on bad input."""
     if not _PERIOD_RE.match(period):
-        print(f"ERROR: Invalid --period '{period}'. Expected YYYY-MM (e.g. 2026-06).", file=sys.stderr)
+        print(f"ERROR: Invalid period '{period}'. Expected YYYY-MM (e.g. 2026-06).", file=sys.stderr)
         sys.exit(1)
+
+
+_DEFAULT_FUNDS_DIR = Path("data/funds")
+_DEFAULT_CUSTODIAN_DIR = Path("data/custodian")
+
+
+def _split_positionals(pos: list[str] | None) -> tuple[str | None, str | None]:
+    """Split positional args into (account, period). A YYYY-MM token is the period."""
+    account = period = None
+    for tok in pos or []:
+        if _PERIOD_RE.match(tok):
+            period = tok
+        else:
+            account = tok
+    return account, period
+
+
+def _latest_period() -> str | None:
+    """Find the newest data/custodian/<period>_holdings.csv period."""
+    if not _DEFAULT_CUSTODIAN_DIR.is_dir():
+        return None
+    periods = []
+    for p in _DEFAULT_CUSTODIAN_DIR.glob("*_holdings.csv"):
+        m = re.match(r"(\d{4}-\d{2})_holdings\.csv$", p.name)
+        if m:
+            periods.append(m.group(1))
+    return max(periods) if periods else None
+
+
+def _resolve_period(period: str | None) -> str:
+    """Validate an explicit period, or auto-detect the latest custodian file."""
+    if period:
+        _validate_period(period)
+        return period
+    latest = _latest_period()
+    if not latest:
+        print("ERROR: No period given and none found in data/custodian/. "
+              "Pass one, e.g. `2026-06`.", file=sys.stderr)
+        sys.exit(1)
+    print(f"Using latest period: {latest}")
+    return latest
+
+
+def _resolve_custodian(custodian: str | None, period: str) -> Path:
+    """Return the custodian CSV path, defaulting to data/custodian/<period>_holdings.csv."""
+    path = Path(custodian) if custodian else _DEFAULT_CUSTODIAN_DIR / f"{period}_holdings.csv"
+    if not path.is_file():
+        print(f"ERROR: Custodian CSV not found: {path}", file=sys.stderr)
+        sys.exit(1)
+    return path
 
 
 def _log_issues(errors: list[str], warnings: list[str], label: str = "") -> None:
@@ -255,6 +312,13 @@ def _generate(args) -> None:
 
 
 def _validate(args) -> None:
+    pos_account, pos_period = _split_positionals(getattr(args, "pos", None))
+    if pos_account and not args.fund_dir:
+        args.fund_dir = str(_DEFAULT_FUNDS_DIR / pos_account.lower())
+    if pos_period and not args.period:
+        args.period = pos_period
+    if args.fund_dir and not args.period:
+        args.period = _resolve_period(None)
     print("Validating input files...")
     schema_errors, _ = check_schema_files(args.schema_dir)
     if schema_errors:
@@ -328,7 +392,7 @@ def _resolve_fund_dir(fund_dir: str, account: str | None) -> tuple[Path, str]:
     """
     p = Path(fund_dir)
     if (p / "fund_config.txt").is_file():
-        acct = account or p.name.upper()
+        acct = (account or p.name).upper()
         return p, acct
 
     if not account:
@@ -344,13 +408,18 @@ def _resolve_fund_dir(fund_dir: str, account: str | None) -> tuple[Path, str]:
 
 def _ingest(args) -> None:
     """Ingest custodian CSV → enriched holdings → N-PORT XML."""
-    _validate_period(args.period)
-    # 1. Parse custodian CSV
-    try:
-        all_rows = parse_custodian_csv(Path(args.custodian))
-    except FileNotFoundError:
-        print(f"ERROR: Custodian file not found: {args.custodian}", file=sys.stderr)
+    # 0. Resolve shorthand: `nport build <fund> [period]`
+    pos_account, pos_period = _split_positionals(getattr(args, "pos", None))
+    args.period = _resolve_period(pos_period or args.period)
+    args.account = pos_account or args.account
+    if not args.fund_dir and args.account:
+        args.fund_dir = str(_DEFAULT_FUNDS_DIR / args.account.lower())
+    if not args.fund_dir:
+        print("ERROR: specify which fund, e.g. `nport build fdrs`.", file=sys.stderr)
         sys.exit(1)
+
+    # 1. Parse custodian CSV (auto-located from period if not given)
+    all_rows = parse_custodian_csv(_resolve_custodian(args.custodian, args.period))
 
     # 2. Resolve fund dir and account
     fund_dir, account = _resolve_fund_dir(args.fund_dir, args.account)
@@ -495,12 +564,19 @@ def _pull(args) -> None:
 
 def _update_masters(args) -> None:
     """Incrementally update security masters from custodian CSV."""
-    # 1. Parse custodian CSV
-    try:
-        all_rows = parse_custodian_csv(Path(args.custodian))
-    except FileNotFoundError:
-        print(f"ERROR: Custodian file not found: {args.custodian}", file=sys.stderr)
-        sys.exit(1)
+    # 0. Resolve shorthand: `nport masters [period] [fund]`
+    pos_account, pos_period = _split_positionals(getattr(args, "pos", None))
+    args.account = pos_account or args.account
+
+    # 1. Parse custodian CSV (auto-located from period if not given)
+    if args.custodian:
+        custodian = Path(args.custodian)
+        if not custodian.is_file():
+            print(f"ERROR: Custodian CSV not found: {custodian}", file=sys.stderr)
+            sys.exit(1)
+    else:
+        custodian = _resolve_custodian(None, _resolve_period(pos_period or getattr(args, "period", None)))
+    all_rows = parse_custodian_csv(custodian)
 
     xml_dir = Path(args.xml_dir)
     fund_dir = Path(args.fund_dir)
@@ -546,9 +622,11 @@ def _update_masters(args) -> None:
 
 def _new_filing(args) -> None:
     """Create filing_data.txt template(s) for a new period."""
-    _validate_period(args.period)
+    # Resolve shorthand: `nport filing [period] [fund]`
+    pos_account, pos_period = _split_positionals(getattr(args, "pos", None))
+    args.account = pos_account or args.account
+    period = _resolve_period(pos_period or args.period)
     fund_dir = Path(args.fund_dir)
-    period = args.period
 
     if not fund_dir.is_dir():
         print(f"ERROR: Fund directory not found: {fund_dir}", file=sys.stderr)
@@ -595,32 +673,37 @@ def _guide(args) -> None:
 N-PORT Monthly Filing Guide
 ============================
 
-STEP 1: Get your custodian CSV from US Bank
+STEP 1: Get your custodian CSV from US Bank.
+  Save it as: data/custodian/<YYYY-MM>_holdings.csv   (e.g. data/custodian/2026-06_holdings.csv)
+  Every command below then finds it automatically.
 
 STEP 2: Update security masters
-  $ nport update-masters --custodian <csv_file>
-  This adds new positions and removes old ones.
-  Then open each fund's security_master.csv and fill in:
+  $ nport masters 2026-06
+  Adds new positions, removes old ones, keeps your manual fields.
+  Then open each fund's security_master.csv and fill in (from Bloomberg):
     - Options: counterpartyName, counterpartyLei, delta
-    - Swaps: counterpartyName, counterpartyLei, notionalAmt, unrealizedAppr, valUSD, pctVal
+    - Swaps:   counterpartyName, counterpartyLei, notionalAmt, unrealizedAppr, valUSD, pctVal
 
 STEP 3: Create this month's filing
-  $ nport new-filing --period YYYY-MM
-  This creates a filing_data.txt template for each fund.
-  Open each fund's filing_data.txt and update:
+  $ nport filing 2026-06
+  Creates a filing_data.txt template per fund. Open each and fill in:
     - totAssets, totLiabs, netAssets (from fund accounting)
     - rtn1, rtn2, rtn3 (monthly returns)
     - netRealizedGain/netUnrealizedAppr for each month
     - mon1/2/3 Sales, Redemption, Reinvestment (flows)
     - dateSigned (date you're signing)
 
-STEP 4: Generate XML for each fund
-  $ nport ingest --custodian <csv_file> --period YYYY-MM --fund-dir data/funds/<ticker>
-  Or dry-run first:
-  $ nport ingest --custodian <csv_file> --period YYYY-MM --fund-dir data/funds/<ticker> --dry-run
+STEP 4: Generate XML for a fund (dry-run first to catch errors)
+  $ nport build fdrs 2026-06 --dry-run
+  $ nport build fdrs 2026-06
+  Writes output/FDRS_2026-06.xml
 
 STEP 5: Review and file
-  Check the output XML, then change liveTestFlag=LIVE in filing_data.txt and regenerate.\
+  Check the output XML, then set liveTestFlag=LIVE in filing_data.txt and rerun STEP 4.
+
+TIP: run `source .venv/bin/activate` once so you can type `nport ...` instead of `uv run nport ...`.
+TIP: the period defaults to the latest custodian file, so you can usually drop it:
+     `nport masters`, `nport filing`, `nport build fdrs`.\
 """)
 
 

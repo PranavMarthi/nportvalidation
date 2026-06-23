@@ -2,6 +2,8 @@
 
 Generate SEC N-PORT XML filings from US Bank custodian CSVs.
 
+> New here? Read [OVERVIEW.md](OVERVIEW.md) for the full context — what every file means, how the pipeline works, and a worked end-to-end example (FDRS, 2026-06).
+
 ## Setup
 
 Requires **Python 3.11+** and [uv](https://docs.astral.sh/uv/).
@@ -20,31 +22,29 @@ uv run nport guide
 
 ## Monthly Workflow
 
-Run `uv run nport guide` for a quick reminder anytime. The full process:
+Run `nport guide` for a quick reminder anytime. See **[OVERVIEW.md](OVERVIEW.md)** for the detailed playbook (including exactly what to pull from Bloomberg).
+
+Tip: run `source .venv/bin/activate` once so you can type `nport ...` instead of `uv run nport ...`. The period is optional — omit it and the newest custodian file is used.
 
 ### 1. Get custodian CSV
 
-Download the monthly positions CSV from US Bank.
+Download the monthly positions CSV from US Bank and save it as `data/custodian/2026-06_holdings.csv`. Every command finds it automatically.
 
 ### 2. Update security masters
 
 ```bash
-uv run nport update-masters --custodian usbank.csv
+nport masters 2026-06
 ```
 
-Adds new positions, removes old ones, preserves your manually-entered fields (counterparty, delta, swap P&L).
-
-Then open each fund's `data/funds/<ticker>/security_master.csv` in Excel and fill in blanks for new options/swaps.
+Adds new positions, removes old ones, preserves your manually-entered fields (counterparty, delta, swap P&L). Then open each fund's `data/funds/<ticker>/security_master.csv` and fill in blanks for new options/swaps (see OVERVIEW.md §3 for the Bloomberg field list).
 
 ### 3. Create this month's filing
 
 ```bash
-uv run nport new-filing --period 2026-06
+nport filing 2026-06
 ```
 
-Creates a `filing_data.txt` template for each fund. If a previous month exists, copies it with dates updated and returns/flows zeroed.
-
-Open each fund's `data/funds/<ticker>/filings/2026-06/filing_data.txt` and update:
+Creates a `filing_data.txt` template for each fund (copied from last month with dates updated and returns/flows zeroed). Open each fund's `data/funds/<ticker>/filings/2026-06/filing_data.txt` and update:
 - **totAssets, totLiabs, netAssets** — from fund accounting
 - **rtn1, rtn2, rtn3** — monthly class returns
 - **netRealizedGain/netUnrealizedAppr** — per month
@@ -54,16 +54,13 @@ Open each fund's `data/funds/<ticker>/filings/2026-06/filing_data.txt` and updat
 ### 4. Generate XML
 
 ```bash
-# Dry-run first:
-uv run nport ingest --custodian usbank.csv --period 2026-06 --fund-dir data/funds/fdrs --dry-run
-
-# Generate for real:
-uv run nport ingest --custodian usbank.csv --period 2026-06 --fund-dir data/funds/fdrs
+nport build fdrs 2026-06 --dry-run    # check first
+nport build fdrs 2026-06              # writes output/FDRS_2026-06.xml
 ```
 
 ### 5. Review and file
 
-Check the output XML in `output/`. When ready, change `liveTestFlag=LIVE` in filing_data.txt and regenerate.
+Check the output XML in `output/`. When ready, change `liveTestFlag=LIVE` in filing_data.txt and rerun `nport build`.
 
 ## Fund Directory Structure
 
@@ -81,23 +78,22 @@ data/funds/
 ```
 
 - **fund_config.txt** — static: CIK, registrant name/address, series/class IDs, signer
-- **security_master.csv** — updated each month via `update-masters`, then manually edited
-- **filing_data.txt** — created each month via `new-filing`, then manually edited
+- **security_master.csv** — updated each month via `nport masters`, then manually edited
+- **filing_data.txt** — created each month via `nport filing`, then manually edited
 
 ## All Commands
 
 | Command | Purpose |
 |---|---|
 | `nport guide` | Print step-by-step filing instructions |
-| `nport new-filing --period YYYY-MM` | Create filing_data.txt template(s) |
-| `nport update-masters --custodian <csv>` | Update security masters from custodian |
-| `nport ingest --custodian <csv> --period YYYY-MM --fund-dir <dir>` | Generate N-PORT XML |
-| `nport generate --fund-dir <dir> --period YYYY-MM --output <xml>` | Generate XML from pre-built holdings |
-| `nport validate --fund-dir <dir> --period YYYY-MM` | Validate inputs without generating |
-| `nport pull --ticker <TICK>` | Download existing filings from EDGAR |
+| `nport masters [period] [fund]` | Update security masters from the custodian CSV |
+| `nport filing [period] [fund]` | Create filing_data.txt template(s) |
+| `nport build <fund> [period]` | Generate N-PORT XML (add `--dry-run` to check first) |
+| `nport validate <fund> [period]` | Validate inputs without generating |
+| `nport pull --ticker <TICK> --list` | List/download existing filings from EDGAR |
 | `nport check-schema` | Check XSD schema version |
 
-Most commands accept `--fund-dir` (defaults to `data/funds`), `--account` (single fund), and `--dry-run`.
+The period defaults to the newest `data/custodian/*_holdings.csv`; a bare fund name resolves to `data/funds/<fund>`; the custodian path is derived from the period. `masters`/`filing`/`build` are short aliases for `update-masters`/`new-filing`/`ingest` — the long forms with explicit `--custodian`/`--fund-dir`/`--period` flags still work.
 
 ## Tests
 
