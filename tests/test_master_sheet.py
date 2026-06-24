@@ -8,7 +8,9 @@ from openpyxl import load_workbook
 from nport.custodian import EQUITY_HEADERS, parse_custodian_csv
 from nport.master_sheet import (
     MASTER_ENRICHMENT_COLUMNS,
-    _formula_fallback,
+    _BBG_FORMULA_COLUMNS,
+    _bbg_spec_key,
+    _normalize_coupon_kind,
     apply_bloomberg_formulas,
     read_master_xlsx,
     refresh_master,
@@ -85,20 +87,22 @@ def test_refresh_adds_new_holdings(tmp_path):
 
 
 def test_refresh_preserves_manual_edits(tmp_path):
-    cust = _write_custodian(tmp_path, [_eq("FDRS", "ABNB", "009066101", "Airbnb Inc")])
+    # Operator-owned (non-Bloomberg) fields survive a refresh. Bloomberg fields
+    # are always formulas, so the durable manual data is on derivatives — here an
+    # option's delta (options have no Bloomberg spec).
+    cust = _write_custodian(tmp_path, [_opt_custodian("BUF", "SPY 12/18/2026 4800 C")])
     master = tmp_path / "master.xlsx"
     refresh_master(parse_custodian_csv(cust), master)
 
-    # Operator fills a Bloomberg field.
     rows, header = read_master_xlsx(master)
-    rows[0]["lei"] = "549300HMUDNO0RY56D37"
+    rows[0]["delta"] = "0.61"
     write_master_xlsx(rows, header, master)
 
-    # Refresh again with the same custodian — edit must survive.
+    # Refresh again with the same custodian — manual delta must survive.
     stats = refresh_master(parse_custodian_csv(cust), master)
     assert stats["kept"] == 1 and stats["added"] == 0
     rows2, _ = read_master_xlsx(master)
-    assert rows2[0]["lei"] == "549300HMUDNO0RY56D37"
+    assert rows2[0]["delta"] == "0.61"
 
 
 def test_refresh_drops_removed_holdings(tmp_path):
@@ -264,23 +268,29 @@ def test_seed_then_split_reproduces_per_fund(tmp_path):
     mrows, _ = read_master_xlsx(master)
     assert [r["ticker"] for r in mrows] == ["NVDA", "ABNB", "SPX-C4800-20261218"]
 
-    # Split reproduces per-fund content.
+    # Split reproduces per-fund content for every NON-Bloomberg column. The
+    # Bloomberg-owned fields (isin/lei/invCountry/...) are now formulas resolved
+    # on a terminal, so off-Bloomberg they read back empty (no fallback) — they
+    # are excluded from the round-trip equality and checked separately below.
     out = tmp_path / "out"
     split_master(master, out)
     for fund in ("fdrs", "buf"):
         oh, orows = _read_csv(funds / fund / "security_master.csv")
         nh, nrows = _read_csv(out / fund / "security_master.csv")
         assert set(oh) == set(nh), fund
-        common = [c for c in oh if c in nh]
+        common = [c for c in oh if c in nh and c not in _BBG_FORMULA_COLUMNS]
         o_by = {r["ticker"]: r for r in orows}
         n_by = {r["ticker"]: r for r in nrows}
         for t in o_by:
             assert {c: o_by[t][c] for c in common} == {c: n_by[t][c] for c in common}, (fund, t)
 
-    # The manual delta survived the round-trip.
+    # The manual (non-Bloomberg) delta + counterparty survived the round-trip.
     _, buf_rows = _read_csv(out / "buf" / "security_master.csv")
     assert buf_rows[0]["delta"] == "0.72"
     assert buf_rows[0]["counterpartyName"] == "Goldman Sachs International"
+    # Equity Bloomberg fields are emptied until resolved on a terminal.
+    _, fdrs_rows = _read_csv(out / "fdrs" / "security_master.csv")
+    assert all(r["lei"] == "" and r["isin"] == "" and r["invCountry"] == "" for r in fdrs_rows)
 
 
 # ── Bloomberg BDP formulas ────────────────────────────────────
@@ -309,7 +319,7 @@ def test_equity_gets_bbgid_and_simple_formulas(tmp_path):
     rows = [_equity(lei="N/A", isin="", invCountry="US")]
     n = apply_bloomberg_formulas(rows)
     assert n == 3  # isin, lei, invCountry (NOT cusip)
-    # apply sets the bbgid helper and cleans fallbacks (no formulas yet).
+    # apply only sets the bbgid lookup key; the formulas are emitted on write.
     assert rows[0]["bbgid"] == "AAPL US Equity"
 
     ws = _equity_master(rows, tmp_path)
@@ -319,11 +329,13 @@ def test_equity_gets_bbgid_and_simple_formulas(tmp_path):
     from openpyxl.utils import get_column_letter
     bb_ref = f"${get_column_letter(bb)}2"
     assert ws.cell(row=2, column=bb).value == "AAPL US Equity"
-    # isin/lei/invCountry are formulas referencing the bbgid CELL.
+    # isin/lei/invCountry are BARE formulas referencing the bbgid CELL — no
+    # IFERROR / embedded fallback.
     le = ws.cell(row=2, column=idx["lei"]).value
-    assert le.startswith("=") and f'BDP({bb_ref},"LEGAL_ENTITY_IDENTIFIER")' in le
-    assert "ID_ISIN" in ws.cell(row=2, column=idx["isin"]).value
-    assert "CNTRY_OF_DOMICILE" in ws.cell(row=2, column=idx["invCountry"]).value
+    assert le == f'=BDP({bb_ref},"LEGAL_ENTITY_IDENTIFIER")'
+    assert "IFERROR" not in le
+    assert ws.cell(row=2, column=idx["isin"]).value == f'=BDP({bb_ref},"ID_ISIN")'
+    assert ws.cell(row=2, column=idx["invCountry"]).value == f'=BDP({bb_ref},"CNTRY_OF_DOMICILE")'
     # cusip is NOT a formula — it's the custodian literal.
     assert ws.cell(row=2, column=idx["cusip"]).value == "037833100"
     # name/title/ticker stay literal too.
@@ -345,11 +357,12 @@ def test_cusip_literal_us_kept_foreign_na(tmp_path):
     aer = next(r for r in back if r["ticker"] == "AER")
     assert amd["cusip"] == "007903107"        # US CUSIP literal
     assert aer["cusip"] == "N/A"              # foreign ordinary -> N/A
-    # lei/country are still formula-embedded.
-    assert aer["lei"] == "549300SZYINBBLJQU475" and aer["invCountry"] == "NL"
+    # lei/country are bare formulas with NO fallback: uncalculated (no Bloomberg
+    # terminal in the test) they read back EMPTY, so a failed lookup stays visible.
+    assert aer["lei"] == "" and aer["invCountry"] == ""
 
 
-def test_derivatives_and_nonequities_not_formula(tmp_path):
+def test_option_no_spec_treasury_isin_only(tmp_path):
     rows = [
         {"Account": "BUF", "cusip": "N/A", "ticker": "SPX-C4800", "name": "opt",
          "assetCat": "DE", "derivCat": "OPT", "lei": "", "isin": ""},
@@ -357,12 +370,21 @@ def test_derivatives_and_nonequities_not_formula(tmp_path):
          "assetCat": "DBT", "issuerCat": "UST", "derivCat": "",
          "lei": "254900HROIFWPRGM1V77", "isin": "", "invCountry": "US"},
     ]
-    # Equities-only pass: options and treasuries get no bbgid, no formulas.
-    assert apply_bloomberg_formulas(rows) == 0
-    assert not rows[0].get("bbgid") and not rows[1].get("bbgid")
+    # Options have no Bloomberg spec; US treasuries get exactly one formula (isin)
+    # keyed by "<cusip> Govt" — LEI/country/maturity/rate are already known.
+    assert apply_bloomberg_formulas(rows) == 1
+    assert not rows[0].get("bbgid")
+    assert rows[1]["bbgid"] == "912797UL9 Govt"
     ws = _equity_master(rows, tmp_path)
     hdr = [c.value for c in ws[1]]
     idx = {c: i + 1 for i, c in enumerate(hdr)}
+    # Option: no formula cells at all.
+    for f in ("isin", "lei", "invCountry"):
+        assert not str(ws.cell(row=2, column=idx[f]).value).startswith("=")
+    # Treasury (row 3): isin is a bare BDP formula; lei stays the known literal.
+    assert ws.cell(row=3, column=idx["isin"]).value == '=BDP($B3,"ID_ISIN")'
+    assert ws.cell(row=3, column=idx["lei"]).value == "254900HROIFWPRGM1V77"
+    # cusip is never a formula here (no custodian sheet linked).
     for excel_row in (2, 3):
         assert not str(ws.cell(row=excel_row, column=idx["cusip"]).value).startswith("=")
 
@@ -386,19 +408,20 @@ def test_bloomberg_error_junk_is_cleaned_in_seed(tmp_path):
     # CINS), NOT the "#N/A N/A" junk and not a formula. The N/A-for-foreign rule
     # is applied downstream by the build.
     assert r["cusip"] == "N00985106"
-    # The real provided ISIN/country were preserved.
-    assert r["isin"] == "NL0000687663" and r["invCountry"] == "NL"
     # No "#N/A ..." junk survives anywhere in the workbook.
     from openpyxl import load_workbook
     ws = load_workbook(master).active
     assert not any(isinstance(c, str) and c.startswith("#")
                    for row in ws.iter_rows(values_only=True) for c in row)
-    # The junk LEI became a live formula (raw cell); read-back gives its
-    # schema-valid fallback (N/A) until calculated.
+    # isin/lei/invCountry are Bloomberg-owned: they become bare =BDP formulas
+    # (overwriting any provided value — no fallback), and read back EMPTY until
+    # resolved on a Bloomberg terminal, so failures stay visible.
     hdr = [c.value for c in ws[1]]
-    lei_cell = ws.cell(row=2, column=hdr.index("lei") + 1).value
-    assert lei_cell.startswith("=") and "LEGAL_ENTITY_IDENTIFIER" in lei_cell
-    assert r["lei"] == "N/A"
+    for f, mnem in (("lei", "LEGAL_ENTITY_IDENTIFIER"), ("isin", "ID_ISIN"),
+                    ("invCountry", "CNTRY_OF_DOMICILE")):
+        cell = ws.cell(row=2, column=hdr.index(f) + 1).value
+        assert cell.startswith("=BDP(") and mnem in cell and "IFERROR" not in cell
+    assert r["lei"] == "" and r["isin"] == "" and r["invCountry"] == ""
 
 
 def test_reference_cells_are_formulas_general_format(tmp_path):
@@ -482,3 +505,91 @@ def test_no_formulas_flag_leaves_blanks(tmp_path):
     assert stats["formulas"] == 0
     rows, _ = read_master_xlsx(master)
     assert rows[0]["isin"] == ""  # left blank, no formula
+
+
+# ── Per-asset-type Bloomberg formulas (bonds, swaps) ──────────
+
+
+def _bond_custodian(account, cusip, name):
+    return {"Date": "06/01/2026", "Account": account, "StockTicker": "",
+            "CUSIP": cusip, "SecurityName": name, "Shares": "100000",
+            "Price": "98.5", "MarketValue": "98500", "Weightings": "2.50%",
+            "NetAssets": "1000000", "SharesOutstanding": "0", "CreationUnits": "0",
+            "MoneyMarketFlag": ""}
+
+
+def _swap_custodian(account, ticker, name):
+    return {"Date": "06/01/2026", "Account": account, "StockTicker": ticker,
+            "CUSIP": "N/A", "SecurityName": name, "Shares": "1", "Price": "0",
+            "MarketValue": "0", "Weightings": "0.00%", "NetAssets": "1000000",
+            "SharesOutstanding": "0", "CreationUnits": "0", "MoneyMarketFlag": ""}
+
+
+def _formula_cell(ws, hdr, col, excel_row=2):
+    return ws.cell(row=excel_row, column=hdr.index(col) + 1).value
+
+
+def test_corporate_bond_formulas_keyed_corp(tmp_path):
+    cust = _write_custodian(tmp_path, [
+        _bond_custodian("CHYG", "00081TAK4", "ACCO Brands Corp 4.25% 03/15/2029"),
+    ])
+    master = tmp_path / "master.xlsx"
+    refresh_master(parse_custodian_csv(cust), master)
+    ws = load_workbook(master)["master"]
+    hdr = [c.value for c in ws[1]]
+    bb = f"${chr(ord('A') + hdr.index('bbgid'))}2"
+    assert _formula_cell(ws, hdr, "bbgid") == "00081TAK4 Corp"
+    # Identity + C.9 are bare BDP formulas — no IFERROR.
+    assert _formula_cell(ws, hdr, "isin") == f'=BDP({bb},"ID_ISIN")'
+    assert _formula_cell(ws, hdr, "lei") == f'=BDP({bb},"LEGAL_ENTITY_IDENTIFIER")'
+    assert _formula_cell(ws, hdr, "invCountry") == f'=BDP({bb},"CNTRY_OF_DOMICILE")'
+    assert _formula_cell(ws, hdr, "maturityDt") == f'=TEXT(BDP({bb},"MATURITY"),"yyyy-mm-dd")'
+    assert _formula_cell(ws, hdr, "annualizedRt") == f'=BDP({bb},"CPN")'
+    assert _formula_cell(ws, hdr, "couponKind") == f'=BDP({bb},"CPN_TYP")'
+    for f in ("isin", "lei", "maturityDt", "couponKind"):
+        assert "IFERROR" not in _formula_cell(ws, hdr, f)
+    # assetCat/issuerCat are the locally-known literals.
+    assert _formula_cell(ws, hdr, "assetCat") == "DBT"
+    assert _formula_cell(ws, hdr, "issuerCat") == "CORP"
+    # Unresolved off-terminal → C.9/identity read back empty (visible failure).
+    rows, _ = read_master_xlsx(master)
+    assert rows[0]["maturityDt"] == "" and rows[0]["lei"] == "" and rows[0]["invCountry"] == ""
+
+
+def test_swap_reference_identity_formulas(tmp_path):
+    cust = _write_custodian(tmp_path, [
+        _swap_custodian("CMAG", "02079K305-TRS-05/31/27-L-CANT",
+                        "ALPHABET INC.-SWAP-CANT-L"),
+    ])
+    master = tmp_path / "master.xlsx"
+    refresh_master(parse_custodian_csv(cust), master)
+    ws = load_workbook(master)["master"]
+    hdr = [c.value for c in ws[1]]
+    bb = f"${chr(ord('A') + hdr.index('bbgid'))}2"
+    # Keyed by the reference security's CUSIP (parsed from the swap ticker).
+    assert _formula_cell(ws, hdr, "bbgid") == "02079K305 Equity"
+    assert _formula_cell(ws, hdr, "refIsin") == f'=BDP({bb},"ID_ISIN")'
+    assert _formula_cell(ws, hdr, "refTicker") == f'=BDP({bb},"TICKER")'
+    assert _formula_cell(ws, hdr, "refIssuerName") == f'=BDP({bb},"ISSUER")'
+    assert _formula_cell(ws, hdr, "refIssueTitle") == f'=BDP({bb},"NAME")'
+    # Economics stay operator-entered, NOT formulas.
+    for f in ("counterpartyLei", "notionalAmt", "unrealizedAppr"):
+        assert not str(_formula_cell(ws, hdr, f)).startswith("=")
+
+
+def test_coupon_kind_normalization():
+    assert _normalize_coupon_kind("FIXED") == "Fixed"
+    assert _normalize_coupon_kind("FLOATING") == "Floating"
+    assert _normalize_coupon_kind("ZERO COUPON") == "None"
+    assert _normalize_coupon_kind("") == ""
+    # Unmapped value passes through unchanged so validation flags it.
+    assert _normalize_coupon_kind("STEP CPN") == "STEP CPN"
+
+
+def test_spec_selection():
+    assert _bbg_spec_key({"assetCat": "EC"}) == "EC"
+    assert _bbg_spec_key({"assetCat": "STIV"}) == "STIV"
+    assert _bbg_spec_key({"assetCat": "DBT", "issuerCat": "UST"}) == "DBT_UST"
+    assert _bbg_spec_key({"assetCat": "DBT", "issuerCat": "CORP"}) == "DBT_CORP"
+    assert _bbg_spec_key({"assetCat": "DE", "derivCat": "SWP", "refCusip": "123"}) == "SWP_REF"
+    assert _bbg_spec_key({"assetCat": "DE", "derivCat": "OPT"}) is None

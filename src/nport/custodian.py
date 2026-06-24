@@ -32,6 +32,7 @@ class HoldingType(Enum):
     OPTION = "option"
     SWAP = "swap"
     TREASURY = "treasury"
+    CORPORATE_BOND = "corporate_bond"
     MONEY_MARKET = "money_market"
     CASH = "cash"
 
@@ -143,6 +144,13 @@ SWAP_HEADERS = [
     "pmntPmntAmt", "pmntCurCdLeg", "pmntRateTenor", "pmntRateUnit",
     "refInstType", "refIssuerName", "refIssueTitle",
     "refCusip", "refIsin", "refTicker",
+]
+
+# Debt (C.9) columns appended for corporate bonds. The first three carry the
+# Bloomberg-filled values; the three flags default to "N".
+DEBT_HEADERS = [
+    "maturityDt", "couponKind", "annualizedRt",
+    "isDefault", "areIntrstPmntsInArrs", "isPaidKind",
 ]
 
 
@@ -333,6 +341,32 @@ def build_treasury_entry(row: CustodianRow) -> dict[str, str]:
     }
 
 
+def build_corporate_bond_entry(row: CustodianRow) -> dict[str, str]:
+    """Build a security master entry for a corporate bond.
+
+    Only locally-known fields are set. ``isin``/``lei``/``invCountry`` and the
+    C.9 debt fields (``maturityDt``/``couponKind``/``annualizedRt``) are left
+    EMPTY on purpose: they are filled by the master's live Bloomberg ``=BDP``
+    formulas (keyed by ``<cusip> Corp``). This is what lets ``invCountry``
+    resolve correctly for foreign issuers (e.g. RBC/TransCanada → CA) instead of
+    a hardcoded US, and keeps failed lookups visible rather than masked.
+    """
+    return {
+        "name": row.security_name[:30],
+        "lei": "",
+        "title": row.security_name,
+        "cusip": row.cusip,
+        "isin": "",
+        "ticker": "",
+        "invCountry": "",
+        "assetCat": "DBT",
+        "issuerCat": "CORP",
+        "maturityDt": "",
+        "couponKind": "",
+        "annualizedRt": "",
+    }
+
+
 # ── Lookup key logic ──────────────────────────────────────────
 
 
@@ -351,6 +385,8 @@ def _sm_lookup_key(holding_type: HoldingType, row: CustodianRow) -> str | None:
             return row.cusip
         return row.stock_ticker
     if holding_type == HoldingType.TREASURY:
+        return row.cusip
+    if holding_type == HoldingType.CORPORATE_BOND:
         return row.cusip
     if holding_type == HoldingType.MONEY_MARKET:
         return row.cusip
@@ -416,6 +452,7 @@ def update_security_master(
     seen_cusips: set[str] = set()
     has_options = False
     has_swaps = False
+    has_bonds = False
 
     for row in rows:
         ht = classify_holding(row)
@@ -443,6 +480,10 @@ def update_security_master(
         elif ht == HoldingType.TREASURY:
             if key not in wanted:
                 wanted[key] = build_treasury_entry(row)
+        elif ht == HoldingType.CORPORATE_BOND:
+            has_bonds = True
+            if key not in wanted:
+                wanted[key] = build_corporate_bond_entry(row)
 
     # Determine headers — preserve existing, expand if new types appear
     if not headers:
@@ -454,6 +495,10 @@ def update_security_master(
                 headers.append(h)
     if has_swaps:
         for h in SWAP_HEADERS:
+            if h not in headers:
+                headers.append(h)
+    if has_bonds:
+        for h in DEBT_HEADERS:
             if h not in headers:
                 headers.append(h)
 
@@ -543,6 +588,12 @@ _OPTION_NAME_RE = re.compile(
     r"^.+\s+\d{2}/\d{2}/\d{4}\s+\d+(?:\.\d+)?\s+[CP]$"
 )
 
+# A debt security's name carries a coupon rate AND a maturity date, e.g.
+# "ACCO Brands Corp 4.25% 03/15/2029" or "Service Properties Trust 0% 09/30/2027".
+# Detection only — the C.9 values come from Bloomberg in the master, not from
+# parsing this. Treasuries and options are matched earlier and never reach here.
+_BOND_NAME_RE = re.compile(r"\d+(?:\.\d+)?%\s+\d{2}/\d{2}/\d{2,4}")
+
 
 def classify_holding(row: CustodianRow) -> HoldingType:
     """Detect holding type from custodian row fields."""
@@ -557,6 +608,8 @@ def classify_holding(row: CustodianRow) -> HoldingType:
         return HoldingType.OPTION
     if "United States Treasury Note/Bond" in row.security_name:
         return HoldingType.TREASURY
+    if _BOND_NAME_RE.search(row.security_name):
+        return HoldingType.CORPORATE_BOND
     return HoldingType.EQUITY
 
 
@@ -789,6 +842,25 @@ def transform_to_holding_dict(
             "maturity_dt": trs.maturity_dt,
             "annualized_rt": trs.annualized_rt,
             "coupon_kind": trs.coupon_kind,
+            "is_default": "N",
+            "are_intrst_pmnts_in_arrs": "N",
+            "is_paid_kind": "N",
+        })
+
+    elif holding_type == HoldingType.CORPORATE_BOND:
+        # Locally-derivable fields only. cusip/lei/isin/invCountry and the C.9
+        # values (maturity/coupon/rate) are filled from the master's live
+        # Bloomberg formulas via merge — NOT parsed here. If Bloomberg has not
+        # populated them, the merged holding fails validation (visible failure)
+        # rather than shipping a guessed value.
+        d.update({
+            "cusip": row.cusip,
+            "ticker": "",
+            "balance": row.shares,
+            "units": "PA",
+            "asset_cat": "DBT",
+            "issuer_cat": "CORP",
+            "fair_val_level": "2",
             "is_default": "N",
             "are_intrst_pmnts_in_arrs": "N",
             "is_paid_kind": "N",
