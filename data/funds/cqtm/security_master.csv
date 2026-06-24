@@ -1,18 +1,19 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Arqit Quantum Inc,N/A,Arqit Quantum Inc,N/A,,ARQQ,KY,EC,CORP
-BTQ Technologies Corp,N/A,BTQ Technologies Corp,055869101,,BTQ,US,EC,CORP
-FormFactor Inc,N/A,FormFactor Inc,346375108,,FORM,US,EC,CORP
 Alphabet Inc,N/A,Alphabet Inc,02079K305,,GOOGL,US,EC,CORP
-Honeywell International Inc,N/A,Honeywell International Inc,438516106,,HON,US,EC,CORP
-Horizon Quantum Holdings LTD,N/A,Horizon Quantum Holdings LTD,N/A,,HQ,US,EC,CORP
-International Business Machine,N/A,International Business Machines Corp,459200101,,IBM,US,EC,CORP
-Infleqtion Inc,N/A,Infleqtion Inc,45676K103,,INFQ,US,EC,CORP
-IonQ Inc,N/A,IonQ Inc,46222L108,,IONQ,US,EC,CORP
-SEALSQ Corp,N/A,SEALSQ Corp,N/A,,LAES,US,EC,CORP
+BTQ Technologies Corp,N/A,BTQ Technologies Corp,055869101,,BTQ,US,EC,CORP
 D-Wave Quantum Inc,N/A,D-Wave Quantum Inc,26740W109,,QBTS,US,EC,CORP
-Quantum Emotion Corp,N/A,Quantum Emotion Corp,74767K103,,QNC,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+FormFactor Inc,N/A,FormFactor Inc,346375108,,FORM,US,EC,CORP
+Honeywell International Inc,N/A,Honeywell International Inc,438516106,,HON,US,EC,CORP
+Infleqtion Inc,N/A,Infleqtion Inc,45676K103,,INFQ,US,EC,CORP
+International Business Machine,N/A,International Business Machines Corp,459200101,,IBM,US,EC,CORP
+IonQ Inc,N/A,IonQ Inc,46222L108,,IONQ,US,EC,CORP
 Quantum Computing Inc,N/A,Quantum Computing Inc,74766W108,,QUBT,US,EC,CORP
+Quantum Emotion Corp,N/A,Quantum Emotion Corp,74767K103,,QNC,US,EC,CORP
+Quantinuum Inc,N/A,Quantinuum Inc,74768A104,,QNT,US,EC,CORP
 Rigetti Computing Inc,N/A,Rigetti Computing Inc,76655K103,,RGTI,US,EC,CORP
 SkyWater Technology Inc,N/A,SkyWater Technology Inc,83089J108,,SKYT,US,EC,CORP
 Xanadu Quantum Technologies Lt,N/A,Xanadu Quantum Technologies Ltd,98390R102,,XNDU,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Arqit Quantum Inc,N/A,Arqit Quantum Inc,N/A,,ARQQ,KY,EC,CORP
+Horizon Quantum Holdings LTD,N/A,Horizon Quantum Holdings LTD,N/A,,HQ,US,EC,CORP
+SEALSQ Corp,N/A,SEALSQ Corp,N/A,,LAES,US,EC,CORP

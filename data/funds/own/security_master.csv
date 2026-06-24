@@ -1,0 +1,102 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
+Advanced Micro Devices Inc,N/A,Advanced Micro Devices Inc,007903107,,AMD,US,EC,CORP
+Airbnb Inc,549300HMUDNO0RY56D37,Airbnb Inc,009066101,US0090661010,ABNB,US,EC,CORP
+Air Products and Chemicals Inc,N/A,Air Products and Chemicals Inc,009158106,,APD,US,EC,CORP
+Alphabet Inc,N/A,Alphabet Inc,02079K305,,GOOGL,US,EC,CORP
+Amazon.com Inc,N/A,Amazon.com Inc,023135106,,AMZN,US,EC,CORP
+Amphenol Corp,N/A,Amphenol Corp,032095101,,APH,US,EC,CORP
+Apollo Global Management Inc,254900LMFT1CY9IYB476,Apollo Global Management Inc,03769M106,US03769M1062,APO,US,EC,CORP
+Apple Inc,N/A,Apple Inc,037833100,,AAPL,US,EC,CORP
+Applied Materials Inc,N/A,Applied Materials Inc,038222105,,AMAT,US,EC,CORP
+AppLovin Corp,549300LLVXMUAOL3SQ07,AppLovin Corp,03831W108,US03831W1080,APP,US,EC,CORP
+Ares Management Corp,529900JUV61FH7B8VW38,Ares Management Corp,03990B101,US03990B1017,ARES,US,EC,CORP
+Arista Networks Inc,635400H1WKBLOQERUU95,Arista Networks Inc,040413205,US0404132054,ANET,US,EC,CORP
+AutoZone Inc,N/A,AutoZone Inc,053332102,,AZO,US,EC,CORP
+Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP
+Bank of America Corp,N/A,Bank of America Corp,060505104,,BAC,US,EC,CORP
+W R Berkley Corp,N/A,W R Berkley Corp,084423102,,WRB,US,EC,CORP
+Berkshire Hathaway Inc,N/A,Berkshire Hathaway Inc,084670702,,BRK/B,US,EC,CORP
+Blackstone Inc,5299004LW4QWGZUB8Y96,Blackstone Inc,09260D107,US09260D1072,BX,US,EC,CORP
+Blackrock Inc,529900VBK42Y5HHRMD23,Blackrock Inc,09290D101,US09290D1019,BLK,US,EC,CORP
+Broadcom Inc,N/A,Broadcom Inc,11135F101,,AVGO,US,EC,CORP
+CVS Health Corp,N/A,CVS Health Corp,126650100,,CVS,US,EC,CORP
+Carrier Global Corp,N/A,Carrier Global Corp,14448C104,,CARR,US,EC,CORP
+Carvana Co,5493003WEAK2PJ5WS063,Carvana Co,146869102,US1468691027,CVNA,US,EC,CORP
+Caterpillar Inc,N/A,Caterpillar Inc,149123101,,CAT,US,EC,CORP
+Chevron Corp,N/A,Chevron Corp,166764100,,CVX,US,EC,CORP
+Cintas Corp,N/A,Cintas Corp,172908105,,CTAS,US,EC,CORP
+Coca-Cola Co/The,N/A,Coca-Cola Co/The,191216100,,KO,US,EC,CORP
+Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP
+Comcast Corp,N/A,Comcast Corp,20030N101,,CMCSA,US,EC,CORP
+Constellation Brands Inc,N/A,Constellation Brands Inc,21036P108,,STZ,US,EC,CORP
+Copart Inc,N/A,Copart Inc,217204106,,CPRT,US,EC,CORP
+Corpay Inc,N/A,Corpay Inc,219948106,,CPAY,US,EC,CORP
+Crowdstrike Holdings Inc,549300YBY08K9KM4HX32,Crowdstrike Holdings Inc,22788C105,US22788C1053,CRWD,US,EC,CORP
+Danaher Corp,N/A,Danaher Corp,235851102,,DHR,US,EC,CORP
+Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
+Dell Technologies Inc,549300TJB5YBRUPOG437,Dell Technologies Inc,24703L202,US24703L2025,DELL,US,EC,CORP
+Dollar Tree Inc,N/A,Dollar Tree Inc,256746108,,DLTR,US,EC,CORP
+DoorDash Inc,549300NUQ43FGGSK5051,DoorDash Inc,25809K105,US25809K1051,DASH,US,EC,CORP
+EchoStar Corp,549300EE20907QZ9GT38,EchoStar Corp,278768106,US2787681061,SATS,US,EC,CORP
+Expedia Group Inc,N/A,Expedia Group Inc,30212P303,,EXPE,US,EC,CORP
+Meta Platforms Inc,BQ4BKCS1HXDV9HN80Z93,Meta Platforms Inc,30303M102,US30303M1027,META,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP
+Fox Corp,N/A,Fox Corp,35137L105,,FOXA,US,EC,CORP
+General Dynamics Corp,N/A,General Dynamics Corp,369550108,,GD,US,EC,CORP
+Goldman Sachs Group Inc/The,N/A,Goldman Sachs Group Inc/The,38141G104,,GS,US,EC,CORP
+WW Grainger Inc,N/A,WW Grainger Inc,384802104,,GWW,US,EC,CORP
+HCA Healthcare Inc,N/A,HCA Healthcare Inc,40412C101,,HCA,US,EC,CORP
+Hilton Worldwide Holdings Inc,N/A,Hilton Worldwide Holdings Inc,43300A203,,HLT,US,EC,CORP
+Incyte Corp,N/A,Incyte Corp,45337C102,,INCY,US,EC,CORP
+Interactive Brokers Group Inc,N/A,Interactive Brokers Group Inc,45841N107,,IBKR,US,EC,CORP
+Intuit Inc,N/A,Intuit Inc,461202103,,INTU,US,EC,CORP
+JPMORGAN CHASE & CO.,N/A,JPMORGAN CHASE & CO.,46625H100,,JPM,US,EC,CORP
+KKR & Co Inc,N/A,KKR & Co Inc,48251W104,,KKR,US,EC,CORP
+Kinder Morgan Inc,N/A,Kinder Morgan Inc,49456B101,,KMI,US,EC,CORP
+Lam Research Corp,N/A,Lam Research Corp,512807306,,LRCX,US,EC,CORP
+Estee Lauder Cos Inc/The,N/A,Estee Lauder Cos Inc/The,518439104,,EL,US,EC,CORP
+Lennar Corp,N/A,Lennar Corp,526057104,,LEN,US,EC,CORP
+Eli Lilly & Co,N/A,Eli Lilly & Co,532457108,,LLY,US,EC,CORP
+Live Nation Entertainment Inc,N/A,Live Nation Entertainment Inc,538034109,,LYV,US,EC,CORP
+Loews Corp,N/A,Loews Corp,540424108,,L,US,EC,CORP
+MSCI Inc,549300HTIN2PD78UB763,MSCI Inc,55354G100,US55354G1004,MSCI,US,EC,CORP
+Marriott International Inc/MD,N/A,Marriott International Inc/MD,571903202,,MAR,US,EC,CORP
+Micron Technology Inc,N/A,Micron Technology Inc,595112103,,MU,US,EC,CORP
+Monolithic Power Systems Inc,529900TB7O85LSZ1XU31,Monolithic Power Systems Inc,609839105,US6098391054,MPWR,US,EC,CORP
+Monster Beverage Corp,N/A,Monster Beverage Corp,61174X109,,MNST,US,EC,CORP
+Netflix Inc,N/A,Netflix Inc,64110L106,,NFLX,US,EC,CORP
+NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP
+Old Dominion Freight Line Inc,N/A,Old Dominion Freight Line Inc,679580100,,ODFL,US,EC,CORP
+Oracle Corp,1Z4GXXU7ZHVWFCD8TV52,Oracle Corp,68389X105,US68389X1054,ORCL,US,EC,CORP
+PACCAR Inc,N/A,PACCAR Inc,693718108,,PCAR,US,EC,CORP
+Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP
+Palo Alto Networks Inc,N/A,Palo Alto Networks Inc,697435105,,PANW,US,EC,CORP
+Public Storage,N/A,Public Storage,74460D109,,PSA,US,EC,CORP
+Qnity Electronics Inc,N/A,Qnity Electronics Inc,74743L100,,Q,US,EC,CORP
+Ralph Lauren Corp,HO1QNWM0IXBZ0QSMMO20,Ralph Lauren Corp,751212101,US7512121010,RL,US,EC,CORP
+Regeneron Pharmaceuticals Inc,549300RCBFWIRX3HYQ56,Regeneron Pharmaceuticals Inc,75886F107,US75886F1075,REGN,US,EC,CORP
+Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP
+Rollins Inc,N/A,Rollins Inc,775711104,,ROL,US,EC,CORP
+Ross Stores Inc,N/A,Ross Stores Inc,778296103,,ROST,US,EC,CORP
+Salesforce Inc,RCGZFPDMRW58VJ54VR07,Salesforce Inc,79466L302,US79466L3024,CRM,US,EC,CORP
+Charles Schwab Corp/The,N/A,Charles Schwab Corp/The,808513105,,SCHW,US,EC,CORP
+Simon Property Group Inc,N/A,Simon Property Group Inc,828806109,,SPG,US,EC,CORP
+Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
+Steel Dynamics Inc,549300HGGKEL4FYTTQ83,Steel Dynamics Inc,858119100,US8581191009,STLD,US,EC,CORP
+Stryker Corp,N/A,Stryker Corp,863667101,,SYK,US,EC,CORP
+Super Micro Computer Inc,54930022CZO1N2UGVW07,Super Micro Computer Inc,86800U302,US86800U3023,SMCI,US,EC,CORP
+TKO Group Holdings Inc,N/A,TKO Group Holdings Inc,87256C101,,TKO,US,EC,CORP
+Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP
+Texas Instruments Inc,N/A,Texas Instruments Inc,882508104,,TXN,US,EC,CORP
+Texas Pacific Land Corp,N/A,Texas Pacific Land Corp,88262P102,,TPL,US,EC,CORP
+TransDigm Group Inc,N/A,TransDigm Group Inc,893641100,,TDG,US,EC,CORP
+Uber Technologies Inc,N/A,Uber Technologies Inc,90353T100,,UBER,US,EC,CORP
+Veeva Systems Inc,549300YZEXPDB92M2F02,Veeva Systems Inc,922475108,US9224751084,VEEV,US,EC,CORP
+Vertiv Holdings Co,N/A,Vertiv Holdings Co,92537N108,,VRT,US,EC,CORP
+Workday Inc,549300J0DYC0N31V7G13,Workday Inc,98138H101,US98138H1014,WDAY,US,EC,CORP
+Arch Capital Group Ltd,N/A,Arch Capital Group Ltd,N/A,,ACGL,US,EC,CORP
+Carnival Corp Ltd,N/A,Carnival Corp Ltd,N/A,,CCL,BM,EC,CORP
+Garmin Ltd,N/A,Garmin Ltd,N/A,,GRMN,US,EC,CORP
+Royal Caribbean Cruises Ltd,N/A,Royal Caribbean Cruises Ltd,N/A,,RCL,US,EC,CORP
+Seagate Technology Holdings PL,N/A,Seagate Technology Holdings PLC,N/A,,STX,US,EC,CORP

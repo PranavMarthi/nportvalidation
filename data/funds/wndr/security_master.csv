@@ -1,59 +1,59 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-American Airlines Group Inc,N/A,American Airlines Group Inc,02376R102,,AAL,US,EC,CORP
 Airbnb Inc,549300HMUDNO0RY56D37,Airbnb Inc,009066101,US0090661010,ABNB,US,EC,CORP
-Allegiant Travel Co,N/A,Allegiant Travel Co,01748X102,,ALGT,US,EC,CORP
 Alaska Air Group Inc,N/A,Alaska Air Group Inc,011659109,,ALK,US,EC,CORP
-Grupo Aeroportuario del Surest,N/A,Grupo Aeroportuario del Sureste SAB de CV,40051E202,,ASR,US,EC,CORP
+Allegiant Travel Co,N/A,Allegiant Travel Co,01748X102,,ALGT,US,EC,CORP
+American Airlines Group Inc,N/A,American Airlines Group Inc,02376R102,,AAL,US,EC,CORP
 American Express Co,N/A,American Express Co,025816109,,AXP,US,EC,CORP
-Booking Holdings Inc,N/A,Booking Holdings Inc,09857L108,,BKNG,US,EC,CORP
 Avis Budget Group Inc,N/A,Avis Budget Group Inc,053774105,,CAR,US,EC,CORP
-Carnival Corp Ltd,N/A,Carnival Corp Ltd,N/A,,CCL,BM,EC,CORP
-Choice Hotels International In,N/A,Choice Hotels International Inc,169905106,,CHH,US,EC,CORP
-Copa Holdings SA,N/A,Copa Holdings SA,N/A,,CPA,US,EC,CORP
+Booking Holdings Inc,N/A,Booking Holdings Inc,09857L108,,BKNG,US,EC,CORP
 Caesars Entertainment Inc,N/A,Caesars Entertainment Inc,12769G100,,CZR,US,EC,CORP
+Choice Hotels International In,N/A,Choice Hotels International Inc,169905106,,CHH,US,EC,CORP
+Controladora Vuela Cia de Avia,N/A,Controladora Vuela Cia de Aviacion SAB de CV,2.12E+109,,VLRS,US,EC,CORP
 Delta Air Lines Inc,N/A,Delta Air Lines Inc,247361702,,DAL,US,EC,CORP
-Walt Disney Co/The,N/A,Walt Disney Co/The,254687106,,DIS,US,EC,CORP
 DiamondRock Hospitality Co,N/A,DiamondRock Hospitality Co,252784301,,DRH,US,EC,CORP
+Walt Disney Co/The,N/A,Walt Disney Co/The,254687106,,DIS,US,EC,CORP
 Expedia Group Inc,N/A,Expedia Group Inc,30212P303,,EXPE,US,EC,CORP
 Flywire Corp,N/A,Flywire Corp,302492103,,FLYW,US,EC,CORP
-Shift4 Payments Inc,N/A,Shift4 Payments Inc,82452J109,,FOUR,US,EC,CORP
-Six Flags Entertainment Corp,N/A,Six Flags Entertainment Corp,83001C108,,FUN,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
 Global Business Travel Group I,N/A,Global Business Travel Group I,37890B100,,GBTG,US,EC,CORP
-Hyatt Hotels Corp,N/A,Hyatt Hotels Corp,448579102,,H,US,EC,CORP
+Grupo Aeroportuario del Pacifi,N/A,Grupo Aeroportuario del Pacifico SAB de CV,400506101,,PAC,US,EC,CORP
+Grupo Aeroportuario del Surest,N/A,Grupo Aeroportuario del Sureste SAB de CV,40051E202,,ASR,US,EC,CORP
+Hertz Global Holdings Inc,N/A,Hertz Global Holdings Inc,42806J700,,HTZ,US,EC,CORP
 Hilton Grand Vacations Inc,N/A,Hilton Grand Vacations Inc,43283X105,,HGV,US,EC,CORP
 Hilton Worldwide Holdings Inc,N/A,Hilton Worldwide Holdings Inc,43300A203,,HLT,US,EC,CORP
 Host Hotels & Resorts Inc,N/A,Host Hotels & Resorts Inc,44107P104,,HST,US,EC,CORP
 H World Group Ltd,N/A,H World Group Ltd,44332N106,,HTHT,US,EC,CORP
-Hertz Global Holdings Inc,N/A,Hertz Global Holdings Inc,42806J700,,HTZ,US,EC,CORP
+Hyatt Hotels Corp,N/A,Hyatt Hotels Corp,448579102,,H,US,EC,CORP
 InterContinental Hotels Group ,N/A,InterContinental Hotels Group PLC,45857P806,,IHG,US,EC,CORP
 JetBlue Airways Corp,N/A,JetBlue Airways Corp,477143101,,JBLU,US,EC,CORP
-Lindblad Expeditions Holdings ,N/A,Lindblad Expeditions Holdings Inc,535219109,,LIND,US,EC,CORP
-Southwest Airlines Co,N/A,Southwest Airlines Co,844741108,,LUV,US,EC,CORP
 Las Vegas Sands Corp,N/A,Las Vegas Sands Corp,517834107,,LVS,US,EC,CORP
-Lyft Inc,N/A,Lyft Inc,55087P104,,LYFT,US,EC,CORP
+Lindblad Expeditions Holdings ,N/A,Lindblad Expeditions Holdings Inc,535219109,,LIND,US,EC,CORP
 Live Nation Entertainment Inc,N/A,Live Nation Entertainment Inc,538034109,,LYV,US,EC,CORP
-Marriott International Inc/MD,N/A,Marriott International Inc/MD,571903202,,MAR,US,EC,CORP
+Lyft Inc,N/A,Lyft Inc,55087P104,,LYFT,US,EC,CORP
 MGM Resorts International,N/A,MGM Resorts International,552953101,,MGM,US,EC,CORP
-MakeMyTrip Ltd,N/A,MakeMyTrip Ltd,N/A,,MMYT,US,EC,CORP
-Vail Resorts Inc,N/A,Vail Resorts Inc,91879Q109,,MTN,US,EC,CORP
+Marriott Vacations Worldwide C,N/A,Marriott Vacations Worldwide Corp,57164Y107,,VAC,US,EC,CORP
+Marriott International Inc/MD,N/A,Marriott International Inc/MD,571903202,,MAR,US,EC,CORP
 Navan Inc,N/A,Navan Inc,639193101,,NAVN,US,EC,CORP
-Norwegian Cruise Line Holdings,N/A,Norwegian Cruise Line Holdings Ltd,N/A,,NCLH,US,EC,CORP
-Grupo Aeroportuario del Pacifi,N/A,Grupo Aeroportuario del Pacifico SAB de CV,400506101,,PAC,US,EC,CORP
-Pebblebrook Hotel Trust,N/A,Pebblebrook Hotel Trust,70509V100,,PEB,US,EC,CORP
 Park Hotels & Resorts Inc,N/A,Park Hotels & Resorts Inc,700517105,,PK,US,EC,CORP
-United Parks & Resorts Inc,N/A,United Parks & Resorts Inc,81282V100,,PRKS,US,EC,CORP
-Royal Caribbean Cruises Ltd,N/A,Royal Caribbean Cruises Ltd,N/A,,RCL,US,EC,CORP
-Ryman Hospitality Properties I,N/A,Ryman Hospitality Properties Inc,78377T107,,RHP,US,EC,CORP
+Pebblebrook Hotel Trust,N/A,Pebblebrook Hotel Trust,70509V100,,PEB,US,EC,CORP
 RLJ Lodging Trust,N/A,RLJ Lodging Trust,74965L101,,RLJ,US,EC,CORP
 Ryanair Holdings PLC,N/A,Ryanair Holdings PLC,783513203,,RYAAY,US,EC,CORP
+Ryman Hospitality Properties I,N/A,Ryman Hospitality Properties Inc,78377T107,,RHP,US,EC,CORP
+United Parks & Resorts Inc,N/A,United Parks & Resorts Inc,81282V100,,PRKS,US,EC,CORP
+Shift4 Payments Inc,N/A,Shift4 Payments Inc,82452J109,,FOUR,US,EC,CORP
+Six Flags Entertainment Corp,N/A,Six Flags Entertainment Corp,83001C108,,FUN,US,EC,CORP
 SkyWest Inc,N/A,SkyWest Inc,830879102,,SKYW,US,EC,CORP
-TRIP.COM GROUP,N/A,TRIP.COM GROUP,89677Q107,,TCOM,US,EC,CORP
+Southwest Airlines Co,N/A,Southwest Airlines Co,844741108,,LUV,US,EC,CORP
 Travel + Leisure Co,N/A,Travel + Leisure Co,894164102,,TNL,US,EC,CORP
+TRIP.COM GROUP,N/A,TRIP.COM GROUP,89677Q107,,TCOM,US,EC,CORP
 TripAdvisor Inc,N/A,TripAdvisor Inc,896945201,,TRIP,US,EC,CORP
-United Airlines Holdings Inc,N/A,United Airlines Holdings Inc,910047109,,UAL,US,EC,CORP
 Uber Technologies Inc,N/A,Uber Technologies Inc,90353T100,,UBER,US,EC,CORP
-Marriott Vacations Worldwide C,N/A,Marriott Vacations Worldwide Corp,57164Y107,,VAC,US,EC,CORP
-Viking Holdings Ltd,N/A,Viking Holdings Ltd,N/A,,VIK,US,EC,CORP
-Controladora Vuela Cia de Avia,N/A,Controladora Vuela Cia de Aviacion SAB de CV,21240E105,,VLRS,US,EC,CORP
+United Airlines Holdings Inc,N/A,United Airlines Holdings Inc,910047109,,UAL,US,EC,CORP
+Vail Resorts Inc,N/A,Vail Resorts Inc,91879Q109,,MTN,US,EC,CORP
 Wyndham Hotels & Resorts Inc,N/A,Wyndham Hotels & Resorts Inc,98311A105,,WH,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Carnival Corp Ltd,N/A,Carnival Corp Ltd,N/A,,CCL,BM,EC,CORP
+Copa Holdings SA,N/A,Copa Holdings SA,N/A,,CPA,US,EC,CORP
+MakeMyTrip Ltd,N/A,MakeMyTrip Ltd,N/A,,MMYT,US,EC,CORP
+Norwegian Cruise Line Holdings,N/A,Norwegian Cruise Line Holdings Ltd,N/A,,NCLH,US,EC,CORP
+Royal Caribbean Cruises Ltd,N/A,Royal Caribbean Cruises Ltd,N/A,,RCL,US,EC,CORP
+Viking Holdings Ltd,N/A,Viking Holdings Ltd,N/A,,VIK,US,EC,CORP

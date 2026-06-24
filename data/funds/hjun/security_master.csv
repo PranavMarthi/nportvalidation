@@ -1,0 +1,6 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,
+United States Treasury Note/Bo,254900HROIFWPRGM1V77,United States Treasury Note/Bond 0.5% 05/31/2027,912828ZS2,,,US,DBT,UST,,,,,,,,,,,,
+SPY 05/28/2027 151.71 C,N/A,SPY 05/28/2027 151.71 C,N/A,,SPY-C151.71-20270528,US,DE,CORP,OPT,,,Call,Purchased,151.71,USD,2027-05-28,,indexBasket,S&P 500 Index,SPX
+SPY 05/28/2027 819.68 C,N/A,SPY 05/28/2027 819.68 C,N/A,,SPY-C819.68-20270528,US,DE,CORP,OPT,,,Call,Written,819.68,USD,2027-05-28,,indexBasket,S&P 500 Index,SPX
+SPY 05/28/2027 758.54 P,N/A,SPY 05/28/2027 758.54 P,N/A,,SPY-P758.54-20270528,US,DE,CORP,OPT,,,Put,Purchased,758.54,USD,2027-05-28,,indexBasket,S&P 500 Index,SPX

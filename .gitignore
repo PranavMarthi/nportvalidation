@@ -8,3 +8,6 @@ build/
 .DS_Store
 .claude/
 output/
+
+# Excel lock files
+~$*

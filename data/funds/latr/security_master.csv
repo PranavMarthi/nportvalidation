@@ -2,22 +2,22 @@ name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
 Affirm Holdings Inc,N/A,Affirm Holdings Inc,00827B106,,AFRM,US,EC,CORP
 Bread Financial Holdings Inc,N/A,Bread Financial Holdings Inc,018581108,,BFH,US,EC,CORP
 FinVolution Group,N/A,FinVolution Group,31810T101,,FINV,US,EC,CORP
-Klarna Group PLC,N/A,Klarna Group PLC,N/A,,KLAR,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
 Kaspi.KZ JSC,N/A,Kaspi.KZ JSC,48581R205,,KSPI,US,EC,CORP
+Marqeta Inc,N/A,Marqeta Inc,57142B104,,MQ,US,EC,CORP
 Mastercard Inc,N/A,Mastercard Inc,57636Q104,,MA,US,EC,CORP
 MercadoLibre Inc,549300DKPDN9M5S8GB14,MercadoLibre Inc,58733R102,US58733R1023,MELI,UY,EC,CORP
 Mitek Systems Inc,N/A,Mitek Systems Inc,606710200,,MITK,US,EC,CORP
-Marqeta Inc,N/A,Marqeta Inc,57142B104,,MQ,US,EC,CORP
-NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,N/A,KYG6683N1034,NU,BR,EC,CORP
 OneMain Holdings Inc,N/A,OneMain Holdings Inc,68268W103,,OMF,US,EC,CORP
 OppFi Inc,N/A,OppFi Inc,68386H103,,OPFI,US,EC,CORP
-Pagaya Technologies Ltd,N/A,Pagaya Technologies Ltd,N/A,,PGY,US,EC,CORP
 PayPal Holdings Inc,N/A,PayPal Holdings Inc,70450Y103,,PYPL,US,EC,CORP
-Sea Ltd,N/A,Sea Ltd,81141R100,,SE,US,EC,CORP
 Sezzle Inc,N/A,Sezzle Inc,78435P105,,SEZL,US,EC,CORP
+Sea Ltd,N/A,Sea Ltd,81141R100,,SE,US,EC,CORP
 Shopify Inc,549300HGQ43STJLLP808,Shopify Inc,82509L107,CA82509L1076,SHOP,CA,EC,CORP
+Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
 Synchrony Financial,N/A,Synchrony Financial,87165B103,,SYF,US,EC,CORP
 Upstart Holdings Inc,N/A,Upstart Holdings Inc,91680M107,,UPST,US,EC,CORP
 Visa Inc,N/A,Visa Inc,92826C839,,V,US,EC,CORP
-Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Klarna Group PLC,N/A,Klarna Group PLC,N/A,,KLAR,US,EC,CORP
+NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,N/A,KYG6683N1034,NU,BR,EC,CORP
+Pagaya Technologies Ltd,N/A,Pagaya Technologies Ltd,N/A,,PGY,US,EC,CORP

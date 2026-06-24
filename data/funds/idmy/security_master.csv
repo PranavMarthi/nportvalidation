@@ -1,7 +1,7 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
 First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,
-EFA 04/30/2027 20.41 C,N/A,EFA 04/30/2027 20.41 C,N/A,,EFA-C20.41-20270430,US,DE,CORP,OPT,,,Call,Purchased,20.41,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA
-EFA 04/30/2027 118.37 C,N/A,EFA 04/30/2027 118.37 C,N/A,,EFA-C118.37-20270430,US,DE,CORP,OPT,,,Call,Written,118.37,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA
-EFA 04/30/2027 86.73 P,N/A,EFA 04/30/2027 86.73 P,N/A,,EFA-P86.73-20270430,US,DE,CORP,OPT,,,Put,Written,86.73,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA
-EFA 04/30/2027 102.04 P,N/A,EFA 04/30/2027 102.04 P,N/A,,EFA-P102.04-20270430,US,DE,CORP,OPT,,,Put,Purchased,102.04,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA
 United States Treasury Note/Bo,254900HROIFWPRGM1V77,United States Treasury Note/Bond 3.75% 04/30/2027,91282CMY4,,,US,DBT,UST,,,,,,,,,,,,
+EFA 04/30/2027 118.37 C,N/A,EFA 04/30/2027 118.37 C,N/A,,EFA-C118.37-20270430,US,DE,CORP,OPT,,,Call,Written,118.37,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA
+EFA 04/30/2027 20.41 C,N/A,EFA 04/30/2027 20.41 C,N/A,,EFA-C20.41-20270430,US,DE,CORP,OPT,,,Call,Purchased,20.41,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA
+EFA 04/30/2027 102.04 P,N/A,EFA 04/30/2027 102.04 P,N/A,,EFA-P102.04-20270430,US,DE,CORP,OPT,,,Put,Purchased,102.04,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA
+EFA 04/30/2027 86.73 P,N/A,EFA 04/30/2027 86.73 P,N/A,,EFA-P86.73-20270430,US,DE,CORP,OPT,,,Put,Written,86.73,USD,2027-04-30,,indexBasket,MSCI EAFE Index,MXEA

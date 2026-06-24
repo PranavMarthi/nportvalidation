@@ -1,59 +1,59 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-American International Group I,N/A,American International Group Inc,026874784,,AIG,US,EC,CORP
-Assurant Inc,N/A,Assurant Inc,04621X108,,AIZ,US,EC,CORP
-Apollo Global Management Inc,254900LMFT1CY9IYB476,Apollo Global Management Inc,03769M106,US03769M1062,APO,US,EC,CORP
 American Express Co,N/A,American Express Co,025816109,,AXP,US,EC,CORP
+American International Group I,N/A,American International Group Inc,026874784,,AIG,US,EC,CORP
+Annaly Capital Management Inc,N/A,Annaly Capital Management Inc,035710839,,NLY,US,EC,CORP
+Apollo Global Management Inc,254900LMFT1CY9IYB476,Apollo Global Management Inc,03769M106,US03769M1062,APO,US,EC,CORP
+Assurant Inc,N/A,Assurant Inc,04621X108,,AIZ,US,EC,CORP
 Axsome Therapeutics Inc,N/A,Axsome Therapeutics Inc,05464T104,,AXSM,US,EC,CORP
-BGC Group Inc,N/A,BGC Group Inc,088929104,,BGC,US,EC,CORP
-Blackrock Inc,529900VBK42Y5HHRMD23,Blackrock Inc,09290D101,US09290D1019,BLK,US,EC,CORP
-Bristol-Myers Squibb Co,N/A,Bristol-Myers Squibb Co,110122108,,BMY,US,EC,CORP
 Bank of New York Mellon Corp/T,N/A,Bank of New York Mellon Corp/The,064058100,,BNY,US,EC,CORP
-Brixmor Property Group Inc,N/A,Brixmor Property Group Inc,11120U105,,BRX,US,EC,CORP
+BGC Group Inc,N/A,BGC Group Inc,088929104,,BGC,US,EC,CORP
 Blackstone Inc,5299004LW4QWGZUB8Y96,Blackstone Inc,09260D107,US09260D1072,BX,US,EC,CORP
+Blackrock Inc,529900VBK42Y5HHRMD23,Blackrock Inc,09290D101,US09290D1019,BLK,US,EC,CORP
+Blue Owl Capital Inc,N/A,Blue Owl Capital Inc,09581B103,,OWL,US,EC,CORP
+Bristol-Myers Squibb Co,N/A,Bristol-Myers Squibb Co,110122108,,BMY,US,EC,CORP
+Brixmor Property Group Inc,N/A,Brixmor Property Group Inc,11120U105,,BRX,US,EC,CORP
 Citigroup Inc,N/A,Citigroup Inc,172967424,,C,US,EC,CORP
 Colgate-Palmolive Co,N/A,Colgate-Palmolive Co,194162103,,CL,US,EC,CORP
 Compass Inc,N/A,Compass Inc,20464U100,,COMP,US,EC,CORP
+Consolidated Edison Inc,N/A,Consolidated Edison Inc,209115104,,ED,US,EC,CORP
 Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
 DigitalOcean Holdings Inc,N/A,DigitalOcean Holdings Inc,25402D102,,DOCN,US,EC,CORP
-Consolidated Edison Inc,N/A,Consolidated Edison Inc,209115104,,ED,US,EC,CORP
-Estee Lauder Cos Inc/The,N/A,Estee Lauder Cos Inc/The,518439104,,EL,US,EC,CORP
 Etsy Inc,N/A,Etsy Inc,29786A106,,ETSY,US,EC,CORP
 Evercore Inc,N/A,Evercore Inc,29977A105,,EVR,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
 Fox Corp,N/A,Fox Corp,35137L105,,FOXA,US,EC,CORP
 Goldman Sachs Group Inc/The,N/A,Goldman Sachs Group Inc/The,38141G104,,GS,US,EC,CORP
-Jefferies Financial Group Inc,N/A,Jefferies Financial Group Inc,47233W109,,JEF,US,EC,CORP
 JPMORGAN CHASE & CO.,N/A,JPMORGAN CHASE & CO.,46625H100,,JPM,US,EC,CORP
+Jefferies Financial Group Inc,N/A,Jefferies Financial Group Inc,47233W109,,JEF,US,EC,CORP
 KKR & Co Inc,N/A,KKR & Co Inc,48251W104,,KKR,US,EC,CORP
-Loews Corp,N/A,Loews Corp,540424108,,L,US,EC,CORP
+Estee Lauder Cos Inc/The,N/A,Estee Lauder Cos Inc/The,518439104,,EL,US,EC,CORP
 Lazard Inc,N/A,Lazard Inc,52110M109,,LAZ,US,EC,CORP
-Moelis & Co,N/A,Moelis & Co,60786M105,,MC,US,EC,CORP
-Moody's Corp,N/A,Moody's Corp,615369105,,MCO,US,EC,CORP
-MongoDB Inc,N/A,MongoDB Inc,60937P106,,MDB,US,EC,CORP
-MetLife Inc,N/A,MetLife Inc,59156R108,,MET,US,EC,CORP
-MarketAxess Holdings Inc,N/A,MarketAxess Holdings Inc,57060D108,,MKTX,US,EC,CORP
-Marsh & McLennan Cos Inc,N/A,Marsh & McLennan Cos Inc,571748102,,MRSH,US,EC,CORP
-Morgan Stanley,N/A,Morgan Stanley,617446448,,MS,US,EC,CORP
+Loews Corp,N/A,Loews Corp,540424108,,L,US,EC,CORP
 MSCI Inc,549300HTIN2PD78UB763,MSCI Inc,55354G100,US55354G1004,MSCI,US,EC,CORP
 Madison Square Garden Sports C,N/A,Madison Square Garden Sports Corp,55825T103,,MSGS,US,EC,CORP
+MarketAxess Holdings Inc,N/A,MarketAxess Holdings Inc,57060D108,,MKTX,US,EC,CORP
+Marsh & McLennan Cos Inc,N/A,Marsh & McLennan Cos Inc,571748102,,MRSH,US,EC,CORP
+MetLife Inc,N/A,MetLife Inc,59156R108,,MET,US,EC,CORP
+Moelis & Co,N/A,Moelis & Co,60786M105,,MC,US,EC,CORP
+MongoDB Inc,N/A,MongoDB Inc,60937P106,,MDB,US,EC,CORP
+Moody's Corp,N/A,Moody's Corp,615369105,,MCO,US,EC,CORP
+Morgan Stanley,N/A,Morgan Stanley,617446448,,MS,US,EC,CORP
 Nasdaq Inc,N/A,Nasdaq Inc,631103108,,NDAQ,US,EC,CORP
-Annaly Capital Management Inc,N/A,Annaly Capital Management Inc,035710839,,NLY,US,EC,CORP
-News Corp,N/A,News Corp,65249B109,,NWSA,US,EC,CORP
+Rithm Capital Corp,N/A,Rithm Capital Corp,64828T201,,RITM,US,EC,CORP
 New York Times Co/The,N/A,New York Times Co/The,650111107,,NYT,US,EC,CORP
+News Corp,N/A,News Corp,65249B109,,NWSA,US,EC,CORP
 Omnicom Group Inc,N/A,Omnicom Group Inc,681919106,,OMC,US,EC,CORP
-Blue Owl Capital Inc,N/A,Blue Owl Capital Inc,09581B103,,OWL,US,EC,CORP
-Pfizer Inc,N/A,Pfizer Inc,717081103,,PFE,US,EC,CORP
 PJT Partners Inc,N/A,PJT Partners Inc,69343T107,,PJT,US,EC,CORP
 Paramount Skydance Corp,N/A,Paramount Skydance Corp,69932A204,,PSKY,US,EC,CORP
-Rithm Capital Corp,N/A,Rithm Capital Corp,64828T201,,RITM,US,EC,CORP
+Pfizer Inc,N/A,Pfizer Inc,717081103,,PFE,US,EC,CORP
 Ralph Lauren Corp,HO1QNWM0IXBZ0QSMMO20,Ralph Lauren Corp,751212101,US7512121010,RL,US,EC,CORP
-StoneX Group Inc,N/A,StoneX Group Inc,861896108,,SNEX,US,EC,CORP
 S&P Global Inc,N/A,S&P Global Inc,78409V104,,SPGI,US,EC,CORP
+Travelers Cos Inc/The,N/A,Travelers Cos Inc/The,8.94E+113,,TRV,US,EC,CORP
+StoneX Group Inc,N/A,StoneX Group Inc,861896108,,SNEX,US,EC,CORP
 Tapestry Inc,N/A,Tapestry Inc,876030107,,TPR,US,EC,CORP
-Travelers Cos Inc/The,N/A,Travelers Cos Inc/The,89417E109,,TRV,US,EC,CORP
 Tradeweb Markets Inc,N/A,Tradeweb Markets Inc,892672106,,TW,US,EC,CORP
+Verizon Communications Inc,N/A,Verizon Communications Inc,92343V104,,VZ,US,EC,CORP
 VICI Properties Inc,N/A,VICI Properties Inc,925652109,,VICI,US,EC,CORP
 Virtu Financial Inc,N/A,Virtu Financial Inc,928254101,,VIRT,US,EC,CORP
-Verizon Communications Inc,N/A,Verizon Communications Inc,92343V104,,VZ,US,EC,CORP
-Warner Bros Discovery Inc,N/A,Warner Bros Discovery Inc,934423104,,WBD,US,EC,CORP
 WP Carey Inc,N/A,WP Carey Inc,92936U109,,WPC,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Warner Bros Discovery Inc,N/A,Warner Bros Discovery Inc,934423104,,WBD,US,EC,CORP

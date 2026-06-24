@@ -16,6 +16,7 @@ from nport.config import (
     parse_filing,
     parse_holdings,
 )
+from nport.cusip import is_valid_cusip
 from nport.models import FilingData, FundConfig, Holding
 from nport.schema import FIELD_SPECS
 from nport.security_master import SecurityMaster
@@ -261,6 +262,22 @@ def merge_positions_with_master(
         for field, value in ref.items():
             if merged.get(field, "") == "" and value:
                 merged[field] = value
+
+        # A valid CUSIP in the master overrides an invalid one from the
+        # custodian (e.g. a spreadsheet-corrupted value the custodian feed
+        # couldn't self-recover). The operator's master entry wins.
+        master_cusip = ref.get("cusip", "")
+        if (
+            is_valid_cusip(master_cusip)
+            and not is_valid_cusip(merged.get("cusip", ""))
+            and merged.get("cusip", "") not in ("N/A", "000000000")
+        ):
+            warnings.append(
+                f"{name}: replaced invalid CUSIP "
+                f"'{merged.get('cusip', '')}' with master value '{master_cusip}'."
+            )
+            merged["cusip"] = master_cusip
+
         enriched.append(merged)
 
     return enriched, warnings

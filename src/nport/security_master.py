@@ -4,6 +4,7 @@ import csv
 from pathlib import Path
 
 from nport.config import _HOLDINGS_KEY_MAP
+from nport.cusip import normalize_cusip
 from nport.input_validation import _CUSIP_RE, _ISIN_RE, _LEI_RE
 
 
@@ -31,10 +32,20 @@ class SecurityMaster:
                 for csv_key, value in row.items():
                     field = _HOLDINGS_KEY_MAP.get(csv_key, csv_key)
                     record[field] = value
+                # Repair spreadsheet-corrupted CUSIPs on load, recovering
+                # scientific-notation cases from the row's own ISIN where
+                # possible, so a master re-saved through Excel still keys
+                # and validates correctly.
+                isin = record.get("isin", "")
+                fixed_cusip, warning = normalize_cusip(record.get("cusip", ""), isin)
+                record["cusip"] = fixed_cusip
+                if warning:
+                    name = record.get("name", f"row {len(self._records) + 1}")
+                    self._warnings.append(f"{name}: {warning}")
+
                 self._records.append(record)
 
                 cusip = record.get("cusip", "")
-                isin = record.get("isin", "")
                 ticker = record.get("ticker", "")
 
                 name = record.get("name", f"row {len(self._records)}")

@@ -1,0 +1,3 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refInstType,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,
+N/A,N/A,STATE STREET SPDR S&P BIOTECH ETF-SWAP-CANT-L,N/A,,78464A870-TRS-12/01/27-L-CANT,US,DE,OTHER,SWP,,,Y,2027-12-01,,USD,,,,,,,,,,,,,otherRefInst,STATE STREET SPDR S&P BIOTECH ETF,STATE STREET SPDR S&P BIOTECH ETF,78464A870,,

@@ -1,36 +1,36 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
 ADT Inc,N/A,ADT Inc,00090Q103,,ADT,US,EC,CORP
-Powerfleet Inc NJ,N/A,Powerfleet Inc NJ,73931J109,,AIOT,US,EC,CORP
 Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP
-Booz Allen Hamilton Holding Co,N/A,Booz Allen Hamilton Holding Corp,099502106,,BAH,US,EC,CORP
 BIGBEAR.AI HOLDINGS INC,N/A,BIGBEAR.AI HOLDINGS INC,08975B109,,BBAI,US,EC,CORP
 BlackSky Technology Inc,N/A,BlackSky Technology Inc,09263B207,,BKSY,US,EC,CORP
+Booz Allen Hamilton Holding Co,N/A,Booz Allen Hamilton Holding Corp,099502106,,BAH,US,EC,CORP
 CACI International Inc,N/A,CACI International Inc,127190304,,CACI,US,EC,CORP
-Cognyte Software Ltd,N/A,Cognyte Software Ltd,N/A,,CGNT,IL,EC,CORP
-Cellebrite DI Ltd,N/A,Cellebrite DI Ltd,N/A,,CLBT,IL,EC,CORP
+Clear Secure Inc,N/A,Clear Secure Inc,18467V109,,YOU,US,EC,CORP
 Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
 Digi International Inc,N/A,Digi International Inc,253798102,,DGII,US,EC,CORP
 Dynatrace Inc,N/A,Dynatrace Inc,268150109,,DT,US,EC,CORP
-Elastic NV,N/A,Elastic NV,N/A,,ESTC,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
 Identiv Inc,N/A,Identiv Inc,45170X205,,INVE,US,EC,CORP
-Samsara Inc,N/A,Samsara Inc,79589L106,,IOT,US,EC,CORP
-Leidos Holdings Inc,N/A,Leidos Holdings Inc,525327102,,LDOS,US,EC,CORP
+Impinj Inc,N/A,Impinj Inc,453204109,,PI,US,EC,CORP
 L3Harris Technologies Inc,N/A,L3Harris Technologies Inc,502431109,,LHX,US,EC,CORP
+Leidos Holdings Inc,N/A,Leidos Holdings Inc,525327102,,LDOS,US,EC,CORP
 Mitek Systems Inc,N/A,Mitek Systems Inc,606710200,,MITK,US,EC,CORP
 Motorola Solutions Inc,N/A,Motorola Solutions Inc,620076307,,MSI,US,EC,CORP
-NIQ Global Intelligence Plc,N/A,NIQ Global Intelligence Plc,N/A,,NIQ,US,EC,CORP
 OSI Systems Inc,N/A,OSI Systems Inc,671044105,,OSIS,US,EC,CORP
-Impinj Inc,N/A,Impinj Inc,453204109,,PI,US,EC,CORP
-Planet Labs PBC,N/A,Planet Labs PBC,72703X106,,PL,US,EC,CORP
 Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP
-Riskified Ltd,N/A,Riskified Ltd,N/A,,RSKD,US,EC,CORP
+Planet Labs PBC,N/A,Planet Labs PBC,72703X106,,PL,US,EC,CORP
+Powerfleet Inc NJ,N/A,Powerfleet Inc NJ,73931J109,,AIOT,US,EC,CORP
 SailPoint Inc,N/A,SailPoint Inc,78781J109,,SAIL,US,EC,CORP
+Samsara Inc,N/A,Samsara Inc,79589L106,,IOT,US,EC,CORP
 Satellogic Inc,N/A,Satellogic Inc,80401C100,,SATL,US,EC,CORP
 Spire Global Inc,N/A,Spire Global Inc,848560306,,SPIR,US,EC,CORP
 Teledyne Technologies Inc,N/A,Teledyne Technologies Inc,879360105,,TDY,US,EC,CORP
 Trimble Inc,N/A,Trimble Inc,896239100,,TRMB,US,EC,CORP
 Tyler Technologies Inc,N/A,Tyler Technologies Inc,902252105,,TYL,US,EC,CORP
 Varonis Systems Inc,N/A,Varonis Systems Inc,922280102,,VRNS,US,EC,CORP
-Clear Secure Inc,N/A,Clear Secure Inc,18467V109,,YOU,US,EC,CORP
 Zebra Technologies Corp,N/A,Zebra Technologies Corp,989207105,,ZBRA,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Cognyte Software Ltd,N/A,Cognyte Software Ltd,N/A,,CGNT,IL,EC,CORP
+Cellebrite DI Ltd,N/A,Cellebrite DI Ltd,N/A,,CLBT,IL,EC,CORP
+Elastic NV,N/A,Elastic NV,N/A,,ESTC,US,EC,CORP
+NIQ Global Intelligence Plc,N/A,NIQ Global Intelligence Plc,N/A,,NIQ,US,EC,CORP
+Riskified Ltd,N/A,Riskified Ltd,N/A,,RSKD,US,EC,CORP

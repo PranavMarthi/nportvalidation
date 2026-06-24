@@ -1,31 +1,31 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
 AST SpaceMobile Inc,N/A,AST SpaceMobile Inc,00217D100,,ASTS,US,EC,CORP
-BlackSky Technology Inc,N/A,BlackSky Technology Inc,09263B207,,BKSY,US,EC,CORP
 BWX Technologies Inc,N/A,BWX Technologies Inc,05605H100,,BWXT,US,EC,CORP
-Frequency Electronics Inc,N/A,Frequency Electronics Inc,358010106,,FEIM,US,EC,CORP
+BlackSky Technology Inc,N/A,BlackSky Technology Inc,09263B207,,BKSY,US,EC,CORP
+EchoStar Corp,549300EE20907QZ9GT38,EchoStar Corp,278768106,US2787681061,SATS,US,EC,CORP
 Firefly Aerospace Inc,N/A,Firefly Aerospace Inc,31816X106,,FLY,US,EC,CORP
-Gilat Satellite Networks Ltd,N/A,Gilat Satellite Networks Ltd,N/A,,GILT,US,EC,CORP
-Gogo Inc,N/A,Gogo Inc,38046C109,,GOGO,US,EC,CORP
-Garmin Ltd,N/A,Garmin Ltd,N/A,,GRMN,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Frequency Electronics Inc,N/A,Frequency Electronics Inc,358010106,,FEIM,US,EC,CORP
 Globalstar Inc,N/A,Globalstar Inc,378973507,,GSAT,US,EC,CORP
+Gogo Inc,N/A,Gogo Inc,38046C109,,GOGO,US,EC,CORP
+Intuitive Machines Inc,N/A,Intuitive Machines Inc,46125A100,,LUNR,US,EC,CORP
 Iridium Communications Inc,N/A,Iridium Communications Inc,46269C102,,IRDM,US,EC,CORP
 Lockheed Martin Corp,N/A,Lockheed Martin Corp,539830109,,LMT,US,EC,CORP
-Intuitive Machines Inc,N/A,Intuitive Machines Inc,46125A100,,LUNR,US,EC,CORP
 MDA Space Ltd,N/A,MDA Space Ltd,55293N109,,MDA,US,EC,CORP
-Mercury Systems Inc,N/A,Mercury Systems Inc,589378108,,MRCY,US,EC,CORP
 MACOM Technology Solutions Hol,N/A,MACOM Technology Solutions Holdings Inc,55405Y100,,MTSI,US,EC,CORP
+Mercury Systems Inc,N/A,Mercury Systems Inc,589378108,,MRCY,US,EC,CORP
 Planet Labs PBC,N/A,Planet Labs PBC,72703X106,,PL,US,EC,CORP
 Redwire Corp,N/A,Redwire Corp,75776W103,,RDW,US,EC,CORP
 Rocket Lab Corp,254900LNRW7906KUMM93,Rocket Lab Corp,773121108,US7731211089,RKLB,US,EC,CORP
 Satellogic Inc,N/A,Satellogic Inc,80401C100,,SATL,US,EC,CORP
-EchoStar Corp,549300EE20907QZ9GT38,EchoStar Corp,278768106,US2787681061,SATS,US,EC,CORP
 Sidus Space Inc,N/A,Sidus Space Inc,826165201,,SIDU,US,EC,CORP
 Sirius XM Holdings Inc,N/A,Sirius XM Holdings Inc,829933100,,SIRI,US,EC,CORP
-Virgin Galactic Holdings Inc,N/A,Virgin Galactic Holdings Inc,92766K403,,SPCE,US,EC,CORP
 Spire Global Inc,N/A,Spire Global Inc,848560306,,SPIR,US,EC,CORP
-Trimble Inc,N/A,Trimble Inc,896239100,,TRMB,US,EC,CORP
 Telesat Corp,N/A,Telesat Corp,879512309,,TSAT,US,EC,CORP
-Voyager Technologies Inc,N/A,Voyager Technologies Inc,92892B103,,VOYG,US,EC,CORP
+Trimble Inc,N/A,Trimble Inc,896239100,,TRMB,US,EC,CORP
 Viasat Inc,N/A,Viasat Inc,92552V100,,VSAT,US,EC,CORP
+Virgin Galactic Holdings Inc,N/A,Virgin Galactic Holdings Inc,92766K403,,SPCE,US,EC,CORP
+Voyager Technologies Inc,N/A,Voyager Technologies Inc,92892B103,,VOYG,US,EC,CORP
 York Space Systems Inc,N/A,York Space Systems Inc,987084100,,YSS,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Gilat Satellite Networks Ltd,N/A,Gilat Satellite Networks Ltd,N/A,,GILT,US,EC,CORP
+Garmin Ltd,N/A,Garmin Ltd,N/A,,GRMN,US,EC,CORP
