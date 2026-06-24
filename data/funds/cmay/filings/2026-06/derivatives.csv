@@ -1,0 +1,5 @@
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+SPY-C143.73-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,118058.22,Call,Purchased,N/A,143.73,USD,2027-04-30,0.5400,indexBasket,S&P 500 Index,SPX
+SPY-C797.71-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,2090.65,Call,Written,N/A,797.71,USD,2027-04-30,0.6000,indexBasket,S&P 500 Index,SPX
+SPY-P610.86-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,2550.25,Put,Written,N/A,610.86,USD,2027-04-30,-0.6200,indexBasket,S&P 500 Index,SPX
+SPY-P718.66-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,3982.06,Put,Purchased,N/A,718.66,USD,2027-04-30,-0.7100,indexBasket,S&P 500 Index,SPX

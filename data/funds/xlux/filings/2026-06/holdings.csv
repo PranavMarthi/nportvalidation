@@ -1,0 +1,3 @@
+holdingId,name,lei,title,cusip,isin,ticker,balance,units,curCd,valUSD,pctVal,payoffProfile,assetCat,issuerCat,invCountry,isRestrictedSec,fairValLevel,isCashCollateral,isNonCashCollateral,isLoanByFund,issuerConditionalDesc,otherDesc,otherValue
+81369Y886-TRS-07/07/27-L-CLST,N/A,N/A,STATE STREET UTILITIES SELECT SECTOR SPDR ETF-SWAP-CLST-L,N/A,,81369Y886-TRS-07/07/27-L-CLST,1,NC,USD,1044435.6,200.05,N/A,DE,OTHER,US,N,2,N,N,N,N/A,USER DEFINED,81369Y886-TRS-07/07/27-L-CLST
+FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,100000,NS,USD,100000,19.15,Long,STIV,RF,US,N,1,N,N,N,,,

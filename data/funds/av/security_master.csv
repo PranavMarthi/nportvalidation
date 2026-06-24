@@ -1,41 +1,41 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AAR Corp,MP76T5YQX3YK5VVAQ802,AAR Corp,000361105,US0003611052,AIR,US,EC,CORP
-Alaska Air Group Inc,529900G48RT4KWLC6C27,Alaska Air Group Inc,011659109,US0116591092,ALK,US,EC,CORP
-ATI Inc,ZW1LRE7C3H17O2ZN9B45,ATI Inc,01741R102,US01741R1023,ATI,US,EC,CORP
-Allegiant Travel Co,549300JM9OZXOHWL2K18,Allegiant Travel Co,01748X102,US01748X1028,ALGT,US,EC,CORP
-American Airlines Group Inc,IWUQB36BXD6OWD6X4T14,American Airlines Group Inc,02376R102,US02376R1023,AAL,US,EC,CORP
-Boeing Co/The,RVHJWBXLJ1RFUBSY1F30,Boeing Co/The,097023105,US0970231058,BA,US,EC,CORP
-CAE Inc,549300FFM2BEH2GF1E44,CAE Inc,124765108,CA1247651088,CAE,US,EC,CORP
-Carpenter Technology Corp,DX6I6ZD3X5WNNCDJKP85,Carpenter Technology Corp,144285103,US1442851036,CRS,US,EC,CORP
-Delta Air Lines Inc,Q2CCMS6R0AS67HJMBN42,Delta Air Lines Inc,247361702,US2473617023,DAL,US,EC,CORP
-Ducommun Inc,549300Z71HMWF90S2214,Ducommun Inc,264147109,US2641471097,DCO,US,EC,CORP
-Embraer SA,549300EM51WYXFHUY333,Embraer SA,29082A107,US29082A1079,EMBJ,US,EC,CORP
-FedEx Corp,549300E707U7WNPZN687,FedEx Corp,31428X106,US31428X1063,FDX,US,EC,CORP
-Fedex Freight Holding Co Inc,984500Y1DA5A58ICE336,Fedex Freight Holding Co Inc,314352105,,FDXF-W,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Frontier Group Holdings Inc,549300DT3Y2BHO6G7T02,Frontier Group Holdings Inc,35909R108,US35909R1086,ULCC,US,EC,CORP
-General Dynamics Corp,9C1X8XOOTYY2FNYTVH06,General Dynamics Corp,369550108,US3695501086,GD,US,EC,CORP
-GE AEROSPACE,3C7474T6CDKPR9K6YT90,GE AEROSPACE,369604301,US3696043013,GE,US,EC,CORP
-Grupo Aeroportuario del Pacifi,4469000001BZ368XFI90,Grupo Aeroportuario del Pacifico SAB de CV,400506101,US4005061019,PAC,US,EC,CORP
-Grupo Aeroportuario del Surest,5299001W7JIDXCUOUC82,Grupo Aeroportuario del Sureste SAB de CV,40051E202,US40051E2028,ASR,US,EC,CORP
-HEICO Corp,529900O1DTDLCJ7L0I14,HEICO Corp,422806109,US4228061093,HEI,US,EC,CORP
-Hexcel Corp,S6Q7LW43WUBUHXY2QP69,Hexcel Corp,428291108,US4282911084,HXL,US,EC,CORP
-Howmet Aerospace Inc,549300HO5WFZUT5N2T22,Howmet Aerospace Inc,443201108,US4432011082,HWM,US,EC,CORP
-JetBlue Airways Corp,54930070J9H97ZO93T57,JetBlue Airways Corp,477143101,US4771431016,JBLU,US,EC,CORP
-Loar Holdings Inc,N/A,Loar Holdings Inc,53947R105,US53947R1059,LOAR,US,EC,CORP
-Lockheed Martin Corp,DPRBOZP0K5RM2YE8UU08,Lockheed Martin Corp,539830109,US5398301094,LMT,US,EC,CORP
-Moog Inc,549300WM2I4U7OBAHG07,Moog Inc,615394202,US6153942023,MOG/A,US,EC,CORP
-Northrop Grumman Corp,RIMU48P07456QXSO0R61,Northrop Grumman Corp,666807102,US6668071029,NOC,US,EC,CORP
-RTX Corp,I07WOS4YJ0N7YRFE7309,RTX Corp,75513E101,US75513E1010,RTX,US,EC,CORP
-Ryanair Holdings PLC,635400BR2ROC1FVEBQ56,Ryanair Holdings PLC,783513203,US7835132033,RYAAY,US,EC,CORP
-SkyWest Inc,529900UYS2KGS6Z42P09,SkyWest Inc,830879102,US8308791024,SKYW,US,EC,CORP
-Southwest Airlines Co,UDTZ87G0STFETI6HGH41,Southwest Airlines Co,844741108,US8447411088,LUV,US,EC,CORP
-Textron Inc,3PPKBHUG1HD6BO7RNR87,Textron Inc,883203101,US8832031012,TXT,US,EC,CORP
-TransDigm Group Inc,N/A,TransDigm Group Inc,893641100,US8936411003,TDG,US,EC,CORP
-United Airlines Holdings Inc,98450079DA0B78DD6764,United Airlines Holdings Inc,910047109,US9100471096,UAL,US,EC,CORP
-United Parcel Service Inc,D01LMJZU09ULLNCY6Z23,United Parcel Service Inc,911312106,US9113121068,UPS,US,EC,CORP
-Woodward Inc,YPYKXXTR8TFDH54ZMB45,Woodward Inc,980745103,US9807451037,WWD,US,EC,CORP
-AerCap Holdings NV,549300SZYINBBLJQU475,AerCap Holdings NV,N/A,NL0000687663,AER,NL,EC,CORP
-Copa Holdings SA,529900BB9UQJV6QQHA59,Copa Holdings SA,N/A,PAP310761054,CPA,US,EC,CORP
-FTAI Aviation Ltd,N/A,FTAI Aviation Ltd,N/A,KYG3730V1059,FTAI,US,EC,CORP
-Joby Aviation Inc,254900NMVFUM8FO88E56,Joby Aviation Inc,N/A,KYG651631007,JOBY,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+AV,AAL US Equity,AAL,American Airlines Group Inc,IWUQB36BXD6OWD6X4T14,American Airlines Group Inc,02376R102,US02376R1023,AAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,AER US Equity,AER,AerCap Holdings NV,549300SZYINBBLJQU475,AerCap Holdings NV,N00985106,NL0000687663,AER,IE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,AIR US Equity,AIR,AAR Corp,MP76T5YQX3YK5VVAQ802,AAR Corp,000361105,US0003611052,AIR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,ALGT US Equity,ALGT,Allegiant Travel Co,549300JM9OZXOHWL2K18,Allegiant Travel Co,01748X102,US01748X1028,ALGT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,ALK US Equity,ALK,Alaska Air Group Inc,529900G48RT4KWLC6C27,Alaska Air Group Inc,011659109,US0116591092,ALK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,ASR US Equity,ASR,Grupo Aeroportuario del Surest,5299001W7JIDXCUOUC82,Grupo Aeroportuario del Sureste SAB de CV,40051E202,US40051E2028,ASR,MX,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,ATI US Equity,ATI,ATI Inc,ZW1LRE7C3H17O2ZN9B45,ATI Inc,01741R102,US01741R1023,ATI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,BA US Equity,BA,Boeing Co/The,RVHJWBXLJ1RFUBSY1F30,Boeing Co/The,097023105,US0970231058,BA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,CAE US Equity,CAE,CAE Inc,549300FFM2BEH2GF1E44,CAE Inc,124765108,CA1247651088,CAE,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,CPA US Equity,CPA,Copa Holdings SA,529900BB9UQJV6QQHA59,Copa Holdings SA,P31076105,PAP310761054,CPA,PA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,CRS US Equity,CRS,Carpenter Technology Corp,DX6I6ZD3X5WNNCDJKP85,Carpenter Technology Corp,144285103,US1442851036,CRS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,DAL US Equity,DAL,Delta Air Lines Inc,Q2CCMS6R0AS67HJMBN42,Delta Air Lines Inc,247361702,US2473617023,DAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,DCO US Equity,DCO,Ducommun Inc,549300Z71HMWF90S2214,Ducommun Inc,264147109,US2641471097,DCO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,EMBJ US Equity,EMBJ,Embraer SA,549300EM51WYXFHUY333,Embraer SA,29082A107,US29082A1079,EMBJ,BR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,FDX US Equity,FDX,FedEx Corp,549300E707U7WNPZN687,FedEx Corp,31428X106,US31428X1063,FDX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,FDXF US Equity,FDXF,Fedex Freight Holding Co Inc,984500Y1DA5A58ICE336,Fedex Freight Holding Co Inc,314352105,US3143521058,FDXF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,FTAI US Equity,FTAI,FTAI Aviation Ltd,N/A,FTAI Aviation Ltd,G3730V105,KYG3730V1059,FTAI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,GD US Equity,GD,General Dynamics Corp,9C1X8XOOTYY2FNYTVH06,General Dynamics Corp,369550108,US3695501086,GD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,GE US Equity,GE,GE AEROSPACE,3C7474T6CDKPR9K6YT90,GE AEROSPACE,369604301,US3696043013,GE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,HEI US Equity,HEI,HEICO Corp,529900O1DTDLCJ7L0I14,HEICO Corp,422806109,US4228061093,HEI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,HWM US Equity,HWM,Howmet Aerospace Inc,549300HO5WFZUT5N2T22,Howmet Aerospace Inc,443201108,US4432011082,HWM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,HXL US Equity,HXL,Hexcel Corp,S6Q7LW43WUBUHXY2QP69,Hexcel Corp,428291108,US4282911084,HXL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,JBLU US Equity,JBLU,JetBlue Airways Corp,54930070J9H97ZO93T57,JetBlue Airways Corp,477143101,US4771431016,JBLU,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,JOBY US Equity,JOBY,Joby Aviation Inc,254900NMVFUM8FO88E56,Joby Aviation Inc,G65163100,KYG651631007,JOBY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,LMT US Equity,LMT,Lockheed Martin Corp,DPRBOZP0K5RM2YE8UU08,Lockheed Martin Corp,539830109,US5398301094,LMT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,LOAR US Equity,LOAR,Loar Holdings Inc,N/A,Loar Holdings Inc,53947R105,US53947R1059,LOAR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,LUV US Equity,LUV,Southwest Airlines Co,UDTZ87G0STFETI6HGH41,Southwest Airlines Co,844741108,US8447411088,LUV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,MOG/A US Equity,MOG/A,Moog Inc,549300WM2I4U7OBAHG07,Moog Inc,615394202,US6153942023,MOG/A,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,NOC US Equity,NOC,Northrop Grumman Corp,RIMU48P07456QXSO0R61,Northrop Grumman Corp,666807102,US6668071029,NOC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,PAC US Equity,PAC,Grupo Aeroportuario del Pacifi,4469000001BZ368XFI90,Grupo Aeroportuario del Pacifico SAB de CV,400506101,US4005061019,PAC,MX,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,RTX US Equity,RTX,RTX Corp,I07WOS4YJ0N7YRFE7309,RTX Corp,75513E101,US75513E1010,RTX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,RYAAY US Equity,RYAAY,Ryanair Holdings PLC,635400BR2ROC1FVEBQ56,Ryanair Holdings PLC,783513203,US7835132033,RYAAY,IE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,SKYW US Equity,SKYW,SkyWest Inc,529900UYS2KGS6Z42P09,SkyWest Inc,830879102,US8308791024,SKYW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,TDG US Equity,TDG,TransDigm Group Inc,N/A,TransDigm Group Inc,893641100,US8936411003,TDG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,TXT US Equity,TXT,Textron Inc,3PPKBHUG1HD6BO7RNR87,Textron Inc,883203101,US8832031012,TXT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,UAL US Equity,UAL,United Airlines Holdings Inc,98450079DA0B78DD6764,United Airlines Holdings Inc,910047109,US9100471096,UAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,ULCC US Equity,ULCC,Frontier Group Holdings Inc,549300DT3Y2BHO6G7T02,Frontier Group Holdings Inc,35909R108,US35909R1086,ULCC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,UPS US Equity,UPS,United Parcel Service Inc,D01LMJZU09ULLNCY6Z23,United Parcel Service Inc,911312106,US9113121068,UPS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AV,WWD US Equity,WWD,Woodward Inc,YPYKXXTR8TFDH54ZMB45,Woodward Inc,980745103,US9807451037,WWD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,19 +1,20 @@
-# TODO: Update totAssets, netAssets, returns, flows for 2026-06
+# EUV 2026-06 — SYNTHETIC TEST filing data (deterministic). liveTestFlag=TEST.
+# netAssets/totAssets/totLiabs are GROUNDED from the custodian; returns/gains/flows
+# are synthetic but format-valid and internally consistent.
 
-# Submission
 submissionType=NPORT-P
 liveTestFlag=TEST
 repPdEnd=2026-06-30
 repPdDate=2026-06-30
 isFinalFiling=N
-dateSigned=YYYY-MM-DD
+dateSigned=2026-07-30
 
-# Fund Financials (from fund accounting)
-totAssets=0
-totLiabs=0
-netAssets=0
+# Fund Financials (totAssets/totLiabs/netAssets reconcile: totAssets - totLiabs = netAssets)
+totAssets=373718051.00
+totLiabs=0.00
+netAssets=373718051.00
 
-# Balance Sheet Items (usually 0 for ETFs)
+# Balance Sheet Items
 assetsAttrMiscSec=0
 assetsInvested=0
 amtPayOneYrBanksBorr=0
@@ -29,27 +30,27 @@ standByCommit=0
 liquidPref=0
 isNonCashCollateral=N
 
-# Returns (monthly class returns; N/A if not applicable)
-rtn1=N/A
-rtn2=N/A
-rtn3=N/A
-netRealizedGainMon1=0
-netUnrealizedApprMon1=0
-netRealizedGainMon2=0
-netUnrealizedApprMon2=0
-netRealizedGainMon3=0
-netUnrealizedApprMon3=0
+# Returns (monthly total returns, %)
+rtn1=-1.7
+rtn2=2.91
+rtn3=0.35
+netRealizedGainMon1=-0.00
+netUnrealizedApprMon1=-0.00
+netRealizedGainMon2=3737180.51
+netUnrealizedApprMon2=3737180.51
+netRealizedGainMon3=0.00
+netUnrealizedApprMon3=0.00
 
-# Flows (creations/redemptions/reinvestments per month)
-mon1Sales=0
-mon1Redemption=0
-mon1Reinvestment=0
-mon2Sales=0
-mon2Redemption=0
-mon2Reinvestment=0
-mon3Sales=0
-mon3Redemption=0
-mon3Reinvestment=0
+# Flows
+mon1Sales=0.00
+mon1Redemption=3737180.51
+mon1Reinvestment=0.00
+mon2Sales=11211541.53
+mon2Redemption=7474361.02
+mon2Reinvestment=0.00
+mon3Sales=0.00
+mon3Redemption=11211541.53
+mon3Reinvestment=0.00
 
 # Designated Index
 nameDesignatedIndex=N/A

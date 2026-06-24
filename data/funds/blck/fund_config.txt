@@ -1,0 +1,30 @@
+# BLCK — SYNTHETIC TEST configuration (deterministic; liveTestFlag stays TEST)
+# Trust-level fields reuse Corgi ETF Trust I (fdrs). Series/Class are per-fund test IDs.
+
+# EDGAR Credentials
+cik=0002078265
+ccc=C0rgi#26
+
+# Registrant Information
+regName=Corgi ETF Trust I
+regFileNumber=811-24117
+regCik=0002078265
+regLei=529900HSQC73ZP7RGT16
+regStreet1=425 Bush St.
+regStreet2=Suite 500
+regCity=San Francisco
+regState=US-CA
+regCountry=US
+regZipOrPostalCode=94104
+regPhone=855-552-6744
+
+# Series / Class (per-fund synthetic test IDs)
+seriesName=BLCK ETF
+seriesId=S434832439
+seriesLei=529900NW9E8YNN31W688
+classId=C000265520
+
+# Signature Block
+signerOrg=Corgi ETF Trust I
+signerName=Emily Yuan
+signerTitle=President & PEO

@@ -1,59 +1,59 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-American Express Co,N/A,American Express Co,025816109,,AXP,US,EC,CORP
-American International Group I,N/A,American International Group Inc,026874784,,AIG,US,EC,CORP
-Annaly Capital Management Inc,N/A,Annaly Capital Management Inc,035710839,,NLY,US,EC,CORP
-Apollo Global Management Inc,254900LMFT1CY9IYB476,Apollo Global Management Inc,03769M106,US03769M1062,APO,US,EC,CORP
-Assurant Inc,N/A,Assurant Inc,04621X108,,AIZ,US,EC,CORP
-Axsome Therapeutics Inc,N/A,Axsome Therapeutics Inc,05464T104,,AXSM,US,EC,CORP
-Bank of New York Mellon Corp/T,N/A,Bank of New York Mellon Corp/The,064058100,,BNY,US,EC,CORP
-BGC Group Inc,N/A,BGC Group Inc,088929104,,BGC,US,EC,CORP
-Blackstone Inc,5299004LW4QWGZUB8Y96,Blackstone Inc,09260D107,US09260D1072,BX,US,EC,CORP
-Blackrock Inc,529900VBK42Y5HHRMD23,Blackrock Inc,09290D101,US09290D1019,BLK,US,EC,CORP
-Blue Owl Capital Inc,N/A,Blue Owl Capital Inc,09581B103,,OWL,US,EC,CORP
-Bristol-Myers Squibb Co,N/A,Bristol-Myers Squibb Co,110122108,,BMY,US,EC,CORP
-Brixmor Property Group Inc,N/A,Brixmor Property Group Inc,11120U105,,BRX,US,EC,CORP
-Citigroup Inc,N/A,Citigroup Inc,172967424,,C,US,EC,CORP
-Colgate-Palmolive Co,N/A,Colgate-Palmolive Co,194162103,,CL,US,EC,CORP
-Compass Inc,N/A,Compass Inc,20464U100,,COMP,US,EC,CORP
-Consolidated Edison Inc,N/A,Consolidated Edison Inc,209115104,,ED,US,EC,CORP
-Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
-DigitalOcean Holdings Inc,N/A,DigitalOcean Holdings Inc,25402D102,,DOCN,US,EC,CORP
-Etsy Inc,N/A,Etsy Inc,29786A106,,ETSY,US,EC,CORP
-Evercore Inc,N/A,Evercore Inc,29977A105,,EVR,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fox Corp,N/A,Fox Corp,35137L105,,FOXA,US,EC,CORP
-Goldman Sachs Group Inc/The,N/A,Goldman Sachs Group Inc/The,38141G104,,GS,US,EC,CORP
-JPMORGAN CHASE & CO.,N/A,JPMORGAN CHASE & CO.,46625H100,,JPM,US,EC,CORP
-Jefferies Financial Group Inc,N/A,Jefferies Financial Group Inc,47233W109,,JEF,US,EC,CORP
-KKR & Co Inc,N/A,KKR & Co Inc,48251W104,,KKR,US,EC,CORP
-Estee Lauder Cos Inc/The,N/A,Estee Lauder Cos Inc/The,518439104,,EL,US,EC,CORP
-Lazard Inc,N/A,Lazard Inc,52110M109,,LAZ,US,EC,CORP
-Loews Corp,N/A,Loews Corp,540424108,,L,US,EC,CORP
-MSCI Inc,549300HTIN2PD78UB763,MSCI Inc,55354G100,US55354G1004,MSCI,US,EC,CORP
-Madison Square Garden Sports C,N/A,Madison Square Garden Sports Corp,55825T103,,MSGS,US,EC,CORP
-MarketAxess Holdings Inc,N/A,MarketAxess Holdings Inc,57060D108,,MKTX,US,EC,CORP
-Marsh & McLennan Cos Inc,N/A,Marsh & McLennan Cos Inc,571748102,,MRSH,US,EC,CORP
-MetLife Inc,N/A,MetLife Inc,59156R108,,MET,US,EC,CORP
-Moelis & Co,N/A,Moelis & Co,60786M105,,MC,US,EC,CORP
-MongoDB Inc,N/A,MongoDB Inc,60937P106,,MDB,US,EC,CORP
-Moody's Corp,N/A,Moody's Corp,615369105,,MCO,US,EC,CORP
-Morgan Stanley,N/A,Morgan Stanley,617446448,,MS,US,EC,CORP
-Nasdaq Inc,N/A,Nasdaq Inc,631103108,,NDAQ,US,EC,CORP
-Rithm Capital Corp,N/A,Rithm Capital Corp,64828T201,,RITM,US,EC,CORP
-New York Times Co/The,N/A,New York Times Co/The,650111107,,NYT,US,EC,CORP
-News Corp,N/A,News Corp,65249B109,,NWSA,US,EC,CORP
-Omnicom Group Inc,N/A,Omnicom Group Inc,681919106,,OMC,US,EC,CORP
-PJT Partners Inc,N/A,PJT Partners Inc,69343T107,,PJT,US,EC,CORP
-Paramount Skydance Corp,N/A,Paramount Skydance Corp,69932A204,,PSKY,US,EC,CORP
-Pfizer Inc,N/A,Pfizer Inc,717081103,,PFE,US,EC,CORP
-Ralph Lauren Corp,HO1QNWM0IXBZ0QSMMO20,Ralph Lauren Corp,751212101,US7512121010,RL,US,EC,CORP
-S&P Global Inc,N/A,S&P Global Inc,78409V104,,SPGI,US,EC,CORP
-Travelers Cos Inc/The,N/A,Travelers Cos Inc/The,8.94E+113,,TRV,US,EC,CORP
-StoneX Group Inc,N/A,StoneX Group Inc,861896108,,SNEX,US,EC,CORP
-Tapestry Inc,N/A,Tapestry Inc,876030107,,TPR,US,EC,CORP
-Tradeweb Markets Inc,N/A,Tradeweb Markets Inc,892672106,,TW,US,EC,CORP
-Verizon Communications Inc,N/A,Verizon Communications Inc,92343V104,,VZ,US,EC,CORP
-VICI Properties Inc,N/A,VICI Properties Inc,925652109,,VICI,US,EC,CORP
-Virtu Financial Inc,N/A,Virtu Financial Inc,928254101,,VIRT,US,EC,CORP
-WP Carey Inc,N/A,WP Carey Inc,92936U109,,WPC,US,EC,CORP
-Warner Bros Discovery Inc,N/A,Warner Bros Discovery Inc,934423104,,WBD,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+NYNY,AIG US Equity,AIG,American International Group I,ODVCVCQG2BP6VHV36M30,American International Group Inc,026874784,US0268747849,AIG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,AIZ US Equity,AIZ,Assurant Inc,H3F39CAXWQRVWURFXL38,Assurant Inc,04621X108,US04621X1081,AIZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,APO US Equity,APO,Apollo Global Management Inc,254900LMFT1CY9IYB476,Apollo Global Management Inc,03769M106,US03769M1062,APO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,AXP US Equity,AXP,American Express Co,R4PP93JZOLY261QX3811,American Express Co,025816109,US0258161092,AXP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,AXSM US Equity,AXSM,Axsome Therapeutics Inc,549300EXGR0XLRJEIB95,Axsome Therapeutics Inc,05464T104,US05464T1043,AXSM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,BGC US Equity,BGC,BGC Group Inc,2549001IGRCG4F0RLD36,BGC Group Inc,088929104,US0889291045,BGC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,BLK US Equity,BLK,Blackrock Inc,529900VBK42Y5HHRMD23,Blackrock Inc,09290D101,US09290D1019,BLK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,BMY US Equity,BMY,Bristol-Myers Squibb Co,HLYYNH7UQUORYSJQCN42,Bristol-Myers Squibb Co,110122108,US1101221083,BMY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,BNY US Equity,BNY,Bank of New York Mellon Corp/T,WFLLPEPC7FZXENRZV188,Bank of New York Mellon Corp/The,064058100,US0640581007,BNY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,BRX US Equity,BRX,Brixmor Property Group Inc,5299007UXW6Y0W2EGZ95,Brixmor Property Group Inc,11120U105,US11120U1051,BRX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,BX US Equity,BX,Blackstone Inc,5299004LW4QWGZUB8Y96,Blackstone Inc,09260D107,US09260D1072,BX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,C US Equity,C,Citigroup Inc,6SHGI4ZSSLCXXQSBB395,Citigroup Inc,172967424,US1729674242,C,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,CL US Equity,CL,Colgate-Palmolive Co,YMEGZFW4SBUSS5BQXF88,Colgate-Palmolive Co,194162103,US1941621039,CL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,COMP US Equity,COMP,Compass Inc,254900DMGQSTC3I2IM78,Compass Inc,20464U100,US20464U1007,COMP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,DDOG US Equity,DDOG,Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,DOCN US Equity,DOCN,DigitalOcean Holdings Inc,549300EPISPY3RE3DL21,DigitalOcean Holdings Inc,25402D102,US25402D1028,DOCN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,ED US Equity,ED,Consolidated Edison Inc,54930033SBW53OO8T749,Consolidated Edison Inc,209115104,US2091151041,ED,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,EL US Equity,EL,Estee Lauder Cos Inc/The,549300VFZ8XJ9NUPU221,Estee Lauder Cos Inc/The,518439104,US5184391044,EL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,ETSY US Equity,ETSY,Etsy Inc,54930089Q7XT501AEA40,Etsy Inc,29786A106,US29786A1060,ETSY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,EVR US Equity,EVR,Evercore Inc,529900P6KLPT95DW3W58,Evercore Inc,29977A105,US29977A1051,EVR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,FOXA US Equity,FOXA,Fox Corp,549300DDU6FDRBIELS05,Fox Corp,35137L105,US35137L1052,FOXA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,GS US Equity,GS,Goldman Sachs Group Inc/The,784F5XWPLTWKTBV3E584,Goldman Sachs Group Inc/The,38141G104,US38141G1040,GS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,JEF US Equity,JEF,Jefferies Financial Group Inc,549300HOF34RGOJ5YL07,Jefferies Financial Group Inc,47233W109,US47233W1099,JEF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,JPM US Equity,JPM,JPMORGAN CHASE & CO.,8I5DZWZKVSZI1NUHU748,JPMORGAN CHASE & CO.,46625H100,US46625H1005,JPM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,KKR US Equity,KKR,KKR & Co Inc,54930013V5I303TF9571,KKR & Co Inc,48251W104,US48251W1045,KKR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,L US Equity,L,Loews Corp,R8V1FN4M5ITGZOG7BS19,Loews Corp,540424108,US5404241086,L,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,LAZ US Equity,LAZ,Lazard Inc,254900RIBCDJSUFG1A11,Lazard Inc,52110M109,US52110M1099,LAZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MC US Equity,MC,Moelis & Co,549300891QNU7VTQUR83,Moelis & Co,60786M105,US60786M1053,MC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MCO US Equity,MCO,Moody's Corp,549300GCEDD8YCF5WU84,Moody's Corp,615369105,US6153691059,MCO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MDB US Equity,MDB,MongoDB Inc,549300TPTG69WKWE1Z37,MongoDB Inc,60937P106,US60937P1066,MDB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MET US Equity,MET,MetLife Inc,C4BXATY60WC6XEOZDX54,MetLife Inc,59156R108,US59156R1086,MET,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MKTX US Equity,MKTX,MarketAxess Holdings Inc,5493002U1CA1XJOVID83,MarketAxess Holdings Inc,57060D108,US57060D1081,MKTX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MRSH US Equity,MRSH,Marsh & McLennan Cos Inc,549300XMP3KDCKJXIU47,Marsh & McLennan Cos Inc,571748102,US5717481023,MRSH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MS US Equity,MS,Morgan Stanley,IGJSJL3JD5P30I6NJZ34,Morgan Stanley,617446448,US6174464486,MS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MSCI US Equity,MSCI,MSCI Inc,549300HTIN2PD78UB763,MSCI Inc,55354G100,US55354G1004,MSCI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,MSGS US Equity,MSGS,Madison Square Garden Sports C,N/A,Madison Square Garden Sports Corp,55825T103,US55825T1034,MSGS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,NDAQ US Equity,NDAQ,Nasdaq Inc,549300L8X1Q78ERXFD06,Nasdaq Inc,631103108,US6311031081,NDAQ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,NLY US Equity,NLY,Annaly Capital Management Inc,2DTL0G3FPRYUT58TI025,Annaly Capital Management Inc,035710839,US0357108390,NLY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,NWSA US Equity,NWSA,News Corp,549300ITS31QK8VRBQ14,News Corp,65249B109,US65249B1098,NWSA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,NYT US Equity,NYT,New York Times Co/The,529900J1WEMMIW7BOH57,New York Times Co/The,650111107,US6501111073,NYT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,OMC US Equity,OMC,Omnicom Group Inc,HKUPACFHSSASQK8HLS17,Omnicom Group Inc,681919106,US6819191064,OMC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,OWL US Equity,OWL,Blue Owl Capital Inc,N/A,Blue Owl Capital Inc,09581B103,US09581B1035,OWL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,PFE US Equity,PFE,Pfizer Inc,765LHXWGK1KXCLTFYQ30,Pfizer Inc,717081103,US7170811035,PFE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,PJT US Equity,PJT,PJT Partners Inc,549300W3WBEQUBKYTN87,PJT Partners Inc,69343T107,US69343T1079,PJT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,PSKY US Equity,PSKY,Paramount Skydance Corp,529900B6VAJG54Y9QF02,Paramount Skydance Corp,69932A204,US69932A2042,PSKY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,RITM US Equity,RITM,Rithm Capital Corp,549300WNTHGEO5LP2G31,Rithm Capital Corp,64828T201,US64828T2015,RITM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,RL US Equity,RL,Ralph Lauren Corp,HO1QNWM0IXBZ0QSMMO20,Ralph Lauren Corp,751212101,US7512121010,RL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,SNEX US Equity,SNEX,StoneX Group Inc,549300JUF07L8VF02M60,StoneX Group Inc,861896108,US8618961085,SNEX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,SPGI US Equity,SPGI,S&P Global Inc,Y6X4K52KMJMZE7I7MY94,S&P Global Inc,78409V104,US78409V1044,SPGI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,TPR US Equity,TPR,Tapestry Inc,549300LJNVY5SW3VTN33,Tapestry Inc,876030107,US8760301072,TPR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,TRV US Equity,TRV,Travelers Cos Inc/The,549300Y650407RU8B149,Travelers Cos Inc/The,89417E109,US89417E1091,TRV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,TW US Equity,TW,Tradeweb Markets Inc,N/A,Tradeweb Markets Inc,892672106,US8926721064,TW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,VICI US Equity,VICI,VICI Properties Inc,254900RKH6RY9KCJQH63,VICI Properties Inc,925652109,US9256521090,VICI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,VIRT US Equity,VIRT,Virtu Financial Inc,5493001OPW2K42CH3884,Virtu Financial Inc,928254101,US9282541013,VIRT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,VZ US Equity,VZ,Verizon Communications Inc,2S72QS2UO2OESLG6Y829,Verizon Communications Inc,92343V104,US92343V1044,VZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,WBD US Equity,WBD,Warner Bros Discovery Inc,5493006ZCRFWKF6B1K26,Warner Bros Discovery Inc,934423104,US9344231041,WBD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NYNY,WPC US Equity,WPC,WP Carey Inc,54930042CRNE713E3Q67,WP Carey Inc,92936U109,US92936U1097,WPC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

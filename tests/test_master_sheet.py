@@ -153,7 +153,6 @@ def test_refresh_idempotent(tmp_path):
     ])
     master = tmp_path / "master.xlsx"
     refresh_master(parse_custodian_csv(cust), master)
-    first = master.read_bytes()
     refresh_master(parse_custodian_csv(cust), master)
     # Re-run keeps everything; row set + values identical.
     rows_a, hdr_a = read_master_xlsx(master)
@@ -196,7 +195,7 @@ def test_identifier_columns_stored_as_text(tmp_path):
 # ── split_master ──────────────────────────────────────────────
 
 
-def test_split_shape_equity_only(tmp_path):
+def test_split_uses_full_master_header(tmp_path):
     cust = _write_custodian(tmp_path, [_eq("FDRS", "ABNB", "009066101", "Airbnb Inc")])
     master = tmp_path / "master.xlsx"
     refresh_master(parse_custodian_csv(cust), master)
@@ -204,8 +203,15 @@ def test_split_shape_equity_only(tmp_path):
     results = split_master(master, funds)
     assert len(results) == 1
     header, rows = _read_csv(results[0][1])
-    assert header == list(EQUITY_HEADERS)  # exactly 9 cols
+    # Per-fund file is a literal projection of the master: the SAME full column
+    # set, in master order (identity helpers + every enrichment column).
+    _, master_header = read_master_xlsx(master)
+    assert header == master_header
+    assert header[:3] == ["Account", "bbgid", "rawTicker"]
     assert len(rows) == 1 and rows[0]["ticker"] == "ABNB"
+    # Type-irrelevant columns for an equity are present but blank.
+    for col in ("putOrCall", "notionalAmt", "maturityDt", "delta"):
+        assert col in header and rows[0][col] == ""
 
 
 def test_split_dry_run_writes_nothing(tmp_path):
@@ -277,7 +283,9 @@ def test_seed_then_split_reproduces_per_fund(tmp_path):
     for fund in ("fdrs", "buf"):
         oh, orows = _read_csv(funds / fund / "security_master.csv")
         nh, nrows = _read_csv(out / fund / "security_master.csv")
-        assert set(oh) == set(nh), fund
+        # Split now emits the full uniform master header, so the original
+        # (tailored) per-fund columns are a subset of the new header.
+        assert set(oh) <= set(nh), fund
         common = [c for c in oh if c in nh and c not in _BBG_FORMULA_COLUMNS]
         o_by = {r["ticker"]: r for r in orows}
         n_by = {r["ticker"]: r for r in nrows}
@@ -288,9 +296,10 @@ def test_seed_then_split_reproduces_per_fund(tmp_path):
     _, buf_rows = _read_csv(out / "buf" / "security_master.csv")
     assert buf_rows[0]["delta"] == "0.72"
     assert buf_rows[0]["counterpartyName"] == "Goldman Sachs International"
-    # Equity Bloomberg fields are emptied until resolved on a terminal.
+    # Equity Bloomberg fields are unresolved off-terminal: lei/invCountry read
+    # back as the schema-valid default (N/A / US), isin (no default) stays empty.
     _, fdrs_rows = _read_csv(out / "fdrs" / "security_master.csv")
-    assert all(r["lei"] == "" and r["isin"] == "" and r["invCountry"] == "" for r in fdrs_rows)
+    assert all(r["lei"] == "N/A" and r["isin"] == "" and r["invCountry"] == "US" for r in fdrs_rows)
 
 
 # ── Bloomberg BDP formulas ────────────────────────────────────
@@ -357,22 +366,23 @@ def test_cusip_literal_us_kept_foreign_na(tmp_path):
     aer = next(r for r in back if r["ticker"] == "AER")
     assert amd["cusip"] == "007903107"        # US CUSIP literal
     assert aer["cusip"] == "N/A"              # foreign ordinary -> N/A
-    # lei/country are bare formulas with NO fallback: uncalculated (no Bloomberg
-    # terminal in the test) they read back EMPTY, so a failed lookup stays visible.
-    assert aer["lei"] == "" and aer["invCountry"] == ""
+    # lei/country are =BDP formulas; uncalculated (no Bloomberg terminal in the
+    # test) they read back as the schema-valid default — lei "N/A", invCountry "US".
+    assert aer["lei"] == "N/A" and aer["invCountry"] == "US"
 
 
-def test_option_no_spec_treasury_isin_only(tmp_path):
+def test_option_no_spec_treasury_full_govt_set(tmp_path):
     rows = [
         {"Account": "BUF", "cusip": "N/A", "ticker": "SPX-C4800", "name": "opt",
          "assetCat": "DE", "derivCat": "OPT", "lei": "", "isin": ""},
         {"Account": "CGOV", "cusip": "912797UL9", "ticker": "", "name": "UST",
          "assetCat": "DBT", "issuerCat": "UST", "derivCat": "",
-         "lei": "254900HROIFWPRGM1V77", "isin": "", "invCountry": "US"},
+         "lei": "", "isin": "", "invCountry": ""},
     ]
-    # Options have no Bloomberg spec; US treasuries get exactly one formula (isin)
-    # keyed by "<cusip> Govt" — LEI/country/maturity/rate are already known.
-    assert apply_bloomberg_formulas(rows) == 1
+    # Options have no Bloomberg spec; US treasuries pull the full C.9 + identity
+    # set (isin/lei/invCountry/maturityDt/annualizedRt/couponKind = 6) keyed by
+    # "<cusip> Govt".
+    assert apply_bloomberg_formulas(rows) == 6
     assert not rows[0].get("bbgid")
     assert rows[1]["bbgid"] == "912797UL9 Govt"
     ws = _equity_master(rows, tmp_path)
@@ -381,9 +391,11 @@ def test_option_no_spec_treasury_isin_only(tmp_path):
     # Option: no formula cells at all.
     for f in ("isin", "lei", "invCountry"):
         assert not str(ws.cell(row=2, column=idx[f]).value).startswith("=")
-    # Treasury (row 3): isin is a bare BDP formula; lei stays the known literal.
+    # Treasury (row 3): all six Bloomberg fields are bare BDP formulas keyed by Govt.
     assert ws.cell(row=3, column=idx["isin"]).value == '=BDP($B3,"ID_ISIN")'
-    assert ws.cell(row=3, column=idx["lei"]).value == "254900HROIFWPRGM1V77"
+    assert ws.cell(row=3, column=idx["lei"]).value == '=BDP($B3,"LEGAL_ENTITY_IDENTIFIER")'
+    assert ws.cell(row=3, column=idx["maturityDt"]).value == '=TEXT(BDP($B3,"MATURITY"),"yyyy-mm-dd")'
+    assert ws.cell(row=3, column=idx["couponKind"]).value == '=BDP($B3,"CPN_TYP")'
     # cusip is never a formula here (no custodian sheet linked).
     for excel_row in (2, 3):
         assert not str(ws.cell(row=excel_row, column=idx["cusip"]).value).startswith("=")
@@ -414,14 +426,14 @@ def test_bloomberg_error_junk_is_cleaned_in_seed(tmp_path):
     assert not any(isinstance(c, str) and c.startswith("#")
                    for row in ws.iter_rows(values_only=True) for c in row)
     # isin/lei/invCountry are Bloomberg-owned: they become bare =BDP formulas
-    # (overwriting any provided value — no fallback), and read back EMPTY until
-    # resolved on a Bloomberg terminal, so failures stay visible.
+    # (overwriting any provided value). Uncalculated, they read back as the
+    # schema-valid default (lei "N/A", invCountry "US"); isin has no default → "".
     hdr = [c.value for c in ws[1]]
     for f, mnem in (("lei", "LEGAL_ENTITY_IDENTIFIER"), ("isin", "ID_ISIN"),
                     ("invCountry", "CNTRY_OF_DOMICILE")):
         cell = ws.cell(row=2, column=hdr.index(f) + 1).value
         assert cell.startswith("=BDP(") and mnem in cell and "IFERROR" not in cell
-    assert r["lei"] == "" and r["isin"] == "" and r["invCountry"] == ""
+    assert r["lei"] == "N/A" and r["isin"] == "" and r["invCountry"] == "US"
 
 
 def test_reference_cells_are_formulas_general_format(tmp_path):
@@ -492,10 +504,36 @@ def test_cash_row_excluded_from_split(tmp_path):
     funds = tmp_path / "funds"
     split_master(master, funds)
     header, rows = _read_csv(funds / "fdrs" / "security_master.csv")
-    # Cash is inert (no assetCat/derivCat) — only the equity is written, and
-    # rawTicker/bbgid/Account never leak into the per-fund CSV.
+    # Cash is inert (no assetCat/derivCat) — excluded as a ROW; only the equity
+    # is written. The full master columns (incl. the identity helpers) are present.
     assert len(rows) == 1 and rows[0]["ticker"] == "NVDA"
-    assert "rawTicker" not in header and "bbgid" not in header and "Account" not in header
+    assert "rawTicker" in header and "bbgid" in header and "Account" in header
+    assert rows[0]["Account"] == "FDRS"
+
+
+def _mm_custodian(account):
+    return {"Date": "06/01/2026", "Account": account, "StockTicker": "FGXXX",
+            "CUSIP": "31846V336",
+            "SecurityName": "First American Government Obligations Fund 12/01/2031",
+            "Shares": "50000", "Price": "1", "MarketValue": "50000",
+            "Weightings": "0.05%", "NetAssets": "1000000", "SharesOutstanding": "0",
+            "CreationUnits": "0", "MoneyMarketFlag": "Y"}
+
+
+def test_money_market_built_from_custodian(tmp_path):
+    # MM identity comes from the custodian (not hardcoded); lei is a BDP formula.
+    cust = _write_custodian(tmp_path, [_mm_custodian("FDRS")])
+    master = tmp_path / "master.xlsx"
+    refresh_master(parse_custodian_csv(cust), master)
+    rows, _ = read_master_xlsx(master)
+    r = rows[0]
+    assert r["assetCat"] == "STIV" and r["issuerCat"] == "RF"
+    assert r["ticker"] == "FGXXX"
+    assert r["title"] == "First American Government Obligations Fund"  # date stripped
+    ws = load_workbook(master)["master"]
+    hdr = [c.value for c in ws[1]]
+    assert ws.cell(row=2, column=hdr.index("bbgid") + 1).value == "FGXXX US Equity"
+    assert str(ws.cell(row=2, column=hdr.index("lei") + 1).value).startswith("=BDP")
 
 
 def test_no_formulas_flag_leaves_blanks(tmp_path):
@@ -551,9 +589,11 @@ def test_corporate_bond_formulas_keyed_corp(tmp_path):
     # assetCat/issuerCat are the locally-known literals.
     assert _formula_cell(ws, hdr, "assetCat") == "DBT"
     assert _formula_cell(ws, hdr, "issuerCat") == "CORP"
-    # Unresolved off-terminal → C.9/identity read back empty (visible failure).
+    # Unresolved off-terminal: lei/invCountry read back as the schema-valid
+    # default (N/A / US); maturityDt has no default so it stays empty (a real gap
+    # in a bond's C.9 data must fail validation visibly).
     rows, _ = read_master_xlsx(master)
-    assert rows[0]["maturityDt"] == "" and rows[0]["lei"] == "" and rows[0]["invCountry"] == ""
+    assert rows[0]["maturityDt"] == "" and rows[0]["lei"] == "N/A" and rows[0]["invCountry"] == "US"
 
 
 def test_swap_reference_identity_formulas(tmp_path):
@@ -580,10 +620,41 @@ def test_swap_reference_identity_formulas(tmp_path):
 def test_coupon_kind_normalization():
     assert _normalize_coupon_kind("FIXED") == "Fixed"
     assert _normalize_coupon_kind("FLOATING") == "Floating"
+    assert _normalize_coupon_kind("VARIABLE") == "Variable"
     assert _normalize_coupon_kind("ZERO COUPON") == "None"
+    assert _normalize_coupon_kind("ZERO") == "None"  # T-bills return CPN_TYP=ZERO
+    assert _normalize_coupon_kind("PAY-IN-KIND") == "Fixed"  # PIK → fixed-rate
     assert _normalize_coupon_kind("") == ""
     # Unmapped value passes through unchanged so validation flags it.
     assert _normalize_coupon_kind("STEP CPN") == "STEP CPN"
+
+
+def test_date_normalization():
+    from nport.master_sheet import _normalize_date
+    assert _normalize_date("2026-09-03") == "2026-09-03"   # already ISO
+    assert _normalize_date("9/3/2026") == "2026-09-03"     # US M/D/YYYY (Excel BDP leak)
+    assert _normalize_date("09/03/2026") == "2026-09-03"
+    assert _normalize_date("9/3/26") == "2026-09-03"       # 2-digit year
+    assert _normalize_date("2026-09-03 00:00:00") == "2026-09-03"  # date serial round-trip
+    assert _normalize_date("") == ""
+    assert _normalize_date("garbage") == "garbage"          # unparseable stays visible
+
+
+def test_lei_country_default_on_failed_lookup(tmp_path):
+    # A calculated Bloomberg cell that returned #N/A (issuer has no LEI on the
+    # terminal) reads back as the schema-valid default: lei "N/A", invCountry "US".
+    from nport.master_sheet import IDENTITY_COLUMNS, MASTER_ENRICHMENT_COLUMNS
+    row = {c: "" for c in IDENTITY_COLUMNS + list(MASTER_ENRICHMENT_COLUMNS)}
+    row.update({"Account": "FDRS", "ticker": "TDG", "name": "TransDigm",
+                "assetCat": "EC", "issuerCat": "CORP",
+                "lei": "#N/A N/A", "isin": "#N/A N/A", "invCountry": "#N/A N/A"})
+    master = tmp_path / "m.xlsx"
+    # No bbgid → written literally, so we can seed the #N/A the way Excel caches it.
+    write_master_xlsx([row], IDENTITY_COLUMNS + list(MASTER_ENRICHMENT_COLUMNS), master)
+    back, _ = read_master_xlsx(master)
+    assert back[0]["lei"] == "N/A"
+    assert back[0]["invCountry"] == "US"
+    assert back[0]["isin"] == ""   # no default — blank, so a real gap stays visible
 
 
 def test_spec_selection():

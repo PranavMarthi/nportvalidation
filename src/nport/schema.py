@@ -7,10 +7,9 @@ programmatic introspection.
 
 from __future__ import annotations
 
-from dataclasses import dataclass, fields
+from dataclasses import dataclass
 
 from nport.config import _HOLDINGS_KEY_MAP
-from nport.models import Holding
 
 
 @dataclass(frozen=True)

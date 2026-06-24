@@ -1,0 +1,3 @@
+holdingId,name,lei,title,cusip,isin,ticker,balance,units,curCd,valUSD,pctVal,payoffProfile,assetCat,issuerCat,invCountry,isRestrictedSec,fairValLevel,isCashCollateral,isNonCashCollateral,isLoanByFund,issuerConditionalDesc,otherDesc,otherValue
+464287184-TRS-12/01/27-L-CANT,N/A,N/A,ISHARES CHINA LARGE-CAP ETF-SWAP-CANT-L,N/A,,464287184-TRS-12/01/27-L-CANT,1,NC,USD,2771313.57,200.09,N/A,DE,OTHER,US,N,2,N,N,N,N/A,USER DEFINED,464287184-TRS-12/01/27-L-CANT
+FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,160572.02,NS,USD,160572.02,11.59,Long,STIV,RF,US,N,1,N,N,N,,,

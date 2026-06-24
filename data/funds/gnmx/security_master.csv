@@ -1,60 +1,60 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Adaptive Biotechnologies Corp,N/A,Adaptive Biotechnologies Corp,00650F109,,ADPT,US,EC,CORP
-Alnylam Pharmaceuticals Inc,N/A,Alnylam Pharmaceuticals Inc,02043Q107,,ALNY,US,EC,CORP
-Arcturus Therapeutics Holdings,N/A,Arcturus Therapeutics Holdings Inc,03969T109,,ARCT,US,EC,CORP
-Arrowhead Pharmaceuticals Inc,N/A,Arrowhead Pharmaceuticals Inc,04280A100,,ARWR,US,EC,CORP
-Beam Therapeutics Inc,N/A,Beam Therapeutics Inc,07373V105,,BEAM,US,EC,CORP
-BioMarin Pharmaceutical Inc,N/A,BioMarin Pharmaceutical Inc,09061G101,,BMRN,US,EC,CORP
-Bio-Techne Corp,N/A,Bio-Techne Corp,09073M104,,TECH,US,EC,CORP
-Biodesix Inc,N/A,Biodesix Inc,09075X207,,BDSX,US,EC,CORP
-Azenta Inc,N/A,Azenta Inc,114340102,,AZTA,US,EC,CORP
-CareDx Inc,N/A,CareDx Inc,14167L103,,CDNA,US,EC,CORP
-Caribou Biosciences Inc,N/A,Caribou Biosciences Inc,142038108,,CRBU,US,EC,CORP
-Caris Life Sciences Inc,N/A,Caris Life Sciences Inc,142152107,,CAI,US,EC,CORP
-Castle Biosciences Inc,N/A,Castle Biosciences Inc,14843C105,,CSTL,US,EC,CORP
-Certara Inc,N/A,Certara Inc,15687V109,,CERT,US,EC,CORP
-Editas Medicine Inc,N/A,Editas Medicine Inc,28106W103,,EDIT,US,EC,CORP
-4D Molecular Therapeutics Inc,N/A,4D Molecular Therapeutics Inc,3.51E+104,,FDMT,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-STANDARD BIOTOOLS INC,N/A,STANDARD BIOTOOLS INC,34385P108,,LAB,US,EC,CORP
-Fulgent Genetics Inc,N/A,Fulgent Genetics Inc,359664109,,FLGT,US,EC,CORP
-Generate Biomedicines Inc,N/A,Generate Biomedicines Inc,370920100,,GENB,US,EC,CORP
-Genmab A/S,N/A,Genmab A/S,372303206,,GMAB,US,EC,CORP
-GRAIL Inc,N/A,GRAIL Inc,384747101,,GRAL,US,EC,CORP
-Guardant Health Inc,N/A,Guardant Health Inc,40131M109,,GH,US,EC,CORP
-Ideaya Biosciences Inc,N/A,Ideaya Biosciences Inc,45166A102,,IDYA,US,EC,CORP
-Illumina Inc,N/A,Illumina Inc,452327109,,ILMN,US,EC,CORP
-Incyte Corp,N/A,Incyte Corp,45337C102,,INCY,US,EC,CORP
-Intellia Therapeutics Inc,N/A,Intellia Therapeutics Inc,45826J105,,NTLA,US,EC,CORP
-Ionis Pharmaceuticals Inc,N/A,Ionis Pharmaceuticals Inc,462222100,,IONS,US,EC,CORP
-Iovance Biotherapeutics Inc,N/A,Iovance Biotherapeutics Inc,462260100,,IOVA,US,EC,CORP
-Krystal Biotech Inc,N/A,Krystal Biotech Inc,501147102,,KRYS,US,EC,CORP
-Moderna Inc,N/A,Moderna Inc,60770K107,,MRNA,US,EC,CORP
-Myriad Genetics Inc,N/A,Myriad Genetics Inc,62855J104,,MYGN,US,EC,CORP
-NeoGenomics Inc,N/A,NeoGenomics Inc,64049M209,,NEO,US,EC,CORP
-Nuvalent Inc,N/A,Nuvalent Inc,670703107,,NUVL,US,EC,CORP
-Nurix Therapeutics Inc,N/A,Nurix Therapeutics Inc,67080M103,,NRIX,US,EC,CORP
-Pacific Biosciences of Califor,N/A,Pacific Biosciences of California Inc,69404D108,,PACB,US,EC,CORP
-Personalis Inc,N/A,Personalis Inc,71535D106,,PSNL,US,EC,CORP
-Precision BioSciences Inc,N/A,Precision BioSciences Inc,74019P207,,DTIL,US,EC,CORP
-Prime Medicine Inc,N/A,Prime Medicine Inc,74168J101,,PRME,US,EC,CORP
-Recursion Pharmaceuticals Inc,N/A,Recursion Pharmaceuticals Inc,75629V104,,RXRX,US,EC,CORP
-Relay Therapeutics Inc,N/A,Relay Therapeutics Inc,75943R102,,RLAY,US,EC,CORP
-Revolution Medicines Inc,N/A,Revolution Medicines Inc,76155X100,,RVMD,US,EC,CORP
-Rocket Pharmaceuticals Inc,N/A,Rocket Pharmaceuticals Inc,77313F106,,RCKT,US,EC,CORP
-Solid Biosciences Inc,N/A,Solid Biosciences Inc,8.34E+208,,SLDB,US,EC,CORP
-Sarepta Therapeutics Inc,N/A,Sarepta Therapeutics Inc,803607100,,SRPT,US,EC,CORP
-Schrodinger Inc/United States,N/A,Schrodinger Inc/United States,80810D103,,SDGR,US,EC,CORP
-GeneDx Holdings Corp,N/A,GeneDx Holdings Corp,81663L200,,WGS,US,EC,CORP
-Tempus AI Inc,N/A,Tempus AI Inc,88023B103,,TEM,US,EC,CORP
-10X Genomics Inc,N/A,10X Genomics Inc,88025U109,,TXG,US,EC,CORP
-Thermo Fisher Scientific Inc,N/A,Thermo Fisher Scientific Inc,883556102,,TMO,US,EC,CORP
-Absci Corp,N/A,Absci Corp,9.10E+110,,ABSI,US,EC,CORP
-Twist Bioscience Corp,N/A,Twist Bioscience Corp,90184D100,,TWST,US,EC,CORP
-Ultragenyx Pharmaceutical Inc,N/A,Ultragenyx Pharmaceutical Inc,90400D108,,RARE,US,EC,CORP
-Veracyte Inc,N/A,Veracyte Inc,92337F107,,VCYT,US,EC,CORP
-Vertex Pharmaceuticals Inc,N/A,Vertex Pharmaceuticals Inc,92532F100,,VRTX,US,EC,CORP
-CRISPR Therapeutics AG,N/A,CRISPR Therapeutics AG,N/A,,CRSP,US,EC,CORP
-QIAGEN NV,N/A,QIAGEN NV,N/A,,QGEN,US,EC,CORP
-uniQure NV,N/A,uniQure NV,N/A,,QURE,US,EC,CORP
-Sophia Genetics SA,N/A,Sophia Genetics SA,N/A,,SOPH,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+GNMX,ABSI US Equity,ABSI,Absci Corp,N/A,Absci Corp,00091E109,US00091E1091,ABSI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,ADPT US Equity,ADPT,Adaptive Biotechnologies Corp,549300ZTF7OT1FW66Q96,Adaptive Biotechnologies Corp,00650F109,US00650F1093,ADPT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,ALNY US Equity,ALNY,Alnylam Pharmaceuticals Inc,529900S3ZI14OWRJII50,Alnylam Pharmaceuticals Inc,02043Q107,US02043Q1076,ALNY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,ARCT US Equity,ARCT,Arcturus Therapeutics Holdings,N/A,Arcturus Therapeutics Holdings Inc,03969T109,US03969T1097,ARCT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,ARWR US Equity,ARWR,Arrowhead Pharmaceuticals Inc,549300O3CSB8T7OZ3D66,Arrowhead Pharmaceuticals Inc,04280A100,US04280A1007,ARWR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,AZTA US Equity,AZTA,Azenta Inc,35ZN6X1ANPH25YN32Y17,Azenta Inc,114340102,US1143401024,AZTA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,BDSX US Equity,BDSX,Biodesix Inc,N/A,Biodesix Inc,09075X207,US09075X2071,BDSX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,BEAM US Equity,BEAM,Beam Therapeutics Inc,N/A,Beam Therapeutics Inc,07373V105,US07373V1052,BEAM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,BMRN US Equity,BMRN,BioMarin Pharmaceutical Inc,NSLL8ITTRR0J5HEMR848,BioMarin Pharmaceutical Inc,09061G101,US09061G1013,BMRN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,CAI US Equity,CAI,Caris Life Sciences Inc,549300LX5LO78M5VPY43,Caris Life Sciences Inc,142152107,US1421521071,CAI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,CDNA US Equity,CDNA,CareDx Inc,549300NQOFKL9NON0U06,CareDx Inc,14167L103,US14167L1035,CDNA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,CERT US Equity,CERT,Certara Inc,N/A,Certara Inc,15687V109,US15687V1098,CERT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,CRBU US Equity,CRBU,Caribou Biosciences Inc,N/A,Caribou Biosciences Inc,142038108,US1420381089,CRBU,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,CRSP US Equity,CRSP,CRISPR Therapeutics AG,506700O6IRRIQLT3W370,CRISPR Therapeutics AG,H17182108,CH0334081137,CRSP,CH,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,CSTL US Equity,CSTL,Castle Biosciences Inc,2549007M2Q4HLR1XD252,Castle Biosciences Inc,14843C105,US14843C1053,CSTL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,DTIL US Equity,DTIL,Precision BioSciences Inc,549300I5QGRS3BLHZH41,Precision BioSciences Inc,74019P207,US74019P2074,DTIL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,EDIT US Equity,EDIT,Editas Medicine Inc,5299000AON4Q9NT2JE42,Editas Medicine Inc,28106W103,US28106W1036,EDIT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,FDMT US Equity,FDMT,4D Molecular Therapeutics Inc,N/A,4D Molecular Therapeutics Inc,35104E100,US35104E1001,FDMT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,FLGT US Equity,FLGT,Fulgent Genetics Inc,549300CL6P01M68QJ404,Fulgent Genetics Inc,359664109,US3596641098,FLGT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,GENB US Equity,GENB,Generate Biomedicines Inc,N/A,Generate Biomedicines Inc,370920100,US3709201004,GENB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,GH US Equity,GH,Guardant Health Inc,254900M8C3E5VC8BR186,Guardant Health Inc,40131M109,US40131M1099,GH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,GMAB US Equity,GMAB,Genmab A/S,529900MTJPDPE4MHJ122,Genmab A/S,372303206,US3723032062,GMAB,DK,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,GRAL US Equity,GRAL,GRAIL Inc,2549009XSNESW3VE8024,GRAIL Inc,384747101,US3847471014,GRAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,IDYA US Equity,IDYA,Ideaya Biosciences Inc,549300ULW08F62IJML11,Ideaya Biosciences Inc,45166A102,US45166A1025,IDYA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,ILMN US Equity,ILMN,Illumina Inc,SQ95QG8SR5Q56LSNF682,Illumina Inc,452327109,US4523271090,ILMN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,INCY US Equity,INCY,Incyte Corp,549300Z4WN6JVZ3T4680,Incyte Corp,45337C102,US45337C1027,INCY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,IONS US Equity,IONS,Ionis Pharmaceuticals Inc,549300SI4ZGLG0BLUZ92,Ionis Pharmaceuticals Inc,462222100,US4622221004,IONS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,IOVA US Equity,IOVA,Iovance Biotherapeutics Inc,2549002L8WT2ACU5Q878,Iovance Biotherapeutics Inc,462260100,US4622601007,IOVA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,KRYS US Equity,KRYS,Krystal Biotech Inc,549300YONUY68210OE41,Krystal Biotech Inc,501147102,US5011471027,KRYS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,LAB US Equity,LAB,STANDARD BIOTOOLS INC,549300GX8Y96GSB6YP89,STANDARD BIOTOOLS INC,34385P108,US34385P1084,LAB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,MRNA US Equity,MRNA,Moderna Inc,549300EI6OKH5K5Q2G38,Moderna Inc,60770K107,US60770K1079,MRNA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,MYGN US Equity,MYGN,Myriad Genetics Inc,52990044IHUOUMETT163,Myriad Genetics Inc,62855J104,US62855J1043,MYGN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,NEO US Equity,NEO,NeoGenomics Inc,254900KXWYZIKXNFT521,NeoGenomics Inc,64049M209,US64049M2098,NEO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,NRIX US Equity,NRIX,Nurix Therapeutics Inc,N/A,Nurix Therapeutics Inc,67080M103,US67080M1036,NRIX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,NTLA US Equity,NTLA,Intellia Therapeutics Inc,5493002T5BCPE5DZC723,Intellia Therapeutics Inc,45826J105,US45826J1051,NTLA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,NUVL US Equity,NUVL,Nuvalent Inc,529900RZ62O2T6LNQS60,Nuvalent Inc,670703107,US6707031075,NUVL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,PACB US Equity,PACB,Pacific Biosciences of Califor,529900F1BWRE1M0KZN89,Pacific Biosciences of California Inc,69404D108,US69404D1081,PACB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,PRME US Equity,PRME,Prime Medicine Inc,N/A,Prime Medicine Inc,74168J101,US74168J1016,PRME,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,PSNL US Equity,PSNL,Personalis Inc,549300EZ2NYFK7H0US48,Personalis Inc,71535D106,US71535D1063,PSNL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,QGEN US Equity,QGEN,QIAGEN NV,54930036WK3GMCN17Z57,QIAGEN NV,N72482156,NL0015002SN0,QGEN,NL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,QURE US Equity,QURE,uniQure NV,724500RPCTZLFYJZ3S98,uniQure NV,N90064101,NL0010696654,QURE,NL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,RARE US Equity,RARE,Ultragenyx Pharmaceutical Inc,529900EV44GVDN1DCX77,Ultragenyx Pharmaceutical Inc,90400D108,US90400D1081,RARE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,RCKT US Equity,RCKT,Rocket Pharmaceuticals Inc,549300R7VV82YUIN4Y93,Rocket Pharmaceuticals Inc,77313F106,US77313F1066,RCKT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,RLAY US Equity,RLAY,Relay Therapeutics Inc,N/A,Relay Therapeutics Inc,75943R102,US75943R1023,RLAY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,RVMD US Equity,RVMD,Revolution Medicines Inc,549300JU3X0LBCQ65892,Revolution Medicines Inc,76155X100,US76155X1000,RVMD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,RXRX US Equity,RXRX,Recursion Pharmaceuticals Inc,N/A,Recursion Pharmaceuticals Inc,75629V104,US75629V1044,RXRX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,SDGR US Equity,SDGR,Schrodinger Inc/United States,984500044BAE4791E559,Schrodinger Inc/United States,80810D103,US80810D1037,SDGR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,SLDB US Equity,SLDB,Solid Biosciences Inc,N/A,Solid Biosciences Inc,83422E204,US83422E2046,SLDB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,SOPH US Equity,SOPH,Sophia Genetics SA,506700H1GPU9GGM8W895,Sophia Genetics SA,H82027105,CH1125843347,SOPH,CH,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,SRPT US Equity,SRPT,Sarepta Therapeutics Inc,549300IKDPIED8J8IG21,Sarepta Therapeutics Inc,803607100,US8036071004,SRPT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,TECH US Equity,TECH,Bio-Techne Corp,54930073RLKQ51TILZ35,Bio-Techne Corp,09073M104,US09073M1045,TECH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,TEM US Equity,TEM,Tempus AI Inc,2549009LA0KWRAGQBX50,Tempus AI Inc,88023B103,US88023B1035,TEM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,TMO US Equity,TMO,Thermo Fisher Scientific Inc,HCHV7422L5HDJZCRFL38,Thermo Fisher Scientific Inc,883556102,US8835561023,TMO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,TWST US Equity,TWST,Twist Bioscience Corp,549300T23BL59LCOH584,Twist Bioscience Corp,90184D100,US90184D1000,TWST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,TXG US Equity,TXG,10X Genomics Inc,5493003Z6741WNLG7H43,10X Genomics Inc,88025U109,US88025U1097,TXG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,VCYT US Equity,VCYT,Veracyte Inc,529900ESWZRHXOW27Z37,Veracyte Inc,92337F107,US92337F1075,VCYT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,VRTX US Equity,VRTX,Vertex Pharmaceuticals Inc,54930015RAQRRZ5ZGJ91,Vertex Pharmaceuticals Inc,92532F100,US92532F1003,VRTX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GNMX,WGS US Equity,WGS,GeneDx Holdings Corp,N/A,GeneDx Holdings Corp,81663L200,US81663L2007,WGS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

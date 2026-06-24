@@ -1,61 +1,61 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Adobe Inc,N/A,Adobe Inc,00724F101,,ADBE,US,EC,CORP
-Advanced Micro Devices Inc,N/A,Advanced Micro Devices Inc,007903107,,AMD,US,EC,CORP
-Affirm Holdings Inc,N/A,Affirm Holdings Inc,00827B106,,AFRM,US,EC,CORP
-Airbnb Inc,549300HMUDNO0RY56D37,Airbnb Inc,009066101,US0090661010,ABNB,US,EC,CORP
-Alphabet Inc,N/A,Alphabet Inc,02079K305,,GOOGL,US,EC,CORP
-Apple Inc,N/A,Apple Inc,037833100,,AAPL,US,EC,CORP
-Applied Materials Inc,N/A,Applied Materials Inc,038222105,,AMAT,US,EC,CORP
-AppLovin Corp,549300LLVXMUAOL3SQ07,AppLovin Corp,03831W108,US03831W1080,APP,US,EC,CORP
-Astera Labs Inc,N/A,Astera Labs Inc,04626A103,,ALAB,US,EC,CORP
-Autodesk Inc,N/A,Autodesk Inc,052769106,,ADSK,US,EC,CORP
-Bloom Energy Corp,549300XB5J9BFW5JXV97,Bloom Energy Corp,093712107,US0937121079,BE,US,EC,CORP
-Bridgebio Pharma Inc,N/A,Bridgebio Pharma Inc,10806X102,,BBIO,US,EC,CORP
-Broadcom Inc,N/A,Broadcom Inc,11135F101,,AVGO,US,EC,CORP
-Cisco Systems Inc,N/A,Cisco Systems Inc,17275R102,,CSCO,US,EC,CORP
-Clorox Co/The,N/A,Clorox Co/The,189054109,,CLX,US,EC,CORP
-Cloudflare Inc,5493007DY18BGNLDWU14,Cloudflare Inc,18915M107,US18915M1071,NET,US,EC,CORP
-Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP
-Cooper Cos Inc/The,N/A,Cooper Cos Inc/The,216648501,,COO,US,EC,CORP
-DoorDash Inc,549300NUQ43FGGSK5051,DoorDash Inc,25809K105,US25809K1051,DASH,US,EC,CORP
-eBay Inc,N/A,eBay Inc,278642103,,EBAY,US,EC,CORP
-Essex Property Trust Inc,N/A,Essex Property Trust Inc,297178105,,ESS,US,EC,CORP
-Meta Platforms Inc,BQ4BKCS1HXDV9HN80Z93,Meta Platforms Inc,30303M102,US30303M1027,META,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP
-Gilead Sciences Inc,N/A,Gilead Sciences Inc,375558103,,GILD,US,EC,CORP
-HP Inc,N/A,HP Inc,40434L105,,HPQ,US,EC,CORP
-Intel Corp,N/A,Intel Corp,458140100,,INTC,US,EC,CORP
-Intuitive Surgical Inc,N/A,Intuitive Surgical Inc,46120E602,,ISRG,US,EC,CORP
-Lam Research Corp,N/A,Lam Research Corp,512807306,,LRCX,US,EC,CORP
-Lumentum Holdings Inc,N/A,Lumentum Holdings Inc,55024U109,,LITE,US,EC,CORP
-MARVELL TECHNOLOGY INC,N/A,MARVELL TECHNOLOGY INC,573874104,,MRVL,US,EC,CORP
-Netflix Inc,N/A,Netflix Inc,64110L106,,NFLX,US,EC,CORP
-NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP
-Okta Inc,N/A,Okta Inc,679295105,,OKTA,US,EC,CORP
-PG&E Corp,N/A,PG&E Corp,69331C108,,PCG,US,EC,CORP
-Palo Alto Networks Inc,N/A,Palo Alto Networks Inc,697435105,,PANW,US,EC,CORP
-Reddit Inc,529900APN1YHPBHPI679,Reddit Inc,75734B100,US75734B1008,RDDT,US,EC,CORP
-Rivian Automotive Inc,N/A,Rivian Automotive Inc,76954A103,,RIVN,US,EC,CORP
-Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP
-ROBLOX Corp,529900ANZDBDFU91SO19,ROBLOX Corp,771049103,US7710491033,RBLX,US,EC,CORP
-Ross Stores Inc,N/A,Ross Stores Inc,778296103,,ROST,US,EC,CORP
-Salesforce Inc,RCGZFPDMRW58VJ54VR07,Salesforce Inc,79466L302,US79466L3024,CRM,US,EC,CORP
-Samsara Inc,N/A,Samsara Inc,79589L106,,IOT,US,EC,CORP
-ServiceNow Inc,N/A,ServiceNow Inc,81762P102,,NOW,US,EC,CORP
-Snowflake Inc,254900CJNSY1K7T53Z16,Snowflake Inc,833445109,US8334451098,SNOW,US,EC,CORP
-SoFi Technologies Inc,N/A,SoFi Technologies Inc,83406F102,,SOFI,US,EC,CORP
-Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
-Super Micro Computer Inc,54930022CZO1N2UGVW07,Super Micro Computer Inc,86800U302,US86800U3023,SMCI,US,EC,CORP
-TD SYNNEX Corp,N/A,TD SYNNEX Corp,87162W100,,SNX,US,EC,CORP
-Twilio Inc,N/A,Twilio Inc,90138F102,,TWLO,US,EC,CORP
-Uber Technologies Inc,N/A,Uber Technologies Inc,90353T100,,UBER,US,EC,CORP
-Veeva Systems Inc,549300YZEXPDB92M2F02,Veeva Systems Inc,922475108,US9224751084,VEEV,US,EC,CORP
-Visa Inc,N/A,Visa Inc,92826C839,,V,US,EC,CORP
-Wells Fargo & Co,N/A,Wells Fargo & Co,949746101,,WFC,US,EC,CORP
-Western Digital Corp,N/A,Western Digital Corp,958102105,,WDC,US,EC,CORP
-Williams-Sonoma Inc,N/A,Williams-Sonoma Inc,969904101,,WSM,US,EC,CORP
-Workday Inc,549300J0DYC0N31V7G13,Workday Inc,98138H101,US98138H1014,WDAY,US,EC,CORP
-Zscaler Inc,529900MZ0RTK1BWRNF46,Zscaler Inc,98980G102,US98980G1022,ZS,US,EC,CORP
-Zoom Communications Inc,549300T9GCHU0ODOM055,Zoom Communications Inc,98980L101,US98980L1017,ZM,US,EC,CORP
-Seagate Technology Holdings PL,N/A,Seagate Technology Holdings PLC,N/A,,STX,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+BAY,AAPL US Equity,AAPL,Apple Inc,HWUPKR0MPOU8FGXBT394,Apple Inc,037833100,US0378331005,AAPL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ABNB US Equity,ABNB,Airbnb Inc,549300HMUDNO0RY56D37,Airbnb Inc,009066101,US0090661010,ABNB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ADBE US Equity,ADBE,Adobe Inc,FU4LY2G4933NH2E1CP29,Adobe Inc,00724F101,US00724F1012,ADBE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ADSK US Equity,ADSK,Autodesk Inc,FRKKVKAIQEF3FCSTPG55,Autodesk Inc,052769106,US0527691069,ADSK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,AFRM US Equity,AFRM,Affirm Holdings Inc,N/A,Affirm Holdings Inc,00827B106,US00827B1061,AFRM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ALAB US Equity,ALAB,Astera Labs Inc,529900LJL8TUEGF7HG20,Astera Labs Inc,04626A103,US04626A1034,ALAB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,AMAT US Equity,AMAT,Applied Materials Inc,41BNNE1AFPNAZELZ6K07,Applied Materials Inc,038222105,US0382221051,AMAT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,AMD US Equity,AMD,Advanced Micro Devices Inc,R2I72C950HOYXII45366,Advanced Micro Devices Inc,007903107,US0079031078,AMD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,APP US Equity,APP,AppLovin Corp,549300LLVXMUAOL3SQ07,AppLovin Corp,03831W108,US03831W1080,APP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,AVGO US Equity,AVGO,Broadcom Inc,549300WV6GIDOZJTV909,Broadcom Inc,11135F101,US11135F1012,AVGO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,BBIO US Equity,BBIO,Bridgebio Pharma Inc,54930028YG89VTY2J114,Bridgebio Pharma Inc,10806X102,US10806X1028,BBIO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,BE US Equity,BE,Bloom Energy Corp,549300XB5J9BFW5JXV97,Bloom Energy Corp,093712107,US0937121079,BE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,CLX US Equity,CLX,Clorox Co/The,54930044KVSC06Z79I06,Clorox Co/The,189054109,US1890541097,CLX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,COIN US Equity,COIN,Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,COO US Equity,COO,Cooper Cos Inc/The,QJKMVPIGLH7530PCUE20,Cooper Cos Inc/The,216648501,US2166485019,COO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,CRM US Equity,CRM,Salesforce Inc,RCGZFPDMRW58VJ54VR07,Salesforce Inc,79466L302,US79466L3024,CRM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,CSCO US Equity,CSCO,Cisco Systems Inc,549300LKFJ962MZ46593,Cisco Systems Inc,17275R102,US17275R1023,CSCO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,DASH US Equity,DASH,DoorDash Inc,549300NUQ43FGGSK5051,DoorDash Inc,25809K105,US25809K1051,DASH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,EBAY US Equity,EBAY,eBay Inc,OML71K8X303XQONU6T67,eBay Inc,278642103,US2786421030,EBAY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ESS US Equity,ESS,Essex Property Trust Inc,549300TR2H2VEFX0NC60,Essex Property Trust Inc,297178105,US2971781057,ESS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,FTNT US Equity,FTNT,Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,GILD US Equity,GILD,Gilead Sciences Inc,549300WTZWR07K8MNV44,Gilead Sciences Inc,375558103,US3755581036,GILD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,GOOGL US Equity,GOOGL,Alphabet Inc,5493006MHB84DD0ZWV18,Alphabet Inc,02079K305,US02079K3059,GOOGL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,HOOD US Equity,HOOD,Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,HPQ US Equity,HPQ,HP Inc,WHKXQACZ14C5XRO8LW03,HP Inc,40434L105,US40434L1052,HPQ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,INTC US Equity,INTC,Intel Corp,KNX4USFCNGPY45LOCE31,Intel Corp,458140100,US4581401001,INTC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,IOT US Equity,IOT,Samsara Inc,529900IE80DQBIFK3M88,Samsara Inc,79589L106,US79589L1061,IOT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ISRG US Equity,ISRG,Intuitive Surgical Inc,54930052SRG011710797,Intuitive Surgical Inc,46120E602,US46120E6023,ISRG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,LITE US Equity,LITE,Lumentum Holdings Inc,549300JLWRRC38DWEF52,Lumentum Holdings Inc,55024U109,US55024U1097,LITE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,LRCX US Equity,LRCX,Lam Research Corp,549300I4GMO6D34U1T02,Lam Research Corp,512807306,US5128073062,LRCX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,META US Equity,META,Meta Platforms Inc,BQ4BKCS1HXDV9HN80Z93,Meta Platforms Inc,30303M102,US30303M1027,META,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,MRVL US Equity,MRVL,MARVELL TECHNOLOGY INC,254900WVU0BM7ZCJ9E93,MARVELL TECHNOLOGY INC,573874104,US5738741041,MRVL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,NET US Equity,NET,Cloudflare Inc,5493007DY18BGNLDWU14,Cloudflare Inc,18915M107,US18915M1071,NET,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,NFLX US Equity,NFLX,Netflix Inc,549300Y7VHGU0I7CE873,Netflix Inc,64110L106,US64110L1061,NFLX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,NOW US Equity,NOW,ServiceNow Inc,549300HJTQM36M0E1G39,ServiceNow Inc,81762P102,US81762P1021,NOW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,NVDA US Equity,NVDA,NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,OKTA US Equity,OKTA,Okta Inc,549300N8J06I8MRHU620,Okta Inc,679295105,US6792951054,OKTA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,PANW US Equity,PANW,Palo Alto Networks Inc,549300QXR2YVZV231H43,Palo Alto Networks Inc,697435105,US6974351057,PANW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,PCG US Equity,PCG,PG&E Corp,8YQ2GSDWYZXO2EDN3511,PG&E Corp,69331C108,US69331C1080,PCG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,RBLX US Equity,RBLX,ROBLOX Corp,529900ANZDBDFU91SO19,ROBLOX Corp,771049103,US7710491033,RBLX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,RDDT US Equity,RDDT,Reddit Inc,529900APN1YHPBHPI679,Reddit Inc,75734B100,US75734B1008,RDDT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,RIVN US Equity,RIVN,Rivian Automotive Inc,25490004LNKJ84MFYY24,Rivian Automotive Inc,76954A103,US76954A1034,RIVN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ROST US Equity,ROST,Ross Stores Inc,549300ENZFLPGRDFZQ60,Ross Stores Inc,778296103,US7782961038,ROST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,SMCI US Equity,SMCI,Super Micro Computer Inc,54930022CZO1N2UGVW07,Super Micro Computer Inc,86800U302,US86800U3023,SMCI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,SNOW US Equity,SNOW,Snowflake Inc,254900CJNSY1K7T53Z16,Snowflake Inc,833445109,US8334451098,SNOW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,SNX US Equity,SNX,TD SYNNEX Corp,5493004HI6PFLF46NS53,TD SYNNEX Corp,87162W100,US87162W1009,SNX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,SOFI US Equity,SOFI,SoFi Technologies Inc,549300SW81JCMVZDDY09,SoFi Technologies Inc,83406F102,US83406F1021,SOFI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,STX US Equity,STX,Seagate Technology Holdings PL,635400RUXIFEZSRU8X70,Seagate Technology Holdings PLC,G7997R103,IE00BKVD2N49,STX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,TWLO US Equity,TWLO,Twilio Inc,5493004W8TRGD63APX93,Twilio Inc,90138F102,US90138F1021,TWLO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,UBER US Equity,UBER,Uber Technologies Inc,549300B2FTG34FILDR98,Uber Technologies Inc,90353T100,US90353T1007,UBER,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,V US Equity,V,Visa Inc,549300JZ4OKEHW3DPJ59,Visa Inc,92826C839,US92826C8394,V,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,VEEV US Equity,VEEV,Veeva Systems Inc,549300YZEXPDB92M2F02,Veeva Systems Inc,922475108,US9224751084,VEEV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,WDAY US Equity,WDAY,Workday Inc,549300J0DYC0N31V7G13,Workday Inc,98138H101,US98138H1014,WDAY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,WDC US Equity,WDC,Western Digital Corp,549300QQXOOYEF89IC56,Western Digital Corp,958102105,US9581021055,WDC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,WFC US Equity,WFC,Wells Fargo & Co,PBLD0EJDB5FWOLXP3B76,Wells Fargo & Co,949746101,US9497461015,WFC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,WSM US Equity,WSM,Williams-Sonoma Inc,549300IARG6YWVTZ1I92,Williams-Sonoma Inc,969904101,US9699041011,WSM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,XYZ US Equity,XYZ,Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ZM US Equity,ZM,Zoom Communications Inc,549300T9GCHU0ODOM055,Zoom Communications Inc,98980L101,US98980L1017,ZM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BAY,ZS US Equity,ZS,Zscaler Inc,529900MZ0RTK1BWRNF46,Zscaler Inc,98980G102,US98980G1022,ZS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

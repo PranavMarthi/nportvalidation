@@ -1,0 +1,3 @@
+holdingId,name,lei,title,cusip,isin,ticker,balance,units,curCd,valUSD,pctVal,payoffProfile,assetCat,issuerCat,invCountry,isRestrictedSec,fairValLevel,isCashCollateral,isNonCashCollateral,isLoanByFund,issuerConditionalDesc,otherDesc,otherValue
+46434G772-TRS-07/05/27-L-MREX,N/A,N/A,ISHARES MSCI TAIWAN ETF-SWAP-MREX-L,N/A,,46434G772-TRS-07/05/27-L-MREX,1,NC,USD,1328991.48,200.31,N/A,DE,OTHER,US,N,2,N,N,N,N/A,USER DEFINED,46434G772-TRS-07/05/27-L-MREX
+FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,131844.87,NS,USD,131844.87,19.87,Long,STIV,RF,US,N,1,N,N,N,,,

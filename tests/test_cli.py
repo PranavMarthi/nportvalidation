@@ -1,7 +1,31 @@
 """CLI integration tests."""
 
 import pytest
+
+import nport.cli as climod
 from nport.cli import main
+
+
+class TestBuildAllFunds:
+    def test_no_fund_builds_every_fund_with_filing(self, monkeypatch, tmp_path):
+        funds = tmp_path / "funds"
+        for t in ("aaa", "bbb"):
+            (funds / t / "filings" / "2026-06").mkdir(parents=True)
+            (funds / t / "fund_config.txt").write_text("x")
+            (funds / t / "filings" / "2026-06" / "filing_data.txt").write_text("x")
+        (funds / "nofiling").mkdir()                       # no period filing → skipped
+        (funds / "nofiling" / "fund_config.txt").write_text("x")
+        monkeypatch.setattr(climod, "_DEFAULT_FUNDS_DIR", funds)
+        seen = []
+        monkeypatch.setattr(climod, "_ingest_one", lambda args: seen.append(args.pos[0]))
+        main(["build", "2026-06"])
+        assert sorted(seen) == ["AAA", "BBB"]
+
+    def test_named_fund_routes_to_single(self, monkeypatch):
+        called = {}
+        monkeypatch.setattr(climod, "_ingest_one", lambda args: called.setdefault("pos", args.pos))
+        main(["build", "fdrs", "2026-06"])
+        assert called["pos"] == ["fdrs", "2026-06"]
 
 
 def _fdrs_paths(fdrs_dir):

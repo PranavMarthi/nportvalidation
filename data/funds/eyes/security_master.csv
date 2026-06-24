@@ -1,36 +1,36 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-ADT Inc,N/A,ADT Inc,00090Q103,,ADT,US,EC,CORP
-Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP
-BIGBEAR.AI HOLDINGS INC,N/A,BIGBEAR.AI HOLDINGS INC,08975B109,,BBAI,US,EC,CORP
-BlackSky Technology Inc,N/A,BlackSky Technology Inc,09263B207,,BKSY,US,EC,CORP
-Booz Allen Hamilton Holding Co,N/A,Booz Allen Hamilton Holding Corp,099502106,,BAH,US,EC,CORP
-CACI International Inc,N/A,CACI International Inc,127190304,,CACI,US,EC,CORP
-Clear Secure Inc,N/A,Clear Secure Inc,18467V109,,YOU,US,EC,CORP
-Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
-Digi International Inc,N/A,Digi International Inc,253798102,,DGII,US,EC,CORP
-Dynatrace Inc,N/A,Dynatrace Inc,268150109,,DT,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Identiv Inc,N/A,Identiv Inc,45170X205,,INVE,US,EC,CORP
-Impinj Inc,N/A,Impinj Inc,453204109,,PI,US,EC,CORP
-L3Harris Technologies Inc,N/A,L3Harris Technologies Inc,502431109,,LHX,US,EC,CORP
-Leidos Holdings Inc,N/A,Leidos Holdings Inc,525327102,,LDOS,US,EC,CORP
-Mitek Systems Inc,N/A,Mitek Systems Inc,606710200,,MITK,US,EC,CORP
-Motorola Solutions Inc,N/A,Motorola Solutions Inc,620076307,,MSI,US,EC,CORP
-OSI Systems Inc,N/A,OSI Systems Inc,671044105,,OSIS,US,EC,CORP
-Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP
-Planet Labs PBC,N/A,Planet Labs PBC,72703X106,,PL,US,EC,CORP
-Powerfleet Inc NJ,N/A,Powerfleet Inc NJ,73931J109,,AIOT,US,EC,CORP
-SailPoint Inc,N/A,SailPoint Inc,78781J109,,SAIL,US,EC,CORP
-Samsara Inc,N/A,Samsara Inc,79589L106,,IOT,US,EC,CORP
-Satellogic Inc,N/A,Satellogic Inc,80401C100,,SATL,US,EC,CORP
-Spire Global Inc,N/A,Spire Global Inc,848560306,,SPIR,US,EC,CORP
-Teledyne Technologies Inc,N/A,Teledyne Technologies Inc,879360105,,TDY,US,EC,CORP
-Trimble Inc,N/A,Trimble Inc,896239100,,TRMB,US,EC,CORP
-Tyler Technologies Inc,N/A,Tyler Technologies Inc,902252105,,TYL,US,EC,CORP
-Varonis Systems Inc,N/A,Varonis Systems Inc,922280102,,VRNS,US,EC,CORP
-Zebra Technologies Corp,N/A,Zebra Technologies Corp,989207105,,ZBRA,US,EC,CORP
-Cognyte Software Ltd,N/A,Cognyte Software Ltd,N/A,,CGNT,IL,EC,CORP
-Cellebrite DI Ltd,N/A,Cellebrite DI Ltd,N/A,,CLBT,IL,EC,CORP
-Elastic NV,N/A,Elastic NV,N/A,,ESTC,US,EC,CORP
-NIQ Global Intelligence Plc,N/A,NIQ Global Intelligence Plc,N/A,,NIQ,US,EC,CORP
-Riskified Ltd,N/A,Riskified Ltd,N/A,,RSKD,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+EYES,ADT US Equity,ADT,ADT Inc,N/A,ADT Inc,00090Q103,US00090Q1031,ADT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,AIOT US Equity,AIOT,Powerfleet Inc NJ,2549007NKEFPYEH4MF81,Powerfleet Inc NJ,73931J109,US73931J1097,AIOT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,AXON US Equity,AXON,Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,BAH US Equity,BAH,Booz Allen Hamilton Holding Co,529900JPV47PIUWMA015,Booz Allen Hamilton Holding Corp,099502106,US0995021062,BAH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,BBAI US Equity,BBAI,BIGBEAR.AI HOLDINGS INC,549300XGCF2ELN28CS63,BIGBEAR.AI HOLDINGS INC,08975B109,US08975B1098,BBAI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,BKSY US Equity,BKSY,BlackSky Technology Inc,N/A,BlackSky Technology Inc,09263B207,US09263B2079,BKSY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,CACI US Equity,CACI,CACI International Inc,SYRPI2D1O9WRTS2WX210,CACI International Inc,127190304,US1271903049,CACI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,CGNT US Equity,CGNT,Cognyte Software Ltd,2549006L803IRJC67B33,Cognyte Software Ltd,M25133105,IL0011691438,CGNT,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,CLBT US Equity,CLBT,Cellebrite DI Ltd,254900G03462YGP1IO36,Cellebrite DI Ltd,M2197Q107,IL0011794802,CLBT,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,DDOG US Equity,DDOG,Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,DGII US Equity,DGII,Digi International Inc,529900KG656HGROI4N27,Digi International Inc,253798102,US2537981027,DGII,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,DT US Equity,DT,Dynatrace Inc,6488T0Z33CE9L61EX904,Dynatrace Inc,268150109,US2681501092,DT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,ESTC US Equity,ESTC,Elastic NV,2549003I48WHHH937I59,Elastic NV,N14506104,NL0013056914,ESTC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,INVE US Equity,INVE,Identiv Inc,5299008KH3C585Z0DS77,Identiv Inc,45170X205,US45170X2053,INVE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,IOT US Equity,IOT,Samsara Inc,529900IE80DQBIFK3M88,Samsara Inc,79589L106,US79589L1061,IOT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,LDOS US Equity,LDOS,Leidos Holdings Inc,549300IUTGTP6EJP8124,Leidos Holdings Inc,525327102,US5253271028,LDOS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,LHX US Equity,LHX,L3Harris Technologies Inc,549300UTE50ZMDBG8A20,L3Harris Technologies Inc,502431109,US5024311095,LHX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,MITK US Equity,MITK,Mitek Systems Inc,549300ABZAQ3R25XG118,Mitek Systems Inc,606710200,US6067102003,MITK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,MSI US Equity,MSI,Motorola Solutions Inc,6S552MUG6KGJVEBSEC55,Motorola Solutions Inc,620076307,US6200763075,MSI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,NIQ US Equity,NIQ,NIQ Global Intelligence Plc,529900Z0P0XAM4O3H416,NIQ Global Intelligence Plc,G63755105,IE000JMT8VI3,NIQ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,OSIS US Equity,OSIS,OSI Systems Inc,DDX3MPX1Y8YD30050X33,OSI Systems Inc,671044105,US6710441055,OSIS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,PI US Equity,PI,Impinj Inc,549300M26VGKSMMWWN17,Impinj Inc,453204109,US4532041096,PI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,PL US Equity,PL,Planet Labs PBC,254900Q7PVI3HTQBRB44,Planet Labs PBC,72703X106,US72703X1063,PL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,PLTR US Equity,PLTR,Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,RSKD US Equity,RSKD,Riskified Ltd,894500GU19M0O0BYWM49,Riskified Ltd,M8216R109,IL0011786493,RSKD,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,SAIL US Equity,SAIL,SailPoint Inc,529900IRT8OM8CEOPC03,SailPoint Inc,78781J109,US78781J1097,SAIL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,SATL US Equity,SATL,Satellogic Inc,5299009D26BMHHTAHA11,Satellogic Inc,80401C100,US80401C1009,SATL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,SPIR US Equity,SPIR,Spire Global Inc,549300EZFBLFFHJ5MF06,Spire Global Inc,848560306,US8485603067,SPIR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,TDY US Equity,TDY,Teledyne Technologies Inc,549300VSMO9KYQWDND94,Teledyne Technologies Inc,879360105,US8793601050,TDY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,TRMB US Equity,TRMB,Trimble Inc,549300E2MI7NSZFQWS19,Trimble Inc,896239100,US8962391004,TRMB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,TYL US Equity,TYL,Tyler Technologies Inc,25490040SMU4Z8LBCW70,Tyler Technologies Inc,902252105,US9022521051,TYL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,VRNS US Equity,VRNS,Varonis Systems Inc,549300SHIVNRRH7STS26,Varonis Systems Inc,922280102,US9222801022,VRNS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,YOU US Equity,YOU,Clear Secure Inc,N/A,Clear Secure Inc,18467V109,US18467V1098,YOU,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EYES,ZBRA US Equity,ZBRA,Zebra Technologies Corp,PO0I32GKZ3HZMMDPZZ08,Zebra Technologies Corp,989207105,US9892071054,ZBRA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,6 +1,7 @@
 """CLI for N-PORT filing generator."""
 
 import argparse
+import copy
 import csv
 import re
 import sys
@@ -18,6 +19,10 @@ from nport.custodian import (
     write_security_master,
 )
 from nport.data_loader import DataLoader, merge_positions_with_master, validate_after_merge, write_canonical_csv, write_split_csv
+from nport.filing_master import (
+    build_filing_master_from_custodian,
+    split_filing_master,
+)
 from nport.master_sheet import (
     refresh_master,
     seed_master_from_per_fund,
@@ -43,10 +48,31 @@ def _add_input_args(parser: argparse.ArgumentParser) -> None:
 
 
 def main(argv: list[str] | None = None) -> None:
+    # Windows consoles default to cp1252 and crash on the —/←/→ in help & guide text.
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8")
+        except (AttributeError, ValueError):
+            pass  # already UTF-8, or a non-reconfigurable stream (e.g. pytest capture)
+
     parser = argparse.ArgumentParser(prog="nport", description="Generate SEC N-PORT XML filings")
     sub = parser.add_subparsers(dest="command")
 
-    gen = sub.add_parser("generate", help="Generate N-PORT XML from input files")
+    # ── The 3 commands you use every month ───────────────────────
+    ms = sub.add_parser("masters", help="STEP 1: build BOTH master workbooks from the custodian (+ AP orders)")
+    ms.add_argument("pos", nargs="*", help="[period] — defaults to the latest custodian file")
+    ms.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
+    ms.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
+    ms.add_argument("--ap-orders", default=None, help="AP order book CSV (default: data/orders/<period>_orders.csv)")
+    ms.add_argument("--dry-run", action="store_true", help="Show what would be built")
+
+    sp = sub.add_parser("split", help="STEP 2: write every per-fund file from BOTH workbooks")
+    sp.add_argument("pos", nargs="*", help="[period] — defaults to the latest custodian file")
+    sp.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
+    sp.add_argument("--dry-run", action="store_true", help="Report targets without writing")
+    # STEP 3 is `build` (defined as `ingest` below) — `nport build` for all funds, `nport build <fund>` for one.
+
+    gen = sub.add_parser("generate", help="(advanced) Generate N-PORT XML from explicit input files")
     _add_input_args(gen)
     gen.add_argument("--output", required=True, help="Output XML path")
     gen.add_argument("--schema-dir", default=None, help="XSD schema directory")
@@ -77,8 +103,8 @@ def main(argv: list[str] | None = None) -> None:
     mg.add_argument("--output", required=True, help="Output canonical holdings CSV path (or directory with --split)")
     mg.add_argument("--split", action="store_true", help="Write split CSVs (base + debt + derivatives) instead of one flat file")
 
-    ig = sub.add_parser("ingest", aliases=["build"], help="Generate N-PORT XML for a fund: `nport build fdrs [2026-06]`")
-    ig.add_argument("pos", nargs="*", help="<fund> [period] — e.g. `fdrs 2026-06` (period defaults to latest)")
+    ig = sub.add_parser("ingest", aliases=["build"], help="STEP 3: generate N-PORT XML — `nport build` (all funds) or `nport build fdrs`")
+    ig.add_argument("pos", nargs="*", help="[fund] [period] — no fund = every fund for the period")
     ig.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
     ig.add_argument("--fund-dir", default=None, help="Fund directory (default: data/funds/<fund>)")
     ig.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
@@ -99,7 +125,7 @@ def main(argv: list[str] | None = None) -> None:
     pl.add_argument("--list", action="store_true", dest="list_filings", help="List recent filings")
     pl.add_argument("--count", type=int, default=5, help="Number of filings to list (default: 5)")
 
-    um = sub.add_parser("update-masters", aliases=["masters"], help="Update security masters: `nport masters [2026-06] [fund]`")
+    um = sub.add_parser("update-masters", help="(advanced/legacy) Update per-fund security_master.csv directly from custodian + reference XMLs")
     um.add_argument("pos", nargs="*", help="[period] [fund] — period defaults to latest, fund defaults to all")
     um.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
     um.add_argument("--fund-dir", default="data/funds", help="Fund directory (default: data/funds)")
@@ -108,7 +134,7 @@ def main(argv: list[str] | None = None) -> None:
     um.add_argument("--xml-dir", default="data/RealXMLs", help="Directory with reference N-PORT XMLs")
     um.add_argument("--dry-run", action="store_true", help="Show changes without writing")
 
-    bm = sub.add_parser("build-master", aliases=["master-build"], help="Refresh the one global master spreadsheet: `nport build-master [2026-06]`")
+    bm = sub.add_parser("build-master", aliases=["master-build"], help="(advanced) Build only the security master workbook (`masters` builds both)")
     bm.add_argument("pos", nargs="*", help="[period] [account] — period defaults to latest, account defaults to all")
     bm.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
     bm.add_argument("--master", default="data/master/security_master.xlsx", help="Master workbook path")
@@ -121,7 +147,7 @@ def main(argv: list[str] | None = None) -> None:
     bm.add_argument("--all-formulas", action="store_true", help="Re-insert BDP formulas even over already-populated Bloomberg cells")
     bm.add_argument("--dry-run", action="store_true", help="Show changes without writing")
 
-    sm = sub.add_parser("split-master", aliases=["master-split"], help="Regenerate per-fund security_master.csv from the master")
+    sm = sub.add_parser("split-master", aliases=["master-split"], help="(advanced) Split only the security master (`split` does both)")
     sm.add_argument("pos", nargs="*", help="[account] — defaults to all accounts in the master")
     sm.add_argument("--master", default="data/master/security_master.xlsx", help="Master workbook path")
     sm.add_argument("--fund-dir", default="data/funds", help="Fund directory (default: data/funds)")
@@ -129,7 +155,23 @@ def main(argv: list[str] | None = None) -> None:
     sm.add_argument("--all", action="store_true", dest="all_accounts", help="Split all accounts in the master")
     sm.add_argument("--dry-run", action="store_true", help="Report per-fund row counts without writing")
 
-    nf = sub.add_parser("new-filing", aliases=["filing"], help="Create filing_data.txt template(s): `nport filing [2026-06] [fund]`")
+    bf = sub.add_parser("build-filing-master", aliases=["filing-master-build"], help="(advanced) Build only the filing master workbook (`masters` builds both)")
+    bf.add_argument("pos", nargs="*", help="[period] — defaults to latest custodian file")
+    bf.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
+    bf.add_argument("--master", default="data/master/filing_master.xlsx", help="Filing master workbook path")
+    bf.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
+    bf.add_argument("--ap-orders", default=None, help="AP order book CSV → monthly Sales/Redemption flows")
+    bf.add_argument("--dry-run", action="store_true", help="Show what would be written")
+
+    sf = sub.add_parser("split-filing-master", aliases=["filing-master-split"], help="(advanced) Split only the filing master (`split` does both)")
+    sf.add_argument("pos", nargs="*", help="[account] — defaults to all funds in the master")
+    sf.add_argument("--master", default="data/master/filing_master.xlsx", help="Filing master workbook path")
+    sf.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
+    sf.add_argument("--fund-dir", default="data/funds", help="Fund directory (default: data/funds)")
+    sf.add_argument("--account", default=None, help="Account to split (default: all)")
+    sf.add_argument("--dry-run", action="store_true", help="Report targets without writing")
+
+    nf = sub.add_parser("new-filing", aliases=["filing"], help="(advanced) Create blank filing_data.txt templates (`masters`+`split` already produce these)")
     nf.add_argument("pos", nargs="*", help="[period] [fund] — period defaults to latest, fund defaults to all")
     nf.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
     nf.add_argument("--fund-dir", default="data/funds", help="Fund directory (default: data/funds)")
@@ -144,6 +186,8 @@ def main(argv: list[str] | None = None) -> None:
         sys.exit(1)
 
     dispatch = {
+        "masters": _masters,
+        "split": _split,
         "generate": _generate,
         "validate": _validate,
         "check-schema": _check_schema,
@@ -154,11 +198,14 @@ def main(argv: list[str] | None = None) -> None:
         "schema": _schema,
         "pull": _pull,
         "update-masters": _update_masters,
-        "masters": _update_masters,  # alias
         "build-master": _build_master,
         "master-build": _build_master,  # alias
         "split-master": _split_master,
         "master-split": _split_master,  # alias
+        "build-filing-master": _build_filing_master,
+        "filing-master-build": _build_filing_master,  # alias
+        "split-filing-master": _split_filing_master,
+        "filing-master-split": _split_filing_master,  # alias
         "new-filing": _new_filing,
         "filing": _new_filing,       # alias
         "guide": _guide,
@@ -436,8 +483,52 @@ def _resolve_fund_dir(fund_dir: str, account: str | None) -> tuple[Path, str]:
     return child, account.upper()
 
 
+def _fund_accounts_for_period(period: str) -> list[str]:
+    """Every fund subdir that has both fund_config.txt and this period's filing_data.txt."""
+    if not _DEFAULT_FUNDS_DIR.is_dir():
+        return []
+    out = []
+    for d in sorted(_DEFAULT_FUNDS_DIR.iterdir()):
+        if (d.is_dir() and (d / "fund_config.txt").is_file()
+                and (d / "filings" / period / "filing_data.txt").is_file()):
+            out.append(d.name.upper())
+    return out
+
+
 def _ingest(args) -> None:
-    """Ingest custodian CSV → enriched holdings → N-PORT XML."""
+    """STEP 3 dispatcher: one fund (`nport build fdrs`) or every fund (`nport build`)."""
+    pos_account, pos_period = _split_positionals(getattr(args, "pos", None))
+    period = _resolve_period(pos_period or args.period)
+    account = pos_account or args.account
+
+    if account or args.fund_dir:
+        _ingest_one(args)
+        return
+
+    # No fund named → build every fund that has this period's filing.
+    accounts = _fund_accounts_for_period(period)
+    if not accounts:
+        print(f"ERROR: no funds have filings/{period}/filing_data.txt — run `nport masters` then `nport split` first.",
+              file=sys.stderr)
+        sys.exit(1)
+    ok, failed = [], []
+    for acct in accounts:
+        sub = copy.copy(args)
+        sub.pos, sub.account, sub.fund_dir, sub.output = [acct, period], None, None, None
+        try:
+            _ingest_one(sub)
+            ok.append(acct)
+        except SystemExit:
+            failed.append(acct)
+    print(f"\n  Built {len(ok)}/{len(accounts)} funds for {period}.")
+    if failed:
+        print(f"  Failed ({len(failed)}): {', '.join(failed)}\n"
+              f"  Re-run e.g. `nport build {failed[0].lower()} {period} --verbose` to see why.", file=sys.stderr)
+        sys.exit(1)
+
+
+def _ingest_one(args) -> None:
+    """Ingest custodian CSV → enriched holdings → N-PORT XML for ONE fund."""
     # 0. Resolve shorthand: `nport build <fund> [period]`
     pos_account, pos_period = _split_positionals(getattr(args, "pos", None))
     args.period = _resolve_period(pos_period or args.period)
@@ -650,6 +741,96 @@ def _update_masters(args) -> None:
             print(f"  {label} -> {sm_path}")
 
 
+_SECURITY_MASTER_PATH = Path("data/master/security_master.xlsx")
+_FILING_MASTER_PATH = Path("data/master/filing_master.xlsx")
+
+
+def _resolve_ap_orders(explicit: str | None, period: str) -> Path | None:
+    """The AP order book CSV: explicit path, else data/orders/<period>_orders.csv if present."""
+    if explicit:
+        p = Path(explicit)
+        if not p.is_file():
+            print(f"ERROR: AP order book CSV not found: {p}", file=sys.stderr)
+            sys.exit(1)
+        return p
+    auto = Path("data/orders") / f"{period}_orders.csv"
+    return auto if auto.is_file() else None
+
+
+def _masters(args) -> None:
+    """STEP 1: build BOTH master workbooks (security + filing) from the custodian."""
+    _, pos_period = _split_positionals(getattr(args, "pos", None))
+    period = _resolve_period(pos_period or getattr(args, "period", None))
+    custodian = _resolve_custodian(args.custodian, period)
+    if not custodian.is_file():
+        print(f"ERROR: Custodian CSV not found: {custodian}", file=sys.stderr)
+        sys.exit(1)
+    ap_orders = _resolve_ap_orders(args.ap_orders, period)
+
+    if args.dry_run:
+        flows = f" + {ap_orders}" if ap_orders else " (no AP orders file)"
+        print(f"  DRY RUN masters {period}:")
+        print(f"    [1/2] security master  <- {custodian} -> {_SECURITY_MASTER_PATH}")
+        print(f"    [2/2] filing master    <- {custodian}{flows} -> {_FILING_MASTER_PATH}")
+        return
+
+    rows = parse_custodian_csv(custodian)
+    try:
+        stats = refresh_master(rows, _SECURITY_MASTER_PATH, Path("data/RealXMLs"), None,
+                               formulas=True, overwrite_formulas=False)
+    except PermissionError:
+        print(f"ERROR: can't write {_SECURITY_MASTER_PATH} — close it in Excel and retry.", file=sys.stderr)
+        sys.exit(1)
+    print(f"  [1/2] security master: added {stats['added']}, removed {stats['removed']}, "
+          f"kept {stats['kept']}, {stats['formulas']} Bloomberg formulas -> {_SECURITY_MASTER_PATH}")
+
+    try:
+        n = build_filing_master_from_custodian(custodian, period, _FILING_MASTER_PATH, ap_orders)
+    except PermissionError:
+        print(f"ERROR: can't write {_FILING_MASTER_PATH} — close it in Excel and retry.", file=sys.stderr)
+        sys.exit(1)
+    flow_note = f"flows from {ap_orders.name}" if ap_orders else "no AP orders file — flows left 0"
+    print(f"  [2/2] filing master: {n} funds ({flow_note}) -> {_FILING_MASTER_PATH}")
+    print("\n  Next: open BOTH workbooks on the Bloomberg machine, let them calculate, SAVE"
+          " (keep .xlsx), then run `nport split`.")
+
+
+def _split(args) -> None:
+    """STEP 2: write every per-fund file from BOTH master workbooks."""
+    _, pos_period = _split_positionals(getattr(args, "pos", None))
+    period = _resolve_period(pos_period or getattr(args, "period", None))
+    fund_dir = _DEFAULT_FUNDS_DIR
+    verb = "DRY RUN" if args.dry_run else "Wrote"
+    did = False
+
+    if _SECURITY_MASTER_PATH.is_file():
+        try:
+            res = split_master(_SECURITY_MASTER_PATH, fund_dir, None, dry_run=args.dry_run)
+        except PermissionError as e:
+            print(f"ERROR: can't write a per-fund CSV — close it in Excel and retry ({e.filename}).", file=sys.stderr)
+            sys.exit(1)
+        print(f"  [1/2] security master: {verb} {len(res)} funds' security_master.csv")
+        did = True
+    else:
+        print(f"  [1/2] security master: skipped — {_SECURITY_MASTER_PATH} not found (run `nport masters` first)")
+
+    if _FILING_MASTER_PATH.is_file():
+        try:
+            res = split_filing_master(_FILING_MASTER_PATH, fund_dir, period, None, dry_run=args.dry_run)
+        except PermissionError as e:
+            print(f"ERROR: can't write a filing_data.txt — close it and retry ({e.filename}).", file=sys.stderr)
+            sys.exit(1)
+        print(f"  [2/2] filing master: {verb} {len(res)} funds' filing_data.txt ({period})")
+        did = True
+    else:
+        print(f"  [2/2] filing master: skipped — {_FILING_MASTER_PATH} not found")
+
+    if not did:
+        sys.exit(1)
+    if not args.dry_run:
+        print("\n  Next: `nport build` (all funds) or `nport build <fund>` to generate the XML.")
+
+
 def _build_master(args) -> None:
     """Refresh the one global master spreadsheet from the custodian CSV."""
     master_path = Path(args.master)
@@ -737,6 +918,55 @@ def _split_master(args) -> None:
         print(f"  {verb} {acct}: {n} rows -> {path}")
 
 
+def _build_filing_master(args) -> None:
+    """Build the per-period filing-returns workbook from the custodian + Bloomberg formulas."""
+    master_path = Path(args.master)
+    _, pos_period = _split_positionals(getattr(args, "pos", None))
+    period = _resolve_period(pos_period or getattr(args, "period", None))
+    custodian = Path(args.custodian) if args.custodian else _resolve_custodian(None, period)
+    if not custodian.is_file():
+        print(f"ERROR: Custodian CSV not found: {custodian}", file=sys.stderr)
+        sys.exit(1)
+    ap_orders = Path(args.ap_orders) if getattr(args, "ap_orders", None) else None
+    if ap_orders and not ap_orders.is_file():
+        print(f"ERROR: AP order book CSV not found: {ap_orders}", file=sys.stderr)
+        sys.exit(1)
+    if args.dry_run:
+        flows_note = f", flows from {ap_orders}" if ap_orders else ""
+        print(f"  DRY RUN build-filing-master {period}: from {custodian}{flows_note} -> {master_path}")
+        return
+    try:
+        n = build_filing_master_from_custodian(custodian, period, master_path, ap_orders)
+    except PermissionError:
+        print(f"ERROR: can't write {master_path} — close it in Excel and retry.", file=sys.stderr)
+        sys.exit(1)
+    print(f"  Built filing master for {n} funds ({period}) -> {master_path}")
+    print("  Open it on a Bloomberg terminal so rtn1-3 calculate, save, then `nport split-filing-master`.")
+
+
+def _split_filing_master(args) -> None:
+    """Write each fund's filing_data.txt from the filing master workbook."""
+    master_path = Path(args.master)
+    if not master_path.is_file():
+        print(f"ERROR: Filing master not found: {master_path}", file=sys.stderr)
+        sys.exit(1)
+    fund_dir = Path(args.fund_dir)
+    pos_account, pos_period = _split_positionals(getattr(args, "pos", None))
+    period = _resolve_period(pos_period or getattr(args, "period", None))
+    account = pos_account or args.account
+    accounts = [account.upper()] if account else None
+    try:
+        results = split_filing_master(master_path, fund_dir, period, accounts, dry_run=args.dry_run)
+    except PermissionError as e:
+        print(f"ERROR: can't write a filing_data.txt — close it and retry ({e.filename}).", file=sys.stderr)
+        sys.exit(1)
+    if not results:
+        print("  No matching funds in the filing master.")
+        return
+    verb = "DRY RUN" if args.dry_run else "Wrote"
+    print(f"  {verb} {len(results)} filing_data.txt files ({period}).")
+
+
 def _new_filing(args) -> None:
     """Create filing_data.txt template(s) for a new period."""
     # Resolve shorthand: `nport filing [period] [fund]`
@@ -781,53 +1011,52 @@ def _new_filing(args) -> None:
 
         path = generate_filing_template(d, period)
         print(f"  {d.name}: created {path}")
-        print(f"    -> Edit this file with totAssets, netAssets, returns, flows")
+        print("    -> Edit this file with totAssets, netAssets, returns, flows")
 
 
 def _guide(args) -> None:
     """Print the step-by-step N-PORT filing guide."""
     print("""\
-N-PORT Monthly Filing Guide
-============================
+N-PORT Monthly Filing — 3 commands
+==================================
 
-STEP 1: Get your custodian CSV from US Bank.
-  Save it as: data/custodian/<YYYY-MM>_holdings.csv   (e.g. data/custodian/2026-06_holdings.csv)
-  Every command below then finds it automatically.
+Drop two files in, run three commands. (Period like 2026-06 is optional — the tool
+uses the newest custodian file if you leave it off.)
 
-STEP 2: Update the one master spreadsheet, then split it to per-fund files
-  $ nport build-master 2026-06
-  Adds new positions, removes old ones, keeps your manual fields — all in ONE
-  workbook: data/master/security_master.xlsx
-  Open that ONE file on the Bloomberg machine and let it calculate:
-    - Stocks:  lei, isin, invCountry  ← pre-filled with live =BDP() formulas, fetch on open
-    - Options: counterpartyName, counterpartyLei, delta              ← type these in
-    - Swaps:   counterpartyName, counterpartyLei, notionalAmt, unrealizedAppr, valUSD, pctVal  ← type these in
-  (CUSIP/ISIN columns are Text, so Excel won't corrupt them. Save as .xlsx, not CSV.)
-  Then split it back out to the per-fund files the build reads:
-  $ nport split-master
-  (Edit the master, NOT the per-fund security_master.csv files — split overwrites them.)
-  First time only: `nport build-master --seed` migrates your existing per-fund CSVs in.
+DROP IN  (from US Bank / your AP order portal):
+  data/custodian/2026-06_holdings.csv      ← US Bank monthly positions (all funds)
+  data/orders/2026-06_orders.csv           ← AP creation/redemption order book (optional, for flows)
 
-STEP 3: Create this month's filing
-  $ nport filing 2026-06
-  Creates a filing_data.txt template per fund. Open each and fill in:
-    - totAssets, totLiabs, netAssets (from fund accounting)
-    - rtn1, rtn2, rtn3 (monthly returns)
-    - netRealizedGain/netUnrealizedAppr for each month
-    - mon1/2/3 Sales, Redemption, Reinvestment (flows)
-    - dateSigned (date you're signing)
+STEP 1 — Build the two master workbooks
+  $ nport masters
+  Builds data/master/security_master.xlsx (holdings reference data) and
+         data/master/filing_master.xlsx   (returns, net assets, flows, B.3 risk).
+  Then OPEN BOTH on the Bloomberg machine, let the =BDP() formulas calculate, and SAVE
+  (keep them .xlsx). Bloomberg fills: stock LEI/ISIN/country, monthly returns, bond
+  durations. Counterparties + LEIs on swaps/options are filled automatically.
+  Only truly manual cells: option `delta`, swap `notionalAmt`/`unrealizedAppr`,
+  and fund-accounting gains — type those into the workbooks before saving.
 
-STEP 4: Generate XML for a fund (dry-run first to catch errors)
-  $ nport build fdrs 2026-06 --dry-run
-  $ nport build fdrs 2026-06
-  Writes output/FDRS_2026-06.xml
+STEP 2 — Split the workbooks into per-fund files
+  $ nport split
+  Writes every fund's security_master.csv and filing_data.txt from the two workbooks.
+  (Edit the workbooks, NOT the per-fund files — split overwrites them.)
 
-STEP 5: Review and file
-  Check the output XML, then set liveTestFlag=LIVE in filing_data.txt and rerun STEP 4.
+STEP 3 — Generate the XML
+  $ nport build            # every fund  ->  output/<TICKER>_2026-06.xml
+  $ nport build fdrs       # just one fund
+  Add --dry-run to validate without writing. Fix any reported field in the workbook,
+  re-split, rebuild.
 
-TIP: run `source .venv/bin/activate` once so you can type `nport ...` instead of `uv run nport ...`.
-TIP: the period defaults to the latest custodian file, so you can usually drop it:
-     `nport masters`, `nport filing`, `nport build fdrs`.\
+FILE IT
+  Review the XML in output/. When it's right, set liveTestFlag=LIVE in each
+  filing_data.txt (or the filing master before splitting) and run `nport build` again,
+  then upload to EDGAR.
+
+TIP: activate the venv once so you can drop the `uv run` prefix:
+     macOS/Linux:  source .venv/bin/activate
+     Windows:      .venv\\Scripts\\Activate.ps1
+TIP: `nport guide` reprints this. `nport --help` lists every command (advanced ones too).\
 """)
 
 

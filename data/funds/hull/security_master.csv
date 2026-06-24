@@ -1,44 +1,44 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Amazon.com Inc,N/A,Amazon.com Inc,023135106,,AMZN,US,EC,CORP
-CH Robinson Worldwide Inc,N/A,CH Robinson Worldwide Inc,12541W209,,CHRW,US,EC,CORP
-Descartes Systems Group Inc/Th,N/A,Descartes Systems Group Inc/The,249906108,,DSGX,US,EC,CORP
-Excelerate Energy Inc,N/A,Excelerate Energy Inc,30069T101,,EE,US,EC,CORP
-Expeditors International of Wa,N/A,Expeditors International of Washington Inc,302130109,,EXPD,US,EC,CORP
-FedEx Corp,N/A,FedEx Corp,31428X106,,FDX,US,EC,CORP
-Fedex Freight Holding Co Inc,N/A,Fedex Freight Holding Co Inc,314352105,,FDXF-W,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-GXO Logistics Inc,N/A,GXO Logistics Inc,36262G101,,GXO,US,EC,CORP
-JB Hunt Transport Services Inc,N/A,JB Hunt Transport Services Inc,445658107,,JBHT,US,EC,CORP
-Matson Inc,N/A,Matson Inc,57686G105,,MATX,US,EC,CORP
-Old Dominion Freight Line Inc,N/A,Old Dominion Freight Line Inc,679580100,,ODFL,US,EC,CORP
-United Parcel Service Inc,N/A,United Parcel Service Inc,911312106,,UPS,US,EC,CORP
-XPO Inc,N/A,XPO Inc,983793100,,XPO,US,EC,CORP
-Ardmore Shipping Corp,N/A,Ardmore Shipping Corp,N/A,,ASC,MH,EC,CORP
-CMB Tech NV,N/A,CMB Tech NV,N/A,,CMBT,BE,EC,CORP
-Costamare Inc,N/A,Costamare Inc,N/A,,CMRE,US,EC,CORP
-Danaos Corp,N/A,Danaos Corp,N/A,,DAC,US,EC,CORP
-DHT Holdings Inc,N/A,DHT Holdings Inc,N/A,,DHT,US,EC,CORP
-Diana Shipping Inc,N/A,Diana Shipping Inc,N/A,,DSX,US,EC,CORP
-Euroseas Ltd,N/A,Euroseas Ltd,N/A,,ESEA,US,EC,CORP
-FLEX LNG Ltd,N/A,FLEX LNG Ltd,N/A,,FLNG,US,EC,CORP
-Frontline PLC,N/A,Frontline PLC,N/A,,FRO,US,EC,CORP
-StealthGas Inc,N/A,StealthGas Inc,N/A,,GASS,US,EC,CORP
-Golar LNG Ltd,N/A,Golar LNG Ltd,N/A,,GLNG,US,EC,CORP
-Genco Shipping & Trading Ltd,N/A,Genco Shipping & Trading Ltd,N/A,,GNK,US,EC,CORP
-Global Ship Lease Inc,N/A,Global Ship Lease Inc,N/A,,GSL,US,EC,CORP
-Hafnia Ltd,N/A,Hafnia Ltd,N/A,,HAFN,US,EC,CORP
-Himalaya Shipping Ltd,N/A,Himalaya Shipping Ltd,N/A,,HSHP,US,EC,CORP
-International Seaways Inc,N/A,International Seaways Inc,N/A,,INSW,US,EC,CORP
-KNOT Offshore Partners LP,N/A,KNOT Offshore Partners LP,N/A,,KNOP,US,EC,CORP
-Dorian LPG Ltd,N/A,Dorian LPG Ltd,N/A,,LPG,US,EC,CORP
-Nordic American Tankers Ltd,N/A,Nordic American Tankers Ltd,N/A,,NAT,US,EC,CORP
-Navigator Holdings Ltd,N/A,Navigator Holdings Ltd,N/A,,NVGS,US,EC,CORP
-PANGAEA LOGISTICS SOLUTIONS LT,N/A,PANGAEA LOGISTICS SOLUTIONS LT,N/A,,PANL,US,EC,CORP
-Star Bulk Carriers Corp,N/A,Star Bulk Carriers Corp,N/A,,SBLK,US,EC,CORP
-SFL Corp Ltd,N/A,SFL Corp Ltd,N/A,,SFL,US,EC,CORP
-Seanergy Maritime Holdings Cor,N/A,Seanergy Maritime Holdings Corp,N/A,,SHIP,US,EC,CORP
-Scorpio Tankers Inc,N/A,Scorpio Tankers Inc,N/A,,STNG,US,EC,CORP
-Tsakos Energy Navigation Ltd,N/A,Tsakos Energy Navigation Ltd,N/A,,TEN,US,EC,CORP
-Teekay Tankers Ltd,N/A,Teekay Tankers Ltd,N/A,,TNK,US,EC,CORP
-TORM PLC,N/A,TORM PLC,N/A,,TRMD,US,EC,CORP
-ZIM Integrated Shipping Servic,N/A,ZIM Integrated Shipping Services Ltd,N/A,,ZIM,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+HULL,AMZN US Equity,AMZN,Amazon.com Inc,ZXTILKJKG63JELOEG630,Amazon.com Inc,023135106,US0231351067,AMZN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,ASC US Equity,ASC,Ardmore Shipping Corp,549300J8HD7K6BHD8O28,Ardmore Shipping Corp,Y0207T100,MHY0207T1001,ASC,IE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,CHRW US Equity,CHRW,CH Robinson Worldwide Inc,529900WNWN5L0OVDHA79,CH Robinson Worldwide Inc,12541W209,US12541W2098,CHRW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,CMBT US Equity,CMBT,CMB Tech NV,549300D80RYON74MEJ03,CMB Tech NV,B38564108,BE0003816338,CMBT,BE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,CMRE US Equity,CMRE,Costamare Inc,5299003L6NPTZ25LN818,Costamare Inc,Y1771G102,MHY1771G1026,CMRE,MC,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,DAC US Equity,DAC,Danaos Corp,734IM3DNDNT36T7YTD24,Danaos Corp,Y1968P121,MHY1968P1218,DAC,GR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,DHT US Equity,DHT,DHT Holdings Inc,549300SMD6IVZYT74K40,DHT Holdings Inc,Y2065G121,MHY2065G1219,DHT,BM,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,DSGX US Equity,DSGX,Descartes Systems Group Inc/Th,875500NEPA7JI5EOMN45,Descartes Systems Group Inc/The,249906108,CA2499061083,DSGX,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,DSX US Equity,DSX,Diana Shipping Inc,549300XD7FHNJ0THIV12,Diana Shipping Inc,Y2066G104,MHY2066G1044,DSX,GR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,EE US Equity,EE,Excelerate Energy Inc,254900J6DPU4HB368I65,Excelerate Energy Inc,30069T101,US30069T1016,EE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,ESEA US Equity,ESEA,Euroseas Ltd,213800ADWWZOFC9KU444,Euroseas Ltd,Y23592135,MHY235921357,ESEA,GR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,EXPD US Equity,EXPD,Expeditors International of Wa,984500B055A804AB6E40,Expeditors International of Washington Inc,302130109,US3021301094,EXPD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,FDX US Equity,FDX,FedEx Corp,549300E707U7WNPZN687,FedEx Corp,31428X106,US31428X1063,FDX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,FDXF US Equity,FDXF,Fedex Freight Holding Co Inc,984500Y1DA5A58ICE336,Fedex Freight Holding Co Inc,314352105,US3143521058,FDXF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,FLNG US Equity,FLNG,FLEX LNG Ltd,21380084THHU3MPC3647,FLEX LNG Ltd,G35947202,BMG359472021,FLNG,BM,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,FRO US Equity,FRO,Frontline PLC,5493004BCIKYU1YL3H63,Frontline PLC,M46528101,CY0200352116,FRO,NO,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,GASS US Equity,GASS,StealthGas Inc,549300JCJUO3WBVVKJ89,StealthGas Inc,Y81669106,MHY816691064,GASS,GR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,GLNG US Equity,GLNG,Golar LNG Ltd,213800C2VSFZG3EZLO34,Golar LNG Ltd,G9456A100,BMG9456A1009,GLNG,BM,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,GNK US Equity,GNK,Genco Shipping & Trading Ltd,5493003MBZ5GU8QHXZ58,Genco Shipping & Trading Ltd,Y2685T131,MHY2685T1313,GNK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,GSL US Equity,GSL,Global Ship Lease Inc,254900GLZ0J5N8UZM071,Global Ship Lease Inc,Y27183600,MHY271836006,GSL,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,GXO US Equity,GXO,GXO Logistics Inc,5493007CNWMXN78JRN66,GXO Logistics Inc,36262G101,US36262G1013,GXO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,HAFN US Equity,HAFN,Hafnia Ltd,5493001KCFT0SCGJ2647,Hafnia Ltd,Y2990R101,SGXZ53070850,HAFN,SG,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,HSHP US Equity,HSHP,Himalaya Shipping Ltd,984500D86FFE5EYE7988,Himalaya Shipping Ltd,G4660A103,BMG4660A1036,HSHP,BM,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,INSW US Equity,INSW,International Seaways Inc,549300YUFDGFRNGBWF46,International Seaways Inc,Y41053102,MHY410531021,INSW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,JBHT US Equity,JBHT,JB Hunt Transport Services Inc,549300XCD1MPI1C5GK90,JB Hunt Transport Services Inc,445658107,US4456581077,JBHT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,KNOP US Equity,KNOP,KNOT Offshore Partners LP,549300RM8O2QLS7ZQN07,KNOT Offshore Partners LP,Y48125101,MHY481251012,KNOP,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,LPG US Equity,LPG,Dorian LPG Ltd,549300WP1W2WGMC7F395,Dorian LPG Ltd,Y2106R110,MHY2106R1100,LPG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,MATX US Equity,MATX,Matson Inc,549300OI5H3Y0I9I4I12,Matson Inc,57686G105,US57686G1058,MATX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,NAT US Equity,NAT,Nordic American Tankers Ltd,213800W4T8AMPKIPIU94,Nordic American Tankers Ltd,G65773106,BMG657731060,NAT,NO,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,NVGS US Equity,NVGS,Navigator Holdings Ltd,213800H7RVOFYARK2W19,Navigator Holdings Ltd,Y62132108,MHY621321089,NVGS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,ODFL US Equity,ODFL,Old Dominion Freight Line Inc,5299009TWK32WE417T96,Old Dominion Freight Line Inc,679580100,US6795801009,ODFL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,PANL US Equity,PANL,PANGAEA LOGISTICS SOLUTIONS LT,N/A,PANGAEA LOGISTICS SOLUTIONS LT,G6891L105,BMG6891L1054,PANL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,SBLK US Equity,SBLK,Star Bulk Carriers Corp,549300SO3FMK7H6DDY54,Star Bulk Carriers Corp,Y8162K204,MHY8162K2046,SBLK,GR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,SFL US Equity,SFL,SFL Corp Ltd,549300RLYYPSB0C7RH77,SFL Corp Ltd,G7738W106,BMG7738W1064,SFL,NO,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,SHIP US Equity,SHIP,Seanergy Maritime Holdings Cor,213800S7JIZA8FZXF245,Seanergy Maritime Holdings Corp,Y73760400,MHY737604006,SHIP,GR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,STNG US Equity,STNG,Scorpio Tankers Inc,549300NVJUH16NXG8K87,Scorpio Tankers Inc,Y7542C130,MHY7542C1306,STNG,MC,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,TEN US Equity,TEN,Tsakos Energy Navigation Ltd,549300IFUTS62LRRCU54,Tsakos Energy Navigation Ltd,G9108L173,BMG9108L1735,TEN,GR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,TNK US Equity,TNK,Teekay Tankers Ltd,549300DE8ZAIYS2T6Q22,Teekay Tankers Ltd,G8726X106,BMG8726X1065,TNK,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,TRMD US Equity,TRMD,TORM PLC,213800VL1H1ABVM1ZF63,TORM PLC,G89479102,GB00BZ3CNK81,TRMD,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,UPS US Equity,UPS,United Parcel Service Inc,D01LMJZU09ULLNCY6Z23,United Parcel Service Inc,911312106,US9113121068,UPS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,XPO US Equity,XPO,XPO Inc,54930096DB9LCLPN7H13,XPO Inc,983793100,US9837931008,XPO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HULL,ZIM US Equity,ZIM,ZIM Integrated Shipping Servic,21380089EIJRELKAIL21,ZIM Integrated Shipping Services Ltd,M9T951109,IL0065100930,ZIM,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

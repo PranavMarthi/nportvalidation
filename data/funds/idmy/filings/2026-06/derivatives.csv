@@ -1,0 +1,5 @@
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+EFA-C20.41-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,38828.52,Call,Purchased,N/A,20.41,USD,2027-04-30,0.7300,indexBasket,MSCI EAFE Index,MXEA
+EFA-C118.37-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,4923.53,Call,Written,N/A,118.37,USD,2027-04-30,0.7100,indexBasket,MSCI EAFE Index,MXEA
+EFA-P86.73-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,836.78,Put,Written,N/A,86.73,USD,2027-04-30,-0.4600,indexBasket,MSCI EAFE Index,MXEA
+EFA-P102.04-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-6767.77,Put,Purchased,N/A,102.04,USD,2027-04-30,-0.7300,indexBasket,MSCI EAFE Index,MXEA

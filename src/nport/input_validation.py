@@ -233,7 +233,7 @@ def validate_holding(holding: Holding, index: int, rep_pd_end: str = "") -> tupl
             _check_date(errors, holding.exp_dt, f"{p}/expDt")
             _check_numeric(errors, holding.delta, f"{p}/delta", allow_na=True)
             if holding.share_no:
-                _check_numeric(errors, holding.share_no, f"{p}/shareNo")
+                _check_numeric(errors, holding.share_no, f"{p}/shareNo", allow_na=True)
             # Written options should have negative balance
             if holding.written_or_pur == "Written":
                 try:
