@@ -31,7 +31,6 @@ there is exactly one source of truth for classification and XML-default values.
 import csv
 import logging
 import os
-import re
 import tempfile
 from pathlib import Path
 
@@ -43,6 +42,7 @@ from nport.custodian import (
     OPTION_HEADERS,
     SWAP_HEADERS,
     HoldingType,
+    build_corporate_bond_entry,
     build_equity_entry,
     build_mm_entry,
     build_option_entry,
@@ -119,53 +119,117 @@ MASTER_HEADER = IDENTITY_COLUMNS + MASTER_ENRICHMENT_COLUMNS
 # Columns stored as Excel Text to defeat spreadsheet corruption.
 ID_TEXT_COLUMNS = {
     "cusip", "isin", "ticker", "rawTicker", "lei", "counterpartyLei",
-    "refCusip", "refIsin",
+    "refCusip", "refIsin", "refTicker",
 }
 
-# Equity reference fields fetched from Bloomberg via a single security id, mapped
-# to their ``BDP`` mnemonic (verified live: LEGAL_ENTITY_IDENTIFIER — NOT ID_LEI;
-# CNTRY_OF_INCORPORATION — issuer's country of organization per N-PORT; ID_ISIN).
-# Each equity row gets a ``=BDP(...)`` formula keyed by the ticker.
+# ── Bloomberg enrichment, per asset type ──────────────────────
 #
-# CUSIP is NOT here: it is a live ``=custodian!…`` reference into sheet 1 (the raw
-# custodian CSV) — copied, never fetched (see ``write_master_xlsx``). The N/A-for-
-# foreign rule is applied downstream by the build, so the master mirrors the
-# custodian as-is. name/title are also excluded (the custodian's are clean;
-# Bloomberg SECURITY_NAME is ALL-CAPS / cryptic, e.g. a T-bill → "B 10/22/26").
-BLOOMBERG_FIELDS = {
-    "isin": "ID_ISIN",
-    "lei": "LEGAL_ENTITY_IDENTIFIER",
-    # invCountry = CNTRY_OF_DOMICILE (issuer's home country). Verified against the
-    # real N-PORT filings: every foreign case matched domicile, NOT incorporation
-    # (SPOT→SE not LU, NU→BR not KY, MELI→UY not US, TEAM→AU not US, RPRX→US).
-    "invCountry": "CNTRY_OF_DOMICILE",
+# Each asset type pulls the reference fields Bloomberg can supply, via a single
+# security id written into the row's ``bbgid`` cell. A spec is
+# ``(key_fn, fields)`` where ``key_fn(row_dict)`` builds the Bloomberg security
+# string and ``fields`` maps a master column → ``(BDP mnemonic, kind)``.
+#
+# Formulas are BARE ``=BDP(...)`` with NO fallback: a failed lookup shows the
+# live ``#N/A`` so the operator sees and fixes it. The master is populated once
+# on a Bloomberg terminal and then exported; a hidden fallback would let bad data
+# ship silently.
+#
+# CUSIP is never here: it is a live ``=custodian!…`` reference into sheet 1.
+# name/title are excluded too (the custodian's are clean; Bloomberg SECURITY_NAME
+# is ALL-CAPS / cryptic). Mnemonics were verified live on the terminal
+# (LEGAL_ENTITY_IDENTIFIER — NOT ID_LEI; CNTRY_OF_DOMICILE — issuer home country,
+# matching the real filings: SPOT→SE, NU→BR, TEAM→AU, RPRX→US).
+#
+# kind: "value" passthrough | "date" (BDP date serial → yyyy-mm-dd) |
+#       "couponKind" (CPN_TYP normalized to the N-PORT enum on read).
+BLOOMBERG_SPECS = {
+    "EC": (
+        lambda r: f"{(r.get('ticker') or '').strip()} US Equity",
+        {"isin": ("ID_ISIN", "value"),
+         "lei": ("LEGAL_ENTITY_IDENTIFIER", "value"),
+         "invCountry": ("CNTRY_OF_DOMICILE", "value")},
+    ),
+    "STIV": (
+        lambda r: f"{(r.get('ticker') or '').strip()} US Equity",
+        {"isin": ("ID_ISIN", "value"),
+         "lei": ("LEGAL_ENTITY_IDENTIFIER", "value"),
+         "invCountry": ("CNTRY_OF_DOMICILE", "value")},
+    ),
+    # US Treasuries already carry LEI/country/maturity/rate (parsed from the UST
+    # name) — only refresh the ISIN. Corporate bonds pull the full identity + C.9
+    # set; invCountry then resolves foreign issuers (RBC/TransCanada → CA).
+    "DBT_UST": (
+        lambda r: f"{(r.get('cusip') or '').strip()} Govt",
+        {"isin": ("ID_ISIN", "value")},
+    ),
+    "DBT_CORP": (
+        lambda r: f"{(r.get('cusip') or '').strip()} Corp",
+        {"isin": ("ID_ISIN", "value"),
+         "lei": ("LEGAL_ENTITY_IDENTIFIER", "value"),
+         "invCountry": ("CNTRY_OF_DOMICILE", "value"),
+         "maturityDt": ("MATURITY", "date"),
+         "annualizedRt": ("CPN", "value"),
+         "couponKind": ("CPN_TYP", "couponKind")},
+    ),
+    # Swaps: key off the REFERENCE security (its CUSIP, parsed from the swap
+    # ticker) and fill only the reference-instrument identity. Contract economics
+    # (counterparty LEI, leg rates/spread, notional, unrealized) are not on
+    # Bloomberg and stay operator-entered.
+    "SWP_REF": (
+        lambda r: f"{(r.get('refCusip') or '').strip()} Equity",
+        {"refIsin": ("ID_ISIN", "value"),
+         "refTicker": ("TICKER", "value"),
+         "refIssuerName": ("ISSUER", "value"),
+         "refIssueTitle": ("NAME", "value")},
+    ),
 }
+
+# Union of every column any spec turns into a formula — used by the read/write
+# loops to know which cells are Bloomberg-owned.
+_BBG_FORMULA_COLUMNS = {col for _kf, fields in BLOOMBERG_SPECS.values() for col in fields}
 
 _NAME_MAX_LEN = 30  # XSD <name> max length
 
-# Schema-valid default when a field has no current value to fall back to.
-_FIELD_DEFAULT = {
-    "name": "", "title": "", "cusip": "N/A",
-    "isin": "", "lei": "N/A", "invCountry": "US",
+# Bloomberg CPN_TYP → N-PORT couponKind enum. An unmapped non-empty value passes
+# through unchanged so downstream validation flags it (no silent coercion).
+_COUPON_KIND_MAP = {
+    "FIXED": "Fixed", "FLOATING": "Floating", "VARIABLE": "Variable",
+    "NONE": "None", "ZERO COUPON": "None", "ZERO CPN": "None",
 }
 
 
-def _formula_fallback(formula: str) -> str:
-    """Extract the embedded fallback (the trailing ``,"..."``) from our BDP formula."""
-    m = re.search(r',"((?:[^"]|"")*)"\)\s*$', formula)
-    return m.group(1).replace('""', '"') if m else ""
+def _normalize_coupon_kind(value: str) -> str:
+    v = (value or "").strip()
+    if not v:
+        return ""
+    return _COUPON_KIND_MAP.get(v.upper(), v)
 
 
-def _equity_formula(mnemonic: str, bbgid_cell: str, fallback: str) -> str:
-    """A simple self-contained BDP formula referencing the row's ``bbgid`` cell.
+def _bbg_spec_key(row: dict[str, str]) -> str | None:
+    """Which ``BLOOMBERG_SPECS`` entry applies to this master row (or None)."""
+    if (row.get("derivCat") or "").strip() == "SWP" and (row.get("refCusip") or "").strip():
+        return "SWP_REF"
+    asset = (row.get("assetCat") or "").strip()
+    if asset == "EC":
+        return "EC"
+    if asset == "STIV":
+        return "STIV"
+    if asset == "DBT":
+        return "DBT_UST" if (row.get("issuerCat") or "").strip() == "UST" else "DBT_CORP"
+    return None  # options and anything else: no Bloomberg lookup
 
-    ``=IFERROR(IF(BDP($B2,"MN")="","fb",BDP($B2,"MN")),"fb")`` — returns the live
-    Bloomberg field, or ``fb`` (the cell's current value) when Bloomberg is empty
-    or errors, so the cell is always a valid N-PORT value.
+
+def _bloomberg_formula(mnemonic: str, key_cell: str, kind: str) -> str:
+    """A BARE Bloomberg formula referencing the row's key cell — no fallback.
+
+    ``value``/``couponKind`` → ``=BDP($B2,"MN")``; ``date`` →
+    ``=TEXT(BDP($B2,"MN"),"yyyy-mm-dd")``. A failed/empty lookup shows the live
+    Bloomberg error in the cell, by design — see ``BLOOMBERG_SPECS``.
     """
-    call = f'BDP({bbgid_cell},"{mnemonic}")'
-    fb = (fallback or "").replace('"', '""')  # escape quotes for the Excel literal
-    return f'=IFERROR(IF({call}="","{fb}",{call}),"{fb}")'
+    call = f'BDP({key_cell},"{mnemonic}")'
+    if kind == "date":
+        return f'=TEXT({call},"yyyy-mm-dd")'
+    return f"={call}"
 
 
 def _is_formula(value: str) -> bool:
@@ -186,35 +250,32 @@ def _strip_bbg_error(value: str) -> str:
 
 
 def apply_bloomberg_formulas(rows: list[dict[str, str]], overwrite: bool = True) -> int:
-    """Set up EQUITY rows for live Bloomberg lookup (equities only, for now).
+    """Set the Bloomberg lookup key (``bbgid``) for every row that has a spec.
 
-    For each equity (``assetCat == "EC"``) with a ticker, set the ``bbgid``
-    helper to ``"<ticker> US Equity"`` and normalise the three Bloomberg fields
-    (isin/lei/invCountry) to a clean fallback value. ``write_master_xlsx`` turns
-    those cells into ``=BDP(bbgid, ...)`` formulas (referencing the ``bbgid``
-    cell) that embed the fallback. One universal form covers US and
-    international: ``ID_ISIN`` / ``LEGAL_ENTITY_IDENTIFIER`` /
-    ``CNTRY_OF_DOMICILE`` resolve live or fall back to a schema-valid default.
-    CUSIP is a separate ``=custodian!…`` reference; money-market, treasuries,
-    options and swaps are left untouched in this pass.
+    Per ``BLOOMBERG_SPECS``: equities/money-market key by ``"<ticker> US
+    Equity"``, bonds by ``"<cusip> Corp"``/``"<cusip> Govt"``, and swaps by their
+    reference security ``"<refCusip> Equity"``. ``write_master_xlsx`` then turns
+    each spec column into a bare ``=BDP(<bbgid>, ...)`` formula. Options (and any
+    other type) have no spec and are left untouched.
+
+    No fallback values are computed or stored — a failed Bloomberg lookup must
+    stay visible (see ``BLOOMBERG_SPECS``). ``overwrite`` is accepted for call
+    compatibility; spec cells are always formula-driven.
 
     Returns the number of formula cells that will be written.
     """
     count = 0
     for row in rows:
-        if (row.get("assetCat") or "") != "EC":
+        spec_key = _bbg_spec_key(row)
+        if spec_key is None:
             continue
-        ticker = (row.get("ticker") or "").strip()
-        if not ticker or ticker == "N/A" or ticker.startswith("#"):
+        key_fn, fields = BLOOMBERG_SPECS[spec_key]
+        bbg = key_fn(row)
+        ident = bbg.split(" ", 1)[0]  # the ticker/cusip/refCusip token
+        if not ident or ident == "N/A" or ident.startswith("#"):
             continue
-        row["bbgid"] = f"{ticker} US Equity"
-        for field in BLOOMBERG_FIELDS:
-            current = (row.get(field) or "").strip()
-            if _is_formula(current):
-                current = _formula_fallback(current)  # re-formula: keep prior fallback
-            # Clean fallback: the cell's value, else the schema-valid default.
-            row[field] = current if (current and not current.startswith("#")) else _FIELD_DEFAULT[field]
-            count += 1
+        row["bbgid"] = bbg.strip()
+        count += len(fields)
     return count
 
 
@@ -256,6 +317,8 @@ def _build_entry(ht: HoldingType, row, ref: dict) -> dict[str, str] | None:
         return build_swap_entry(row)
     if ht == HoldingType.TREASURY:
         return build_treasury_entry(row)
+    if ht == HoldingType.CORPORATE_BOND:
+        return build_corporate_bond_entry(row)
     return None
 
 
@@ -304,30 +367,28 @@ def read_master_xlsx(path: Path) -> tuple[list[dict[str, str]], list[str]]:
         return wb["master"] if "master" in wb.sheetnames else wb.active
 
     rows_v = list(_master(wb_v).iter_rows(values_only=True))
-    rows_f = list(_master(wb_f).iter_rows(values_only=True))
     if not rows_v:
         return [], []
     header = [(_cell_to_str(h)).strip() for h in rows_v[0] if h is not None]
 
     cust_cusips = _read_custodian_cusips(wb_f)  # by row index, 1:1 with master rows
-    data_v, data_f = rows_v[1:], rows_f[1:]
+    data_v = rows_v[1:]
 
     rows: list[dict[str, str]] = []
     for idx, vraw in enumerate(data_v):
         if vraw is None or all(c is None for c in vraw):
             continue
-        fraw = data_f[idx] if idx < len(data_f) else None
         rec: dict[str, str] = {}
         for i, col in enumerate(header):
             sval = _cell_to_str(vraw[i]) if i < len(vraw) else ""
-            sval = _strip_bbg_error(sval)  # drop literal "#N/A ..." junk
-            if sval == "" and col in BLOOMBERG_FIELDS:
-                fval = fraw[i] if (fraw and i < len(fraw)) else None
-                if _is_formula(fval):
-                    # Uncalculated formula (never opened on Bloomberg) — recover
-                    # the value embedded as the formula's fallback.
-                    sval = _strip_bbg_error(_formula_fallback(fval))
-            rec[col] = sval
+            if col in _BBG_FORMULA_COLUMNS:
+                # Bloomberg-owned cell: take the calculated value as-is — never
+                # strip a #N/A error or fabricate a value, so a failed lookup
+                # stays visible for validation to report. couponKind's CPN_TYP
+                # result is mapped to the N-PORT enum.
+                rec[col] = _normalize_coupon_kind(sval) if col == "couponKind" else sval
+                continue
+            rec[col] = _strip_bbg_error(sval)  # drop literal "#N/A ..." junk from manual cells
         # CUSIP: the live link into sheet 1, resolved here by row index (since
         # openpyxl can't evaluate the formula). Falls back to defensive repair
         # for a standalone master without the custodian sheet (unit tests).
@@ -381,16 +442,18 @@ def write_master_xlsx(
 
     for idx, r in enumerate(rows):
         excel_row = idx + 2
-        is_eq = (r.get("assetCat") or "") == "EC"
+        spec_key = _bbg_spec_key(r)
+        fields = BLOOMBERG_SPECS[spec_key][1] if spec_key else {}
         bbgid_ref = (f"${get_column_letter(bbgid_pos)}{excel_row}"
-                     if (bbgid_pos and is_eq and (r.get('bbgid') or '').strip()) else None)
+                     if (bbgid_pos and fields and (r.get('bbgid') or '').strip()) else None)
         out = []
         for col in header:
             val = r.get(col, "")
             if col == "cusip" and link:
                 val = f"={_CUSTODIAN_SHEET}!{cust_cusip_col}{excel_row}"
-            elif bbgid_ref and col in BLOOMBERG_FIELDS:
-                val = _equity_formula(BLOOMBERG_FIELDS[col], bbgid_ref, r.get(col, ""))
+            elif bbgid_ref and col in fields:
+                mnemonic, kind = fields[col]
+                val = _bloomberg_formula(mnemonic, bbgid_ref, kind)
             out.append(val)
         ws.append(out)
 

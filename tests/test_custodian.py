@@ -12,6 +12,7 @@ from nport.custodian import (
     ParsedOption,
     ParsedSwap,
     ParsedTreasury,
+    build_corporate_bond_entry,
     classify_holding,
     filter_by_account,
     generate_filing_template,
@@ -201,6 +202,19 @@ class TestClassifyHolding:
     def test_treasury(self):
         r = _row(security_name="United States Treasury Note/Bond 0.5% 04/30/2027", stock_ticker="912828ZN3")
         assert classify_holding(r) == HoldingType.TREASURY
+
+    def test_corporate_bond(self):
+        r = _row(security_name="ACCO Brands Corp 4.25% 03/15/2029", stock_ticker="", cusip="00081TAK4")
+        assert classify_holding(r) == HoldingType.CORPORATE_BOND
+
+    def test_corporate_bond_zero_coupon(self):
+        r = _row(security_name="Service Properties Trust 0% 09/30/2027", stock_ticker="", cusip="81761LAB1")
+        assert classify_holding(r) == HoldingType.CORPORATE_BOND
+
+    def test_reit_equity_not_bond(self):
+        # A REIT with no coupon%/maturity in the name stays an equity.
+        r = _row(security_name="Essex Property Trust Inc", stock_ticker="ESS", cusip="297178105")
+        assert classify_holding(r) == HoldingType.EQUITY
 
     def test_money_market(self):
         r = _row(stock_ticker="FGXXX", money_market_flag="Y")
@@ -466,6 +480,42 @@ class TestTransformTreasury:
         assert d["is_default"] == "N"
         assert d["are_intrst_pmnts_in_arrs"] == "N"
         assert d["is_paid_kind"] == "N"
+
+
+# ── TestCorporateBond ────────────────────────────────────────
+
+
+class TestCorporateBond:
+    def test_build_entry_leaves_bloomberg_fields_empty(self):
+        r = _row(security_name="ACCO Brands Corp 4.25% 03/15/2029",
+                 stock_ticker="", cusip="00081TAK4")
+        e = build_corporate_bond_entry(r)
+        assert e["assetCat"] == "DBT" and e["issuerCat"] == "CORP"
+        assert e["cusip"] == "00081TAK4"
+        # Bloomberg-owned identity + C.9 fields are EMPTY (filled by =BDP later).
+        assert e["lei"] == "" and e["isin"] == "" and e["invCountry"] == ""
+        assert e["maturityDt"] == "" and e["couponKind"] == "" and e["annualizedRt"] == ""
+
+    def test_transform_debt_fields(self):
+        r = _row(security_name="ACCO Brands Corp 4.25% 03/15/2029", stock_ticker="",
+                 cusip="00081TAK4", shares="100000.00000000",
+                 market_value="98500.00", weightings="2.50%")
+        d = transform_to_holding_dict(r, HoldingType.CORPORATE_BOND)
+        assert d["cusip"] == "00081TAK4"
+        assert d["units"] == "PA"
+        assert d["asset_cat"] == "DBT"
+        assert d["issuer_cat"] == "CORP"
+        assert d["fair_val_level"] == "2"
+        assert d["is_default"] == "N"
+        assert d["are_intrst_pmnts_in_arrs"] == "N"
+        assert d["is_paid_kind"] == "N"
+        # maturity/coupon/rate/country/lei NOT parsed here — Bloomberg fills them
+        # via the master merge. Left empty so a missing lookup fails visibly.
+        assert d.get("maturity_dt", "") == ""
+        assert d.get("coupon_kind", "") == ""
+        assert d.get("annualized_rt", "") == ""
+        assert d.get("inv_country", "") == ""
+        assert d.get("lei", "") == ""
 
 
 # ── TestTransformMoneyMarket ─────────────────────────────────
