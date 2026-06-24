@@ -1,28 +1,28 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Archer Aviation Inc,N/A,Archer Aviation Inc,03945R102,,ACHR,US,EC,CORP
+AeroVironment Inc,N/A,AeroVironment Inc,008073108,,AVAV,US,EC,CORP
 AIRO Group Holdings Inc,N/A,AIRO Group Holdings Inc,009422106,,AIRO,US,EC,CORP
 Amprius Technologies Inc,N/A,Amprius Technologies Inc,03214Q108,,AMPX,US,EC,CORP
-AeroVironment Inc,N/A,AeroVironment Inc,008073108,,AVAV,US,EC,CORP
+Archer Aviation Inc,N/A,Archer Aviation Inc,03945R102,,ACHR,US,EC,CORP
 Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP
-Boeing Co/The,N/A,Boeing Co/The,097023105,,BA,US,EC,CORP
 Beta Technologies Inc,N/A,Beta Technologies Inc,086921103,,BETA,US,EC,CORP
+Boeing Co/The,N/A,Boeing Co/The,097023105,,BA,US,EC,CORP
+Bristow Group Inc,N/A,Bristow Group Inc,11040G103,,VTOL,US,EC,CORP
+EHang Holdings Ltd,N/A,EHang Holdings Ltd,2.69E+106,,EH,US,EC,CORP
 Draganfly Inc,N/A,Draganfly Inc,26142Q304,,DPRO,US,EC,CORP
-EHang Holdings Ltd,N/A,EHang Holdings Ltd,26853E102,,EH,US,EC,CORP
 Eve Holding Inc,N/A,Eve Holding Inc,29970N104,,EVEX,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
 Hexcel Corp,N/A,Hexcel Corp,428291108,,HXL,US,EC,CORP
-Joby Aviation Inc,N/A,Joby Aviation Inc,N/A,,JOBY,US,EC,CORP
 Kratos Defense & Security Solu,N/A,Kratos Defense & Security Solutions Inc,50077B207,,KTOS,US,EC,CORP
 L3Harris Technologies Inc,N/A,L3Harris Technologies Inc,502431109,,LHX,US,EC,CORP
 Lockheed Martin Corp,N/A,Lockheed Martin Corp,539830109,,LMT,US,EC,CORP
 Northrop Grumman Corp,N/A,Northrop Grumman Corp,666807102,,NOC,US,EC,CORP
 Ondas Inc,N/A,Ondas Inc,68236H204,,ONDS,US,EC,CORP
 Ouster Inc,N/A,Ouster Inc,68989M202,,OUST,US,EC,CORP
-Red Cat Holdings Inc,N/A,Red Cat Holdings Inc,75644T100,,RCAT,US,EC,CORP
 RTX Corp,N/A,RTX Corp,75513E101,,RTX,US,EC,CORP
+Red Cat Holdings Inc,N/A,Red Cat Holdings Inc,75644T100,,RCAT,US,EC,CORP
 Swarmer Inc,N/A,Swarmer Inc,86989Y109,,SWMR,US,EC,CORP
 Teledyne Technologies Inc,N/A,Teledyne Technologies Inc,879360105,,TDY,US,EC,CORP
-Trimble Inc,N/A,Trimble Inc,896239100,,TRMB,US,EC,CORP
 Textron Inc,N/A,Textron Inc,883203101,,TXT,US,EC,CORP
+Trimble Inc,N/A,Trimble Inc,896239100,,TRMB,US,EC,CORP
 Unusual Machines Inc /US,N/A,Unusual Machines Inc /US,91532F102,,UMAC,US,EC,CORP
-Bristow Group Inc,N/A,Bristow Group Inc,11040G103,,VTOL,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Joby Aviation Inc,N/A,Joby Aviation Inc,N/A,,JOBY,US,EC,CORP

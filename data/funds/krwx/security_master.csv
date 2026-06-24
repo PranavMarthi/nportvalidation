@@ -1,0 +1,4 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refInstType,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,
+N/A,N/A,ISHARES MSCI SOUTH KOREA ETF-SWAP-CLST-L,N/A,,464286772-TRS-07/07/27-L-CLST,US,DE,OTHER,SWP,,,Y,2027-07-07,,USD,,,,,,,,,,,,,otherRefInst,ISHARES MSCI SOUTH KOREA ETF,ISHARES MSCI SOUTH KOREA ETF,464286772,,
+N/A,N/A,ISHARES MSCI SOUTH KOREA ETF-SWAP-CANT-L,N/A,,464286772-TRS-12/01/27-L-CANT,US,DE,OTHER,SWP,,,Y,2027-12-01,,USD,,,,,,,,,,,,,otherRefInst,ISHARES MSCI SOUTH KOREA ETF,ISHARES MSCI SOUTH KOREA ETF,464286772,,

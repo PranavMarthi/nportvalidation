@@ -1,6 +1,6 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
 First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,
+United States Treasury Note/Bo,254900HROIFWPRGM1V77,United States Treasury Note/Bond 3.75% 04/30/2027,91282CMY4,,,US,DBT,UST,,,,,,,,,,,,
 SPY 04/30/2027 144.74 C,N/A,SPY 04/30/2027 144.74 C,N/A,,SPY-C144.74-20270430,US,DE,CORP,OPT,,,Call,Purchased,144.74,USD,2027-04-30,,indexBasket,S&P 500 Index,SPX
 SPY 04/30/2027 770.75 C,N/A,SPY 04/30/2027 770.75 C,N/A,,SPY-C770.75-20270430,US,DE,CORP,OPT,,,Call,Written,770.75,USD,2027-04-30,,indexBasket,S&P 500 Index,SPX
 SPY 04/30/2027 723.71 P,N/A,SPY 04/30/2027 723.71 P,N/A,,SPY-P723.71-20270430,US,DE,CORP,OPT,,,Put,Purchased,723.71,USD,2027-04-30,,indexBasket,S&P 500 Index,SPX
-United States Treasury Note/Bo,254900HROIFWPRGM1V77,United States Treasury Note/Bond 3.75% 04/30/2027,91282CMY4,,,US,DBT,UST,,,,,,,,,,,,

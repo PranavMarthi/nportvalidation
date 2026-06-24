@@ -1,42 +1,38 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-American Eagle Outfitters Inc,N/A,American Eagle Outfitters Inc,02553E106,,AEO,US,EC,CORP
 Abercrombie & Fitch Co,N/A,Abercrombie & Fitch Co,002896207,,ANF,US,EC,CORP
-Amer Sports Inc,N/A,Amer Sports Inc,N/A,,AS,KY,EC,CORP
-Birkenstock Holding Plc,N/A,Birkenstock Holding Plc,N/A,,BIRK,JE,EC,CORP
-Buckle Inc/The,N/A,Buckle Inc/The,118440106,,BKE,US,EC,CORP
 Boot Barn Holdings Inc,N/A,Boot Barn Holdings Inc,099406100,,BOOT,US,EC,CORP
+Buckle Inc/The,N/A,Buckle Inc/The,118440106,,BKE,US,EC,CORP
 CALERES INC COM,N/A,CALERES INC COM,129500104,,CAL,US,EC,CORP
-Columbia Sportswear Co,N/A,Columbia Sportswear Co,198516106,,COLM,US,EC,CORP
-CAPRI HOLDINGS LTD,N/A,CAPRI HOLDINGS LTD,N/A,,CPRI,US,EC,CORP
+Canada Goose Holdings Inc,N/A,Canada Goose Holdings Inc,135086106,,GOOS,US,EC,CORP
 Carter's Inc,N/A,Carter's Inc,146229109,,CRI,US,EC,CORP
+Columbia Sportswear Co,N/A,Columbia Sportswear Co,198516106,,COLM,US,EC,CORP
+American Eagle Outfitters Inc,N/A,American Eagle Outfitters Inc,2.55E+109,,AEO,US,EC,CORP
 Crocs Inc,N/A,Crocs Inc,227046109,,CROX,US,EC,CORP
-Designer Brands Inc,N/A,Designer Brands Inc,250565108,,DBI,US,EC,CORP
 Deckers Outdoor Corp,N/A,Deckers Outdoor Corp,243537107,,DECK,US,EC,CORP
+Designer Brands Inc,N/A,Designer Brands Inc,250565108,,DBI,US,EC,CORP
 Figs Inc,N/A,Figs Inc,30260D103,,FIGS,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
 Fossil Group Inc,N/A,Fossil Group Inc,34988V106,,FOSL,US,EC,CORP
+G-III Apparel Group Ltd,N/A,G-III Apparel Group Ltd,36237H101,,GIII,US,EC,CORP
 Gap Inc/The,N/A,Gap Inc/The,364760108,,GAP,US,EC,CORP
 Genesco Inc,N/A,Genesco Inc,371532102,,GCO,US,EC,CORP
-G-III Apparel Group Ltd,N/A,G-III Apparel Group Ltd,36237H101,,GIII,US,EC,CORP
 Gildan Activewear Inc,N/A,Gildan Activewear Inc,375916103,,GIL,US,EC,CORP
-Canada Goose Holdings Inc,N/A,Canada Goose Holdings Inc,135086106,,GOOS,US,EC,CORP
 Johnson Outdoors Inc,N/A,Johnson Outdoors Inc,479167108,,JOUT,US,EC,CORP
 Kontoor Brands Inc,N/A,Kontoor Brands Inc,50050N103,,KTB,US,EC,CORP
 Levi Strauss & Co,N/A,Levi Strauss & Co,52736R102,,LEVI,US,EC,CORP
 Lululemon Athletica Inc,N/A,Lululemon Athletica Inc,550021109,,LULU,US,EC,CORP
+Steven Madden Ltd,N/A,Steven Madden Ltd,556269108,,SHOO,US,EC,CORP
 NIKE Inc,N/A,NIKE Inc,654106103,,NKE,US,EC,CORP
-On Holding AG,N/A,On Holding AG,N/A,,ONON,US,EC,CORP
 Oxford Industries Inc,N/A,Oxford Industries Inc,691497309,,OXM,US,EC,CORP
 PVH Corp,N/A,PVH Corp,693656100,,PVH,US,EC,CORP
-FERRARI NV,N/A,FERRARI NV,N/A,,RACE,US,EC,CORP
-Rocky Brands Inc,N/A,Rocky Brands Inc,774515100,,RCKY,US,EC,CORP
-RealReal Inc/The,N/A,RealReal Inc/The,88339P101,,REAL,US,EC,CORP
 RH,N/A,RH,74967X103,,RH,US,EC,CORP
 Ralph Lauren Corp,HO1QNWM0IXBZ0QSMMO20,Ralph Lauren Corp,751212101,US7512121010,RL,US,EC,CORP
 Revolve Group Inc,N/A,Revolve Group Inc,76156B107,,RVLV,US,EC,CORP
+Rocky Brands Inc,N/A,Rocky Brands Inc,774515100,,RCKY,US,EC,CORP
+ThredUp Inc,N/A,ThredUp Inc,8.86E+106,,TDUP,US,EC,CORP
 Stitch Fix Inc,N/A,Stitch Fix Inc,860897107,,SFIX,US,EC,CORP
-Steven Madden Ltd,N/A,Steven Madden Ltd,556269108,,SHOO,US,EC,CORP
-ThredUp Inc,N/A,ThredUp Inc,88556E102,,TDUP,US,EC,CORP
 Tapestry Inc,N/A,Tapestry Inc,876030107,,TPR,US,EC,CORP
+RealReal Inc/The,N/A,RealReal Inc/The,88339P101,,REAL,US,EC,CORP
 Under Armour Inc,N/A,Under Armour Inc,904311107,,UAA,US,EC,CORP
 Urban Outfitters Inc,N/A,Urban Outfitters Inc,917047102,,URBN,US,EC,CORP
 VF Corp,N/A,VF Corp,918204108,,VFC,US,EC,CORP
@@ -44,6 +40,10 @@ Victoria's Secret & Co,N/A,Victoria's Secret & Co,926400102,,VSCO,US,EC,CORP
 Warby Parker Inc,N/A,Warby Parker Inc,93403J106,,WRBY,US,EC,CORP
 Wolverine World Wide Inc,N/A,Wolverine World Wide Inc,978097103,,WWW,US,EC,CORP
 YETI Holdings Inc,N/A,YETI Holdings Inc,98585X104,,YETI,US,EC,CORP
-Ermenegildo Zegna NV,N/A,Ermenegildo Zegna NV,N/A,,ZGN,US,EC,CORP
 Zumiez Inc,N/A,Zumiez Inc,989817101,,ZUMZ,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Amer Sports Inc,N/A,Amer Sports Inc,N/A,,AS,KY,EC,CORP
+Birkenstock Holding Plc,N/A,Birkenstock Holding Plc,N/A,,BIRK,JE,EC,CORP
+CAPRI HOLDINGS LTD,N/A,CAPRI HOLDINGS LTD,N/A,,CPRI,US,EC,CORP
+On Holding AG,N/A,On Holding AG,N/A,,ONON,US,EC,CORP
+FERRARI NV,N/A,FERRARI NV,N/A,,RACE,US,EC,CORP
+Ermenegildo Zegna NV,N/A,Ermenegildo Zegna NV,N/A,,ZGN,US,EC,CORP

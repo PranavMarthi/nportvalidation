@@ -1,26 +1,26 @@
 name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Archer Aviation Inc,N/A,Archer Aviation Inc,03945R102,,ACHR,US,EC,CORP
-Ambarella Inc,N/A,Ambarella Inc,N/A,,AMBA,KY,EC,CORP
-Amazon.com Inc,N/A,Amazon.com Inc,023135106,,AMZN,US,EC,CORP
-Aurora Innovation Inc,N/A,Aurora Innovation Inc,051774107,,AUR,US,EC,CORP
 AeroVironment Inc,N/A,AeroVironment Inc,008073108,,AVAV,US,EC,CORP
+Alphabet Inc,N/A,Alphabet Inc,02079K305,,GOOGL,US,EC,CORP
+Amazon.com Inc,N/A,Amazon.com Inc,023135106,,AMZN,US,EC,CORP
+Archer Aviation Inc,N/A,Archer Aviation Inc,03945R102,,ACHR,US,EC,CORP
+Aurora Innovation Inc,N/A,Aurora Innovation Inc,051774107,,AUR,US,EC,CORP
 Caterpillar Inc,N/A,Caterpillar Inc,149123101,,CAT,US,EC,CORP
 Cognex Corp,N/A,Cognex Corp,192422103,,CGNX,US,EC,CORP
 Deere & Co,N/A,Deere & Co,244199105,,DE,US,EC,CORP
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
 Globus Medical Inc,N/A,Globus Medical Inc,379577208,,GMED,US,EC,CORP
-Alphabet Inc,N/A,Alphabet Inc,02079K305,,GOOGL,US,EC,CORP
 Intuitive Surgical Inc,N/A,Intuitive Surgical Inc,46120E602,,ISRG,US,EC,CORP
 JBT Marel Corp,N/A,JBT Marel Corp,477839104,,JBTM,US,EC,CORP
 Mobileye Global Inc,N/A,Mobileye Global Inc,60741F104,,MBLY,US,EC,CORP
 Novanta Inc,N/A,Novanta Inc,67000B104,,NOVT,US,EC,CORP
 NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP
-UiPath Inc,N/A,UiPath Inc,90364P105,,PATH,US,EC,CORP
-Procept Biorobotics Corp,N/A,Procept Biorobotics Corp,74276L105,,PRCT,US,EC,CORP
 PTC Inc,N/A,PTC Inc,69370C100,,PTC,US,EC,CORP
+Procept Biorobotics Corp,N/A,Procept Biorobotics Corp,74276L105,,PRCT,US,EC,CORP
 Richtech Robotics Inc,N/A,Richtech Robotics Inc,765504105,,RR,US,EC,CORP
 Serve Robotics Inc,N/A,Serve Robotics Inc,81758H106,,SERV,US,EC,CORP
 Stryker Corp,N/A,Stryker Corp,863667101,,SYK,US,EC,CORP
 Symbotic Inc,N/A,Symbotic Inc,87151X101,,SYM,US,EC,CORP
 Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP
+UiPath Inc,N/A,UiPath Inc,90364P105,,PATH,US,EC,CORP
 ZIMMER BIOMET HOLDINGS INC,N/A,ZIMMER BIOMET HOLDINGS INC,98956P102,,ZBH,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
+Ambarella Inc,N/A,Ambarella Inc,N/A,,AMBA,KY,EC,CORP

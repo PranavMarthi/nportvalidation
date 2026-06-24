@@ -1,0 +1,7 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,
+United States Treasury Note/Bo,254900HROIFWPRGM1V77,United States Treasury Note/Bond 0.5% 05/31/2027,912828ZS2,,,US,DBT,UST,,,,,,,,,,,,
+EEM 05/28/2027 14.02 C,N/A,EEM 05/28/2027 14.02 C,N/A,,EEM-C14.02-20270528,US,DE,CORP,OPT,,,Call,Purchased,14.02,USD,2027-05-28,,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM 05/28/2027 87.03 C,N/A,EEM 05/28/2027 87.03 C,N/A,,EEM-C87.03-20270528,US,DE,CORP,OPT,,,Call,Written,87.03,USD,2027-05-28,,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM 05/28/2027 59.57 P,N/A,EEM 05/28/2027 59.57 P,N/A,,EEM-P59.57-20270528,US,DE,CORP,OPT,,,Put,Written,59.57,USD,2027-05-28,,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM 05/28/2027 70.08 P,N/A,EEM 05/28/2027 70.08 P,N/A,,EEM-P70.08-20270528,US,DE,CORP,OPT,,,Put,Purchased,70.08,USD,2027-05-28,,indexBasket,MSCI Emerging Markets Index,MXEF

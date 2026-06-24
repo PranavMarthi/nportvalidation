@@ -1,0 +1,7 @@
+name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,
+United States Treasury Note/Bo,254900HROIFWPRGM1V77,United States Treasury Note/Bond 0.5% 05/31/2027,912828ZS2,,,US,DBT,UST,,,,,,,,,,,,
+IWM 05/28/2027 345.56 C,N/A,IWM 05/28/2027 345.56 C,N/A,,IWM-C345.56-20270528,US,DE,CORP,OPT,,,Call,Written,345.56,USD,2027-05-28,,indexBasket,Russell 2000 Index,RTY
+IWM 05/28/2027 57.79 C,N/A,IWM 05/28/2027 57.79 C,N/A,,IWM-C57.79-20270528,US,DE,CORP,OPT,,,Call,Purchased,57.79,USD,2027-05-28,,indexBasket,Russell 2000 Index,RTY
+IWM 05/28/2027 245.61 P,N/A,IWM 05/28/2027 245.61 P,N/A,,IWM-P245.61-20270528,US,DE,CORP,OPT,,,Put,Written,245.61,USD,2027-05-28,,indexBasket,Russell 2000 Index,RTY
+IWM 05/28/2027 288.95 P,N/A,IWM 05/28/2027 288.95 P,N/A,,IWM-P288.95-20270528,US,DE,CORP,OPT,,,Put,Purchased,288.95,USD,2027-05-28,,indexBasket,Russell 2000 Index,RTY

@@ -17,6 +17,7 @@ from pathlib import Path
 
 from lxml import etree
 
+from nport.cusip import normalize_cusip
 from nport.data_loader import merge_positions_with_master, validate_after_merge
 from nport.security_master import SecurityMaster
 
@@ -369,8 +370,8 @@ def _sm_entry_key(entry: dict[str, str]) -> str:
     # Options and swaps are always keyed by ticker
     if deriv_cat in ("OPT", "SWP"):
         return ticker
-    # CINS equities (cusip is N/A) — use ticker
-    if cusip in ("N/A", ""):
+    # CINS equities (cusip is N/A), blanks, or Bloomberg-error junk — use ticker
+    if cusip in ("N/A", "") or cusip.startswith("#"):
         return ticker
     return cusip
 
@@ -497,11 +498,18 @@ def parse_custodian_csv(path: Path) -> list[CustodianRow]:
     with open(path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
+            # Repair spreadsheet-corrupted CUSIPs (dropped leading zeros,
+            # scientific notation) before anything downstream sees them.
+            # The custodian feed carries no ISIN, so unrecoverable values
+            # pass through unchanged and are logged for the operator.
+            cusip, warning = normalize_cusip(row.get("CUSIP", ""))
+            if warning:
+                logger.warning("%s (%s): %s", row.get("StockTicker", "?"), path.name, warning)
             rows.append(CustodianRow(
                 date=row.get("Date", ""),
                 account=row.get("Account", ""),
                 stock_ticker=row.get("StockTicker", ""),
-                cusip=row.get("CUSIP", ""),
+                cusip=cusip,
                 security_name=row.get("SecurityName", ""),
                 shares=row.get("Shares", ""),
                 price=row.get("Price", ""),
