@@ -1,7 +1,6 @@
 """Tests for custodian CSV ingestion."""
 
 import csv
-import textwrap
 from pathlib import Path
 
 import pytest
@@ -13,6 +12,10 @@ from nport.custodian import (
     ParsedSwap,
     ParsedTreasury,
     build_corporate_bond_entry,
+    build_mm_entry,
+    build_option_entry,
+    build_swap_entry,
+    build_treasury_entry,
     classify_holding,
     filter_by_account,
     generate_filing_template,
@@ -203,6 +206,13 @@ class TestClassifyHolding:
         r = _row(security_name="United States Treasury Note/Bond 0.5% 04/30/2027", stock_ticker="912828ZN3")
         assert classify_holding(r) == HoldingType.TREASURY
 
+    def test_treasury_bill(self):
+        # Bills have no coupon% in the name — must still classify as TREASURY,
+        # not fall through to EQUITY.
+        r = _row(security_name="United States Treasury Bill 10/22/2026",
+                 stock_ticker="912797UL9", cusip="912797UL9")
+        assert classify_holding(r) == HoldingType.TREASURY
+
     def test_corporate_bond(self):
         r = _row(security_name="ACCO Brands Corp 4.25% 03/15/2029", stock_ticker="", cusip="00081TAK4")
         assert classify_holding(r) == HoldingType.CORPORATE_BOND
@@ -274,6 +284,11 @@ class TestParseTreasuryName:
     def test_integer_rate(self):
         trs = parse_treasury_name("United States Treasury Note/Bond 4% 02/15/2030")
         assert trs == ParsedTreasury("4", "2030-02-15", "Fixed")
+
+    def test_bill_zero_coupon(self):
+        # Bills carry only a maturity date → rate 0, couponKind "None".
+        trs = parse_treasury_name("United States Treasury Bill 10/22/2026")
+        assert trs == ParsedTreasury("0", "2026-10-22", "None")
 
     def test_invalid_format(self):
         with pytest.raises(ValueError, match="Cannot parse treasury name"):
@@ -481,6 +496,19 @@ class TestTransformTreasury:
         assert d["are_intrst_pmnts_in_arrs"] == "N"
         assert d["is_paid_kind"] == "N"
 
+    def test_bill_fields(self):
+        r = _row(
+            security_name="United States Treasury Bill 10/22/2026",
+            cusip="912797UL9", stock_ticker="912797UL9",
+            shares="1000000.00000000", market_value="985000.00", weightings="5.00%",
+        )
+        d = transform_to_holding_dict(r, HoldingType.TREASURY)
+        assert d["asset_cat"] == "DBT"
+        assert d["issuer_cat"] == "UST"
+        assert d["maturity_dt"] == "2026-10-22"
+        assert d["annualized_rt"] == "0"
+        assert d["coupon_kind"] == "None"
+
 
 # ── TestCorporateBond ────────────────────────────────────────
 
@@ -516,6 +544,83 @@ class TestCorporateBond:
         assert d.get("annualized_rt", "") == ""
         assert d.get("inv_country", "") == ""
         assert d.get("lei", "") == ""
+
+
+# ── TestBuilderSourcing (strictly custodian + Bloomberg) ─────
+
+
+class TestBuilderSourcing:
+    """Master builders source identity from the custodian; Bloomberg-owned
+    fields are left blank for the live =BDP formulas. Nothing hardcoded."""
+
+    def test_mm_entry_from_custodian(self):
+        r = _row(stock_ticker="FGXXX", cusip="31846V336",
+                 security_name="First American Government Obligations Fund 12/01/2031",
+                 money_market_flag="Y")
+        e = build_mm_entry(r)
+        assert e["ticker"] == "FGXXX" and e["cusip"] == "31846V336"
+        assert e["title"] == "First American Government Obligations Fund"  # date stripped
+        assert e["assetCat"] == "STIV" and e["issuerCat"] == "RF"
+        assert e["lei"] == "" and e["isin"] == "" and e["invCountry"] == ""
+
+    def test_mm_entry_not_hardcoded_to_first_american(self):
+        # A different sweep vehicle must carry ITS identity, not First American's.
+        r = _row(stock_ticker="GVMXX", cusip="38141W273",
+                 security_name="Goldman Sachs Government MMF", money_market_flag="Y")
+        e = build_mm_entry(r)
+        assert e["ticker"] == "GVMXX" and e["cusip"] == "38141W273"
+        assert "First American" not in e["title"]
+
+    def test_treasury_entry_blank_for_bloomberg(self):
+        r = _row(security_name="United States Treasury Note/Bond 6.25% 05/15/2030",
+                 cusip="912810FM5", stock_ticker="912810FM5")
+        e = build_treasury_entry(r)
+        assert e["assetCat"] == "DBT" and e["issuerCat"] == "UST"
+        assert e["cusip"] == "912810FM5"
+        assert e["lei"] == "" and e["invCountry"] == ""  # filled by DBT_UST (Govt)
+
+    def test_swap_counterparty_and_values_from_custodian(self):
+        r = _row(stock_ticker="464286400-TRS-12/01/27-L-CANT",
+                 security_name="ISHARES MSCI BRAZIL ETF-SWAP-CANT-L",
+                 market_value="1157777.68", weightings="3.50%")
+        e = build_swap_entry(r)
+        # CANT code → resolved to the legal name + GLEIF LEI.
+        assert e["counterpartyName"] == "Cantor Fitzgerald & Co."
+        assert e["counterpartyLei"] == "5493004J7H4GCPG6OB62"
+        assert e["valUSD"] == "1157777.68"
+        assert e["pctVal"] == "3.50"
+        assert e["refCusip"] == "464286400"
+        # Still no source for these — stay blank.
+        assert e["notionalAmt"] == "" and e["unrealizedAppr"] == ""
+
+    def test_swap_counterparty_falls_back_to_name(self):
+        # Ticker has no counterparty token; the SecurityName carries "CS" (= Clear Street).
+        r = _row(stock_ticker="218946101-TRS-01/19/28-L",
+                 security_name="CORGI ETF TR SWAP CS",
+                 market_value="100.00", weightings="0.10%")
+        e = build_swap_entry(r)
+        assert e["counterpartyName"] == "Clear Street LLC"
+        assert e["counterpartyLei"] == "549300KNQS43Y7TO3X67"
+
+    def test_unknown_swap_counterparty_falls_back_to_code(self):
+        # An unmapped code keeps the raw token + N/A LEI (valid, warns) — no fabrication.
+        r = _row(stock_ticker="464286400-TRS-12/01/27-L-XYZ",
+                 security_name="SOMETHING-SWAP-XYZ-L",
+                 market_value="100.00", weightings="0.10%")
+        e = build_swap_entry(r)
+        assert e["counterpartyName"] == "XYZ" and e["counterpartyLei"] == "N/A"
+
+    def test_option_values_from_custodian_delta_blank(self):
+        r = _row(security_name="SPY 05/28/2027 151.71 C",
+                 stock_ticker="2SPY  270528C00151710",
+                 shares="100.00000000", market_value="1078119.50", weightings="2.50%")
+        e = build_option_entry(r)
+        assert e["valUSD"] == "1078119.50"
+        assert e["pctVal"] == "2.50"
+        assert e["delta"] == ""  # FLEX options don't resolve on Bloomberg
+        # Listed/FLEX options clear through the OCC (central counterparty).
+        assert e["counterpartyName"] == "The Options Clearing Corporation"
+        assert e["counterpartyLei"] == "549300CII6SLYGKNHA04"
 
 
 # ── TestTransformMoneyMarket ─────────────────────────────────
@@ -1164,6 +1269,7 @@ class TestGuideCLI:
 
         main(["guide"])
         captured = capsys.readouterr()
-        assert "N-PORT Monthly Filing Guide" in captured.out
-        assert "STEP 1" in captured.out
-        assert "STEP 5" in captured.out
+        assert "N-PORT Monthly Filing" in captured.out
+        assert "nport masters" in captured.out
+        assert "nport split" in captured.out
+        assert "nport build" in captured.out

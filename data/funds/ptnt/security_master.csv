@@ -1,32 +1,32 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Acacia Research Corp,N/A,Acacia Research Corp,003881307,,ACTG,US,EC,CORP
-Adeia Inc,N/A,Adeia Inc,00676P107,,ADEA,US,EC,CORP
-ARM Holdings PLC,N/A,ARM Holdings PLC,042068205,,ARM,US,EC,CORP
-Cadence Design Systems Inc,N/A,Cadence Design Systems Inc,127387108,,CDNS,US,EC,CORP
-CEVA Inc,N/A,CEVA Inc,157210105,,CEVA,US,EC,CORP
-Walt Disney Co/The,N/A,Walt Disney Co/The,254687106,,DIS,US,EC,CORP
-Dolby Laboratories Inc,N/A,Dolby Laboratories Inc,25659T107,,DLB,US,EC,CORP
-Domino's Pizza Inc,N/A,Domino's Pizza Inc,25754A201,,DPZ,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Hasbro Inc,N/A,Hasbro Inc,418056107,,HAS,US,EC,CORP
-InterDigital Inc,N/A,InterDigital Inc,45867G101,,IDCC,US,EC,CORP
-International Business Machine,N/A,International Business Machines Corp,459200101,,IBM,US,EC,CORP
-Liberty Media Corp-Liberty For,N/A,Liberty Media Corp-Liberty Formula One,531229755,,FWONK,US,EC,CORP
-Ligand Pharmaceuticals Inc,N/A,Ligand Pharmaceuticals Inc,53220K504,,LGND,US,EC,CORP
-Mattel Inc,N/A,Mattel Inc,577081102,,MAT,US,EC,CORP
-McDonald's Corp,N/A,McDonald's Corp,580135101,,MCD,US,EC,CORP
-Netflix Inc,N/A,Netflix Inc,64110L106,,NFLX,US,EC,CORP
-Nokia Oyj,N/A,Nokia Oyj,654902204,,NOK,US,EC,CORP
-QUALCOMM Inc,N/A,QUALCOMM Inc,747525103,,QCOM,US,EC,CORP
-Rambus Inc,N/A,Rambus Inc,750917106,,RMBS,US,EC,CORP
-Silvaco Group Inc,N/A,Silvaco Group Inc,82728C102,,SVCO,US,EC,CORP
-Synopsys Inc,N/A,Synopsys Inc,871607107,,SNPS,US,EC,CORP
-TKO Group Holdings Inc,N/A,TKO Group Holdings Inc,87256C101,,TKO,US,EC,CORP
-Take-Two Interactive Software ,N/A,Take-Two Interactive Software Inc,874054109,,TTWO,US,EC,CORP
-VeriSign Inc,LMPL4N8ZOJRMF0KOF759,VeriSign Inc,92343E102,US92343E1029,VRSN,US,EC,CORP
-Warner Music Group Corp,N/A,Warner Music Group Corp,934550203,,WMG,US,EC,CORP
-Wingstop Inc,N/A,Wingstop Inc,974155103,,WING,US,EC,CORP
-XOMA Royalty Corp,N/A,XOMA Royalty Corp,98419J206,,XOMA,US,EC,CORP
-Xperi Inc,N/A,Xperi Inc,98423J101,,XPER,US,EC,CORP
-Yum! Brands Inc,N/A,Yum! Brands Inc,988498101,,YUM,US,EC,CORP
-Royalty Pharma PLC,549300FGFN7VOK8BZR03,Royalty Pharma PLC,N/A,GB00BMVP7Y09,RPRX,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+PTNT,ACTG US Equity,ACTG,Acacia Research Corp,529900BCN7BE6ESPDZ72,Acacia Research Corp,003881307,US0038813079,ACTG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,ADEA US Equity,ADEA,Adeia Inc,N/A,Adeia Inc,00676P107,US00676P1075,ADEA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,ARM US Equity,ARM,ARM Holdings PLC,2138001E66EELTE7Y904,ARM Holdings PLC,042068205,US0420682058,ARM,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,CDNS US Equity,CDNS,Cadence Design Systems Inc,GCT7RXJOGLXPV0NXZY22,Cadence Design Systems Inc,127387108,US1273871087,CDNS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,CEVA US Equity,CEVA,CEVA Inc,529900G9T7CVU2J2VU73,CEVA Inc,157210105,US1572101053,CEVA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,DIS US Equity,DIS,Walt Disney Co/The,549300GZKULIZ0WOW665,Walt Disney Co/The,254687106,US2546871060,DIS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,DLB US Equity,DLB,Dolby Laboratories Inc,549300X04FB2QPCJ5J24,Dolby Laboratories Inc,25659T107,US25659T1079,DLB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,DPZ US Equity,DPZ,Domino's Pizza Inc,25490005ZWM1IF9UXU57,Domino's Pizza Inc,25754A201,US25754A2015,DPZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,FWONK US Equity,FWONK,Liberty Media Corp-Liberty For,N/A,Liberty Media Corp-Liberty Formula One,531229755,US5312297550,FWONK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,HAS US Equity,HAS,Hasbro Inc,549300NUB6D2R1ITYR45,Hasbro Inc,418056107,US4180561072,HAS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,IBM US Equity,IBM,International Business Machine,VGRQXHF3J8VDLUA7XE92,International Business Machines Corp,459200101,US4592001014,IBM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,IDCC US Equity,IDCC,InterDigital Inc,N/A,InterDigital Inc,45867G101,US45867G1013,IDCC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,LGND US Equity,LGND,Ligand Pharmaceuticals Inc,5493008K7TB0IKP37H79,Ligand Pharmaceuticals Inc,53220K504,US53220K5048,LGND,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,MAT US Equity,MAT,Mattel Inc,549300VELLG24KHTJ564,Mattel Inc,577081102,US5770811025,MAT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,MCD US Equity,MCD,McDonald's Corp,UE2136O97NLB5BYP9H04,McDonald's Corp,580135101,US5801351017,MCD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,NFLX US Equity,NFLX,Netflix Inc,549300Y7VHGU0I7CE873,Netflix Inc,64110L106,US64110L1061,NFLX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,NOK US Equity,NOK,Nokia Oyj,549300A0JPRWG1KI7U06,Nokia Oyj,654902204,US6549022043,NOK,FI,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,QCOM US Equity,QCOM,QUALCOMM Inc,H1J8DDZKZP6H7RWC0H53,QUALCOMM Inc,747525103,US7475251036,QCOM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,RMBS US Equity,RMBS,Rambus Inc,2549000211GDCQSLV833,Rambus Inc,750917106,US7509171069,RMBS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,RPRX US Equity,RPRX,Royalty Pharma PLC,549300FGFN7VOK8BZR03,Royalty Pharma PLC,G7709Q104,GB00BMVP7Y09,RPRX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,SNPS US Equity,SNPS,Synopsys Inc,QG7T915N9S0NY5UKNE63,Synopsys Inc,871607107,US8716071076,SNPS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,SVCO US Equity,SVCO,Silvaco Group Inc,89450009UUSWTJL6DP68,Silvaco Group Inc,82728C102,US82728C1027,SVCO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,TKO US Equity,TKO,TKO Group Holdings Inc,N/A,TKO Group Holdings Inc,87256C101,US87256C1018,TKO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,TTWO US Equity,TTWO,Take-Two Interactive Software ,BOMSTHHJK882EWYX3334,Take-Two Interactive Software Inc,874054109,US8740541094,TTWO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,VRSN US Equity,VRSN,VeriSign Inc,LMPL4N8ZOJRMF0KOF759,VeriSign Inc,92343E102,US92343E1029,VRSN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,WING US Equity,WING,Wingstop Inc,549300SSH3F8HPIM3Q47,Wingstop Inc,974155103,US9741551033,WING,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,WMG US Equity,WMG,Warner Music Group Corp,N/A,Warner Music Group Corp,934550203,US9345502036,WMG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,XOMA US Equity,XOMA,XOMA Royalty Corp,N/A,XOMA Royalty Corp,98419J206,US98419J2069,XOMA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,XPER US Equity,XPER,Xperi Inc,529900I86PYPO1GBLY22,Xperi Inc,98423J101,US98423J1016,XPER,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PTNT,YUM US Equity,YUM,Yum! Brands Inc,549300JE8XHZZ7OHN517,Yum! Brands Inc,988498101,US9884981013,YUM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

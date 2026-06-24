@@ -1,41 +1,41 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AXT Inc,N/A,AXT Inc,00246W103,,AXTI,US,EC,CORP
-ADTRAN Holdings Inc,N/A,ADTRAN Holdings Inc,00486H105,,ADTN,US,EC,CORP
-Aehr Test Systems,N/A,Aehr Test Systems,00760J108,,AEHR,US,EC,CORP
-Aeva Technologies Inc,N/A,Aeva Technologies Inc,00835Q202,,AEVA,US,EC,CORP
-Applied Materials Inc,N/A,Applied Materials Inc,038222105,,AMAT,US,EC,CORP
-Applied Optoelectronics Inc,N/A,Applied Optoelectronics Inc,03823U102,,AAOI,US,EC,CORP
-Ciena Corp,N/A,Ciena Corp,171779309,,CIEN,US,EC,CORP
-Coherent Corp,N/A,Coherent Corp,19247G107,,COHR,US,EC,CORP
-Corning Inc,N/A,Corning Inc,219350105,,GLW,US,EC,CORP
-Entegris Inc,N/A,Entegris Inc,29362U104,,ENTG,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-FormFactor Inc,N/A,FormFactor Inc,346375108,,FORM,US,EC,CORP
-Hesai Group,N/A,Hesai Group,428050108,,HSAI,US,EC,CORP
-IPG Photonics Corp,N/A,IPG Photonics Corp,44980X109,,IPGP,US,EC,CORP
-KLA CORP,N/A,KLA CORP,482480100,,KLAC,US,EC,CORP
-Lam Research Corp,N/A,Lam Research Corp,512807306,,LRCX,US,EC,CORP
-Lightwave Logic Inc,N/A,Lightwave Logic Inc,532275104,,LWLG,US,EC,CORP
-Lumentum Holdings Inc,N/A,Lumentum Holdings Inc,55024U109,,LITE,US,EC,CORP
-MACOM Technology Solutions Hol,N/A,MACOM Technology Solutions Holdings Inc,55405Y100,,MTSI,US,EC,CORP
-MARVELL TECHNOLOGY INC,N/A,MARVELL TECHNOLOGY INC,573874104,,MRVL,US,EC,CORP
-Materion Corp,N/A,Materion Corp,576690101,,MTRN,US,EC,CORP
-nLight Inc,N/A,nLight Inc,65487K100,,LASR,US,EC,CORP
-Novanta Inc,N/A,Novanta Inc,67000B104,,NOVT,US,EC,CORP
-Onto Innovation Inc,N/A,Onto Innovation Inc,683344105,,ONTO,US,EC,CORP
-Ouster Inc,N/A,Ouster Inc,68989M202,,OUST,US,EC,CORP
-PDF Solutions Inc,N/A,PDF Solutions Inc,693282105,,PDFS,US,EC,CORP
-Photronics Inc,N/A,Photronics Inc,719405102,,PLAB,US,EC,CORP
-POET Technologies Inc,N/A,POET Technologies Inc,73044W302,,POET,US,EC,CORP
-Taiwan Semiconductor Manufactu,N/A,Taiwan Semiconductor Manufacturing Co Ltd,874039100,,TSM,US,EC,CORP
-Teledyne Technologies Inc,N/A,Teledyne Technologies Inc,879360105,,TDY,US,EC,CORP
-Ultra Clean Holdings Inc,N/A,Ultra Clean Holdings Inc,90385V107,,UCTT,US,EC,CORP
-Veeco Instruments Inc,N/A,Veeco Instruments Inc,922417100,,VECO,US,EC,CORP
-Viavi Solutions Inc,N/A,Viavi Solutions Inc,925550105,,VIAV,US,EC,CORP
-ASML Holding NV,N/A,ASML Holding NV,N/A,,ASML,NL,EC,CORP
-Camtek Ltd/Israel,N/A,Camtek Ltd/Israel,N/A,,CAMT,IL,EC,CORP
-Credo Technology Group Holding,N/A,Credo Technology Group Holding Ltd,N/A,KYG254571055,CRDO,US,EC,CORP
-Fabrinet,N/A,Fabrinet,N/A,,FN,US,EC,CORP
-GLOBALFOUNDRIES Inc,N/A,GLOBALFOUNDRIES Inc,N/A,,GFS,US,EC,CORP
-Nova Ltd,N/A,Nova Ltd,N/A,,NVMI,US,EC,CORP
-Tower Semiconductor Ltd,N/A,Tower Semiconductor Ltd,N/A,,TSEM,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+EUV,AAOI US Equity,AAOI,Applied Optoelectronics Inc,529900I8U6Q5SYDNLT48,Applied Optoelectronics Inc,03823U102,US03823U1025,AAOI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,ADTN US Equity,ADTN,ADTRAN Holdings Inc,549300VV36J86CRRWF77,ADTRAN Holdings Inc,00486H105,US00486H1059,ADTN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,AEHR US Equity,AEHR,Aehr Test Systems,529900A4GWWZFRU2RE97,Aehr Test Systems,00760J108,US00760J1088,AEHR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,AEVA US Equity,AEVA,Aeva Technologies Inc,529900EOW3TB2FR95A21,Aeva Technologies Inc,00835Q202,US00835Q2021,AEVA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,AMAT US Equity,AMAT,Applied Materials Inc,41BNNE1AFPNAZELZ6K07,Applied Materials Inc,038222105,US0382221051,AMAT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,ASML US Equity,ASML,ASML Holding NV,724500Y6DUVHQD6OXN27,ASML Holding NV,N07059210,USN070592100,ASML,NL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,AXTI US Equity,AXTI,AXT Inc,549300M2142IVLVIJN37,AXT Inc,00246W103,US00246W1036,AXTI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,CAMT US Equity,CAMT,Camtek Ltd/Israel,5493000H80W07HCKGS43,Camtek Ltd/Israel,M20791105,IL0010952641,CAMT,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,CIEN US Equity,CIEN,Ciena Corp,W0CZ7N0GH8UIGXDM1H41,Ciena Corp,171779309,US1717793095,CIEN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,COHR US Equity,COHR,Coherent Corp,549300O5C25A0MMHHU33,Coherent Corp,19247G107,US19247G1076,COHR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,CRDO US Equity,CRDO,Credo Technology Group Holding,N/A,Credo Technology Group Holding Ltd,G25457105,KYG254571055,CRDO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,ENTG US Equity,ENTG,Entegris Inc,IYX6OWO7BT5DKO3BYG52,Entegris Inc,29362U104,US29362U1043,ENTG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,FN US Equity,FN,Fabrinet,5493004TETZ6IYF7CV44,Fabrinet,G3323L100,KYG3323L1005,FN,TH,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,FORM US Equity,FORM,FormFactor Inc,549300YCEEO6SZD1ZR61,FormFactor Inc,346375108,US3463751087,FORM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,GFS US Equity,GFS,GLOBALFOUNDRIES Inc,549300BA76VK784VMX48,GLOBALFOUNDRIES Inc,G39387108,KYG393871085,GFS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,GLW US Equity,GLW,Corning Inc,549300X2937PB0CJ7I56,Corning Inc,219350105,US2193501051,GLW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,HSAI US Equity,HSAI,Hesai Group,836800KOYHURQT1JZY11,Hesai Group,428050108,US4280501085,HSAI,CN,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,IPGP US Equity,IPGP,IPG Photonics Corp,5493002KZ51CADQ94G15,IPG Photonics Corp,44980X109,US44980X1090,IPGP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,KLAC US Equity,KLAC,KLA CORP,549300H0BF5JCG96TJ81,KLA CORP,482480100,US4824801009,KLAC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,LASR US Equity,LASR,nLight Inc,N/A,nLight Inc,65487K100,US65487K1007,LASR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,LITE US Equity,LITE,Lumentum Holdings Inc,549300JLWRRC38DWEF52,Lumentum Holdings Inc,55024U109,US55024U1097,LITE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,LRCX US Equity,LRCX,Lam Research Corp,549300I4GMO6D34U1T02,Lam Research Corp,512807306,US5128073062,LRCX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,LWLG US Equity,LWLG,Lightwave Logic Inc,N/A,Lightwave Logic Inc,532275104,US5322751042,LWLG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,MRVL US Equity,MRVL,MARVELL TECHNOLOGY INC,254900WVU0BM7ZCJ9E93,MARVELL TECHNOLOGY INC,573874104,US5738741041,MRVL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,MTRN US Equity,MTRN,Materion Corp,549300CJ5RI351SUYT02,Materion Corp,576690101,US5766901012,MTRN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,MTSI US Equity,MTSI,MACOM Technology Solutions Hol,N/A,MACOM Technology Solutions Holdings Inc,55405Y100,US55405Y1001,MTSI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,NOVT US Equity,NOVT,Novanta Inc,N/A,Novanta Inc,67000B104,CA67000B1040,NOVT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,NVMI US Equity,NVMI,Nova Ltd,529900B2DSWE5V3SC292,Nova Ltd,M7516K103,IL0010845571,NVMI,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,ONTO US Equity,ONTO,Onto Innovation Inc,254900RXZVN73CHOO062,Onto Innovation Inc,683344105,US6833441057,ONTO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,OUST US Equity,OUST,Ouster Inc,N/A,Ouster Inc,68989M202,US68989M2026,OUST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,PDFS US Equity,PDFS,PDF Solutions Inc,549300GMSP6MROFBI160,PDF Solutions Inc,693282105,US6932821050,PDFS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,PLAB US Equity,PLAB,Photronics Inc,549300OK5JVNIBNY6F63,Photronics Inc,719405102,US7194051022,PLAB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,POET US Equity,POET,POET Technologies Inc,529900HTWKO62IAAQD05,POET Technologies Inc,73044W302,CA73044W3021,POET,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,TDY US Equity,TDY,Teledyne Technologies Inc,549300VSMO9KYQWDND94,Teledyne Technologies Inc,879360105,US8793601050,TDY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,TSEM US Equity,TSEM,Tower Semiconductor Ltd,54930086ZSNXZOUX0C54,Tower Semiconductor Ltd,M87915274,IL0010823792,TSEM,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,TSM US Equity,TSM,Taiwan Semiconductor Manufactu,549300KB6NK5SBD14S87,Taiwan Semiconductor Manufacturing Co Ltd,874039100,US8740391003,TSM,TW,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,UCTT US Equity,UCTT,Ultra Clean Holdings Inc,5493007L6LS7QX18PE75,Ultra Clean Holdings Inc,90385V107,US90385V1070,UCTT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,VECO US Equity,VECO,Veeco Instruments Inc,5493004201F72ADDZW04,Veeco Instruments Inc,922417100,US9224171002,VECO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EUV,VIAV US Equity,VIAV,Viavi Solutions Inc,5493006K3E3N1QOBF092,Viavi Solutions Inc,925550105,US9255501051,VIAV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,58 +1,58 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Affirm Holdings Inc,N/A,Affirm Holdings Inc,00827B106,,AFRM,US,EC,CORP
-Ally Financial Inc,N/A,Ally Financial Inc,02005N100,,ALLY,US,EC,CORP
-BILL Holdings Inc,N/A,BILL Holdings Inc,090043100,,BILL,US,EC,CORP
-Broadridge Financial Solutions,N/A,Broadridge Financial Solutions Inc,11133T103,,BR,US,EC,CORP
-Chime Financial Inc,N/A,Chime Financial Inc,16935C109,,CHYM,US,EC,CORP
-Circle Internet Group Inc,N/A,Circle Internet Group Inc,172573107,,CRCL,US,EC,CORP
-Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP
-Corpay Inc,N/A,Corpay Inc,219948106,,CPAY,US,EC,CORP
-Dave Inc,N/A,Dave Inc,23834J201,,DAVE,US,EC,CORP
-Equifax Inc,N/A,Equifax Inc,294429105,,EFX,US,EC,CORP
-Flywire Corp,N/A,Flywire Corp,302492103,,FLYW,US,EC,CORP
-Fair Isaac Corp,N/A,Fair Isaac Corp,303250104,,FICO,US,EC,CORP
-Fidelity National Information ,N/A,Fidelity National Information Services Inc,31620M106,,FIS,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fiserv Inc,N/A,Fiserv Inc,337738108,,FISV,US,EC,CORP
-Global Payments Inc,N/A,Global Payments Inc,37940X102,,GPN,US,EC,CORP
-Green Dot Corp,N/A,Green Dot Corp,39304D102,,GDOT,US,EC,CORP
-Jack Henry & Associates Inc,N/A,Jack Henry & Associates Inc,426281101,,JKHY,US,EC,CORP
-Intuit Inc,N/A,Intuit Inc,461202103,,INTU,US,EC,CORP
-Kaspi.KZ JSC,N/A,Kaspi.KZ JSC,48581R205,,KSPI,US,EC,CORP
-LendingTree Inc,N/A,LendingTree Inc,52603B107,,TREE,US,EC,CORP
-Marqeta Inc,N/A,Marqeta Inc,57142B104,,MQ,US,EC,CORP
-Mastercard Inc,N/A,Mastercard Inc,57636Q104,,MA,US,EC,CORP
-MercadoLibre Inc,549300DKPDN9M5S8GB14,MercadoLibre Inc,58733R102,US58733R1023,MELI,UY,EC,CORP
-Miami International Holdings I,N/A,Miami International Holdings Inc,59356Q108,,MIAX,US,EC,CORP
-nCino Inc,N/A,nCino Inc,63947X101,,NCNO,US,EC,CORP
-NerdWallet Inc,N/A,NerdWallet Inc,64082B102,,NRDS,US,EC,CORP
-OneSpan Inc,N/A,OneSpan Inc,68287N100,,OSPN,US,EC,CORP
-Open Lending Corp,N/A,Open Lending Corp,68373J104,,LPRO,US,EC,CORP
-Oportun Financial Corp,N/A,Oportun Financial Corp,68376D104,,OPRT,US,EC,CORP
-PayPal Holdings Inc,N/A,PayPal Holdings Inc,70450Y103,,PYPL,US,EC,CORP
-Payoneer Global Inc,N/A,Payoneer Global Inc,70451X104,,PAYO,US,EC,CORP
-Q2 Holdings Inc,N/A,Q2 Holdings Inc,74736L109,,QTWO,US,EC,CORP
-Remitly Global Inc,N/A,Remitly Global Inc,75960P104,,RELY,US,EC,CORP
-Repay Holdings Corp,N/A,Repay Holdings Corp,76029L100,,RPAY,US,EC,CORP
-Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP
-Rocket Cos Inc,N/A,Rocket Cos Inc,77311W101,,RKT,US,EC,CORP
-Sea Ltd,N/A,Sea Ltd,81141R100,,SE,US,EC,CORP
-Shift4 Payments Inc,N/A,Shift4 Payments Inc,82452J109,,FOUR,US,EC,CORP
-SoFi Technologies Inc,N/A,SoFi Technologies Inc,83406F102,,SOFI,US,EC,CORP
-Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
-Toast Inc,N/A,Toast Inc,888787108,,TOST,US,EC,CORP
-Upstart Holdings Inc,N/A,Upstart Holdings Inc,91680M107,,UPST,US,EC,CORP
-Visa Inc,N/A,Visa Inc,92826C839,,V,US,EC,CORP
-Wealthfront Corp,N/A,Wealthfront Corp,947002101,,WLTH,US,EC,CORP
-Western Union Co/The,N/A,Western Union Co/The,959802109,,WU,US,EC,CORP
-WEX Inc,N/A,WEX Inc,96208T104,,WEX,US,EC,CORP
-Dlocal Ltd/Uruguay,N/A,Dlocal Ltd/Uruguay,N/A,,DLO,US,EC,CORP
-Etoro Group Ltd,N/A,Etoro Group Ltd,N/A,,ETOR,US,EC,CORP
-Global-e Online Ltd,N/A,Global-e Online Ltd,N/A,,GLBE,IL,EC,CORP
-Inter & Co Inc,N/A,Inter & Co Inc,N/A,,INTR,US,EC,CORP
-NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,N/A,KYG6683N1034,NU,BR,EC,CORP
-Pagseguro Digital Ltd,N/A,Pagseguro Digital Ltd,N/A,,PAGS,US,EC,CORP
-Pagaya Technologies Ltd,N/A,Pagaya Technologies Ltd,N/A,,PGY,US,EC,CORP
-Paysafe Ltd,N/A,Paysafe Ltd,N/A,,PSFE,US,EC,CORP
-Riskified Ltd,N/A,Riskified Ltd,N/A,,RSKD,US,EC,CORP
-StoneCo Ltd,N/A,StoneCo Ltd,N/A,,STNE,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+KYC,AFRM US Equity,AFRM,Affirm Holdings Inc,N/A,Affirm Holdings Inc,00827B106,US00827B1061,AFRM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,ALLY US Equity,ALLY,Ally Financial Inc,549300JBN1OSM8YNAI90,Ally Financial Inc,02005N100,US02005N1000,ALLY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,BILL US Equity,BILL,BILL Holdings Inc,549300IBF9VZZIGOZW63,BILL Holdings Inc,090043100,US0900431000,BILL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,BR US Equity,BR,Broadridge Financial Solutions,549300KZDJZQ2YIHRC28,Broadridge Financial Solutions Inc,11133T103,US11133T1034,BR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,CHYM US Equity,CHYM,Chime Financial Inc,N/A,Chime Financial Inc,16935C109,US16935C1099,CHYM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,COIN US Equity,COIN,Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,CPAY US Equity,CPAY,Corpay Inc,549300DG6RR0NQSFLN74,Corpay Inc,219948106,US2199481068,CPAY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,CRCL US Equity,CRCL,Circle Internet Group Inc,254900HFVVR6NPMQVN93,Circle Internet Group Inc,172573107,US1725731079,CRCL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,DAVE US Equity,DAVE,Dave Inc,25490061SUVXCW51RZ82,Dave Inc,23834J201,US23834J2015,DAVE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,DLO US Equity,DLO,Dlocal Ltd/Uruguay,529900D15DJKVN3RCO35,Dlocal Ltd/Uruguay,G29018101,KYG290181018,DLO,UY,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,EFX US Equity,EFX,Equifax Inc,5493004MCF8JDC86VS77,Equifax Inc,294429105,US2944291051,EFX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,ETOR US Equity,ETOR,Etoro Group Ltd,213800XPRPJK2X5QRG86,Etoro Group Ltd,G32089107,VGG320891077,ETOR,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,FICO US Equity,FICO,Fair Isaac Corp,RI6HET5SJUEY30V1PS26,Fair Isaac Corp,303250104,US3032501047,FICO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,FIS US Equity,FIS,Fidelity National Information ,6WQI0GK1PRFVBA061U48,Fidelity National Information Services Inc,31620M106,US31620M1062,FIS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,FISV US Equity,FISV,Fiserv Inc,GI7UBEJLXYLGR2C7GV83,Fiserv Inc,337738108,US3377381088,FISV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,FLYW US Equity,FLYW,Flywire Corp,54930055DSV7NNY4VY66,Flywire Corp,302492103,US3024921039,FLYW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,FOUR US Equity,FOUR,Shift4 Payments Inc,N/A,Shift4 Payments Inc,82452J109,US82452J1097,FOUR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,GDOT US Equity,GDOT,Green Dot Corp,N/A,Green Dot Corp,39304D102,US39304D1028,GDOT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,GLBE US Equity,GLBE,Global-e Online Ltd,N/A,Global-e Online Ltd,M5216V106,IL0011741688,GLBE,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,GPN US Equity,GPN,Global Payments Inc,549300NOMHGVQBX6S778,Global Payments Inc,37940X102,US37940X1028,GPN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,HOOD US Equity,HOOD,Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,INTR US Equity,INTR,Inter & Co Inc,N/A,Inter & Co Inc,G4R20B107,KYG4R20B1074,INTR,BR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,INTU US Equity,INTU,Intuit Inc,VI90HBPH7XSFMB9E4M29,Intuit Inc,461202103,US4612021034,INTU,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,JKHY US Equity,JKHY,Jack Henry & Associates Inc,529900X1QS8C54W0JB21,Jack Henry & Associates Inc,426281101,US4262811015,JKHY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,KSPI US Equity,KSPI,Kaspi.KZ JSC,2549003YU6FARG8OAZ13,Kaspi.KZ JSC,48581R205,US48581R2058,KSPI,KZ,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,LPRO US Equity,LPRO,Open Lending Corp,N/A,Open Lending Corp,68373J104,US68373J1043,LPRO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,MA US Equity,MA,Mastercard Inc,AR5L2ODV9HN37376R084,Mastercard Inc,57636Q104,US57636Q1040,MA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,MELI US Equity,MELI,MercadoLibre Inc,549300DKPDN9M5S8GB14,MercadoLibre Inc,58733R102,US58733R1023,MELI,UY,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,MIAX US Equity,MIAX,Miami International Holdings I,254900TREUDBWGLAP788,Miami International Holdings Inc,59356Q108,US59356Q1085,MIAX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,MQ US Equity,MQ,Marqeta Inc,254900UZARK0FMZGZE18,Marqeta Inc,57142B104,US57142B1044,MQ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,NCNO US Equity,NCNO,nCino Inc,549300WVRR2WR3L6MZ46,nCino Inc,63947X101,US63947X1019,NCNO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,NRDS US Equity,NRDS,NerdWallet Inc,254900FJ2Y4SH71DJ379,NerdWallet Inc,64082B102,US64082B1026,NRDS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,NU US Equity,NU,NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,G6683N103,KYG6683N1034,NU,BR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,OPRT US Equity,OPRT,Oportun Financial Corp,549300351Y4J4FKIOR78,Oportun Financial Corp,68376D104,US68376D1046,OPRT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,OSPN US Equity,OSPN,OneSpan Inc,984500E502E6DC354D26,OneSpan Inc,68287N100,US68287N1000,OSPN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,PAGS US Equity,PAGS,Pagseguro Digital Ltd,391200VY4YW47I4HGH62,Pagseguro Digital Ltd,G68707101,KYG687071012,PAGS,BR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,PAYO US Equity,PAYO,Payoneer Global Inc,984500491C64C70FF033,Payoneer Global Inc,70451X104,US70451X1046,PAYO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,PGY US Equity,PGY,Pagaya Technologies Ltd,N/A,Pagaya Technologies Ltd,M7S64L123,IL0011858912,PGY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,PSFE US Equity,PSFE,Paysafe Ltd,2138003K6PVDCI5TBN11,Paysafe Ltd,G6964L206,BMG6964L2062,PSFE,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,PYPL US Equity,PYPL,PayPal Holdings Inc,5493005X2GO78EFZ3E94,PayPal Holdings Inc,70450Y103,US70450Y1038,PYPL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,QTWO US Equity,QTWO,Q2 Holdings Inc,549300M9RKR9DZXWS696,Q2 Holdings Inc,74736L109,US74736L1098,QTWO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,RELY US Equity,RELY,Remitly Global Inc,N/A,Remitly Global Inc,75960P104,US75960P1049,RELY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,RKT US Equity,RKT,Rocket Cos Inc,N/A,Rocket Cos Inc,77311W101,US77311W1018,RKT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,RPAY US Equity,RPAY,Repay Holdings Corp,2549006EJ42T73ZKUI98,Repay Holdings Corp,76029L100,US76029L1008,RPAY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,RSKD US Equity,RSKD,Riskified Ltd,894500GU19M0O0BYWM49,Riskified Ltd,M8216R109,IL0011786493,RSKD,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,SE US Equity,SE,Sea Ltd,529900OM6JLLW44YKI15,Sea Ltd,81141R100,US81141R1005,SE,SG,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,SOFI US Equity,SOFI,SoFi Technologies Inc,549300SW81JCMVZDDY09,SoFi Technologies Inc,83406F102,US83406F1021,SOFI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,STNE US Equity,STNE,StoneCo Ltd,549300O1A9LEF0XZCR35,StoneCo Ltd,G85158106,KYG851581069,STNE,BR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,TOST US Equity,TOST,Toast Inc,549300TN1PZNLCD4I551,Toast Inc,888787108,US8887871080,TOST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,TREE US Equity,TREE,LendingTree Inc,549300ISY5YHUJZTON08,LendingTree Inc,52603B107,US52603B1070,TREE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,UPST US Equity,UPST,Upstart Holdings Inc,549300WNB47JRNENIC75,Upstart Holdings Inc,91680M107,US91680M1071,UPST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,V US Equity,V,Visa Inc,549300JZ4OKEHW3DPJ59,Visa Inc,92826C839,US92826C8394,V,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,WEX US Equity,WEX,WEX Inc,T9M5IGROL1TL1G5OV478,WEX Inc,96208T104,US96208T1043,WEX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,WLTH US Equity,WLTH,Wealthfront Corp,254900H4LJLUHGFJYM32,Wealthfront Corp,947002101,US9470021018,WLTH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,WU US Equity,WU,Western Union Co/The,28ID94QU1140NC23S047,Western Union Co/The,959802109,US9598021098,WU,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KYC,XYZ US Equity,XYZ,Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

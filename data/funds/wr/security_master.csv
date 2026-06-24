@@ -1,58 +1,58 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AeroVironment Inc,N/A,AeroVironment Inc,008073108,,AVAV,US,EC,CORP
-ATI Inc,N/A,ATI Inc,01741R102,,ATI,US,EC,CORP
-Amentum Holdings Inc,N/A,Amentum Holdings Inc,023939101,,AMTM,US,EC,CORP
-BWX Technologies Inc,N/A,BWX Technologies Inc,05605H100,,BWXT,US,EC,CORP
-Baker Hughes Co,N/A,Baker Hughes Co,05722G100,,BKR,US,EC,CORP
-Booz Allen Hamilton Holding Co,N/A,Booz Allen Hamilton Holding Corp,099502106,,BAH,US,EC,CORP
-CACI International Inc,N/A,CACI International Inc,127190304,,CACI,US,EC,CORP
-Cadre Holdings Inc,N/A,Cadre Holdings Inc,12763L105,,CDRE,US,EC,CORP
-Cheniere Energy Inc,N/A,Cheniere Energy Inc,16411R208,,LNG,US,EC,CORP
-Chevron Corp,N/A,Chevron Corp,166764100,,CVX,US,EC,CORP
-ConocoPhillips,N/A,ConocoPhillips,20825C104,,COP,US,EC,CORP
-Devon Energy Corp,N/A,Devon Energy Corp,25179M103,,DVN,US,EC,CORP
-Diamondback Energy Inc,N/A,Diamondback Energy Inc,25278X109,,FANG,US,EC,CORP
-EOG Resources Inc,N/A,EOG Resources Inc,26875P101,,EOG,US,EC,CORP
-EQT Corp,N/A,EQT Corp,26884L109,,EQT,US,EC,CORP
-Exxon Mobil Corp,N/A,Exxon Mobil Corp,30231G102,,XOM,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-General Dynamics Corp,N/A,General Dynamics Corp,369550108,,GD,US,EC,CORP
-Halliburton Co,N/A,Halliburton Co,406216101,,HAL,US,EC,CORP
-Helmerich & Payne Inc,N/A,Helmerich & Payne Inc,423452101,,HP,US,EC,CORP
-Hexcel Corp,N/A,Hexcel Corp,428291108,,HXL,US,EC,CORP
-Howmet Aerospace Inc,N/A,Howmet Aerospace Inc,443201108,,HWM,US,EC,CORP
-Huntington Ingalls Industries ,N/A,Huntington Ingalls Industries Inc,446413106,,HII,US,EC,CORP
-Karman Holdings Inc,N/A,Karman Holdings Inc,485924104,,KRMN,US,EC,CORP
-Kinder Morgan Inc,N/A,Kinder Morgan Inc,49456B101,,KMI,US,EC,CORP
-Kratos Defense & Security Solu,N/A,Kratos Defense & Security Solutions Inc,50077B207,,KTOS,US,EC,CORP
-Leidos Holdings Inc,N/A,Leidos Holdings Inc,525327102,,LDOS,US,EC,CORP
-Leonardo DRS Inc,N/A,Leonardo DRS Inc,52661A108,,DRS,US,EC,CORP
-Liberty Energy Inc,N/A,Liberty Energy Inc,53115L104,,LBRT,US,EC,CORP
-Loar Holdings Inc,N/A,Loar Holdings Inc,53947R105,,LOAR,US,EC,CORP
-Lockheed Martin Corp,N/A,Lockheed Martin Corp,539830109,,LMT,US,EC,CORP
-Marathon Petroleum Corp,N/A,Marathon Petroleum Corp,56585A102,,MPC,US,EC,CORP
-Matador Resources Co,N/A,Matador Resources Co,576485205,,MTDR,US,EC,CORP
-Mercury Systems Inc,N/A,Mercury Systems Inc,589378108,,MRCY,US,EC,CORP
-Moog Inc,N/A,Moog Inc,615394202,,MOG/A,US,EC,CORP
-National Presto Industries Inc,N/A,National Presto Industries Inc,637215104,,NPK,US,EC,CORP
-Occidental Petroleum Corp,N/A,Occidental Petroleum Corp,674599105,,OXY,US,EC,CORP
-Olin Corp,N/A,Olin Corp,680665205,,OLN,US,EC,CORP
-Ondas Inc,N/A,Ondas Inc,68236H204,,ONDS,US,EC,CORP
-ONEOK Inc,N/A,ONEOK Inc,682680103,,OKE,US,EC,CORP
-Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP
-Patterson-UTI Energy Inc,N/A,Patterson-UTI Energy Inc,703481101,,PTEN,US,EC,CORP
-Permian Resources Corp,N/A,Permian Resources Corp,71424F105,,PR,US,EC,CORP
-Phillips 66,N/A,Phillips 66,718546104,,PSX,US,EC,CORP
-RTX Corp,N/A,RTX Corp,75513E101,,RTX,US,EC,CORP
-Red Cat Holdings Inc,N/A,Red Cat Holdings Inc,75644T100,,RCAT,US,EC,CORP
-Rocket Lab Corp,254900LNRW7906KUMM93,Rocket Lab Corp,773121108,US7731211089,RKLB,US,EC,CORP
-SLB Ltd,N/A,SLB Ltd,806857108,,SLB,US,EC,CORP
-Science Applications Internati,N/A,Science Applications International Corp,808625107,,SAIC,US,EC,CORP
-Smith & Wesson Brands Inc,N/A,Smith & Wesson Brands Inc,831754106,,SWBI,US,EC,CORP
-Targa Resources Corp,N/A,Targa Resources Corp,87612G101,,TRGP,US,EC,CORP
-TransDigm Group Inc,N/A,TransDigm Group Inc,893641100,,TDG,US,EC,CORP
-Valero Energy Corp,N/A,Valero Energy Corp,91913Y100,,VLO,US,EC,CORP
-V2X Inc,N/A,V2X Inc,92242T101,,VVX,US,EC,CORP
-Venture Global Inc,N/A,Venture Global Inc,92333F101,,VG,US,EC,CORP
-Williams Cos Inc/The,N/A,Williams Cos Inc/The,969457100,,WMB,US,EC,CORP
-Weatherford International PLC,N/A,Weatherford International PLC,N/A,,WFRD,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+WR,AMTM US Equity,AMTM,Amentum Holdings Inc,2549009FJIBLW40CU216,Amentum Holdings Inc,023939101,US0239391016,AMTM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,ATI US Equity,ATI,ATI Inc,ZW1LRE7C3H17O2ZN9B45,ATI Inc,01741R102,US01741R1023,ATI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,AVAV US Equity,AVAV,AeroVironment Inc,529900PGHVI29YLZ6221,AeroVironment Inc,008073108,US0080731088,AVAV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,BAH US Equity,BAH,Booz Allen Hamilton Holding Co,529900JPV47PIUWMA015,Booz Allen Hamilton Holding Corp,099502106,US0995021062,BAH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,BKR US Equity,BKR,Baker Hughes Co,N/A,Baker Hughes Co,05722G100,US05722G1004,BKR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,BWXT US Equity,BWXT,BWX Technologies Inc,549300NP85N265KWMS58,BWX Technologies Inc,05605H100,US05605H1005,BWXT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,CACI US Equity,CACI,CACI International Inc,SYRPI2D1O9WRTS2WX210,CACI International Inc,127190304,US1271903049,CACI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,CDRE US Equity,CDRE,Cadre Holdings Inc,2549006IKQEWJ8M7CB97,Cadre Holdings Inc,12763L105,US12763L1052,CDRE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,COP US Equity,COP,ConocoPhillips,WPTL2Z3FIYTHSP5V2253,ConocoPhillips,20825C104,US20825C1045,COP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,CVX US Equity,CVX,Chevron Corp,N/A,Chevron Corp,166764100,US1667641005,CVX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,DRS US Equity,DRS,Leonardo DRS Inc,549300HMMEWVG3PPQU18,Leonardo DRS Inc,52661A108,US52661A1088,DRS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,DVN US Equity,DVN,Devon Energy Corp,54930042348RKR3ZPN35,Devon Energy Corp,25179M103,US25179M1036,DVN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,EOG US Equity,EOG,EOG Resources Inc,XWTZDRYZPBUHIQBKDB46,EOG Resources Inc,26875P101,US26875P1012,EOG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,EQT US Equity,EQT,EQT Corp,4NT01YGM4X7ZX86ISY52,EQT Corp,26884L109,US26884L1098,EQT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,FANG US Equity,FANG,Diamondback Energy Inc,549300R22LSX6OHWEN64,Diamondback Energy Inc,25278X109,US25278X1090,FANG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,GD US Equity,GD,General Dynamics Corp,9C1X8XOOTYY2FNYTVH06,General Dynamics Corp,369550108,US3695501086,GD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,HAL US Equity,HAL,Halliburton Co,ENYF8GB5SMQZ25S06U51,Halliburton Co,406216101,US4062161017,HAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,HII US Equity,HII,Huntington Ingalls Industries ,5TZLZ6WJTBVJ0QWBG121,Huntington Ingalls Industries Inc,446413106,US4464131063,HII,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,HP US Equity,HP,Helmerich & Payne Inc,254900NAOGHJ88RZ4C73,Helmerich & Payne Inc,423452101,US4234521015,HP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,HWM US Equity,HWM,Howmet Aerospace Inc,549300HO5WFZUT5N2T22,Howmet Aerospace Inc,443201108,US4432011082,HWM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,HXL US Equity,HXL,Hexcel Corp,S6Q7LW43WUBUHXY2QP69,Hexcel Corp,428291108,US4282911084,HXL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,KMI US Equity,KMI,Kinder Morgan Inc,549300WR7IX8XE0TBO16,Kinder Morgan Inc,49456B101,US49456B1017,KMI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,KRMN US Equity,KRMN,Karman Holdings Inc,529900O0VTB7GNU1Z532,Karman Holdings Inc,485924104,US4859241048,KRMN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,KTOS US Equity,KTOS,Kratos Defense & Security Solu,5493000EKBN0UY1F3F88,Kratos Defense & Security Solutions Inc,50077B207,US50077B2079,KTOS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,LBRT US Equity,LBRT,Liberty Energy Inc,254900PKFJW6RILDCM60,Liberty Energy Inc,53115L104,US53115L1044,LBRT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,LDOS US Equity,LDOS,Leidos Holdings Inc,549300IUTGTP6EJP8124,Leidos Holdings Inc,525327102,US5253271028,LDOS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,LMT US Equity,LMT,Lockheed Martin Corp,DPRBOZP0K5RM2YE8UU08,Lockheed Martin Corp,539830109,US5398301094,LMT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,LNG US Equity,LNG,Cheniere Energy Inc,MIHC87W9WTYSYZWV1J40,Cheniere Energy Inc,16411R208,US16411R2085,LNG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,LOAR US Equity,LOAR,Loar Holdings Inc,N/A,Loar Holdings Inc,53947R105,US53947R1059,LOAR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,MOG/A US Equity,MOG/A,Moog Inc,549300WM2I4U7OBAHG07,Moog Inc,615394202,US6153942023,MOG/A,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,MPC US Equity,MPC,Marathon Petroleum Corp,3BNYRYQHD39K4LCKQF12,Marathon Petroleum Corp,56585A102,US56585A1025,MPC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,MRCY US Equity,MRCY,Mercury Systems Inc,549300P3B84SGK7HH679,Mercury Systems Inc,589378108,US5893781089,MRCY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,MTDR US Equity,MTDR,Matador Resources Co,549300CI3Q2UUK5R4G79,Matador Resources Co,576485205,US5764852050,MTDR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,NPK US Equity,NPK,National Presto Industries Inc,N/A,National Presto Industries Inc,637215104,US6372151042,NPK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,OKE US Equity,OKE,ONEOK Inc,2T3D6M0JSY48PSZI1Q41,ONEOK Inc,682680103,US6826801036,OKE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,OLN US Equity,OLN,Olin Corp,549300GKK294V7W57P06,Olin Corp,680665205,US6806652052,OLN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,ONDS US Equity,ONDS,Ondas Inc,549300JWLHDUB82V8607,Ondas Inc,68236H204,US68236H2040,ONDS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,OXY US Equity,OXY,Occidental Petroleum Corp,IM7X0T3ECJW4C1T7ON55,Occidental Petroleum Corp,674599105,US6745991058,OXY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,PLTR US Equity,PLTR,Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,PR US Equity,PR,Permian Resources Corp,N/A,Permian Resources Corp,71424F105,US71424F1057,PR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,PSX US Equity,PSX,Phillips 66,5493005JBO5YSIGK1814,Phillips 66,718546104,US7185461040,PSX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,PTEN US Equity,PTEN,Patterson-UTI Energy Inc,254900XGFBKIXD6G0697,Patterson-UTI Energy Inc,703481101,US7034811015,PTEN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,RCAT US Equity,RCAT,Red Cat Holdings Inc,5493005OGSQW28V2PY05,Red Cat Holdings Inc,75644T100,US75644T1007,RCAT,PR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,RKLB US Equity,RKLB,Rocket Lab Corp,254900LNRW7906KUMM93,Rocket Lab Corp,773121108,US7731211089,RKLB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,RTX US Equity,RTX,RTX Corp,I07WOS4YJ0N7YRFE7309,RTX Corp,75513E101,US75513E1010,RTX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,SAIC US Equity,SAIC,Science Applications Internati,549300LZPNZIXQGZPZ48,Science Applications International Corp,808625107,US8086251076,SAIC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,SLB US Equity,SLB,SLB Ltd,213800ZUA17OK3QLGM62,SLB Ltd,806857108,AN8068571086,SLB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,SWBI US Equity,SWBI,Smith & Wesson Brands Inc,5493004PFHUPOR1PWN79,Smith & Wesson Brands Inc,831754106,US8317541063,SWBI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,TDG US Equity,TDG,TransDigm Group Inc,N/A,TransDigm Group Inc,893641100,US8936411003,TDG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,TRGP US Equity,TRGP,Targa Resources Corp,5493003QENHHS261UR94,Targa Resources Corp,87612G101,US87612G1013,TRGP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,VG US Equity,VG,Venture Global Inc,2549007XC91CAB3E0N98,Venture Global Inc,92333F101,US92333F1012,VG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,VLO US Equity,VLO,Valero Energy Corp,549300XTO5VR8SKV1V74,Valero Energy Corp,91913Y100,US91913Y1001,VLO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,VVX US Equity,VVX,V2X Inc,N/A,V2X Inc,92242T101,US92242T1016,VVX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,WFRD US Equity,WFRD,Weatherford International PLC,529900LPBDSCQDJKHQ39,Weatherford International PLC,G48833118,IE00BLNN3691,WFRD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,WMB US Equity,WMB,Williams Cos Inc/The,D71FAKCBLFS2O0RBPG08,Williams Cos Inc/The,969457100,US9694571004,WMB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WR,XOM US Equity,XOM,Exxon Mobil Corp,J3WHBG0MTS7O8ZVMDC91,Exxon Mobil Corp,30231G102,US30231G1022,XOM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

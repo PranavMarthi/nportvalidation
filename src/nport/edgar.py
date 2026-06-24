@@ -15,9 +15,9 @@ from dataclasses import dataclass
 
 from lxml import etree
 
-logger = logging.getLogger(__name__)
-
 from nport.constants import NS_NPORT
+
+logger = logging.getLogger(__name__)
 
 _BASE_URL = "https://data.sec.gov"
 _ARCHIVES_URL = "https://www.sec.gov/Archives/edgar/data"

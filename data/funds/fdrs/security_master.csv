@@ -1,52 +1,52 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AST SpaceMobile Inc,N/A,AST SpaceMobile Inc,00217D100,,ASTS,US,EC,CORP
-Airbnb Inc,549300HMUDNO0RY56D37,Airbnb Inc,009066101,US0090661010,ABNB,US,EC,CORP
-Apollo Global Management Inc,254900LMFT1CY9IYB476,Apollo Global Management Inc,03769M106,US03769M1062,APO,US,EC,CORP
-AppLovin Corp,549300LLVXMUAOL3SQ07,AppLovin Corp,03831W108,US03831W1080,APP,US,EC,CORP
-Ares Management Corp,529900JUV61FH7B8VW38,Ares Management Corp,03990B101,US03990B1017,ARES,US,EC,CORP
-Arista Networks Inc,635400H1WKBLOQERUU95,Arista Networks Inc,040413205,US0404132054,ANET,US,EC,CORP
-Astera Labs Inc,N/A,Astera Labs Inc,04626A103,,ALAB,US,EC,CORP
-Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP
-Blackstone Inc,5299004LW4QWGZUB8Y96,Blackstone Inc,09260D107,US09260D1072,BX,US,EC,CORP
-Blackrock Inc,529900VBK42Y5HHRMD23,Blackrock Inc,09290D101,US09290D1019,BLK,US,EC,CORP
-Bloom Energy Corp,549300XB5J9BFW5JXV97,Bloom Energy Corp,093712107,US0937121079,BE,US,EC,CORP
-Capital One Financial Corp,ZUE8T73ROZOF6FLBAR73,Capital One Financial Corp,14040H105,US14040H1059,COF,US,EC,CORP
-Carvana Co,5493003WEAK2PJ5WS063,Carvana Co,146869102,US1468691027,CVNA,US,EC,CORP
-Cloudflare Inc,5493007DY18BGNLDWU14,Cloudflare Inc,18915M107,US18915M1071,NET,US,EC,CORP
-Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP
-CoreWeave Inc,984500511DP2B6186053,CoreWeave Inc,21873S108,US21873S1087,CRWV,US,EC,CORP
-Coupang Inc,549300XR4L1D80AK4W76,Coupang Inc,22266T109,US22266T1097,CPNG,US,EC,CORP
-Crowdstrike Holdings Inc,549300YBY08K9KM4HX32,Crowdstrike Holdings Inc,22788C105,US22788C1053,CRWD,US,EC,CORP
-Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
-Dell Technologies Inc,549300TJB5YBRUPOG437,Dell Technologies Inc,24703L202,US24703L2025,DELL,US,EC,CORP
-DoorDash Inc,549300NUQ43FGGSK5051,DoorDash Inc,25809K105,US25809K1051,DASH,US,EC,CORP
-Meta Platforms Inc,BQ4BKCS1HXDV9HN80Z93,Meta Platforms Inc,30303M102,US30303M1027,META,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP
-Intercontinental Exchange Inc,5493000F4ZO33MV32P92,Intercontinental Exchange Inc,45866F104,US45866F1049,ICE,US,EC,CORP
-Strategy Inc,549300WQTWEJUEHXQX21,Strategy Inc,594972408,US5949724083,MSTR,US,EC,CORP
-Monolithic Power Systems Inc,529900TB7O85LSZ1XU31,Monolithic Power Systems Inc,609839105,US6098391054,MPWR,US,EC,CORP
-NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP
-Oracle Corp,1Z4GXXU7ZHVWFCD8TV52,Oracle Corp,68389X105,US68389X1054,ORCL,US,EC,CORP
-Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP
-Everpure Inc,549300NPDB0BZTK3WO90,Everpure Inc,74624M102,US74624M1027,P,US,EC,CORP
-Reddit Inc,529900APN1YHPBHPI679,Reddit Inc,75734B100,US75734B1008,RDDT,US,EC,CORP
-Regeneron Pharmaceuticals Inc,549300RCBFWIRX3HYQ56,Regeneron Pharmaceuticals Inc,75886F107,US75886F1075,REGN,US,EC,CORP
-Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP
-ROBLOX Corp,529900ANZDBDFU91SO19,ROBLOX Corp,771049103,US7710491033,RBLX,US,EC,CORP
-Rocket Lab Corp,254900LNRW7906KUMM93,Rocket Lab Corp,773121108,US7731211089,RKLB,US,EC,CORP
-Salesforce Inc,RCGZFPDMRW58VJ54VR07,Salesforce Inc,79466L302,US79466L3024,CRM,US,EC,CORP
-Shopify Inc,549300HGQ43STJLLP808,Shopify Inc,82509L107,CA82509L1076,SHOP,CA,EC,CORP
-Snowflake Inc,254900CJNSY1K7T53Z16,Snowflake Inc,833445109,US8334451098,SNOW,US,EC,CORP
-Space Exploration Technologies,N/A,Space Exploration Technologies Corp,84615Q103,,SPCX,US,EC,CORP
-Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
-Steel Dynamics Inc,549300HGGKEL4FYTTQ83,Steel Dynamics Inc,858119100,US8581191009,STLD,US,EC,CORP
-Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP
-United Therapeutics Corp,5299005C4HZL4UWROC14,United Therapeutics Corp,91307C102,US91307C1027,UTHR,US,EC,CORP
-Veeva Systems Inc,549300YZEXPDB92M2F02,Veeva Systems Inc,922475108,US9224751084,VEEV,US,EC,CORP
-Waste Connections Inc,549300HDLRTPBQU69P29,Waste Connections Inc,94106B101,CA94106B1013,WCN,CA,EC,CORP
-Workday Inc,549300J0DYC0N31V7G13,Workday Inc,98138H101,US98138H1014,WDAY,US,EC,CORP
-Zoom Communications Inc,549300T9GCHU0ODOM055,Zoom Communications Inc,98980L101,US98980L1017,ZM,US,EC,CORP
-Credo Technology Group Holding,N/A,Credo Technology Group Holding Ltd,N/A,KYG254571055,CRDO,US,EC,CORP
-Nebius Group NV,549300GGZHJ5Q1B18P93,Nebius Group NV,N/A,NL0009805522,NBIS,NL,EC,CORP
-NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,N/A,KYG6683N1034,NU,BR,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+FDRS,ABNB US Equity,ABNB,Airbnb Inc,549300HMUDNO0RY56D37,Airbnb Inc,009066101,US0090661010,ABNB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,ALAB US Equity,ALAB,Astera Labs Inc,529900LJL8TUEGF7HG20,Astera Labs Inc,04626A103,US04626A1034,ALAB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,ANET US Equity,ANET,Arista Networks Inc,635400H1WKBLOQERUU95,Arista Networks Inc,040413205,US0404132054,ANET,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,APO US Equity,APO,Apollo Global Management Inc,254900LMFT1CY9IYB476,Apollo Global Management Inc,03769M106,US03769M1062,APO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,APP US Equity,APP,AppLovin Corp,549300LLVXMUAOL3SQ07,AppLovin Corp,03831W108,US03831W1080,APP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,ARES US Equity,ARES,Ares Management Corp,529900JUV61FH7B8VW38,Ares Management Corp,03990B101,US03990B1017,ARES,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,ASTS US Equity,ASTS,AST SpaceMobile Inc,254900MBSC9P2UCI6623,AST SpaceMobile Inc,00217D100,US00217D1000,ASTS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,AXON US Equity,AXON,Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,BE US Equity,BE,Bloom Energy Corp,549300XB5J9BFW5JXV97,Bloom Energy Corp,093712107,US0937121079,BE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,BLK US Equity,BLK,Blackrock Inc,529900VBK42Y5HHRMD23,Blackrock Inc,09290D101,US09290D1019,BLK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,BX US Equity,BX,Blackstone Inc,5299004LW4QWGZUB8Y96,Blackstone Inc,09260D107,US09260D1072,BX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,COF US Equity,COF,Capital One Financial Corp,ZUE8T73ROZOF6FLBAR73,Capital One Financial Corp,14040H105,US14040H1059,COF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,COIN US Equity,COIN,Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,CPNG US Equity,CPNG,Coupang Inc,549300XR4L1D80AK4W76,Coupang Inc,22266T109,US22266T1097,CPNG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,CRDO US Equity,CRDO,Credo Technology Group Holding,N/A,Credo Technology Group Holding Ltd,G25457105,KYG254571055,CRDO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,CRM US Equity,CRM,Salesforce Inc,RCGZFPDMRW58VJ54VR07,Salesforce Inc,79466L302,US79466L3024,CRM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,CRWD US Equity,CRWD,Crowdstrike Holdings Inc,549300YBY08K9KM4HX32,Crowdstrike Holdings Inc,22788C105,US22788C1053,CRWD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,CRWV US Equity,CRWV,CoreWeave Inc,984500511DP2B6186053,CoreWeave Inc,21873S108,US21873S1087,CRWV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,CVNA US Equity,CVNA,Carvana Co,5493003WEAK2PJ5WS063,Carvana Co,146869102,US1468691027,CVNA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,DASH US Equity,DASH,DoorDash Inc,549300NUQ43FGGSK5051,DoorDash Inc,25809K105,US25809K1051,DASH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,DDOG US Equity,DDOG,Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,DELL US Equity,DELL,Dell Technologies Inc,549300TJB5YBRUPOG437,Dell Technologies Inc,24703L202,US24703L2025,DELL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,FTNT US Equity,FTNT,Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,HOOD US Equity,HOOD,Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,ICE US Equity,ICE,Intercontinental Exchange Inc,5493000F4ZO33MV32P92,Intercontinental Exchange Inc,45866F104,US45866F1049,ICE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,META US Equity,META,Meta Platforms Inc,BQ4BKCS1HXDV9HN80Z93,Meta Platforms Inc,30303M102,US30303M1027,META,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,MPWR US Equity,MPWR,Monolithic Power Systems Inc,529900TB7O85LSZ1XU31,Monolithic Power Systems Inc,609839105,US6098391054,MPWR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,MSTR US Equity,MSTR,Strategy Inc,549300WQTWEJUEHXQX21,Strategy Inc,594972408,US5949724083,MSTR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,NBIS US Equity,NBIS,Nebius Group NV,549300GGZHJ5Q1B18P93,Nebius Group NV,N97284108,NL0009805522,NBIS,NL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,NET US Equity,NET,Cloudflare Inc,5493007DY18BGNLDWU14,Cloudflare Inc,18915M107,US18915M1071,NET,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,NU US Equity,NU,NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,G6683N103,KYG6683N1034,NU,BR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,NVDA US Equity,NVDA,NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,ORCL US Equity,ORCL,Oracle Corp,1Z4GXXU7ZHVWFCD8TV52,Oracle Corp,68389X105,US68389X1054,ORCL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,P US Equity,P,Everpure Inc,549300NPDB0BZTK3WO90,Everpure Inc,74624M102,US74624M1027,P,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,PLTR US Equity,PLTR,Palantir Technologies Inc,549300UVN46B3BBDHO85,Palantir Technologies Inc,69608A108,US69608A1088,PLTR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,RBLX US Equity,RBLX,ROBLOX Corp,529900ANZDBDFU91SO19,ROBLOX Corp,771049103,US7710491033,RBLX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,RDDT US Equity,RDDT,Reddit Inc,529900APN1YHPBHPI679,Reddit Inc,75734B100,US75734B1008,RDDT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,REGN US Equity,REGN,Regeneron Pharmaceuticals Inc,549300RCBFWIRX3HYQ56,Regeneron Pharmaceuticals Inc,75886F107,US75886F1075,REGN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,RKLB US Equity,RKLB,Rocket Lab Corp,254900LNRW7906KUMM93,Rocket Lab Corp,773121108,US7731211089,RKLB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,SHOP US Equity,SHOP,Shopify Inc,549300HGQ43STJLLP808,Shopify Inc,82509L107,CA82509L1076,SHOP,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,SNOW US Equity,SNOW,Snowflake Inc,254900CJNSY1K7T53Z16,Snowflake Inc,833445109,US8334451098,SNOW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,SPCX US Equity,SPCX,Space Exploration Technologies,549300B9WLO96RQCXP87,Space Exploration Technologies Corp,84615Q103,US84615Q1031,SPCX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,STLD US Equity,STLD,Steel Dynamics Inc,549300HGGKEL4FYTTQ83,Steel Dynamics Inc,858119100,US8581191009,STLD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,TSLA US Equity,TSLA,Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,UTHR US Equity,UTHR,United Therapeutics Corp,5299005C4HZL4UWROC14,United Therapeutics Corp,91307C102,US91307C1027,UTHR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,VEEV US Equity,VEEV,Veeva Systems Inc,549300YZEXPDB92M2F02,Veeva Systems Inc,922475108,US9224751084,VEEV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,WCN US Equity,WCN,Waste Connections Inc,549300HDLRTPBQU69P29,Waste Connections Inc,94106B101,CA94106B1013,WCN,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,WDAY US Equity,WDAY,Workday Inc,549300J0DYC0N31V7G13,Workday Inc,98138H101,US98138H1014,WDAY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,XYZ US Equity,XYZ,Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FDRS,ZM US Equity,ZM,Zoom Communications Inc,549300T9GCHU0ODOM055,Zoom Communications Inc,98980L101,US98980L1017,ZM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

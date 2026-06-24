@@ -1,26 +1,26 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AeroVironment Inc,N/A,AeroVironment Inc,008073108,,AVAV,US,EC,CORP
-Alphabet Inc,N/A,Alphabet Inc,02079K305,,GOOGL,US,EC,CORP
-Amazon.com Inc,N/A,Amazon.com Inc,023135106,,AMZN,US,EC,CORP
-Archer Aviation Inc,N/A,Archer Aviation Inc,03945R102,,ACHR,US,EC,CORP
-Aurora Innovation Inc,N/A,Aurora Innovation Inc,051774107,,AUR,US,EC,CORP
-Caterpillar Inc,N/A,Caterpillar Inc,149123101,,CAT,US,EC,CORP
-Cognex Corp,N/A,Cognex Corp,192422103,,CGNX,US,EC,CORP
-Deere & Co,N/A,Deere & Co,244199105,,DE,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Globus Medical Inc,N/A,Globus Medical Inc,379577208,,GMED,US,EC,CORP
-Intuitive Surgical Inc,N/A,Intuitive Surgical Inc,46120E602,,ISRG,US,EC,CORP
-JBT Marel Corp,N/A,JBT Marel Corp,477839104,,JBTM,US,EC,CORP
-Mobileye Global Inc,N/A,Mobileye Global Inc,60741F104,,MBLY,US,EC,CORP
-Novanta Inc,N/A,Novanta Inc,67000B104,,NOVT,US,EC,CORP
-NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP
-PTC Inc,N/A,PTC Inc,69370C100,,PTC,US,EC,CORP
-Procept Biorobotics Corp,N/A,Procept Biorobotics Corp,74276L105,,PRCT,US,EC,CORP
-Richtech Robotics Inc,N/A,Richtech Robotics Inc,765504105,,RR,US,EC,CORP
-Serve Robotics Inc,N/A,Serve Robotics Inc,81758H106,,SERV,US,EC,CORP
-Stryker Corp,N/A,Stryker Corp,863667101,,SYK,US,EC,CORP
-Symbotic Inc,N/A,Symbotic Inc,87151X101,,SYM,US,EC,CORP
-Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP
-UiPath Inc,N/A,UiPath Inc,90364P105,,PATH,US,EC,CORP
-ZIMMER BIOMET HOLDINGS INC,N/A,ZIMMER BIOMET HOLDINGS INC,98956P102,,ZBH,US,EC,CORP
-Ambarella Inc,N/A,Ambarella Inc,N/A,,AMBA,KY,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+CBOT,ACHR US Equity,ACHR,Archer Aviation Inc,529900UGYVU0KY2RLD83,Archer Aviation Inc,03945R102,US03945R1023,ACHR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,AMBA US Equity,AMBA,Ambarella Inc,254900XN7F4DG0CEKC02,Ambarella Inc,G037AX101,KYG037AX1015,AMBA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,AMZN US Equity,AMZN,Amazon.com Inc,ZXTILKJKG63JELOEG630,Amazon.com Inc,023135106,US0231351067,AMZN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,AUR US Equity,AUR,Aurora Innovation Inc,984500AB2E0D9F7D9D76,Aurora Innovation Inc,051774107,US0517741072,AUR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,AVAV US Equity,AVAV,AeroVironment Inc,529900PGHVI29YLZ6221,AeroVironment Inc,008073108,US0080731088,AVAV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,CAT US Equity,CAT,Caterpillar Inc,WRJR7GS4GTRECRRTVX92,Caterpillar Inc,149123101,US1491231015,CAT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,CGNX US Equity,CGNX,Cognex Corp,549300JQTYZCLC43S226,Cognex Corp,192422103,US1924221039,CGNX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,DE US Equity,DE,Deere & Co,PWFTNG3EI0Y73OXWDH08,Deere & Co,244199105,US2441991054,DE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,GMED US Equity,GMED,Globus Medical Inc,5299003M2P4CIK0RF205,Globus Medical Inc,379577208,US3795772082,GMED,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,GOOGL US Equity,GOOGL,Alphabet Inc,5493006MHB84DD0ZWV18,Alphabet Inc,02079K305,US02079K3059,GOOGL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,ISRG US Equity,ISRG,Intuitive Surgical Inc,54930052SRG011710797,Intuitive Surgical Inc,46120E602,US46120E6023,ISRG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,JBTM US Equity,JBTM,JBT Marel Corp,5493007CT6ATBZ2L6826,JBT Marel Corp,477839104,US4778391049,JBTM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,MBLY US Equity,MBLY,Mobileye Global Inc,N/A,Mobileye Global Inc,60741F104,US60741F1049,MBLY,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,NOVT US Equity,NOVT,Novanta Inc,N/A,Novanta Inc,67000B104,CA67000B1040,NOVT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,NVDA US Equity,NVDA,NVIDIA Corp,549300S4KLFTLO7GSQ80,NVIDIA Corp,67066G104,US67066G1040,NVDA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,PATH US Equity,PATH,UiPath Inc,5493000YP61KBELDHT53,UiPath Inc,90364P105,US90364P1057,PATH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,PRCT US Equity,PRCT,Procept Biorobotics Corp,N/A,Procept Biorobotics Corp,74276L105,US74276L1052,PRCT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,PTC US Equity,PTC,PTC Inc,54930050SSMU8SKDJ030,PTC Inc,69370C100,US69370C1009,PTC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,RR US Equity,RR,Richtech Robotics Inc,N/A,Richtech Robotics Inc,765504105,US7655041058,RR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,SERV US Equity,SERV,Serve Robotics Inc,N/A,Serve Robotics Inc,81758H106,US81758H1068,SERV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,SYK US Equity,SYK,Stryker Corp,5493002F0SC4JTBU5137,Stryker Corp,863667101,US8636671013,SYK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,SYM US Equity,SYM,Symbotic Inc,529900UN9QT55OG9I235,Symbotic Inc,87151X101,US87151X1019,SYM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,TSLA US Equity,TSLA,Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CBOT,ZBH US Equity,ZBH,ZIMMER BIOMET HOLDINGS INC,2P2YLDVPES3BXQ1FRB91,ZIMMER BIOMET HOLDINGS INC,98956P102,US98956P1021,ZBH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

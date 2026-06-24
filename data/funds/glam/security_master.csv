@@ -1,27 +1,27 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AbbVie Inc,N/A,AbbVie Inc,00287Y109,,ABBV,US,EC,CORP
-AirSculpt Technologies Inc,N/A,AirSculpt Technologies Inc,009496100,,AIRS,US,EC,CORP
-Align Technology Inc,N/A,Align Technology Inc,016255101,,ALGN,US,EC,CORP
-AptarGroup Inc,N/A,AptarGroup Inc,038336103,,ATR,US,EC,CORP
-Bath & Body Works Inc,N/A,Bath & Body Works Inc,070830104,,BBWI,US,EC,CORP
-Colgate-Palmolive Co,N/A,Colgate-Palmolive Co,194162103,,CL,US,EC,CORP
-Coty Inc,N/A,Coty Inc,222070203,,COTY,US,EC,CORP
-elf Beauty Inc,N/A,elf Beauty Inc,26856L103,,ELF,US,EC,CORP
-Edgewell Personal Care Co,N/A,Edgewell Personal Care Co,28035Q102,,EPC,US,EC,CORP
-Evolus Inc,N/A,Evolus Inc,30052C107,,EOLS,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Hims & Hers Health Inc,N/A,Hims & Hers Health Inc,433000106,,HIMS,US,EC,CORP
-Honest Co Inc/The,N/A,Honest Co Inc/The,438333106,,HNST,US,EC,CORP
-Interparfums Inc,N/A,Interparfums Inc,458334109,,IPAR,US,EC,CORP
-International Flavors & Fragra,N/A,International Flavors & Fragrances Inc,459506101,,IFF,US,EC,CORP
-Kenvue Inc,N/A,Kenvue Inc,49177J102,,KVUE,US,EC,CORP
-Estee Lauder Cos Inc/The,N/A,Estee Lauder Cos Inc/The,518439104,,EL,US,EC,CORP
-Nu Skin Enterprises Inc,N/A,Nu Skin Enterprises Inc,67018T105,,NUS,US,EC,CORP
-Olaplex Holdings Inc,N/A,Olaplex Holdings Inc,679369108,,OLPX,US,EC,CORP
-Sally Beauty Holdings Inc,N/A,Sally Beauty Holdings Inc,7.95E+108,,SBH,US,EC,CORP
-USANA Health Sciences Inc,N/A,USANA Health Sciences Inc,90328M107,,USNA,US,EC,CORP
-ULTA BEAUTY INC,N/A,ULTA BEAUTY INC,90384S303,,ULTA,US,EC,CORP
-Establishment Labs Holdings In,N/A,Establishment Labs Holdings Inc,N/A,,ESTA,US,EC,CORP
-Helen of Troy Ltd,N/A,Helen of Troy Ltd,N/A,,HELE,US,EC,CORP
-Inmode Ltd,N/A,Inmode Ltd,N/A,,INMD,IL,EC,CORP
-Oddity Tech Ltd,N/A,Oddity Tech Ltd,N/A,,ODD,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+GLAM,ABBV US Equity,ABBV,AbbVie Inc,FR5LCKFTG8054YNNRU85,AbbVie Inc,00287Y109,US00287Y1091,ABBV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,AIRS US Equity,AIRS,AirSculpt Technologies Inc,N/A,AirSculpt Technologies Inc,009496100,US0094961002,AIRS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,ALGN US Equity,ALGN,Align Technology Inc,549300N5YSE0U3LCP840,Align Technology Inc,016255101,US0162551016,ALGN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,ATR US Equity,ATR,AptarGroup Inc,VNPEQDQFAA7IY1T2PX43,AptarGroup Inc,038336103,US0383361039,ATR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,BBWI US Equity,BBWI,Bath & Body Works Inc,GR3KVMWVCR54YWQNXU90,Bath & Body Works Inc,070830104,US0708301041,BBWI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,CL US Equity,CL,Colgate-Palmolive Co,YMEGZFW4SBUSS5BQXF88,Colgate-Palmolive Co,194162103,US1941621039,CL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,COTY US Equity,COTY,Coty Inc,549300BO9IWPF3S48F93,Coty Inc,222070203,US2220702037,COTY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,EL US Equity,EL,Estee Lauder Cos Inc/The,549300VFZ8XJ9NUPU221,Estee Lauder Cos Inc/The,518439104,US5184391044,EL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,ELF US Equity,ELF,elf Beauty Inc,549300U2K9TCON25C029,elf Beauty Inc,26856L103,US26856L1035,ELF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,EOLS US Equity,EOLS,Evolus Inc,549300VYQRYBQOT8V419,Evolus Inc,30052C107,US30052C1071,EOLS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,EPC US Equity,EPC,Edgewell Personal Care Co,549300CY8QZDL4Z3RU59,Edgewell Personal Care Co,28035Q102,US28035Q1022,EPC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,ESTA US Equity,ESTA,Establishment Labs Holdings In,549300BCBQ714JNJ7V58,Establishment Labs Holdings Inc,G31249108,VGG312491084,ESTA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,HELE US Equity,HELE,Helen of Troy Ltd,N/A,Helen of Troy Ltd,G4388N106,BMG4388N1065,HELE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,HIMS US Equity,HIMS,Hims & Hers Health Inc,254900V041EIVTSB6D58,Hims & Hers Health Inc,433000106,US4330001060,HIMS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,HNST US Equity,HNST,Honest Co Inc/The,N/A,Honest Co Inc/The,438333106,US4383331067,HNST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,IFF US Equity,IFF,International Flavors & Fragra,BZLRL03D3GPGMOGFO832,International Flavors & Fragrances Inc,459506101,US4595061015,IFF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,INMD US Equity,INMD,Inmode Ltd,984500DD95A35E9BD358,Inmode Ltd,M5425M103,IL0011595993,INMD,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,IPAR US Equity,IPAR,Interparfums Inc,N/A,Interparfums Inc,458334109,US4583341098,IPAR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,KVUE US Equity,KVUE,Kenvue Inc,5493008HSF8L4M2LIJ82,Kenvue Inc,49177J102,US49177J1025,KVUE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,NUS US Equity,NUS,Nu Skin Enterprises Inc,54930050DETB6CP71D38,Nu Skin Enterprises Inc,67018T105,US67018T1051,NUS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,ODD US Equity,ODD,Oddity Tech Ltd,254900QH12XZS53G0V57,Oddity Tech Ltd,M7518J104,IL0011974909,ODD,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,OLPX US Equity,OLPX,Olaplex Holdings Inc,N/A,Olaplex Holdings Inc,679369108,US6793691089,OLPX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,SBH US Equity,SBH,Sally Beauty Holdings Inc,529900VXW6E8ONDIQ271,Sally Beauty Holdings Inc,79546E104,US79546E1047,SBH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,ULTA US Equity,ULTA,ULTA BEAUTY INC,529900CIV6HN8M28YM82,ULTA BEAUTY INC,90384S303,US90384S3031,ULTA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GLAM,USNA US Equity,USNA,USANA Health Sciences Inc,549300YTURXE814MAH96,USANA Health Sciences Inc,90328M107,US90328M1071,USNA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

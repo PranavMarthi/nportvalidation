@@ -31,7 +31,9 @@ there is exactly one source of truth for classification and XML-default values.
 import csv
 import logging
 import os
+import re
 import tempfile
+from datetime import datetime
 from pathlib import Path
 
 from openpyxl import Workbook, load_workbook
@@ -49,7 +51,6 @@ from nport.custodian import (
     build_swap_entry,
     build_treasury_entry,
     classify_holding,
-    filter_by_account,
     load_xml_reference,
     write_security_master,
     _sm_entry_key,
@@ -114,7 +115,6 @@ def _build_enrichment_columns() -> list[str]:
 
 
 MASTER_ENRICHMENT_COLUMNS = _build_enrichment_columns()
-MASTER_HEADER = IDENTITY_COLUMNS + MASTER_ENRICHMENT_COLUMNS
 
 # Columns stored as Excel Text to defeat spreadsheet corruption.
 ID_TEXT_COLUMNS = {
@@ -155,12 +155,18 @@ BLOOMBERG_SPECS = {
          "lei": ("LEGAL_ENTITY_IDENTIFIER", "value"),
          "invCountry": ("CNTRY_OF_DOMICILE", "value")},
     ),
-    # US Treasuries already carry LEI/country/maturity/rate (parsed from the UST
-    # name) — only refresh the ISIN. Corporate bonds pull the full identity + C.9
-    # set; invCountry then resolves foreign issuers (RBC/TransCanada → CA).
+    # US Treasuries (notes, bonds AND bills) pull the full identity + C.9 set
+    # under the Govt key — verified live: MATURITY/CPN/CPN_TYP resolve for notes
+    # (CPN_TYP=FIXED) and bills (CPN_TYP=ZERO, CPN=0); LEI is the US Treasury LEI,
+    # CNTRY_OF_DOMICILE=US.
     "DBT_UST": (
         lambda r: f"{(r.get('cusip') or '').strip()} Govt",
-        {"isin": ("ID_ISIN", "value")},
+        {"isin": ("ID_ISIN", "value"),
+         "lei": ("LEGAL_ENTITY_IDENTIFIER", "value"),
+         "invCountry": ("CNTRY_OF_DOMICILE", "value"),
+         "maturityDt": ("MATURITY", "date"),
+         "annualizedRt": ("CPN", "value"),
+         "couponKind": ("CPN_TYP", "couponKind")},
     ),
     "DBT_CORP": (
         lambda r: f"{(r.get('cusip') or '').strip()} Corp",
@@ -190,12 +196,47 @@ _BBG_FORMULA_COLUMNS = {col for _kf, fields in BLOOMBERG_SPECS.values() for col 
 
 _NAME_MAX_LEN = 30  # XSD <name> max length
 
-# Bloomberg CPN_TYP → N-PORT couponKind enum. An unmapped non-empty value passes
-# through unchanged so downstream validation flags it (no silent coercion).
+# Schema-valid default for a Bloomberg-owned field that comes back empty/#N/A.
+# Only fields with a meaningful N-PORT sentinel are listed: an issuer with no LEI
+# in Bloomberg is reported "N/A" (verified: no Bloomberg/BQL route to it here),
+# and a missing domicile defaults to US. isin/maturityDt/couponKind/annualizedRt
+# have NO default — a blank there is a real gap and must fail validation visibly.
+_FIELD_DEFAULT = {"lei": "N/A", "invCountry": "US"}
+
+# Date columns normalized to ISO YYYY-MM-DD on read. maturityDt comes from
+# Bloomberg via Excel `=TEXT(BDP(...))`, which can leak a locale string like
+# "9/3/2026" when BDP returns text; expDt/terminationDt are custodian-parsed.
+_DATE_COLUMNS = {"maturityDt", "expDt", "terminationDt"}
+
+# Bloomberg CPN_TYP → N-PORT couponKind enum (Fixed/Floating/Variable/None). An
+# unmapped non-empty value passes through unchanged so validation flags it. A
+# pay-in-kind bond is fixed-rate paid in kind → Fixed (with isPaidKind=Y).
 _COUPON_KIND_MAP = {
     "FIXED": "Fixed", "FLOATING": "Floating", "VARIABLE": "Variable",
-    "NONE": "None", "ZERO COUPON": "None", "ZERO CPN": "None",
+    "NONE": "None", "ZERO": "None", "ZERO COUPON": "None", "ZERO CPN": "None",
+    "PAY-IN-KIND": "Fixed", "PAY IN KIND": "Fixed", "PIK": "Fixed",
 }
+
+
+def _normalize_date(value: str) -> str:
+    """Coerce a date string to ISO YYYY-MM-DD.
+
+    Bloomberg's Excel add-in can return a date as locale text ("9/3/2026") that
+    `TEXT(...,"yyyy-mm-dd")` fails to reformat; a cached date serial round-trips
+    as "2026-09-03 00:00:00". Both (and already-ISO values) are normalized; an
+    unparseable value is returned unchanged so it stays visible.
+    """
+    s = (value or "").strip()
+    if not s:
+        return ""
+    if re.match(r"^\d{4}-\d{2}-\d{2}$", s):
+        return s
+    for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d %H:%M:%S", "%Y/%m/%d", "%m-%d-%Y"):
+        try:
+            return datetime.strptime(s, fmt).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    return s
 
 
 def _normalize_coupon_kind(value: str) -> str:
@@ -310,7 +351,7 @@ def _build_entry(ht: HoldingType, row, ref: dict) -> dict[str, str] | None:
     if ht == HoldingType.EQUITY:
         return build_equity_entry(row.stock_ticker, row.security_name, row.cusip, ref)
     if ht == HoldingType.MONEY_MARKET:
-        return build_mm_entry(ref)
+        return build_mm_entry(row)
     if ht == HoldingType.OPTION:
         return build_option_entry(row)
     if ht == HoldingType.SWAP:
@@ -382,13 +423,24 @@ def read_master_xlsx(path: Path) -> tuple[list[dict[str, str]], list[str]]:
         for i, col in enumerate(header):
             sval = _cell_to_str(vraw[i]) if i < len(vraw) else ""
             if col in _BBG_FORMULA_COLUMNS:
-                # Bloomberg-owned cell: take the calculated value as-is — never
-                # strip a #N/A error or fabricate a value, so a failed lookup
-                # stays visible for validation to report. couponKind's CPN_TYP
-                # result is mapped to the N-PORT enum.
-                rec[col] = _normalize_coupon_kind(sval) if col == "couponKind" else sval
+                # Bloomberg-owned cell. Drop the literal "#N/A …" junk a failed
+                # lookup leaves, map couponKind/normalize dates, then apply the
+                # schema-valid default where one exists (lei→N/A, invCountry→US).
+                # Fields without a default stay blank so a real gap (e.g. a bond
+                # with no maturity) still fails validation visibly.
+                sval = _strip_bbg_error(sval)
+                if col == "couponKind":
+                    sval = _normalize_coupon_kind(sval)
+                elif col in _DATE_COLUMNS:
+                    sval = _normalize_date(sval)
+                if not sval and col in _FIELD_DEFAULT:
+                    sval = _FIELD_DEFAULT[col]
+                rec[col] = sval
                 continue
-            rec[col] = _strip_bbg_error(sval)  # drop literal "#N/A ..." junk from manual cells
+            sval = _strip_bbg_error(sval)  # drop literal "#N/A ..." junk from manual cells
+            if col in _DATE_COLUMNS:
+                sval = _normalize_date(sval)
+            rec[col] = sval
         # CUSIP: the live link into sheet 1, resolved here by row index (since
         # openpyxl can't evaluate the formula). Falls back to defensive repair
         # for a standalone master without the custodian sheet (unit tests).
@@ -605,33 +657,6 @@ def refresh_master(
 # ── Split (master → per-fund CSVs) ────────────────────────────
 
 
-def _fund_header(rows: list[dict[str, str]]) -> list[str]:
-    """Choose a fund's per-fund CSV header, reproducing the existing shapes."""
-    header = list(EQUITY_HEADERS)
-
-    def _nonblank(col: str) -> bool:
-        return any((r.get(col, "") or "").strip() for r in rows)
-
-    if any(r.get("derivCat", "") == "OPT" for r in rows):
-        for c in OPTION_HEADERS:
-            if c not in header:
-                header.append(c)
-    if any(r.get("derivCat", "") == "SWP" for r in rows):
-        for c in SWAP_HEADERS:
-            if c not in header:
-                header.append(c)
-    # Debt columns: include those actually populated (bond_fund uses 3 of them).
-    for c in DEBT_COLUMNS:
-        if c not in header and _nonblank(c):
-            header.append(c)
-    # Any other legal enrichment column populated for this fund (e.g.
-    # leveraged_etf's granular receive-leg columns).
-    for c in _HOLDINGS_KEY_MAP:
-        if c not in header and c not in IDENTITY_COLUMNS and _nonblank(c):
-            header.append(c)
-    return header
-
-
 def split_master(
     master_path: Path,
     funds_dir: Path,
@@ -640,9 +665,15 @@ def split_master(
 ) -> list[tuple[str, Path, int]]:
     """Write each fund's per-fund security_master.csv from the master.
 
+    Every per-fund file is a literal projection of the master: the SAME full
+    column set (``Account``/``bbgid``/``rawTicker`` + every enrichment column,
+    in master order), just filtered to that fund's rows by ``Account``. Type-
+    irrelevant cells stay blank, exactly as in the master. The build's loader
+    maps known headers and ignores the rest, so the master-only columns are inert.
+
     Returns ``[(account, path, n_rows)]``.
     """
-    rows, _ = read_master_xlsx(master_path)
+    rows, header = read_master_xlsx(master_path)
     grouped: dict[str, list[dict[str, str]]] = {}
     for r in rows:
         # Skip cash rows (no security type) — they carry no enrichment and the
@@ -658,7 +689,6 @@ def split_master(
         arows = grouped.get(account, [])
         if not arows:
             continue
-        header = _fund_header(arows)
         out_rows = [{c: r.get(c, "") for c in header} for r in arows]
         path = funds_dir / account.lower() / "security_master.csv"
         if not dry_run:

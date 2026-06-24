@@ -1,18 +1,18 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-BRC Inc,N/A,BRC Inc,05601U105,,BRCC,US,EC,CORP
-Celsius Holdings Inc,N/A,Celsius Holdings Inc,15118V207,,CELH,US,EC,CORP
-Coca-Cola Co/The,N/A,Coca-Cola Co/The,191216100,,KO,US,EC,CORP
-Dutch Bros Inc,N/A,Dutch Bros Inc,26701L100,,BROS,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Ingredion Inc,N/A,Ingredion Inc,457187102,,INGR,US,EC,CORP
-International Flavors & Fragra,N/A,International Flavors & Fragrances Inc,459506101,,IFF,US,EC,CORP
-Keurig Dr Pepper Inc,N/A,Keurig Dr Pepper Inc,49271V100,,KDP,US,EC,CORP
-Krispy Kreme Inc,N/A,Krispy Kreme Inc,50101L106,,DNUT,US,EC,CORP
-Monster Beverage Corp,N/A,Monster Beverage Corp,61174X109,,MNST,US,EC,CORP
-PepsiCo Inc,N/A,PepsiCo Inc,713448108,,PEP,US,EC,CORP
-Restaurant Brands Internationa,N/A,Restaurant Brands International Inc,76131D103,,QSR,US,EC,CORP
-Sensient Technologies Corp,N/A,Sensient Technologies Corp,81725T100,,SXT,US,EC,CORP
-J M Smucker Co/The,N/A,J M Smucker Co/The,832696405,,SJM,US,EC,CORP
-Starbucks Corp,N/A,Starbucks Corp,855244109,,SBUX,US,EC,CORP
-Westrock Coffee Co,N/A,Westrock Coffee Co,96145W103,,WEST,US,EC,CORP
-Zevia PBC,N/A,Zevia PBC,98955K104,,ZVIA,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+BREW,BRCC US Equity,BRCC,BRC Inc,N/A,BRC Inc,05601U105,US05601U1051,BRCC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,BROS US Equity,BROS,Dutch Bros Inc,N/A,Dutch Bros Inc,26701L100,US26701L1008,BROS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,CELH US Equity,CELH,Celsius Holdings Inc,N/A,Celsius Holdings Inc,15118V207,US15118V2079,CELH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,DNUT US Equity,DNUT,Krispy Kreme Inc,N/A,Krispy Kreme Inc,50101L106,US50101L1061,DNUT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,IFF US Equity,IFF,International Flavors & Fragra,BZLRL03D3GPGMOGFO832,International Flavors & Fragrances Inc,459506101,US4595061015,IFF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,INGR US Equity,INGR,Ingredion Inc,PKSTQ48QDN0XSVS7YK88,Ingredion Inc,457187102,US4571871023,INGR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,KDP US Equity,KDP,Keurig Dr Pepper Inc,DYTQ8KRTKO7Y2BVU5K74,Keurig Dr Pepper Inc,49271V100,US49271V1008,KDP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,KO US Equity,KO,Coca-Cola Co/The,UWJKFUJFZ02DKWI3RY53,Coca-Cola Co/The,191216100,US1912161007,KO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,MNST US Equity,MNST,Monster Beverage Corp,52990090AP0E7HCB6F33,Monster Beverage Corp,61174X109,US61174X1090,MNST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,PEP US Equity,PEP,PepsiCo Inc,FJSUNZKFNQ5YPJ5OT455,PepsiCo Inc,713448108,US7134481081,PEP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,QSR US Equity,QSR,Restaurant Brands Internationa,5299009RXTX9DN9AKJ98,Restaurant Brands International Inc,76131D103,CA76131D1033,QSR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,SBUX US Equity,SBUX,Starbucks Corp,OQSJ1DU9TAOC51A47K68,Starbucks Corp,855244109,US8552441094,SBUX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,SJM US Equity,SJM,J M Smucker Co/The,5493000WDH6A0LHDJD55,J M Smucker Co/The,832696405,US8326964058,SJM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,SXT US Equity,SXT,Sensient Technologies Corp,CMMZHMFZQG86EI7WZU92,Sensient Technologies Corp,81725T100,US81725T1007,SXT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,WEST US Equity,WEST,Westrock Coffee Co,N/A,Westrock Coffee Co,96145W103,US96145W1036,WEST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BREW,ZVIA US Equity,ZVIA,Zevia PBC,N/A,Zevia PBC,98955K104,US98955K1043,ZVIA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

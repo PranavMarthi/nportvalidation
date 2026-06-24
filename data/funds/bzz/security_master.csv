@@ -1,28 +1,28 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AeroVironment Inc,N/A,AeroVironment Inc,008073108,,AVAV,US,EC,CORP
-AIRO Group Holdings Inc,N/A,AIRO Group Holdings Inc,009422106,,AIRO,US,EC,CORP
-Amprius Technologies Inc,N/A,Amprius Technologies Inc,03214Q108,,AMPX,US,EC,CORP
-Archer Aviation Inc,N/A,Archer Aviation Inc,03945R102,,ACHR,US,EC,CORP
-Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP
-Beta Technologies Inc,N/A,Beta Technologies Inc,086921103,,BETA,US,EC,CORP
-Boeing Co/The,N/A,Boeing Co/The,097023105,,BA,US,EC,CORP
-Bristow Group Inc,N/A,Bristow Group Inc,11040G103,,VTOL,US,EC,CORP
-EHang Holdings Ltd,N/A,EHang Holdings Ltd,2.69E+106,,EH,US,EC,CORP
-Draganfly Inc,N/A,Draganfly Inc,26142Q304,,DPRO,US,EC,CORP
-Eve Holding Inc,N/A,Eve Holding Inc,29970N104,,EVEX,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Hexcel Corp,N/A,Hexcel Corp,428291108,,HXL,US,EC,CORP
-Kratos Defense & Security Solu,N/A,Kratos Defense & Security Solutions Inc,50077B207,,KTOS,US,EC,CORP
-L3Harris Technologies Inc,N/A,L3Harris Technologies Inc,502431109,,LHX,US,EC,CORP
-Lockheed Martin Corp,N/A,Lockheed Martin Corp,539830109,,LMT,US,EC,CORP
-Northrop Grumman Corp,N/A,Northrop Grumman Corp,666807102,,NOC,US,EC,CORP
-Ondas Inc,N/A,Ondas Inc,68236H204,,ONDS,US,EC,CORP
-Ouster Inc,N/A,Ouster Inc,68989M202,,OUST,US,EC,CORP
-RTX Corp,N/A,RTX Corp,75513E101,,RTX,US,EC,CORP
-Red Cat Holdings Inc,N/A,Red Cat Holdings Inc,75644T100,,RCAT,US,EC,CORP
-Swarmer Inc,N/A,Swarmer Inc,86989Y109,,SWMR,US,EC,CORP
-Teledyne Technologies Inc,N/A,Teledyne Technologies Inc,879360105,,TDY,US,EC,CORP
-Textron Inc,N/A,Textron Inc,883203101,,TXT,US,EC,CORP
-Trimble Inc,N/A,Trimble Inc,896239100,,TRMB,US,EC,CORP
-Unusual Machines Inc /US,N/A,Unusual Machines Inc /US,91532F102,,UMAC,US,EC,CORP
-Joby Aviation Inc,N/A,Joby Aviation Inc,N/A,,JOBY,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+BZZ,ACHR US Equity,ACHR,Archer Aviation Inc,529900UGYVU0KY2RLD83,Archer Aviation Inc,03945R102,US03945R1023,ACHR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,AIRO US Equity,AIRO,AIRO Group Holdings Inc,529900EUD8XWJZVS2615,AIRO Group Holdings Inc,009422106,US0094221068,AIRO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,AMPX US Equity,AMPX,Amprius Technologies Inc,N/A,Amprius Technologies Inc,03214Q108,US03214Q1085,AMPX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,AVAV US Equity,AVAV,AeroVironment Inc,529900PGHVI29YLZ6221,AeroVironment Inc,008073108,US0080731088,AVAV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,AXON US Equity,AXON,Axon Enterprise Inc,549300QP2IEEGFE16681,Axon Enterprise Inc,05464C101,US05464C1018,AXON,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,BA US Equity,BA,Boeing Co/The,RVHJWBXLJ1RFUBSY1F30,Boeing Co/The,097023105,US0970231058,BA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,BETA US Equity,BETA,Beta Technologies Inc,52990061LF435PLC7H73,Beta Technologies Inc,086921103,US0869211039,BETA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,DPRO US Equity,DPRO,Draganfly Inc,894500SZMK5WX44WHE32,Draganfly Inc,26142Q304,CA26142Q3044,DPRO,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,EH US Equity,EH,EHang Holdings Ltd,529900RPWTHQC2WF6O10,EHang Holdings Ltd,26853E102,US26853E1029,EH,CN,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,EVEX US Equity,EVEX,Eve Holding Inc,N/A,Eve Holding Inc,29970N104,US29970N1046,EVEX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,HXL US Equity,HXL,Hexcel Corp,S6Q7LW43WUBUHXY2QP69,Hexcel Corp,428291108,US4282911084,HXL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,JOBY US Equity,JOBY,Joby Aviation Inc,254900NMVFUM8FO88E56,Joby Aviation Inc,G65163100,KYG651631007,JOBY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,KTOS US Equity,KTOS,Kratos Defense & Security Solu,5493000EKBN0UY1F3F88,Kratos Defense & Security Solutions Inc,50077B207,US50077B2079,KTOS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,LHX US Equity,LHX,L3Harris Technologies Inc,549300UTE50ZMDBG8A20,L3Harris Technologies Inc,502431109,US5024311095,LHX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,LMT US Equity,LMT,Lockheed Martin Corp,DPRBOZP0K5RM2YE8UU08,Lockheed Martin Corp,539830109,US5398301094,LMT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,NOC US Equity,NOC,Northrop Grumman Corp,RIMU48P07456QXSO0R61,Northrop Grumman Corp,666807102,US6668071029,NOC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,ONDS US Equity,ONDS,Ondas Inc,549300JWLHDUB82V8607,Ondas Inc,68236H204,US68236H2040,ONDS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,OUST US Equity,OUST,Ouster Inc,N/A,Ouster Inc,68989M202,US68989M2026,OUST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,RCAT US Equity,RCAT,Red Cat Holdings Inc,5493005OGSQW28V2PY05,Red Cat Holdings Inc,75644T100,US75644T1007,RCAT,PR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,RTX US Equity,RTX,RTX Corp,I07WOS4YJ0N7YRFE7309,RTX Corp,75513E101,US75513E1010,RTX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,SWMR US Equity,SWMR,Swarmer Inc,52990026V7Z2CE1RXC85,Swarmer Inc,86989Y109,US86989Y1091,SWMR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,TDY US Equity,TDY,Teledyne Technologies Inc,549300VSMO9KYQWDND94,Teledyne Technologies Inc,879360105,US8793601050,TDY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,TRMB US Equity,TRMB,Trimble Inc,549300E2MI7NSZFQWS19,Trimble Inc,896239100,US8962391004,TRMB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,TXT US Equity,TXT,Textron Inc,3PPKBHUG1HD6BO7RNR87,Textron Inc,883203101,US8832031012,TXT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,UMAC US Equity,UMAC,Unusual Machines Inc /US,N/A,Unusual Machines Inc /US,91532F102,US91532F1021,UMAC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BZZ,VTOL US Equity,VTOL,Bristow Group Inc,5493005Q24EN3UC1PV68,Bristow Group Inc,11040G103,US11040G1031,VTOL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

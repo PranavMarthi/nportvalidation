@@ -1,49 +1,49 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Abercrombie & Fitch Co,N/A,Abercrombie & Fitch Co,002896207,,ANF,US,EC,CORP
-Boot Barn Holdings Inc,N/A,Boot Barn Holdings Inc,099406100,,BOOT,US,EC,CORP
-Buckle Inc/The,N/A,Buckle Inc/The,118440106,,BKE,US,EC,CORP
-CALERES INC COM,N/A,CALERES INC COM,129500104,,CAL,US,EC,CORP
-Canada Goose Holdings Inc,N/A,Canada Goose Holdings Inc,135086106,,GOOS,US,EC,CORP
-Carter's Inc,N/A,Carter's Inc,146229109,,CRI,US,EC,CORP
-Columbia Sportswear Co,N/A,Columbia Sportswear Co,198516106,,COLM,US,EC,CORP
-American Eagle Outfitters Inc,N/A,American Eagle Outfitters Inc,2.55E+109,,AEO,US,EC,CORP
-Crocs Inc,N/A,Crocs Inc,227046109,,CROX,US,EC,CORP
-Deckers Outdoor Corp,N/A,Deckers Outdoor Corp,243537107,,DECK,US,EC,CORP
-Designer Brands Inc,N/A,Designer Brands Inc,250565108,,DBI,US,EC,CORP
-Figs Inc,N/A,Figs Inc,30260D103,,FIGS,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fossil Group Inc,N/A,Fossil Group Inc,34988V106,,FOSL,US,EC,CORP
-G-III Apparel Group Ltd,N/A,G-III Apparel Group Ltd,36237H101,,GIII,US,EC,CORP
-Gap Inc/The,N/A,Gap Inc/The,364760108,,GAP,US,EC,CORP
-Genesco Inc,N/A,Genesco Inc,371532102,,GCO,US,EC,CORP
-Gildan Activewear Inc,N/A,Gildan Activewear Inc,375916103,,GIL,US,EC,CORP
-Johnson Outdoors Inc,N/A,Johnson Outdoors Inc,479167108,,JOUT,US,EC,CORP
-Kontoor Brands Inc,N/A,Kontoor Brands Inc,50050N103,,KTB,US,EC,CORP
-Levi Strauss & Co,N/A,Levi Strauss & Co,52736R102,,LEVI,US,EC,CORP
-Lululemon Athletica Inc,N/A,Lululemon Athletica Inc,550021109,,LULU,US,EC,CORP
-Steven Madden Ltd,N/A,Steven Madden Ltd,556269108,,SHOO,US,EC,CORP
-NIKE Inc,N/A,NIKE Inc,654106103,,NKE,US,EC,CORP
-Oxford Industries Inc,N/A,Oxford Industries Inc,691497309,,OXM,US,EC,CORP
-PVH Corp,N/A,PVH Corp,693656100,,PVH,US,EC,CORP
-RH,N/A,RH,74967X103,,RH,US,EC,CORP
-Ralph Lauren Corp,HO1QNWM0IXBZ0QSMMO20,Ralph Lauren Corp,751212101,US7512121010,RL,US,EC,CORP
-Revolve Group Inc,N/A,Revolve Group Inc,76156B107,,RVLV,US,EC,CORP
-Rocky Brands Inc,N/A,Rocky Brands Inc,774515100,,RCKY,US,EC,CORP
-ThredUp Inc,N/A,ThredUp Inc,8.86E+106,,TDUP,US,EC,CORP
-Stitch Fix Inc,N/A,Stitch Fix Inc,860897107,,SFIX,US,EC,CORP
-Tapestry Inc,N/A,Tapestry Inc,876030107,,TPR,US,EC,CORP
-RealReal Inc/The,N/A,RealReal Inc/The,88339P101,,REAL,US,EC,CORP
-Under Armour Inc,N/A,Under Armour Inc,904311107,,UAA,US,EC,CORP
-Urban Outfitters Inc,N/A,Urban Outfitters Inc,917047102,,URBN,US,EC,CORP
-VF Corp,N/A,VF Corp,918204108,,VFC,US,EC,CORP
-Victoria's Secret & Co,N/A,Victoria's Secret & Co,926400102,,VSCO,US,EC,CORP
-Warby Parker Inc,N/A,Warby Parker Inc,93403J106,,WRBY,US,EC,CORP
-Wolverine World Wide Inc,N/A,Wolverine World Wide Inc,978097103,,WWW,US,EC,CORP
-YETI Holdings Inc,N/A,YETI Holdings Inc,98585X104,,YETI,US,EC,CORP
-Zumiez Inc,N/A,Zumiez Inc,989817101,,ZUMZ,US,EC,CORP
-Amer Sports Inc,N/A,Amer Sports Inc,N/A,,AS,KY,EC,CORP
-Birkenstock Holding Plc,N/A,Birkenstock Holding Plc,N/A,,BIRK,JE,EC,CORP
-CAPRI HOLDINGS LTD,N/A,CAPRI HOLDINGS LTD,N/A,,CPRI,US,EC,CORP
-On Holding AG,N/A,On Holding AG,N/A,,ONON,US,EC,CORP
-FERRARI NV,N/A,FERRARI NV,N/A,,RACE,US,EC,CORP
-Ermenegildo Zegna NV,N/A,Ermenegildo Zegna NV,N/A,,ZGN,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+STYL,AEO US Equity,AEO,American Eagle Outfitters Inc,5299001Z9HXK01DHW793,American Eagle Outfitters Inc,02553E106,US02553E1064,AEO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,ANF US Equity,ANF,Abercrombie & Fitch Co,5493000J7LL72TOGT983,Abercrombie & Fitch Co,002896207,US0028962076,ANF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,AS US Equity,AS,Amer Sports Inc,391200YCSWTRD1J21867,Amer Sports Inc,G0260P102,KYG0260P1028,AS,FI,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,BIRK US Equity,BIRK,Birkenstock Holding Plc,529900CQ8LQKQ7LIT631,Birkenstock Holding Plc,M2029K104,JE00BS44BN30,BIRK,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,BKE US Equity,BKE,Buckle Inc/The,5299007IU0461T3GDL34,Buckle Inc/The,118440106,US1184401065,BKE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,BOOT US Equity,BOOT,Boot Barn Holdings Inc,529900QE1BFMYA3N4E71,Boot Barn Holdings Inc,099406100,US0994061002,BOOT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,CAL US Equity,CAL,CALERES INC COM,JFU6RQQJ8Z1CPOLBXQ18,CALERES INC COM,129500104,US1295001044,CAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,COLM US Equity,COLM,Columbia Sportswear Co,549300OTMCIEUXAH5Z60,Columbia Sportswear Co,198516106,US1985161066,COLM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,CPRI US Equity,CPRI,CAPRI HOLDINGS LTD,549300LPG8W0H1OX3A26,CAPRI HOLDINGS LTD,G1890L107,VGG1890L1076,CPRI,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,CRI US Equity,CRI,Carter's Inc,5299003WAQK4R3L3ZU36,Carter's Inc,146229109,US1462291097,CRI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,CROX US Equity,CROX,Crocs Inc,549300B0J6YCXD63OG72,Crocs Inc,227046109,US2270461096,CROX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,DBI US Equity,DBI,Designer Brands Inc,N/A,Designer Brands Inc,250565108,US2505651081,DBI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,DECK US Equity,DECK,Deckers Outdoor Corp,5493008LG4W3I6K8J118,Deckers Outdoor Corp,243537107,US2435371073,DECK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,FIGS US Equity,FIGS,Figs Inc,N/A,Figs Inc,30260D103,US30260D1037,FIGS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,FOSL US Equity,FOSL,Fossil Group Inc,DDMY8YZ6L8UEMS1FDM73,Fossil Group Inc,34988V106,US34988V1061,FOSL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,GAP US Equity,GAP,Gap Inc/The,T2ZG1WRWZ4BUCMQL9224,Gap Inc/The,364760108,US3647601083,GAP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,GCO US Equity,GCO,Genesco Inc,549300VY2Q511P1K5P56,Genesco Inc,371532102,US3715321028,GCO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,GIII US Equity,GIII,G-III Apparel Group Ltd,529900O5KABM3R3SFM87,G-III Apparel Group Ltd,36237H101,US36237H1014,GIII,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,GIL US Equity,GIL,Gildan Activewear Inc,549300SB3IBI34M00Z45,Gildan Activewear Inc,375916103,CA3759161035,GIL,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,GOOS US Equity,GOOS,Canada Goose Holdings Inc,529900891XBE6RV8JR07,Canada Goose Holdings Inc,135086106,CA1350861060,GOOS,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,JOUT US Equity,JOUT,Johnson Outdoors Inc,N/A,Johnson Outdoors Inc,479167108,US4791671088,JOUT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,KTB US Equity,KTB,Kontoor Brands Inc,549300M0CPXV65RFF271,Kontoor Brands Inc,50050N103,US50050N1037,KTB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,LEVI US Equity,LEVI,Levi Strauss & Co,MB0UERO0RDFKU8258G77,Levi Strauss & Co,52736R102,US52736R1023,LEVI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,LULU US Equity,LULU,Lululemon Athletica Inc,549300D9GZ4BMLDW5T40,Lululemon Athletica Inc,550021109,US5500211090,LULU,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,NKE US Equity,NKE,NIKE Inc,787RXPR0UX0O0XUXPZ81,NIKE Inc,654106103,US6541061031,NKE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,ONON US Equity,ONON,On Holding AG,506700FB3467B9W95526,On Holding AG,H5919C104,CH1134540470,ONON,CH,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,OXM US Equity,OXM,Oxford Industries Inc,IDZ20O0XD3GS4UOI2L88,Oxford Industries Inc,691497309,US6914973093,OXM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,PVH US Equity,PVH,PVH Corp,123WALMHY1GZXG2YDL90,PVH Corp,693656100,US6936561009,PVH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,RACE US Equity,RACE,FERRARI NV,549300RIVY5EX8RCON76,FERRARI NV,N3167Y103,NL0011585146,RACE,IT,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,RCKY US Equity,RCKY,Rocky Brands Inc,5299004HQ6GCTW838N96,Rocky Brands Inc,774515100,US7745151008,RCKY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,REAL US Equity,REAL,RealReal Inc/The,549300O00VUGT4H1PE90,RealReal Inc/The,88339P101,US88339P1012,REAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,RH US Equity,RH,RH,5493008MTS3OGGMHGK69,RH,74967X103,US74967X1037,RH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,RL US Equity,RL,Ralph Lauren Corp,HO1QNWM0IXBZ0QSMMO20,Ralph Lauren Corp,751212101,US7512121010,RL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,RVLV US Equity,RVLV,Revolve Group Inc,N/A,Revolve Group Inc,76156B107,US76156B1070,RVLV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,SFIX US Equity,SFIX,Stitch Fix Inc,549300TNHOVBOJZIYE72,Stitch Fix Inc,860897107,US8608971078,SFIX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,SHOO US Equity,SHOO,Steven Madden Ltd,549300Z9GZ7GYJWSGF43,Steven Madden Ltd,556269108,US5562691080,SHOO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,TDUP US Equity,TDUP,ThredUp Inc,549300JKGKTKX3L3XK25,ThredUp Inc,88556E102,US88556E1029,TDUP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,TPR US Equity,TPR,Tapestry Inc,549300LJNVY5SW3VTN33,Tapestry Inc,876030107,US8760301072,TPR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,UAA US Equity,UAA,Under Armour Inc,549300D4549QKWETZ406,Under Armour Inc,904311107,US9043111072,UAA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,URBN US Equity,URBN,Urban Outfitters Inc,549300N3DUFR5U6NRN38,Urban Outfitters Inc,917047102,US9170471026,URBN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,VFC US Equity,VFC,VF Corp,CWAJJ9DJ5Z7P057HV541,VF Corp,918204108,US9182041080,VFC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,VSXY US Equity,VSXY,Victoria's Secret & Co,5493006T3O70U3UWVF17,Victoria's Secret & Co,926400102,US9264001028,VSXY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,WRBY US Equity,WRBY,Warby Parker Inc,N/A,Warby Parker Inc,93403J106,US93403J1060,WRBY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,WWW US Equity,WWW,Wolverine World Wide Inc,549300OVC7PK14LQ8D87,Wolverine World Wide Inc,978097103,US9780971035,WWW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,YETI US Equity,YETI,YETI Holdings Inc,549300DSQICIGNT5GO63,YETI Holdings Inc,98585X104,US98585X1046,YETI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,ZGN US Equity,ZGN,Ermenegildo Zegna NV,8156003760472AA7E269,Ermenegildo Zegna NV,N30577105,NL0015000PB5,ZGN,IT,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+STYL,ZUMZ US Equity,ZUMZ,Zumiez Inc,549300J0PDF58P6HZD25,Zumiez Inc,989817101,US9898171015,ZUMZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

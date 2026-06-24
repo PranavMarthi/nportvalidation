@@ -1,24 +1,24 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Archrock Inc,N/A,Archrock Inc,03957W106,,AROC,US,EC,CORP
-Baker Hughes Co,N/A,Baker Hughes Co,05722G100,,BKR,US,EC,CORP
-Caterpillar Inc,N/A,Caterpillar Inc,149123101,,CAT,US,EC,CORP
-Chart Industries Inc,N/A,Chart Industries Inc,16115Q308,,GTLS,US,EC,CORP
-Cheniere Energy Inc,N/A,Cheniere Energy Inc,16411R208,,LNG,US,EC,CORP
-Clean Energy Fuels Corp,N/A,Clean Energy Fuels Corp,184499101,,CLNE,US,EC,CORP
-Cummins Inc,N/A,Cummins Inc,231021106,,CMI,US,EC,CORP
-Curtiss-Wright Corp,N/A,Curtiss-Wright Corp,231561101,,CW,US,EC,CORP
-Donaldson Co Inc,N/A,Donaldson Co Inc,257651109,,DCI,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fluor Corp,N/A,Fluor Corp,343412102,,FLR,US,EC,CORP
-Flowserve Corp,N/A,Flowserve Corp,34354P105,,FLS,US,EC,CORP
-GE Vernova Inc,N/A,GE Vernova Inc,36828A101,,GEV,US,EC,CORP
-Generac Holdings Inc,N/A,Generac Holdings Inc,368736104,,GNRC,US,EC,CORP
-Argan Inc,N/A,Argan Inc,4.01E+112,,AGX,US,EC,CORP
-Kinder Morgan Inc,N/A,Kinder Morgan Inc,49456B101,,KMI,US,EC,CORP
-Kodiak Gas Services Inc,N/A,Kodiak Gas Services Inc,50012A108,,KGS,US,EC,CORP
-Natural Gas Services Group Inc,N/A,Natural Gas Services Group Inc,63886Q109,,NGS,US,EC,CORP
-New Fortress Energy Inc,N/A,New Fortress Energy Inc,644393100,,NFE,US,EC,CORP
-ONEOK Inc,N/A,ONEOK Inc,682680103,,OKE,US,EC,CORP
-Woodward Inc,N/A,Woodward Inc,980745103,,WWD,US,EC,CORP
-Eaton Corp PLC,N/A,Eaton Corp PLC,N/A,,ETN,US,EC,CORP
-TechnipFMC PLC,N/A,TechnipFMC PLC,N/A,,FTI,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+GASZ,AGX US Equity,AGX,Argan Inc,529900E4KZWBV9KGBS83,Argan Inc,04010E109,US04010E1091,AGX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,AROC US Equity,AROC,Archrock Inc,549300K3RIHMHDVFTL28,Archrock Inc,03957W106,US03957W1062,AROC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,BKR US Equity,BKR,Baker Hughes Co,N/A,Baker Hughes Co,05722G100,US05722G1004,BKR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,CAT US Equity,CAT,Caterpillar Inc,WRJR7GS4GTRECRRTVX92,Caterpillar Inc,149123101,US1491231015,CAT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,CLNE US Equity,CLNE,Clean Energy Fuels Corp,549300MTQB4VUAOPMF71,Clean Energy Fuels Corp,184499101,US1844991018,CLNE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,CMI US Equity,CMI,Cummins Inc,ZUNI8PYC725B6H8JU438,Cummins Inc,231021106,US2310211063,CMI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,CW US Equity,CW,Curtiss-Wright Corp,TEL51ETZWP7D0ZM4X325,Curtiss-Wright Corp,231561101,US2315611010,CW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,DCI US Equity,DCI,Donaldson Co Inc,OZE6KXY9QQPR8EJ8WL20,Donaldson Co Inc,257651109,US2576511099,DCI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,ETN US Equity,ETN,Eaton Corp PLC,549300VDIGTMXUNT7H71,Eaton Corp PLC,G29183103,IE00B8KQN827,ETN,IE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,FLR US Equity,FLR,Fluor Corp,CQ7WZ4NOFWT7FAE6Q943,Fluor Corp,343412102,US3434121022,FLR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,FLS US Equity,FLS,Flowserve Corp,6Y0GK87T6V7NJKZJVM41,Flowserve Corp,34354P105,US34354P1057,FLS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,FTI US Equity,FTI,TechnipFMC PLC,549300D5I93QWCJTCK36,TechnipFMC PLC,G87110105,GB00BDSFG982,FTI,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,GEV US Equity,GEV,GE Vernova Inc,254900DP080RU6OK2553,GE Vernova Inc,36828A101,US36828A1016,GEV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,GNRC US Equity,GNRC,Generac Holdings Inc,529900S2H2AHJHSFFI84,Generac Holdings Inc,368736104,US3687361044,GNRC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,GTLS US Equity,GTLS,Chart Industries Inc,EM7QGKC1GYOF3LSZSL80,Chart Industries Inc,16115Q308,US16115Q3083,GTLS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,KGS US Equity,KGS,Kodiak Gas Services Inc,N/A,Kodiak Gas Services Inc,50012A108,US50012A1088,KGS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,KMI US Equity,KMI,Kinder Morgan Inc,549300WR7IX8XE0TBO16,Kinder Morgan Inc,49456B101,US49456B1017,KMI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,LNG US Equity,LNG,Cheniere Energy Inc,MIHC87W9WTYSYZWV1J40,Cheniere Energy Inc,16411R208,US16411R2085,LNG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,NFE US Equity,NFE,New Fortress Energy Inc,254900EICTYTCHA5X705,New Fortress Energy Inc,644393100,US6443931000,NFE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,NGS US Equity,NGS,Natural Gas Services Group Inc,N/A,Natural Gas Services Group Inc,63886Q109,US63886Q1094,NGS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,OKE US Equity,OKE,ONEOK Inc,2T3D6M0JSY48PSZI1Q41,ONEOK Inc,682680103,US6826801036,OKE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GASZ,WWD US Equity,WWD,Woodward Inc,YPYKXXTR8TFDH54ZMB45,Woodward Inc,980745103,US9807451037,WWD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

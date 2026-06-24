@@ -1,0 +1,3 @@
+holdingId,name,lei,title,cusip,isin,ticker,balance,units,curCd,valUSD,pctVal,payoffProfile,assetCat,issuerCat,invCountry,isRestrictedSec,fairValLevel,isCashCollateral,isNonCashCollateral,isLoanByFund,issuerConditionalDesc,otherDesc,otherValue
+46429B598-TRS-07/05/27-L-MREX,N/A,N/A,ISHARES MSCI INDIA ETF-SWAP-MREX-L,N/A,,46429B598-TRS-07/05/27-L-MREX,1,NC,USD,1340501.76,200.12,N/A,DE,OTHER,US,N,2,N,N,N,N/A,USER DEFINED,46429B598-TRS-07/05/27-L-MREX
+FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,135085.47,NS,USD,135085.47,20.17,Long,STIV,RF,US,N,1,N,N,N,,,

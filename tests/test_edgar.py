@@ -1,13 +1,11 @@
 """Tests for EDGAR API client (mocked HTTP)."""
 
-import io
 import json
 from pathlib import Path
-from unittest.mock import MagicMock
 
 import pytest
 
-from nport.edgar import EdgarClient, FilingMetadata, extract_filing_summary
+from nport.edgar import EdgarClient, extract_filing_summary
 
 _ROOT = Path(__file__).resolve().parent.parent
 

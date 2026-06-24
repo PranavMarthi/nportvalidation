@@ -1,19 +1,19 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Alphabet Inc,N/A,Alphabet Inc,02079K305,,GOOGL,US,EC,CORP
-BTQ Technologies Corp,N/A,BTQ Technologies Corp,055869101,,BTQ,US,EC,CORP
-D-Wave Quantum Inc,N/A,D-Wave Quantum Inc,26740W109,,QBTS,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-FormFactor Inc,N/A,FormFactor Inc,346375108,,FORM,US,EC,CORP
-Honeywell International Inc,N/A,Honeywell International Inc,438516106,,HON,US,EC,CORP
-Infleqtion Inc,N/A,Infleqtion Inc,45676K103,,INFQ,US,EC,CORP
-International Business Machine,N/A,International Business Machines Corp,459200101,,IBM,US,EC,CORP
-IonQ Inc,N/A,IonQ Inc,46222L108,,IONQ,US,EC,CORP
-Quantum Computing Inc,N/A,Quantum Computing Inc,74766W108,,QUBT,US,EC,CORP
-Quantum Emotion Corp,N/A,Quantum Emotion Corp,74767K103,,QNC,US,EC,CORP
-Quantinuum Inc,N/A,Quantinuum Inc,74768A104,,QNT,US,EC,CORP
-Rigetti Computing Inc,N/A,Rigetti Computing Inc,76655K103,,RGTI,US,EC,CORP
-SkyWater Technology Inc,N/A,SkyWater Technology Inc,83089J108,,SKYT,US,EC,CORP
-Xanadu Quantum Technologies Lt,N/A,Xanadu Quantum Technologies Ltd,98390R102,,XNDU,US,EC,CORP
-Arqit Quantum Inc,N/A,Arqit Quantum Inc,N/A,,ARQQ,KY,EC,CORP
-Horizon Quantum Holdings LTD,N/A,Horizon Quantum Holdings LTD,N/A,,HQ,US,EC,CORP
-SEALSQ Corp,N/A,SEALSQ Corp,N/A,,LAES,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+CQTM,ARQQ US Equity,ARQQ,Arqit Quantum Inc,254900G93Z1SN49J9J68,Arqit Quantum Inc,G0567U127,KYG0567U1278,ARQQ,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,BTQ US Equity,BTQ,BTQ Technologies Corp,9845009I0C867C156D63,BTQ Technologies Corp,055869101,CA0558691014,BTQ,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,FORM US Equity,FORM,FormFactor Inc,549300YCEEO6SZD1ZR61,FormFactor Inc,346375108,US3463751087,FORM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,GOOGL US Equity,GOOGL,Alphabet Inc,5493006MHB84DD0ZWV18,Alphabet Inc,02079K305,US02079K3059,GOOGL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,HON US Equity,HON,Honeywell International Inc,ISRPG12PN4EIEOEMW547,Honeywell International Inc,438516106,US4385161066,HON,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,HQ US Equity,HQ,Horizon Quantum Holdings LTD,N/A,Horizon Quantum Holdings LTD,Y4000A102,SGXZ31642911,HQ,SG,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,IBM US Equity,IBM,International Business Machine,VGRQXHF3J8VDLUA7XE92,International Business Machines Corp,459200101,US4592001014,IBM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,INFQ US Equity,INFQ,Infleqtion Inc,N/A,Infleqtion Inc,45676K103,US45676K1034,INFQ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,IONQ US Equity,IONQ,IonQ Inc,529900RB2VEFGLQS7G28,IonQ Inc,46222L108,US46222L1089,IONQ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,LAES US Equity,LAES,SEALSQ Corp,894500UBT7U7WMV2PG59,SEALSQ Corp,G79483106,VGG794831062,LAES,CH,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,QBTS US Equity,QBTS,D-Wave Quantum Inc,5493001U37G4PRD4GW95,D-Wave Quantum Inc,26740W109,US26740W1099,QBTS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,QNC US Equity,QNC,Quantum Emotion Corp,984500T1YCBEAFFA0495,Quantum Emotion Corp,74767K103,CA74767K1030,QNC,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,QNT US Equity,QNT,Quantinuum Inc,529900XVZ9SO3PH40230,Quantinuum Inc,74768A104,US74768A1043,QNT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,QUBT US Equity,QUBT,Quantum Computing Inc,N/A,Quantum Computing Inc,74766W108,US74766W1080,QUBT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,RGTI US Equity,RGTI,Rigetti Computing Inc,52990024JHY459DH8W71,Rigetti Computing Inc,76655K103,US76655K1034,RGTI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,SKYT US Equity,SKYT,SkyWater Technology Inc,N/A,SkyWater Technology Inc,83089J108,US83089J1088,SKYT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CQTM,XNDU US Equity,XNDU,Xanadu Quantum Technologies Lt,254900ERDXSXKJDE3515,Xanadu Quantum Technologies Ltd,98390R102,CA98390R1029,XNDU,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

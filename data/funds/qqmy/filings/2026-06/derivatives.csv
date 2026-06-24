@@ -1,0 +1,5 @@
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+QQQ-C133.55-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-190787.35,Call,Purchased,N/A,133.55,USD,2027-04-30,0.4300,indexBasket,NASDAQ 100 Index,NDX
+QQQ-C767.9-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-21720.72,Call,Written,N/A,767.9,USD,2027-04-30,0.6000,indexBasket,NASDAQ 100 Index,NDX
+QQQ-P567.58-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,6668.92,Put,Written,N/A,567.58,USD,2027-04-30,-0.6000,indexBasket,NASDAQ 100 Index,NDX
+QQQ-P667.74-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-2804.54,Put,Purchased,N/A,667.74,USD,2027-04-30,-0.4400,indexBasket,NASDAQ 100 Index,NDX

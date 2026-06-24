@@ -1,27 +1,27 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-A10 Networks Inc,N/A,A10 Networks Inc,002121101,,ATEN,US,EC,CORP
-Akamai Technologies Inc,N/A,Akamai Technologies Inc,00971T101,,AKAM,US,EC,CORP
-CACI International Inc,N/A,CACI International Inc,127190304,,CACI,US,EC,CORP
-Cloudflare Inc,5493007DY18BGNLDWU14,Cloudflare Inc,18915M107,US18915M1071,NET,US,EC,CORP
-Crowdstrike Holdings Inc,549300YBY08K9KM4HX32,Crowdstrike Holdings Inc,22788C105,US22788C1053,CRWD,US,EC,CORP
-Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP
-F5 Inc,N/A,F5 Inc,315616102,,FFIV,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP
-Netskope Inc,N/A,Netskope Inc,64119N608,,NTSK,US,EC,CORP
-GEN DIGITAL INC,N/A,GEN DIGITAL INC,668771108,,GEN,US,EC,CORP
-Okta Inc,N/A,Okta Inc,679295105,,OKTA,US,EC,CORP
-OneSpan Inc,N/A,OneSpan Inc,68287N100,,OSPN,US,EC,CORP
-Palo Alto Networks Inc,N/A,Palo Alto Networks Inc,697435105,,PANW,US,EC,CORP
-Qualys Inc,N/A,Qualys Inc,74758T303,,QLYS,US,EC,CORP
-Rapid7 Inc,N/A,Rapid7 Inc,753422104,,RPD,US,EC,CORP
-Rubrik Inc,N/A,Rubrik Inc,781154109,,RBRK,US,EC,CORP
-SailPoint Inc,N/A,SailPoint Inc,78781J109,,SAIL,US,EC,CORP
-Telos Corp,N/A,Telos Corp,87969B101,,TLS,US,EC,CORP
-Tenable Holdings Inc,N/A,Tenable Holdings Inc,88025T102,,TENB,US,EC,CORP
-Varonis Systems Inc,N/A,Varonis Systems Inc,922280102,,VRNS,US,EC,CORP
-Zscaler Inc,529900MZ0RTK1BWRNF46,Zscaler Inc,98980G102,US98980G1022,ZS,US,EC,CORP
-Arqit Quantum Inc,N/A,Arqit Quantum Inc,N/A,,ARQQ,KY,EC,CORP
-Check Point Software Technolog,N/A,Check Point Software Technologies Ltd,N/A,,CHKP,IL,EC,CORP
-Elastic NV,N/A,Elastic NV,N/A,,ESTC,US,EC,CORP
-Radware Ltd,N/A,Radware Ltd,N/A,,RDWR,IL,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+XA,AKAM US Equity,AKAM,Akamai Technologies Inc,OC1LZNN2LF5WTJ5RIL89,Akamai Technologies Inc,00971T101,US00971T1016,AKAM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,ARQQ US Equity,ARQQ,Arqit Quantum Inc,254900G93Z1SN49J9J68,Arqit Quantum Inc,G0567U127,KYG0567U1278,ARQQ,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,ATEN US Equity,ATEN,A10 Networks Inc,549300UQD4IWUML81Q35,A10 Networks Inc,002121101,US0021211018,ATEN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,CACI US Equity,CACI,CACI International Inc,SYRPI2D1O9WRTS2WX210,CACI International Inc,127190304,US1271903049,CACI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,CHKP US Equity,CHKP,Check Point Software Technolog,2549003ZVBH73EPNS513,Check Point Software Technologies Ltd,M22465104,IL0010824113,CHKP,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,CRWD US Equity,CRWD,Crowdstrike Holdings Inc,549300YBY08K9KM4HX32,Crowdstrike Holdings Inc,22788C105,US22788C1053,CRWD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,DDOG US Equity,DDOG,Datadog Inc,549300F6JNO0KRPO1K63,Datadog Inc,23804L103,US23804L1035,DDOG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,ESTC US Equity,ESTC,Elastic NV,2549003I48WHHH937I59,Elastic NV,N14506104,NL0013056914,ESTC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,FFIV US Equity,FFIV,F5 Inc,54930015FPK9KT966303,F5 Inc,315616102,US3156161024,FFIV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,FTNT US Equity,FTNT,Fortinet Inc,549300O0QJWDBAS0QX03,Fortinet Inc,34959E109,US34959E1091,FTNT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,GEN US Equity,GEN,GEN DIGITAL INC,YF6ZV0M6AU4FY94MK914,GEN DIGITAL INC,668771108,US6687711084,GEN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,NET US Equity,NET,Cloudflare Inc,5493007DY18BGNLDWU14,Cloudflare Inc,18915M107,US18915M1071,NET,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,NTSK US Equity,NTSK,Netskope Inc,254900CS525VJG6KO570,Netskope Inc,64119N608,US64119N6085,NTSK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,OKTA US Equity,OKTA,Okta Inc,549300N8J06I8MRHU620,Okta Inc,679295105,US6792951054,OKTA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,OSPN US Equity,OSPN,OneSpan Inc,984500E502E6DC354D26,OneSpan Inc,68287N100,US68287N1000,OSPN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,PANW US Equity,PANW,Palo Alto Networks Inc,549300QXR2YVZV231H43,Palo Alto Networks Inc,697435105,US6974351057,PANW,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,QLYS US Equity,QLYS,Qualys Inc,549300EMBXYOW9W1XA17,Qualys Inc,74758T303,US74758T3032,QLYS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,RBRK US Equity,RBRK,Rubrik Inc,254900TRGK2WTBYMYU27,Rubrik Inc,781154109,US7811541090,RBRK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,RDWR US Equity,RDWR,Radware Ltd,254900LYRZOTBQ99ZG59,Radware Ltd,M81873107,IL0010834765,RDWR,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,RPD US Equity,RPD,Rapid7 Inc,549300GNVG5D60KEYN14,Rapid7 Inc,753422104,US7534221046,RPD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,SAIL US Equity,SAIL,SailPoint Inc,529900IRT8OM8CEOPC03,SailPoint Inc,78781J109,US78781J1097,SAIL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,TENB US Equity,TENB,Tenable Holdings Inc,5493004S5OMPESF0EF83,Tenable Holdings Inc,88025T102,US88025T1025,TENB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,TLS US Equity,TLS,Telos Corp,N/A,Telos Corp,87969B101,US87969B1017,TLS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,VRNS US Equity,VRNS,Varonis Systems Inc,549300SHIVNRRH7STS26,Varonis Systems Inc,922280102,US9222801022,VRNS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XA,ZS US Equity,ZS,Zscaler Inc,529900MZ0RTK1BWRNF46,Zscaler Inc,98980G102,US98980G1022,ZS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

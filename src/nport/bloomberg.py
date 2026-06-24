@@ -10,7 +10,7 @@ blpapi is an optional dependency — this module lazy-imports it.
 import csv
 import logging
 import sys
-from dataclasses import dataclass, field as dc_field, fields
+from dataclasses import dataclass, fields
 from pathlib import Path
 
 from nport.models import Holding

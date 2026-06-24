@@ -1,6 +1,5 @@
 """Tests for schema file checking and version monitoring."""
 
-import pytest
 from nport.schema_check import (
     CURRENT_SCHEMA_VERSION,
     EXPECTED_SCHEMA_FILES,

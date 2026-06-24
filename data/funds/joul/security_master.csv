@@ -1,21 +1,21 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Advanced Energy Industries Inc,N/A,Advanced Energy Industries Inc,007973100,,AEIS,US,EC,CORP
-American Superconductor Corp,N/A,American Superconductor Corp,030111207,,AMSC,US,EC,CORP
-Arcosa Inc,N/A,Arcosa Inc,039653100,,ACA,US,EC,CORP
-Atkore Inc,N/A,Atkore Inc,047649108,,ATKR,US,EC,CORP
-Dycom Industries Inc,N/A,Dycom Industries Inc,267475101,,DY,US,EC,CORP
-ESCO Technologies Inc,N/A,ESCO Technologies Inc,296315104,,ESE,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Forgent Power Solutions Inc,N/A,Forgent Power Solutions Inc,34631F102,,FPS,US,EC,CORP
-GE Vernova Inc,N/A,GE Vernova Inc,36828A101,,GEV,US,EC,CORP
-Hubbell Inc,N/A,Hubbell Inc,443510607,,HUBB,US,EC,CORP
-Itron Inc,N/A,Itron Inc,465741106,,ITRI,US,EC,CORP
-MYR Group Inc,N/A,MYR Group Inc,55405W104,,MYRG,US,EC,CORP
-MasTec Inc,N/A,MasTec Inc,576323109,,MTZ,US,EC,CORP
-Quanta Services Inc,N/A,Quanta Services Inc,7.48E+106,,PWR,US,EC,CORP
-Powell Industries Inc,N/A,Powell Industries Inc,739128106,,POWL,US,EC,CORP
-Preformed Line Products Co,N/A,Preformed Line Products Co,740444104,,PLPC,US,EC,CORP
-Primoris Services Corp,N/A,Primoris Services Corp,74164F103,,PRIM,US,EC,CORP
-Valmont Industries Inc,N/A,Valmont Industries Inc,920253101,,VMI,US,EC,CORP
-Eaton Corp PLC,N/A,Eaton Corp PLC,N/A,,ETN,US,EC,CORP
-nVent Electric PLC,N/A,nVent Electric PLC,N/A,,NVT,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+JOUL,ACA US Equity,ACA,Arcosa Inc,549300WFHLTCZV7D6V29,Arcosa Inc,039653100,US0396531008,ACA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,AEIS US Equity,AEIS,Advanced Energy Industries Inc,549300756XI3QLFT2U27,Advanced Energy Industries Inc,007973100,US0079731008,AEIS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,AMSC US Equity,AMSC,American Superconductor Corp,549300S9YT8Z8LOK4452,American Superconductor Corp,030111207,US0301112076,AMSC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,ATKR US Equity,ATKR,Atkore Inc,52990002TI38AM4RPV48,Atkore Inc,047649108,US0476491081,ATKR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,DY US Equity,DY,Dycom Industries Inc,549300F56EKTHQI3WT60,Dycom Industries Inc,267475101,US2674751019,DY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,ESE US Equity,ESE,ESCO Technologies Inc,5493007JJLP5MEWVDH10,ESCO Technologies Inc,296315104,US2963151046,ESE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,ETN US Equity,ETN,Eaton Corp PLC,549300VDIGTMXUNT7H71,Eaton Corp PLC,G29183103,IE00B8KQN827,ETN,IE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,FPS US Equity,FPS,Forgent Power Solutions Inc,529900VOEJB5GLOFQR48,Forgent Power Solutions Inc,34631F102,US34631F1021,FPS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,GEV US Equity,GEV,GE Vernova Inc,254900DP080RU6OK2553,GE Vernova Inc,36828A101,US36828A1016,GEV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,HUBB US Equity,HUBB,Hubbell Inc,54930088VDQ6840Y6597,Hubbell Inc,443510607,US4435106079,HUBB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,ITRI US Equity,ITRI,Itron Inc,24F6LSZD18II6ICG6S41,Itron Inc,465741106,US4657411066,ITRI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,MTZ US Equity,MTZ,MasTec Inc,549300TMDIT8WREDOF45,MasTec Inc,576323109,US5763231090,MTZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,MYRG US Equity,MYRG,MYR Group Inc,529900G1IMMZHOQ17I54,MYR Group Inc,55405W104,US55405W1045,MYRG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,NVT US Equity,NVT,nVent Electric PLC,N/A,nVent Electric PLC,G6700G107,IE00BDVJJQ56,NVT,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,PLPC US Equity,PLPC,Preformed Line Products Co,549300EYH53XDJID2098,Preformed Line Products Co,740444104,US7404441047,PLPC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,POWL US Equity,POWL,Powell Industries Inc,549300V08RO7MX2UBN26,Powell Industries Inc,739128106,US7391281067,POWL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,PRIM US Equity,PRIM,Primoris Services Corp,549300UF3OLBJ8D5K349,Primoris Services Corp,74164F103,US74164F1030,PRIM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,PWR US Equity,PWR,Quanta Services Inc,SHVRXXEACT60MMH07S24,Quanta Services Inc,74762E102,US74762E1029,PWR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JOUL,VMI US Equity,VMI,Valmont Industries Inc,5493009ZGZJJ8F77JN08,Valmont Industries Inc,920253101,US9202531011,VMI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

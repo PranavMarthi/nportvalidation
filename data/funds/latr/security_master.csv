@@ -1,23 +1,23 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Affirm Holdings Inc,N/A,Affirm Holdings Inc,00827B106,,AFRM,US,EC,CORP
-Bread Financial Holdings Inc,N/A,Bread Financial Holdings Inc,018581108,,BFH,US,EC,CORP
-FinVolution Group,N/A,FinVolution Group,31810T101,,FINV,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Kaspi.KZ JSC,N/A,Kaspi.KZ JSC,48581R205,,KSPI,US,EC,CORP
-Marqeta Inc,N/A,Marqeta Inc,57142B104,,MQ,US,EC,CORP
-Mastercard Inc,N/A,Mastercard Inc,57636Q104,,MA,US,EC,CORP
-MercadoLibre Inc,549300DKPDN9M5S8GB14,MercadoLibre Inc,58733R102,US58733R1023,MELI,UY,EC,CORP
-Mitek Systems Inc,N/A,Mitek Systems Inc,606710200,,MITK,US,EC,CORP
-OneMain Holdings Inc,N/A,OneMain Holdings Inc,68268W103,,OMF,US,EC,CORP
-OppFi Inc,N/A,OppFi Inc,68386H103,,OPFI,US,EC,CORP
-PayPal Holdings Inc,N/A,PayPal Holdings Inc,70450Y103,,PYPL,US,EC,CORP
-Sezzle Inc,N/A,Sezzle Inc,78435P105,,SEZL,US,EC,CORP
-Sea Ltd,N/A,Sea Ltd,81141R100,,SE,US,EC,CORP
-Shopify Inc,549300HGQ43STJLLP808,Shopify Inc,82509L107,CA82509L1076,SHOP,CA,EC,CORP
-Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
-Synchrony Financial,N/A,Synchrony Financial,87165B103,,SYF,US,EC,CORP
-Upstart Holdings Inc,N/A,Upstart Holdings Inc,91680M107,,UPST,US,EC,CORP
-Visa Inc,N/A,Visa Inc,92826C839,,V,US,EC,CORP
-Klarna Group PLC,N/A,Klarna Group PLC,N/A,,KLAR,US,EC,CORP
-NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,N/A,KYG6683N1034,NU,BR,EC,CORP
-Pagaya Technologies Ltd,N/A,Pagaya Technologies Ltd,N/A,,PGY,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+LATR,AFRM US Equity,AFRM,Affirm Holdings Inc,N/A,Affirm Holdings Inc,00827B106,US00827B1061,AFRM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,BFH US Equity,BFH,Bread Financial Holdings Inc,549300G8S4PO686J7H97,Bread Financial Holdings Inc,018581108,US0185811082,BFH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,FINV US Equity,FINV,FinVolution Group,3003000RAVUT809U6P08,FinVolution Group,31810T101,US31810T1016,FINV,CN,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,KLAR US Equity,KLAR,Klarna Group PLC,636700HER4JIK7GZUN17,Klarna Group PLC,G5279N105,GB00BMHVL512,KLAR,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,KSPI US Equity,KSPI,Kaspi.KZ JSC,2549003YU6FARG8OAZ13,Kaspi.KZ JSC,48581R205,US48581R2058,KSPI,KZ,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,MA US Equity,MA,Mastercard Inc,AR5L2ODV9HN37376R084,Mastercard Inc,57636Q104,US57636Q1040,MA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,MELI US Equity,MELI,MercadoLibre Inc,549300DKPDN9M5S8GB14,MercadoLibre Inc,58733R102,US58733R1023,MELI,UY,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,MITK US Equity,MITK,Mitek Systems Inc,549300ABZAQ3R25XG118,Mitek Systems Inc,606710200,US6067102003,MITK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,MQ US Equity,MQ,Marqeta Inc,254900UZARK0FMZGZE18,Marqeta Inc,57142B104,US57142B1044,MQ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,NU US Equity,NU,NU Holdings Ltd/Cayman Islands,5493002DG1RHWK9W2X27,NU Holdings Ltd/Cayman Islands,G6683N103,KYG6683N1034,NU,BR,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,OMF US Equity,OMF,OneMain Holdings Inc,549300E3VEW8SMS5XW09,OneMain Holdings Inc,68268W103,US68268W1036,OMF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,OPFI US Equity,OPFI,OppFi Inc,N/A,OppFi Inc,68386H103,US68386H1032,OPFI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,PGY US Equity,PGY,Pagaya Technologies Ltd,N/A,Pagaya Technologies Ltd,M7S64L123,IL0011858912,PGY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,PYPL US Equity,PYPL,PayPal Holdings Inc,5493005X2GO78EFZ3E94,PayPal Holdings Inc,70450Y103,US70450Y1038,PYPL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,SE US Equity,SE,Sea Ltd,529900OM6JLLW44YKI15,Sea Ltd,81141R100,US81141R1005,SE,SG,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,SEZL US Equity,SEZL,Sezzle Inc,9845000CA64541AE3I35,Sezzle Inc,78435P105,US78435P1057,SEZL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,SHOP US Equity,SHOP,Shopify Inc,549300HGQ43STJLLP808,Shopify Inc,82509L107,CA82509L1076,SHOP,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,SYF US Equity,SYF,Synchrony Financial,549300RS7EWPM9MA6C78,Synchrony Financial,87165B103,US87165B1035,SYF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,UPST US Equity,UPST,Upstart Holdings Inc,549300WNB47JRNENIC75,Upstart Holdings Inc,91680M107,US91680M1071,UPST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,V US Equity,V,Visa Inc,549300JZ4OKEHW3DPJ59,Visa Inc,92826C839,US92826C8394,V,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LATR,XYZ US Equity,XYZ,Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

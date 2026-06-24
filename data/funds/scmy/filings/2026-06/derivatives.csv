@@ -1,0 +1,5 @@
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+IWM-C56.52-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-158076.34,Call,Purchased,N/A,56.52,USD,2027-04-30,0.2600,indexBasket,Russell 2000 Index,RTY
+IWM-C333.47-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,4645.64,Call,Written,N/A,333.47,USD,2027-04-30,0.5700,indexBasket,Russell 2000 Index,RTY
+IWM-P240.21-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,1061.54,Put,Written,N/A,240.21,USD,2027-04-30,-0.3600,indexBasket,Russell 2000 Index,RTY
+IWM-P282.6-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-4916.01,Put,Purchased,N/A,282.6,USD,2027-04-30,-0.5300,indexBasket,Russell 2000 Index,RTY

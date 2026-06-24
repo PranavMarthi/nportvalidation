@@ -1,0 +1,5 @@
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+EEM-C14.02-20270528,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-24715.56,Call,Purchased,N/A,14.02,USD,2027-05-28,0.7300,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM-C87.03-20270528,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,3013.53,Call,Written,N/A,87.03,USD,2027-05-28,0.3100,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM-P59.57-20270528,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-671.33,Put,Written,N/A,59.57,USD,2027-05-28,-0.3900,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM-P70.08-20270528,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,2881.61,Put,Purchased,N/A,70.08,USD,2027-05-28,-0.7100,indexBasket,MSCI Emerging Markets Index,MXEF

@@ -88,6 +88,19 @@ _UNDERLYING_INDEX_MAP = {
     "EFA": ("MSCI EAFE Index", "MXEA"),
 }
 
+# Swap counterparty code (the swap ticker's trailing token / SecurityName tag in the
+# custodian) → (legal name, LEI). LEIs verified against the GLEIF registry (all ACTIVE).
+# CS and CLST are both Clear Street.
+_SWAP_COUNTERPARTIES = {
+    "CANT": ("Cantor Fitzgerald & Co.", "5493004J7H4GCPG6OB62"),
+    "CLST": ("Clear Street LLC", "549300KNQS43Y7TO3X67"),
+    "CS": ("Clear Street LLC", "549300KNQS43Y7TO3X67"),
+    "MREX": ("Marex Capital Markets Inc.", "5493006BWPDUCYG6EQ34"),
+}
+# Listed/FLEX options clear through the OCC (the central counterparty), LEI from GLEIF.
+_OCC_NAME = "The Options Clearing Corporation"
+_OCC_LEI = "549300CII6SLYGKNHA04"
+
 _US_TREASURY_LEI = "254900HROIFWPRGM1V77"
 
 _NAME_MAX_LEN = 30  # XSD schema max length for <name>
@@ -237,17 +250,22 @@ def build_equity_entry(
     }
 
 
-def build_mm_entry(ref: dict[str, dict[str, str]]) -> dict[str, str]:
-    """Build security master entry for FGXXX money market fund."""
-    hit = ref.get("31846V336") or ref.get("T:FGXXX")
+def build_mm_entry(row: CustodianRow) -> dict[str, str]:
+    """Build a security master entry for a money-market fund holding.
+
+    Identity comes from the custodian (ticker/cusip/name, trailing date stripped);
+    lei/isin/invCountry are filled by the master's live Bloomberg formulas (the
+    ``STIV`` spec, keyed by ``<ticker> US Equity``). Nothing hardcoded.
+    """
+    clean_name = _TRAILING_DATE_RE.sub("", row.security_name)
     return {
-        "name": (hit or {}).get("name", "First American Government Obli"),
-        "lei": (hit or {}).get("lei", "549300R5MYM6VZF1RM44"),
-        "title": "First American Government Obligations Fund",
-        "cusip": "31846V336",
-        "isin": (hit or {}).get("isin", "US31846V3362"),
-        "ticker": "FGXXX",
-        "invCountry": "US",
+        "name": clean_name[:_NAME_MAX_LEN],
+        "lei": "",
+        "title": clean_name,
+        "cusip": row.cusip,
+        "isin": "",
+        "ticker": row.stock_ticker,
+        "invCountry": "",
         "assetCat": "STIV",
         "issuerCat": "RF",
     }
@@ -270,8 +288,8 @@ def build_option_entry(row: CustodianRow) -> dict[str, str]:
         "assetCat": "DE",
         "issuerCat": "CORP",
         "derivCat": "OPT",
-        "counterpartyName": "",
-        "counterpartyLei": "",
+        "counterpartyName": _OCC_NAME,
+        "counterpartyLei": _OCC_LEI,
         "putOrCall": opt.put_or_call,
         "writtenOrPur": "Purchased" if shares >= 0 else "Written",
         "exercisePrice": opt.exercise_price,
@@ -281,13 +299,20 @@ def build_option_entry(row: CustodianRow) -> dict[str, str]:
         "refInstType": "indexBasket",
         "refIndexName": idx[0],
         "refIndexIdentifier": idx[1],
+        "valUSD": row.market_value,
+        "pctVal": row.weightings.replace("%", "").strip(),
     }
 
 
 def build_swap_entry(row: CustodianRow) -> dict[str, str]:
     """Build a security master entry for a swap position."""
     swap = parse_swap_ticker(row.stock_ticker)
-    ref_issuer, _ = _parse_swap_security_name(row.security_name)
+    ref_issuer, name_cp = _parse_swap_security_name(row.security_name)
+    # Counterparty code is in the custodian: the swap ticker's trailing token
+    # (CANT/CLST/MREX), or the SecurityName for the few without it (CS).
+    counterparty = swap.counterparty_abbrev or name_cp
+    cp_name, cp_lei = _SWAP_COUNTERPARTIES.get(counterparty.upper(), (counterparty, "N/A"))
+    pct = row.weightings.replace("%", "").strip()
     return {
         "name": "N/A",
         "lei": "N/A",
@@ -299,15 +324,15 @@ def build_swap_entry(row: CustodianRow) -> dict[str, str]:
         "assetCat": "DE",
         "issuerCat": "OTHER",
         "derivCat": "SWP",
-        "counterpartyName": "",
-        "counterpartyLei": "",
+        "counterpartyName": cp_name,
+        "counterpartyLei": cp_lei,
         "swapFlag": "Y",
         "terminationDt": swap.termination_dt,
         "notionalAmt": "",
         "swapCurCd": "USD",
         "unrealizedAppr": "",
-        "valUSD": "",
-        "pctVal": "",
+        "valUSD": row.market_value,
+        "pctVal": pct,
         "recFixedOrFloating": "",
         "recDesc": "",
         "pmntFixedOrFloating": "",
@@ -327,15 +352,20 @@ def build_swap_entry(row: CustodianRow) -> dict[str, str]:
 
 
 def build_treasury_entry(row: CustodianRow) -> dict[str, str]:
-    """Build a security master entry for a treasury position."""
+    """Build a security master entry for a US Treasury position (note/bond/bill).
+
+    Identity (name/title/cusip) is from the custodian; ``lei``/``invCountry`` and
+    the C.9 fields (maturity/rate/couponKind) are left EMPTY — the master fills
+    them via the live ``DBT_UST`` Bloomberg formulas (keyed by ``<cusip> Govt``).
+    """
     return {
-        "name": row.security_name[:30],
-        "lei": _US_TREASURY_LEI,
+        "name": row.security_name[:_NAME_MAX_LEN],
+        "lei": "",
         "title": row.security_name,
         "cusip": row.cusip,
         "isin": "",
         "ticker": "",
-        "invCountry": "US",
+        "invCountry": "",
         "assetCat": "DBT",
         "issuerCat": "UST",
     }
@@ -400,7 +430,6 @@ def _sm_entry_key(entry: dict[str, str]) -> str:
     """
     cusip = entry.get("cusip", "")
     ticker = entry.get("ticker", "")
-    asset_cat = entry.get("assetCat", "")
     deriv_cat = entry.get("derivCat", "")
 
     # Options and swaps are always keyed by ticker
@@ -468,7 +497,7 @@ def update_security_master(
                 wanted[key] = build_equity_entry(row.stock_ticker, row.security_name, row.cusip, ref)
         elif ht == HoldingType.MONEY_MARKET:
             if key not in wanted:
-                wanted[key] = build_mm_entry(ref)
+                wanted[key] = build_mm_entry(row)
         elif ht == HoldingType.OPTION:
             has_options = True
             if key not in wanted:
@@ -606,7 +635,8 @@ def classify_holding(row: CustodianRow) -> HoldingType:
     name = row.security_name.rstrip()
     if (name.endswith(" C") or name.endswith(" P")) and _OPTION_NAME_RE.match(name):
         return HoldingType.OPTION
-    if "United States Treasury Note/Bond" in row.security_name:
+    if ("United States Treasury Note/Bond" in row.security_name
+            or "United States Treasury Bill" in row.security_name):
         return HoldingType.TREASURY
     if _BOND_NAME_RE.search(row.security_name):
         return HoldingType.CORPORATE_BOND
@@ -639,19 +669,27 @@ def parse_option_name(security_name: str) -> ParsedOption:
 def parse_treasury_name(security_name: str) -> ParsedTreasury:
     """Parse treasury SecurityName.
 
-    Format: ``United States Treasury Note/Bond 0.5% 04/30/2027``
-    Returns ParsedTreasury with annualized_rt, maturity_dt, coupon_kind.
+    Notes/bonds carry a coupon + maturity (``United States Treasury Note/Bond
+    0.5% 04/30/2027`` → Fixed). Bills are zero-coupon discount instruments with
+    only a maturity (``United States Treasury Bill 10/22/2026`` → rate 0,
+    couponKind "None"). Returns ParsedTreasury.
     """
     m = re.search(r"(\d+(?:\.\d+)?)%\s+(\d{2}/\d{2}/\d{4})", security_name)
-    if not m:
-        raise ValueError(f"Cannot parse treasury name: '{security_name}'")
-    rate = m.group(1)
-    maturity_dt = datetime.strptime(m.group(2), "%m/%d/%Y").strftime("%Y-%m-%d")
-    return ParsedTreasury(
-        annualized_rt=rate,
-        maturity_dt=maturity_dt,
-        coupon_kind="Fixed",
-    )
+    if m:
+        return ParsedTreasury(
+            annualized_rt=m.group(1),
+            maturity_dt=datetime.strptime(m.group(2), "%m/%d/%Y").strftime("%Y-%m-%d"),
+            coupon_kind="Fixed",
+        )
+    # Treasury bill: no coupon in the name, just a maturity date.
+    d = re.search(r"(\d{2}/\d{2}/\d{4})", security_name)
+    if d and "Bill" in security_name:
+        return ParsedTreasury(
+            annualized_rt="0",
+            maturity_dt=datetime.strptime(d.group(1), "%m/%d/%Y").strftime("%Y-%m-%d"),
+            coupon_kind="None",
+        )
+    raise ValueError(f"Cannot parse treasury name: '{security_name}'")
 
 
 def parse_swap_ticker(stock_ticker: str) -> ParsedSwap:
@@ -778,6 +816,7 @@ def transform_to_holding_dict(
             "issuer_cat": "CORP",
             "fair_val_level": "2",
             "deriv_cat": "OPT",
+            "share_no": "N/A",  # index options are on an index, not a share count
             "put_or_call": opt.put_or_call,
             "exercise_price": opt.exercise_price,
             "exercise_price_cur_cd": "USD",

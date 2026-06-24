@@ -1,26 +1,26 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Accel Entertainment Inc,N/A,Accel Entertainment Inc,00436Q106,,ACEL,US,EC,CORP
-Bally's Corp,N/A,Bally's Corp,05875B304,,BALY,US,EC,CORP
-Boyd Gaming Corp,N/A,Boyd Gaming Corp,103304101,,BYD,US,EC,CORP
-Caesars Entertainment Inc,N/A,Caesars Entertainment Inc,12769G100,,CZR,US,EC,CORP
-Churchill Downs Inc,N/A,Churchill Downs Inc,171484108,,CHDN,US,EC,CORP
-DraftKings Inc,N/A,DraftKings Inc,26142V105,,DKNG,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Full House Resorts Inc,N/A,Full House Resorts Inc,359678109,,FLL,US,EC,CORP
-Inspired Entertainment Inc,N/A,Inspired Entertainment Inc,45782N108,,INSE,US,EC,CORP
-Las Vegas Sands Corp,N/A,Las Vegas Sands Corp,517834107,,LVS,US,EC,CORP
-MGM Resorts International,N/A,MGM Resorts International,552953101,,MGM,US,EC,CORP
-Melco Resorts & Entertainment ,N/A,Melco Resorts & Entertainment Ltd,585464100,,MLCO,US,EC,CORP
-Monarch Casino & Resort Inc,N/A,Monarch Casino & Resort Inc,609027107,,MCRI,US,EC,CORP
-Penn Entertainment Inc,N/A,Penn Entertainment Inc,707569109,,PENN,US,EC,CORP
-Red Rock Resorts Inc,N/A,Red Rock Resorts Inc,75700L108,,RRR,US,EC,CORP
-Rush Street Interactive Inc,N/A,Rush Street Interactive Inc,782011100,,RSI,US,EC,CORP
-Wynn Resorts Ltd,N/A,Wynn Resorts Ltd,983134107,,WYNN,US,EC,CORP
-Brightstar Lottery PLC,N/A,Brightstar Lottery PLC,N/A,,BRSL,KY,EC,CORP
-Codere Online Luxembourg SA,N/A,Codere Online Luxembourg SA,N/A,,CDRO,LU,EC,CORP
-Flutter Entertainment PLC,N/A,Flutter Entertainment PLC,N/A,,FLUT,IE,EC,CORP
-Gambling.com Group Ltd,N/A,Gambling.com Group Ltd,N/A,,GAMB,US,EC,CORP
-Genius Sports Ltd,N/A,Genius Sports Ltd,N/A,,GENI,US,EC,CORP
-Paysafe Ltd,N/A,Paysafe Ltd,N/A,,PSFE,US,EC,CORP
-Super Group SGHC Ltd,N/A,Super Group SGHC Ltd,N/A,,SGHC,US,EC,CORP
-Sportradar Group AG,N/A,Sportradar Group AG,N/A,,SRAD,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+ODDZ,ACEL US Equity,ACEL,Accel Entertainment Inc,N/A,Accel Entertainment Inc,00436Q106,US00436Q1067,ACEL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,BALY US Equity,BALY,Bally's Corp,549300NS4D5IK406VT62,Bally's Corp,05875B304,US05875B3042,BALY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,BRSL US Equity,BRSL,Brightstar Lottery PLC,549300UQ6KHRCZDRGZ76,Brightstar Lottery PLC,G4863A108,GB00BVG7F061,BRSL,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,BYD US Equity,BYD,Boyd Gaming Corp,254900787YGRYS2A1Z35,Boyd Gaming Corp,103304101,US1033041013,BYD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,CDRO US Equity,CDRO,Codere Online Luxembourg SA,222100ZJU57ZQLLYNO89,Codere Online Luxembourg SA,L18268109,LU2405144788,CDRO,LU,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,CHDN US Equity,CHDN,Churchill Downs Inc,529900FODTBQC8MIS994,Churchill Downs Inc,171484108,US1714841087,CHDN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,CZR US Equity,CZR,Caesars Entertainment Inc,549300FA4CTCW903Y781,Caesars Entertainment Inc,12769G100,US12769G1004,CZR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,DKNG US Equity,DKNG,DraftKings Inc,2549006G33IUL6IVOD83,DraftKings Inc,26142V105,US26142V1052,DKNG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,FLL US Equity,FLL,Full House Resorts Inc,5493009DKIWW0H901Y82,Full House Resorts Inc,359678109,US3596781092,FLL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,FLUT US Equity,FLUT,Flutter Entertainment PLC,635400EG4YIJLJMZJ782,Flutter Entertainment PLC,G3643J108,IE00BWT6H894,FLUT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,GAMB US Equity,GAMB,Gambling.com Group Ltd,254900PUNXQ3N26IMU63,Gambling.com Group Ltd,G3R239101,JE00BL970N11,GAMB,JE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,GENI US Equity,GENI,Genius Sports Ltd,N/A,Genius Sports Ltd,G3934V109,GG00BMF1JR16,GENI,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,INSE US Equity,INSE,Inspired Entertainment Inc,549300ZUGYK6NBIU6D69,Inspired Entertainment Inc,45782N108,US45782N1081,INSE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,LVS US Equity,LVS,Las Vegas Sands Corp,549300DUOO1KXOHPM605,Las Vegas Sands Corp,517834107,US5178341070,LVS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,MCRI US Equity,MCRI,Monarch Casino & Resort Inc,549300AK5FF7KY11V997,Monarch Casino & Resort Inc,609027107,US6090271072,MCRI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,MGM US Equity,MGM,MGM Resorts International,54930066VBP7DZEGGJ87,MGM Resorts International,552953101,US5529531015,MGM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,MLCO US Equity,MLCO,Melco Resorts & Entertainment ,529900NRV6LBR3T6B421,Melco Resorts & Entertainment Ltd,585464100,US5854641009,MLCO,HK,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,PENN US Equity,PENN,Penn Entertainment Inc,N/A,Penn Entertainment Inc,707569109,US7075691094,PENN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,PSFE US Equity,PSFE,Paysafe Ltd,2138003K6PVDCI5TBN11,Paysafe Ltd,G6964L206,BMG6964L2062,PSFE,GB,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,RRR US Equity,RRR,Red Rock Resorts Inc,N/A,Red Rock Resorts Inc,75700L108,US75700L1089,RRR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,RSI US Equity,RSI,Rush Street Interactive Inc,N/A,Rush Street Interactive Inc,782011100,US7820111000,RSI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,SGHC US Equity,SGHC,Super Group SGHC Ltd,N/A,Super Group SGHC Ltd,G8588X103,GG00BMG42V42,SGHC,GG,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,SRAD US Equity,SRAD,Sportradar Group AG,549300H1P33YOAT7Z533,Sportradar Group AG,H8088L103,CH1134239669,SRAD,CH,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ODDZ,WYNN US Equity,WYNN,Wynn Resorts Ltd,254900CEKKWIHTEAB172,Wynn Resorts Ltd,983134107,US9831341071,WYNN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

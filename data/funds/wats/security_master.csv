@@ -1,25 +1,25 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-AES Corp/The,N/A,AES Corp/The,00130H105,,AES,US,EC,CORP
-Albemarle Corp,N/A,Albemarle Corp,012653101,,ALB,US,EC,CORP
-American Battery Technology Co,N/A,American Battery Technology Co,02451V309,,ABAT,US,EC,CORP
-American Superconductor Corp,N/A,American Superconductor Corp,030111207,,AMSC,US,EC,CORP
-Amprius Technologies Inc,N/A,Amprius Technologies Inc,03214Q108,,AMPX,US,EC,CORP
-Atkore Inc,N/A,Atkore Inc,047649108,,ATKR,US,EC,CORP
-Bloom Energy Corp,549300XB5J9BFW5JXV97,Bloom Energy Corp,093712107,US0937121079,BE,US,EC,CORP
-EnerSys,N/A,EnerSys,29275Y102,,ENS,US,EC,CORP
-Energy Vault Holdings Inc,N/A,Energy Vault Holdings Inc,29280W109,,NRGV,US,EC,CORP
-Enphase Energy Inc,N/A,Enphase Energy Inc,29355A107,,ENPH,US,EC,CORP
-Enovix Corp,N/A,Enovix Corp,293594107,,ENVX,US,EC,CORP
-Eos Energy Enterprises Inc,N/A,Eos Energy Enterprises Inc,29415C101,,EOSE,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Fluence Energy Inc,N/A,Fluence Energy Inc,34379V103,,FLNC,US,EC,CORP
-T1 Energy Inc,N/A,T1 Energy Inc,35834F104,,TE,US,EC,CORP
-Generac Holdings Inc,N/A,Generac Holdings Inc,368736104,,GNRC,US,EC,CORP
-Microvast Holdings Inc,N/A,Microvast Holdings Inc,59516C106,,MVST,US,EC,CORP
-SES AI Corp,N/A,SES AI Corp,78397Q109,,SES,US,EC,CORP
-Sociedad Quimica y Minera de C,N/A,Sociedad Quimica y Minera de Chile SA,833635105,,SQM,US,EC,CORP
-SolarEdge Technologies Inc,N/A,SolarEdge Technologies Inc,83417M104,,SEDG,US,EC,CORP
-Solid Power Inc,N/A,Solid Power Inc,83422N105,,SLDP,US,EC,CORP
-Stem Inc,N/A,Stem Inc,85859N300,,STEM,US,EC,CORP
-Sunrun Inc,N/A,Sunrun Inc,86771W105,,RUN,US,EC,CORP
-Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+WATS,ABAT US Equity,ABAT,American Battery Technology Co,529900JBJ8D85CDPHQ69,American Battery Technology Co,02451V309,US02451V3096,ABAT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,AES US Equity,AES,AES Corp/The,2NUNNB7D43COUIRE5295,AES Corp/The,00130H105,US00130H1059,AES,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,ALB US Equity,ALB,Albemarle Corp,HDBLS2Q6GV1LSKQPBS54,Albemarle Corp,012653101,US0126531013,ALB,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,AMPX US Equity,AMPX,Amprius Technologies Inc,N/A,Amprius Technologies Inc,03214Q108,US03214Q1085,AMPX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,AMSC US Equity,AMSC,American Superconductor Corp,549300S9YT8Z8LOK4452,American Superconductor Corp,030111207,US0301112076,AMSC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,ATKR US Equity,ATKR,Atkore Inc,52990002TI38AM4RPV48,Atkore Inc,047649108,US0476491081,ATKR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,BE US Equity,BE,Bloom Energy Corp,549300XB5J9BFW5JXV97,Bloom Energy Corp,093712107,US0937121079,BE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,ENPH US Equity,ENPH,Enphase Energy Inc,5493008U7KIGMI59Z314,Enphase Energy Inc,29355A107,US29355A1079,ENPH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,ENS US Equity,ENS,EnerSys,7ZS3DE5PN30BYUJFWP05,EnerSys,29275Y102,US29275Y1029,ENS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,ENVX US Equity,ENVX,Enovix Corp,549300EC7NZGWORHYJ53,Enovix Corp,293594107,US2935941078,ENVX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,EOSE US Equity,EOSE,Eos Energy Enterprises Inc,529900UCCJMLRGDXVT41,Eos Energy Enterprises Inc,29415C101,US29415C1018,EOSE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,FLNC US Equity,FLNC,Fluence Energy Inc,25490043LHZ97BT5PP29,Fluence Energy Inc,34379V103,US34379V1035,FLNC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,GNRC US Equity,GNRC,Generac Holdings Inc,529900S2H2AHJHSFFI84,Generac Holdings Inc,368736104,US3687361044,GNRC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,MVST US Equity,MVST,Microvast Holdings Inc,549300J4UX9OMHSTKS35,Microvast Holdings Inc,59516C106,US59516C1062,MVST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,NRGV US Equity,NRGV,Energy Vault Holdings Inc,254900VMTXIU80WPJR14,Energy Vault Holdings Inc,29280W109,US29280W1099,NRGV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,RUN US Equity,RUN,Sunrun Inc,54930007SJ77CI66U531,Sunrun Inc,86771W105,US86771W1053,RUN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,SEDG US Equity,SEDG,SolarEdge Technologies Inc,5493000K6Y58XXPDF853,SolarEdge Technologies Inc,83417M104,US83417M1045,SEDG,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,SES US Equity,SES,SES AI Corp,529900HSCKUBL8K4K759,SES AI Corp,78397Q109,US78397Q1094,SES,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,SLDP US Equity,SLDP,Solid Power Inc,5299001ZPFRA2QBIQK79,Solid Power Inc,83422N105,US83422N1054,SLDP,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,SQM US Equity,SQM,Sociedad Quimica y Minera de C,TJ88LXZZW5PWIN93ZC81,Sociedad Quimica y Minera de Chile SA,833635105,US8336351056,SQM,CL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,STEM US Equity,STEM,Stem Inc,549300GVWIYFILN5V546,Stem Inc,85859N300,US85859N3008,STEM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,TE US Equity,TE,T1 Energy Inc,529900H0645VFXNMJ693,T1 Energy Inc,35834F104,US35834F1049,TE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WATS,TSLA US Equity,TSLA,Tesla Inc,54930043XZGB27CTOV49,Tesla Inc,88160R101,US88160R1014,TSLA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

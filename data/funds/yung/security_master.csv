@@ -1,49 +1,49 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Acushnet Holdings Corp,N/A,Acushnet Holdings Corp,005098108,,GOLF,US,EC,CORP
-Addus HomeCare Corp,N/A,Addus HomeCare Corp,006739106,,ADUS,US,EC,CORP
-Booking Holdings Inc,N/A,Booking Holdings Inc,09857L108,,BKNG,US,EC,CORP
-BrightSpring Health Services I,N/A,BrightSpring Health Services Inc,10950A106,,BTSG,US,EC,CORP
-Brookdale Senior Living Inc,N/A,Brookdale Senior Living Inc,112463104,,BKD,US,EC,CORP
-Brunswick Corp/DE,N/A,Brunswick Corp/DE,117043109,,BC,US,EC,CORP
-Callaway Golf Co,N/A,Callaway Golf Co,131193104,,CALY,US,EC,CORP
-Sonida Senior Living Inc,N/A,Sonida Senior Living Inc,140475203,,SNDA,US,EC,CORP
-Cooper Cos Inc/The,N/A,Cooper Cos Inc/The,216648501,,COO,US,EC,CORP
-DAVITA INC,N/A,DAVITA INC,23918K108,,DVA,US,EC,CORP
-Delta Air Lines Inc,N/A,Delta Air Lines Inc,247361702,,DAL,US,EC,CORP
-DENTSPLY SIRONA Inc,N/A,DENTSPLY SIRONA Inc,24906P109,,XRAY,US,EC,CORP
-ENCOMPASS HEALTH CORP,N/A,ENCOMPASS HEALTH CORP,29261A100,,EHC,US,EC,CORP
-Ensign Group Inc/The,N/A,Ensign Group Inc/The,29358P101,,ENSG,US,EC,CORP
-Envista Holdings Corp,N/A,Envista Holdings Corp,29415F104,,NVST,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-American Healthcare REIT Inc,N/A,American Healthcare REIT Inc,398182303,,AHR,US,EC,CORP
-Hilton Grand Vacations Inc,N/A,Hilton Grand Vacations Inc,43283X105,,HGV,US,EC,CORP
-Hims & Hers Health Inc,N/A,Hims & Hers Health Inc,433000106,,HIMS,US,EC,CORP
-Hilton Worldwide Holdings Inc,N/A,Hilton Worldwide Holdings Inc,43300A203,,HLT,US,EC,CORP
-Humana Inc,N/A,Humana Inc,444859102,,HUM,US,EC,CORP
-LTC Properties Inc,N/A,LTC Properties Inc,502175102,,LTC,US,EC,CORP
-Life Time Group Holdings Inc,N/A,Life Time Group Holdings Inc,53190C102,,LTH,US,EC,CORP
-Eli Lilly & Co,N/A,Eli Lilly & Co,532457108,,LLY,US,EC,CORP
-Lindblad Expeditions Holdings ,N/A,Lindblad Expeditions Holdings Inc,535219109,,LIND,US,EC,CORP
-Marriott International Inc/MD,N/A,Marriott International Inc/MD,571903202,,MAR,US,EC,CORP
-Medline Inc,N/A,Medline Inc,58507V107,,MDLN,US,EC,CORP
-National HealthCare Corp,N/A,National HealthCare Corp,635906100,,NHC,US,EC,CORP
-National Health Investors Inc,N/A,National Health Investors Inc,63633D104,,NHI,US,EC,CORP
-National Vision Holdings Inc,N/A,National Vision Holdings Inc,63845R107,,EYE,US,EC,CORP
-Nature's Sunshine Products Inc,N/A,Nature's Sunshine Products Inc,639027101,,NATR,US,EC,CORP
-Omega Healthcare Investors Inc,N/A,Omega Healthcare Investors Inc,681936100,,OHI,US,EC,CORP
-Pennant Group Inc/The,N/A,Pennant Group Inc/The,7.08E+113,,PNTG,US,EC,CORP
-Peloton Interactive Inc,N/A,Peloton Interactive Inc,70614W100,,PTON,US,EC,CORP
-Service Corp International/US,N/A,Service Corp International/US,817565104,,SCI,US,EC,CORP
-Southwest Airlines Co,N/A,Southwest Airlines Co,844741108,,LUV,US,EC,CORP
-Teladoc Health Inc,N/A,Teladoc Health Inc,87918A105,,TDOC,US,EC,CORP
-Travel + Leisure Co,N/A,Travel + Leisure Co,894164102,,TNL,US,EC,CORP
-United Airlines Holdings Inc,N/A,United Airlines Holdings Inc,910047109,,UAL,US,EC,CORP
-Ventas Inc,N/A,Ventas Inc,92276F100,,VTR,US,EC,CORP
-Viking Therapeutics Inc,N/A,Viking Therapeutics Inc,92686J106,,VKTX,US,EC,CORP
-Welltower Inc,N/A,Welltower Inc,95040Q104,,WELL,US,EC,CORP
-Alcon AG,N/A,Alcon AG,N/A,,ALC,CH,EC,CORP
-Carnival Corp Ltd,N/A,Carnival Corp Ltd,N/A,,CCL,BM,EC,CORP
-Medtronic PLC,N/A,Medtronic PLC,N/A,,MDT,US,EC,CORP
-Norwegian Cruise Line Holdings,N/A,Norwegian Cruise Line Holdings Ltd,N/A,,NCLH,US,EC,CORP
-Royal Caribbean Cruises Ltd,N/A,Royal Caribbean Cruises Ltd,N/A,,RCL,US,EC,CORP
-Viking Holdings Ltd,N/A,Viking Holdings Ltd,N/A,,VIK,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+YUNG,ADUS US Equity,ADUS,Addus HomeCare Corp,52990090ZT33AKPDBX62,Addus HomeCare Corp,006739106,US0067391062,ADUS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,AHR US Equity,AHR,American Healthcare REIT Inc,2549004GGE2APGNT6O92,American Healthcare REIT Inc,398182303,US3981823038,AHR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,ALC US Equity,ALC,Alcon AG,549300LDT5AP8S0NBM78,Alcon AG,H01301128,CH0432492467,ALC,CH,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,BC US Equity,BC,Brunswick Corp/DE,YM4O38W15AX4YLLQKU27,Brunswick Corp/DE,117043109,US1170431092,BC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,BKD US Equity,BKD,Brookdale Senior Living Inc,LH7MQB13NWY7CJ9VC445,Brookdale Senior Living Inc,112463104,US1124631045,BKD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,BKNG US Equity,BKNG,Booking Holdings Inc,FXM8FAOHMYDIPD38UZ17,Booking Holdings Inc,09857L108,US09857L1089,BKNG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,BTSG US Equity,BTSG,BrightSpring Health Services I,N/A,BrightSpring Health Services Inc,10950A106,US10950A1060,BTSG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,CALY US Equity,CALY,Callaway Golf Co,5493005UB0KFRKBPCU72,Callaway Golf Co,131193104,US1311931042,CALY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,CCL US Equity,CCL,Carnival Corp Ltd,F1OF2ZSX47CR0BCWA982,Carnival Corp Ltd,G2004J103,BMG2004J1036,CCL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,COO US Equity,COO,Cooper Cos Inc/The,QJKMVPIGLH7530PCUE20,Cooper Cos Inc/The,216648501,US2166485019,COO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,DAL US Equity,DAL,Delta Air Lines Inc,Q2CCMS6R0AS67HJMBN42,Delta Air Lines Inc,247361702,US2473617023,DAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,DVA US Equity,DVA,DAVITA INC,M2XHYMU3TZNEZURC6H66,DAVITA INC,23918K108,US23918K1088,DVA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,EHC US Equity,EHC,ENCOMPASS HEALTH CORP,549300FVRPM9DRQZRG64,ENCOMPASS HEALTH CORP,29261A100,US29261A1007,EHC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,ENSG US Equity,ENSG,Ensign Group Inc/The,5493003K4HEEA8Q0BC72,Ensign Group Inc/The,29358P101,US29358P1012,ENSG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,EYE US Equity,EYE,National Vision Holdings Inc,549300JHURCBLI5ROA42,National Vision Holdings Inc,63845R107,US63845R1077,EYE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,GOLF US Equity,GOLF,Acushnet Holdings Corp,529900W5FI106H543E43,Acushnet Holdings Corp,005098108,US0050981085,GOLF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,HGV US Equity,HGV,Hilton Grand Vacations Inc,549300O9K6MFD8D07574,Hilton Grand Vacations Inc,43283X105,US43283X1054,HGV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,HIMS US Equity,HIMS,Hims & Hers Health Inc,254900V041EIVTSB6D58,Hims & Hers Health Inc,433000106,US4330001060,HIMS,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,HLT US Equity,HLT,Hilton Worldwide Holdings Inc,549300HVGPK36ICB0B89,Hilton Worldwide Holdings Inc,43300A203,US43300A2033,HLT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,HUM US Equity,HUM,Humana Inc,529900YLDW34GJAO4J06,Humana Inc,444859102,US4448591028,HUM,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,LIND US Equity,LIND,Lindblad Expeditions Holdings ,549300GSPW24GZE6R597,Lindblad Expeditions Holdings Inc,535219109,US5352191093,LIND,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,LLY US Equity,LLY,Eli Lilly & Co,FRDRIPF3EKNDJ2CQJL29,Eli Lilly & Co,532457108,US5324571083,LLY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,LTC US Equity,LTC,LTC Properties Inc,549300NRZP8IJG2KY677,LTC Properties Inc,502175102,US5021751020,LTC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,LTH US Equity,LTH,Life Time Group Holdings Inc,N/A,Life Time Group Holdings Inc,53190C102,US53190C1027,LTH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,LUV US Equity,LUV,Southwest Airlines Co,UDTZ87G0STFETI6HGH41,Southwest Airlines Co,844741108,US8447411088,LUV,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,MAR US Equity,MAR,Marriott International Inc/MD,225YDZ14ZO8E1TXUSU86,Marriott International Inc/MD,571903202,US5719032022,MAR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,MDLN US Equity,MDLN,Medline Inc,984500FAN6J1P8566D43,Medline Inc,58507V107,US58507V1070,MDLN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,MDT US Equity,MDT,Medtronic PLC,549300GX3ZBSQWUXY261,Medtronic PLC,G5960L103,IE00BTN1Y115,MDT,IE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,NATR US Equity,NATR,Nature's Sunshine Products Inc,N/A,Nature's Sunshine Products Inc,639027101,US6390271012,NATR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,NCLH US Equity,NCLH,Norwegian Cruise Line Holdings,N/A,Norwegian Cruise Line Holdings Ltd,G66721104,BMG667211046,NCLH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,NHC US Equity,NHC,National HealthCare Corp,254900PTS11LS1JS2752,National HealthCare Corp,635906100,US6359061008,NHC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,NHI US Equity,NHI,National Health Investors Inc,549300ZPKZIG6DKDEC02,National Health Investors Inc,63633D104,US63633D1046,NHI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,NVST US Equity,NVST,Envista Holdings Corp,549300BX623VURJZ5269,Envista Holdings Corp,29415F104,US29415F1049,NVST,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,OHI US Equity,OHI,Omega Healthcare Investors Inc,549300OJ7ENK42CZ8E73,Omega Healthcare Investors Inc,681936100,US6819361006,OHI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,PNTG US Equity,PNTG,Pennant Group Inc/The,5493007H2OYR6BYLDA64,Pennant Group Inc/The,70805E109,US70805E1091,PNTG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,PTON US Equity,PTON,Peloton Interactive Inc,5493002YS021166W0339,Peloton Interactive Inc,70614W100,US70614W1009,PTON,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,RCL US Equity,RCL,Royal Caribbean Cruises Ltd,K2NEH8QNVW44JIWK7Z55,Royal Caribbean Cruises Ltd,V7780T103,LR0008862868,RCL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,SCI US Equity,SCI,Service Corp International/US,549300RKVM2ME20JHZ15,Service Corp International/US,817565104,US8175651046,SCI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,SNDA US Equity,SNDA,Sonida Senior Living Inc,254900YX6LQ8K1N8PZ90,Sonida Senior Living Inc,140475203,US1404752032,SNDA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,TDOC US Equity,TDOC,Teladoc Health Inc,549300I2PVFBC9MFAC61,Teladoc Health Inc,87918A105,US87918A1051,TDOC,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,TNL US Equity,TNL,Travel + Leisure Co,T4VNTWMFQ7JQB65L7T35,Travel + Leisure Co,894164102,US8941641024,TNL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,UAL US Equity,UAL,United Airlines Holdings Inc,98450079DA0B78DD6764,United Airlines Holdings Inc,910047109,US9100471096,UAL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,VIK US Equity,VIK,Viking Holdings Ltd,52990032GOPN7BVQMN13,Viking Holdings Ltd,G93A5A101,BMG93A5A1010,VIK,BM,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,VKTX US Equity,VKTX,Viking Therapeutics Inc,529900IVC72YPFA25M37,Viking Therapeutics Inc,92686J106,US92686J1060,VKTX,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,VTR US Equity,VTR,Ventas Inc,ORQTRC074CWLT3DKHT41,Ventas Inc,92276F100,US92276F1003,VTR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,WELL US Equity,WELL,Welltower Inc,254900F33BIAR82QTA19,Welltower Inc,95040Q104,US95040Q1040,WELL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+YUNG,XRAY US Equity,XRAY,DENTSPLY SIRONA Inc,9NHEHR1SOZCYXDO8HO28,DENTSPLY SIRONA Inc,24906P109,US24906P1093,XRAY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

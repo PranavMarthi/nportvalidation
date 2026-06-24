@@ -1,35 +1,35 @@
-name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat
-Applied Digital Corp,N/A,Applied Digital Corp,038169207,,APLD,US,EC,CORP
-Bakkt Inc,N/A,Bakkt Inc,05759B305,,BKKT,US,EC,CORP
-BitMine Immersion Technologies,N/A,BitMine Immersion Technologies Inc,09175A206,,BMNR,US,EC,CORP
-Bitgo Holdings Inc,N/A,Bitgo Holdings Inc,091947101,,BTGO,US,EC,CORP
-Cboe Global Markets Inc,N/A,Cboe Global Markets Inc,12503M108,,CBOE,US,EC,CORP
-CME Group Inc,N/A,CME Group Inc,12572Q105,,CME,US,EC,CORP
-Cipher Digital Inc,N/A,Cipher Digital Inc,17253J106,,CIFR,US,EC,CORP
-Circle Internet Group Inc,N/A,Circle Internet Group Inc,172573107,,CRCL,US,EC,CORP
-Cleanspark Inc,N/A,Cleanspark Inc,18452B209,,CLSK,US,EC,CORP
-Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP
-GPGI Inc,N/A,GPGI Inc,20459V105,,GPGI,US,EC,CORP
-Core Scientific Inc,N/A,Core Scientific Inc,21874A106,,CORZ,US,EC,CORP
-First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF
-Figure Technology Solutions In,N/A,Figure Technology Solutions Inc,349381103,,FIGR,US,EC,CORP
-Galaxy Digital Inc,N/A,Galaxy Digital Inc,36317J209,,GLXY,US,EC,CORP
-Gemini Space Station Inc,N/A,Gemini Space Station Inc,36866J105,,GEMI,US,EC,CORP
-Hive Digital Technologies Ltd,N/A,Hive Digital Technologies Ltd,433921103,,HIVE,US,EC,CORP
-HUT 8 CORP,N/A,HUT 8 CORP,44812J104,,HUT,US,EC,CORP
-MARA Holdings Inc,N/A,MARA Holdings Inc,565788106,,MARA,US,EC,CORP
-Soluna Holdings Inc,N/A,Soluna Holdings Inc,583543301,,SLNH,US,EC,CORP
-PayPal Holdings Inc,N/A,PayPal Holdings Inc,70450Y103,,PYPL,US,EC,CORP
-Riot Platforms Inc,N/A,Riot Platforms Inc,767292105,,RIOT,US,EC,CORP
-Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP
-Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP
-Terawulf Inc,N/A,Terawulf Inc,88080T104,,WULF,US,EC,CORP
-Bullish,N/A,Bullish,N/A,,BLSH,KY,EC,CORP
-Bit Digital Inc,N/A,Bit Digital Inc,N/A,,BTBT,KY,EC,CORP
-Bitdeer Technologies Group,N/A,Bitdeer Technologies Group,N/A,,BTDR,KY,EC,CORP
-Cango Inc/KY,N/A,Cango Inc/KY,N/A,,CANG,KY,EC,CORP
-Coincheck Group NV,N/A,Coincheck Group NV,N/A,,CNCK,US,EC,CORP
-CoinShares PLC,N/A,CoinShares PLC,N/A,,CSHR,US,EC,CORP
-Etoro Group Ltd,N/A,Etoro Group Ltd,N/A,,ETOR,US,EC,CORP
-BitFuFu Inc,N/A,BitFuFu Inc,N/A,,FUFU,US,EC,CORP
-IREN Ltd,N/A,IREN Ltd,N/A,,IREN,US,EC,CORP
+Account,bbgid,rawTicker,name,lei,title,cusip,isin,ticker,invCountry,assetCat,issuerCat,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier,swapFlag,terminationDt,notionalAmt,swapCurCd,unrealizedAppr,valUSD,pctVal,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntFloatingRtSpread,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,maturityDt,couponKind,annualizedRt,isDefault,areIntrstPmntsInArrs,isPaidKind
+BLCK,APLD US Equity,APLD,Applied Digital Corp,2549004NE2B6RYXINZ02,Applied Digital Corp,038169207,US0381692070,APLD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,BKKT US Equity,BKKT,Bakkt Inc,N/A,Bakkt Inc,05759B305,US05759B3050,BKKT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,BLSH US Equity,BLSH,Bullish,N/A,Bullish,G16910120,KYG169101204,BLSH,KY,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,BMNR US Equity,BMNR,BitMine Immersion Technologies,254900TGJJ1D9JNAQT27,BitMine Immersion Technologies Inc,09175A206,US09175A2069,BMNR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,BTBT US Equity,BTBT,Bit Digital Inc,2549005XLPRWS7HWCM31,Bit Digital Inc,G1144A105,KYG1144A1058,BTBT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,BTDR US Equity,BTDR,Bitdeer Technologies Group,2549007M2KGWVJ9XFP20,Bitdeer Technologies Group,G11448100,KYG114481008,BTDR,SG,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,BTGO US Equity,BTGO,Bitgo Holdings Inc,254900UPX35JR22RH064,Bitgo Holdings Inc,091947101,US0919471013,BTGO,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CANG US Equity,CANG,Cango Inc/KY,5299003TQHBB4QUSZB86,Cango Inc/KY,G1820C102,KYG1820C1024,CANG,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CBOE US Equity,CBOE,Cboe Global Markets Inc,529900RLNSGA90UPEH54,Cboe Global Markets Inc,12503M108,US12503M1080,CBOE,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CIFR US Equity,CIFR,Cipher Digital Inc,254900QABG5HCQZ28A17,Cipher Digital Inc,17253J106,US17253J1060,CIFR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CLSK US Equity,CLSK,Cleanspark Inc,254900VO7KBRJQDGY810,Cleanspark Inc,18452B209,US18452B2097,CLSK,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CME US Equity,CME,CME Group Inc,LCZ7XYGSLJUHFXXNXD88,CME Group Inc,12572Q105,US12572Q1058,CME,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CNCK US Equity,CNCK,Coincheck Group NV,5299004Z2A5SO6LXBB37,Coincheck Group NV,N20967118,NL0015002BV9,CNCK,NL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,COIN US Equity,COIN,Coinbase Global Inc,5493004G3J2SC154DU06,Coinbase Global Inc,19260Q107,US19260Q1076,COIN,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CORZ US Equity,CORZ,Core Scientific Inc,5299003RGB2LAZ65RK73,Core Scientific Inc,21874A106,US21874A1060,CORZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CRCL US Equity,CRCL,Circle Internet Group Inc,254900HFVVR6NPMQVN93,Circle Internet Group Inc,172573107,US1725731079,CRCL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,CSHR US Equity,CSHR,CoinShares PLC,213800XIX1ZHW9SWFW27,CoinShares PLC,G670AQ104,JE00BS6SC522,CSHR,JE,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,ETOR US Equity,ETOR,Etoro Group Ltd,213800XPRPJK2X5QRG86,Etoro Group Ltd,G32089107,VGG320891077,ETOR,IL,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,FGXXX US Equity,FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,US,STIV,RF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,FIGR US Equity,FIGR,Figure Technology Solutions In,N/A,Figure Technology Solutions Inc,349381103,US3493811034,FIGR,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,FUFU US Equity,FUFU,BitFuFu Inc,N/A,BitFuFu Inc,G1152A104,KYG1152A1040,FUFU,SG,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,GEMI US Equity,GEMI,Gemini Space Station Inc,N/A,Gemini Space Station Inc,36866J105,US36866J1051,GEMI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,GLXY US Equity,GLXY,Galaxy Digital Inc,9845001C4070E5N07806,Galaxy Digital Inc,36317J209,US36317J2096,GLXY,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,GPGI US Equity,GPGI,GPGI Inc,N/A,GPGI Inc,20459V105,US20459V1052,GPGI,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,HIVE US Equity,HIVE,Hive Digital Technologies Ltd,5493004QCZ1QBI9FS784,Hive Digital Technologies Ltd,433921103,CA4339211035,HIVE,CA,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,HOOD US Equity,HOOD,Robinhood Markets Inc,213800FS5AO3YWIE6F63,Robinhood Markets Inc,770700102,US7707001027,HOOD,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,HUT US Equity,HUT,HUT 8 CORP,98450066FEF9C1D3FC20,HUT 8 CORP,44812J104,US44812J1043,HUT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,IREN US Equity,IREN,IREN Ltd,254900FZF02RB3NNGB71,IREN Ltd,Q4982L109,AU0000185993,IREN,AU,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,MARA US Equity,MARA,MARA Holdings Inc,549300M8ISKPTX2W7F94,MARA Holdings Inc,565788106,US5657881067,MARA,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,PYPL US Equity,PYPL,PayPal Holdings Inc,5493005X2GO78EFZ3E94,PayPal Holdings Inc,70450Y103,US70450Y1038,PYPL,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,RIOT US Equity,RIOT,Riot Platforms Inc,5299005LKZAJQDQZDF73,Riot Platforms Inc,767292105,US7672921050,RIOT,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,SLNH US Equity,SLNH,Soluna Holdings Inc,N/A,Soluna Holdings Inc,583543301,US5835433013,SLNH,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,WULF US Equity,WULF,Terawulf Inc,254900CVMW1SX2T78A64,Terawulf Inc,88080T104,US88080T1043,WULF,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BLCK,XYZ US Equity,XYZ,Block Inc,549300OHIIUWSTIZME52,Block Inc,852234103,US8522341036,XYZ,US,EC,CORP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
