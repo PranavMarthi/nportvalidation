@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=QQJN ETF
-seriesId=S283284256
+seriesName=Corgi Growth & Technology 15% Structured Buffer ETF - June Series
+seriesId=S000102628
 seriesLei=MZEBU0MV9UVGXYQ6D568
-classId=C000265520
+classId=C000273135
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

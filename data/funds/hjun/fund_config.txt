@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=HJUN ETF
-seriesId=S506837527
+seriesName=Corgi U.S. Equities 100% Structured Buffer ETF - June Series
+seriesId=S000103086
 seriesLei=529900FU3IDPCDKTCE79
-classId=C000265520
+classId=C000273618
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

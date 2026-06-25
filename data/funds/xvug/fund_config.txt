@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XVUG ETF
-seriesId=S843988056
+seriesName=Corgi U.S. Growth 2x Daily ETF
+seriesId=S000102791
 seriesLei=529900S1PJOVSE9ONQ52
-classId=C000265520
+classId=C000273301
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

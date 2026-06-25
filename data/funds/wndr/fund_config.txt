@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=WNDR ETF
-seriesId=S656677242
+seriesName=Corgi Travel & Leisure ETF
+seriesId=S000102682
 seriesLei=529900PPRQAWCJHF5127
-classId=C000265520
+classId=C000273189
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

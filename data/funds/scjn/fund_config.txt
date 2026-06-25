@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=SCJN ETF
-seriesId=S590014957
+seriesName=Corgi U.S. Small-Cap 15% Structured Buffer ETF - June Series
+seriesId=S000103102
 seriesLei=FT4AT3SZBU6OWWXPYZ34
-classId=C000265520
+classId=C000273634
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

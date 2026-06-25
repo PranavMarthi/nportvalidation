@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=GLAM ETF
-seriesId=S413526043
+seriesName=Corgi Beauty, Skincare & Aesthetics ETF
+seriesId=S000102694
 seriesLei=529900XGYJXUKNB8Q029
-classId=C000265520
+classId=C000273201
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

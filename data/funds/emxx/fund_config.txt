@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=EMXX ETF
-seriesId=S373388339
+seriesName=Corgi Emerging Markets 2x Daily ETF
+seriesId=S000102819
 seriesLei=529900M9A78CBLYAQX53
-classId=C000265520
+classId=C000273329
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XEUR ETF
-seriesId=S347167092
+seriesName=Corgi Europe Equities 2x Daily ETF
+seriesId=S000102830
 seriesLei=529900XI1LPYX9JHD953
-classId=C000265520
+classId=C000273340
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

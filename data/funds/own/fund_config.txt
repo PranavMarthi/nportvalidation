@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=OWN ETF
-seriesId=S499809099
+seriesName=Inside Ownership 100 ETF
+seriesId=S000104645
 seriesLei=529900HA6N7Q7VKBT927
-classId=C000265520
+classId=C000275279
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

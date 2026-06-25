@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CTJN ETF
-seriesId=S434274794
+seriesName=Corgi U.S. Equities 30% Structured Buffer ETF - June Series
+seriesId=S000103105
 seriesLei=HCU68S275X66BJZRC631
-classId=C000265520
+classId=C000273637
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=JUNC ETF
-seriesId=S258606614
+seriesName=Corgi U.S. Equities 10% Structured Buffer ETF - June Series
+seriesId=S000102635
 seriesLei=RLBRW6U65BCZUX0OKH73
-classId=C000265520
+classId=C000273142
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

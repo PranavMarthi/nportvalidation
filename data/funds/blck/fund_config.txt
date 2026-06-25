@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=BLCK ETF
-seriesId=S434832439
+seriesName=Corgi Crypto Infrastructure ETF
+seriesId=S000102696
 seriesLei=529900NW9E8YNN31W688
-classId=C000265520
+classId=C000273203
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

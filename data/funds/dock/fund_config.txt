@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=DOCK ETF
-seriesId=S191128206
+seriesName=Corgi Ports, Rail & Freight ETF
+seriesId=S000102676
 seriesLei=529900PFNICEDYP35V27
-classId=C000265520
+classId=C000273183
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

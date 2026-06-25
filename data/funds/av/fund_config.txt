@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=AV ETF
-seriesId=S125649397
+seriesName=Corgi Aerospace & Commercial Aviation ETF
+seriesId=S000102670
 seriesLei=529900615AR0BFA07331
-classId=C000265520
+classId=C000273177
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

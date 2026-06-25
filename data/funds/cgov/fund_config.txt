@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CGOV ETF
-seriesId=S267632852
+seriesName=Corgi 0-3 Month T-Bill ETF
+seriesId=S000104286
 seriesLei=52990069N37TP4S86594
-classId=C000265520
+classId=C000274887
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

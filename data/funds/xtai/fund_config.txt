@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XTAI ETF
-seriesId=S591573984
+seriesName=Corgi Taiwan 2x Daily ETF
+seriesId=S000102783
 seriesLei=529900RVYA02GXO32T65
-classId=C000265520
+classId=C000273293
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

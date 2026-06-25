@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=IDMY ETF
-seriesId=S361512979
+seriesName=Corgi International Developed Equities 15% Structured Buffer ETF - May Series
+seriesId=S000103089
 seriesLei=529900BRRXMNYB3DCJ64
-classId=C000265520
+classId=C000273621
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

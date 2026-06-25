@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XA ETF
-seriesId=S205501716
+seriesName=Corgi AI Cybersecurity ETF
+seriesId=S000102681
 seriesLei=529900XGGMJ2O5ISK933
-classId=C000265520
+classId=C000273188
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

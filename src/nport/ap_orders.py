@@ -107,7 +107,7 @@ def aggregate_flows(orders: list[ApOrder], period: str) -> dict[str, dict[str, s
         for mon in _FLOW_MONTHS:
             rec[f"{mon}Sales"] = f"{fld.get(f'{mon}Sales', 0.0):.2f}"
             rec[f"{mon}Redemption"] = f"{fld.get(f'{mon}Redemption', 0.0):.2f}"
-            rec[f"{mon}Reinvestment"] = "0"
+            rec[f"{mon}Reinvestment"] = "N/A"   # reinvested distributions: no feed in an order book
         out[ticker] = rec
     return out
 

@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CTMA ETF
-seriesId=S936256617
+seriesName=Corgi U.S. Equities 30% Structured Buffer ETF - May Series
+seriesId=S000103104
 seriesLei=5299006CIU3J62M43O75
-classId=C000265520
+classId=C000273636
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

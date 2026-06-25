@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XLKX ETF
-seriesId=S892686706
+seriesName=Corgi U.S. Technology 2x Daily ETF
+seriesId=S000102801
 seriesLei=529900FNMZM1594W0L15
-classId=C000265520
+classId=C000273311
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

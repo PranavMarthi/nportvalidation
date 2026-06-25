@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=EUVX ETF
-seriesId=S677023194
+seriesName=Corgi Lithography & Semiconductor Photonics 2x Daily ETF
+seriesId=S000102839
 seriesLei=529900QR1IS06M2POY49
-classId=C000265520
+classId=C000273349
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

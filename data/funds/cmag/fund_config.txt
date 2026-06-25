@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CMAG ETF
-seriesId=S346249960
+seriesName=Corgi Mag 7 ETF
+seriesId=S000102687
 seriesLei=529900VPDO1DOBUNEZ81
-classId=C000265520
+classId=C000273194
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XLBX ETF
-seriesId=S376597920
+seriesName=Corgi U.S. Materials 2x Daily ETF
+seriesId=S000102795
 seriesLei=529900ETZSWYZUCNMO74
-classId=C000265520
+classId=C000273305
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

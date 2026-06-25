@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CCPX ETF
-seriesId=S557593486
+seriesName=Corgi China 2x Daily ETF
+seriesId=S000102797
 seriesLei=529900CP2YXI6L3CPU03
-classId=C000265520
+classId=C000273307
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

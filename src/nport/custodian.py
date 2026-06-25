@@ -295,7 +295,7 @@ def build_option_entry(row: CustodianRow) -> dict[str, str]:
         "exercisePrice": opt.exercise_price,
         "exercisePriceCurCd": "USD",
         "expDt": opt.exp_dt,
-        "delta": "",
+        "delta": "N/A",   # no feed (FLEX options don't price on Bloomberg) — honest, schema-valid
         "refInstType": "indexBasket",
         "refIndexName": idx[0],
         "refIndexIdentifier": idx[1],
@@ -328,8 +328,11 @@ def build_swap_entry(row: CustodianRow) -> dict[str, str]:
         "counterpartyLei": cp_lei,
         "swapFlag": "Y",
         "terminationDt": swap.termination_dt,
-        "notionalAmt": "",
+        # Notional = reference shares x price = the custodian market value (real, not fabricated).
+        "notionalAmt": row.market_value,
         "swapCurCd": "USD",
+        # MTM unrealized gain has no feed and the XSD forbids N/A here → left blank (honest unset;
+        # the fund administrator must supply it before the swap fund can validate).
         "unrealizedAppr": "",
         "valUSD": row.market_value,
         "pctVal": pct,

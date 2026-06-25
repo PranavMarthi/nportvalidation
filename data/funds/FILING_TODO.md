@@ -9,9 +9,9 @@ The security data (master → per-fund security_master.csv) is already generated
 | field | source | note |
 |---|---|---|
 | seriesLei | **BBG** | `LEGAL_ENTITY_IDENTIFIER` — done (85/90 real; 5 not-yet-issued) |
-| seriesName | EDGAR | registered series name (BBG `ISSUER` is the marketing name) |
-| seriesId | **EDGAR only** | `company_tickers_mf.json` / N-PORT / N-CEN — NOT in Bloomberg; placeholder until SEC file refreshes |
-| classId | **EDGAR only** | same SEC source — NOT in Bloomberg (held at fdrs's per instruction) |
+| seriesName | **EDGAR** (automated) | real registered name from filing headers (`scripts/backfill_series_ids.py`) |
+| seriesId | **EDGAR** (automated) | from filing-header `<SERIES-ID>`, matched to ticker via Bloomberg `LONG_COMP_NAME` — 89/90 (GPTZ unmatched, needs manual) |
+| classId | **EDGAR** (automated) | real per-fund `<CLASS-CONTRACT-ID>` from the same header (89/90) |
 | cik, regCik | EDGAR | trust CIK 0002078265 (shared, trust-level) |
 | regName | EDGAR | "Corgi ETF Trust I" (trust-level) |
 | regFileNumber | EDGAR | 811-24117 (trust-level) |
@@ -20,7 +20,7 @@ The security data (master → per-fund security_master.csv) is already generated
 | signerOrg, signerName, signerTitle | ACCT/EDGAR | signature block (trust-level) |
 | ccc | **manual** | confidential EDGAR filer code — not in any feed |
 
-→ Only `seriesLei` is Bloomberg; the rest is the EDGAR trust block (set once, shared) + seriesId/classId + manual `ccc`.
+→ `seriesLei` Bloomberg; `seriesId`/`classId`/`seriesName` now **EDGAR-automated** (89/90); the rest is the EDGAR trust block (set once, shared) + manual `ccc`.
 
 ## 2. filing_data.txt (filings/2026-06/)
 | field(s) | source | note |
@@ -34,7 +34,7 @@ The security data (master → per-fund security_master.csv) is already generated
 | netRealizedGainMon1-3, netUnrealizedApprMon1-3 | **ACCT only** | not in BBG/custodian/AP (needs cost basis) |
 | mon1-3 Sales/Redemption | **AP** (automated) | Σ `Notional` of CREATE/REDEEM (ACCEPTED) by month — `--ap-orders` |
 | mon1-3 Reinvestment | **ACCT** | DRIP/reinvested distributions — not in an order book |
-| nameDesignatedIndex, indexIdentifier | EDGAR/ACCT | prospectus designated index (BBG `FUND_BENCHMARK_PRIM` is a benchmark, not reliable) |
+| nameDesignatedIndex, indexIdentifier | **BBG** (automated) | broad-based index = `FUND_BENCHMARK_PRIM` → resolved name (`_DESIGNATED_INDEX` in filing_master). 84/90; FDRX (proprietary FDRI) + 5 no-benchmark stay N/A. Verify vs 497K |
 | amtPay*/delayDeliv/standByCommit/liquidPref/assetsAttr*/assetsInvested/isNonCashCollateral | **CONST/ACCT** | 0/N default for plain ETFs |
 | cur_metrics_json, credit_sprd_risk_*_json (B.3) | **BBG** (approx, automated) | debt funds: per-holding `DUR_ADJ_MID`/`OAS_SPREAD_DUR_MID` × MV, bucketed by maturity (`risk` sheet). Admin risk engine authoritative |
 

@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CBOT ETF
-seriesId=S465113847
+seriesName=Corgi Robots & Humanoids ETF
+seriesId=S000102678
 seriesLei=529900G19OE1Z981UI40
-classId=C000265520
+classId=C000273185
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

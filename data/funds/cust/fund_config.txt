@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CUST ETF
-seriesId=S542895907
+seriesName=Corgi 1-3 Year Treasury Bond ETF
+seriesId=S000104288
 seriesLei=529900B593BSUD7FGR37
-classId=C000265520
+classId=C000274889
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

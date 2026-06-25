@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=DIPR ETF
-seriesId=S662481692
+seriesName=Corgi Space & Satellite Communications ETF
+seriesId=S000102686
 seriesLei=529900JRJQZ1RZEMCK44
-classId=C000265520
+classId=C000273193
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

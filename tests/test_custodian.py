@@ -590,8 +590,10 @@ class TestBuilderSourcing:
         assert e["valUSD"] == "1157777.68"
         assert e["pctVal"] == "3.50"
         assert e["refCusip"] == "464286400"
-        # Still no source for these — stay blank.
-        assert e["notionalAmt"] == "" and e["unrealizedAppr"] == ""
+        # notionalAmt = reference shares×price = the custodian market value (real, not fabricated).
+        assert e["notionalAmt"] == "1157777.68"
+        # MTM unrealized gain has no feed and XSD forbids N/A here → honest blank.
+        assert e["unrealizedAppr"] == ""
 
     def test_swap_counterparty_falls_back_to_name(self):
         # Ticker has no counterparty token; the SecurityName carries "CS" (= Clear Street).
@@ -610,14 +612,14 @@ class TestBuilderSourcing:
         e = build_swap_entry(r)
         assert e["counterpartyName"] == "XYZ" and e["counterpartyLei"] == "N/A"
 
-    def test_option_values_from_custodian_delta_blank(self):
+    def test_option_values_from_custodian_delta_na(self):
         r = _row(security_name="SPY 05/28/2027 151.71 C",
                  stock_ticker="2SPY  270528C00151710",
                  shares="100.00000000", market_value="1078119.50", weightings="2.50%")
         e = build_option_entry(r)
         assert e["valUSD"] == "1078119.50"
         assert e["pctVal"] == "2.50"
-        assert e["delta"] == ""  # FLEX options don't resolve on Bloomberg
+        assert e["delta"] == "N/A"  # no feed (FLEX won't price) — honest, schema-valid
         # Listed/FLEX options clear through the OCC (central counterparty).
         assert e["counterpartyName"] == "The Options Clearing Corporation"
         assert e["counterpartyLei"] == "549300CII6SLYGKNHA04"

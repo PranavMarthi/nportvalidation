@@ -41,7 +41,7 @@ def test_aggregate_create_redeem_by_month():
     assert f["mon2Redemption"] == "300.00"    # May redemption
     assert f["mon2Sales"] == "0.00"
     assert f["mon3Sales"] == "200.00"         # June creation
-    assert f["mon1Reinvestment"] == "0"       # never sourced from an order book
+    assert f["mon1Reinvestment"] == "N/A"     # never sourced from an order book
 
 
 def test_aggregate_excludes_cancelled_and_out_of_period():

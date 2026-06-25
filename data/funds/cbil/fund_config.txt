@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CBIL ETF
-seriesId=S711620893
+seriesName=Corgi 3-12 Month T-Bill ETF
+seriesId=S000104287
 seriesLei=529900N4HGGNS73UTA37
-classId=C000265520
+classId=C000274888
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

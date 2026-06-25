@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=LATR ETF
-seriesId=S088440729
+seriesName=Corgi Buy Now Pay Later ETF
+seriesId=S000102685
 seriesLei=529900N3LGDTCIFEF023
-classId=C000265520
+classId=C000273192
 
 # Signature Block
 signerOrg=Corgi ETF Trust I
