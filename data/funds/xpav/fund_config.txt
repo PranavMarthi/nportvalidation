@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XPAV ETF
-seriesId=S619079478
+seriesName=U.S. Manufacturing 2x Daily ETF
+seriesId=S000102794
 seriesLei=529900M1ILFV1EYRXX59
-classId=C000265520
+classId=C000273304
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

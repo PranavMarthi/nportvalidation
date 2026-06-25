@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=WX ETF
-seriesId=S507471158
+seriesName=Corgi All World 2x Daily ETF
+seriesId=S000102775
 seriesLei=529900YCP03OWVJK6311
-classId=C000265520
+classId=C000273285
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

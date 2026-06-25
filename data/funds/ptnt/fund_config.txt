@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=PTNT ETF
-seriesId=S166589743
+seriesName=Corgi IP Licensing & Royalties ETF
+seriesId=S000102691
 seriesLei=5299007MCXKLD2XG7L85
-classId=C000265520
+classId=C000273198
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

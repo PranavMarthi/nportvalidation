@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XBIX ETF
-seriesId=S909606343
+seriesName=Corgi U.S. Biotech 2x Daily ETF
+seriesId=S000102785
 seriesLei=529900Z8QE93POC74721
-classId=C000265520
+classId=C000273295
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

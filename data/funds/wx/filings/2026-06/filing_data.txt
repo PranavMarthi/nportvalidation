@@ -31,27 +31,27 @@ liquidPref=0
 isNonCashCollateral=N
 
 # Returns (monthly total returns, %)
-rtn1=-0.1
-rtn2=2.19
-rtn3=0.68
-netRealizedGainMon1=0.00
-netUnrealizedApprMon1=-6109.90
-netRealizedGainMon2=-0.00
-netUnrealizedApprMon2=-0.00
-netRealizedGainMon3=-0.00
-netUnrealizedApprMon3=-0.00
+rtn1=N/A
+rtn2=N/A
+rtn3=N/A
+netRealizedGainMon1=N/A
+netUnrealizedApprMon1=N/A
+netRealizedGainMon2=N/A
+netUnrealizedApprMon2=N/A
+netRealizedGainMon3=N/A
+netUnrealizedApprMon3=N/A
 
 # Flows
-mon1Sales=18329.70
-mon1Redemption=18329.70
-mon1Reinvestment=0.00
-mon2Sales=30549.50
-mon2Redemption=24439.60
-mon2Reinvestment=0.00
-mon3Sales=18329.70
-mon3Redemption=18329.70
-mon3Reinvestment=0.00
+mon1Sales=N/A
+mon1Redemption=N/A
+mon1Reinvestment=N/A
+mon2Sales=N/A
+mon2Redemption=N/A
+mon2Reinvestment=N/A
+mon3Sales=N/A
+mon3Redemption=N/A
+mon3Reinvestment=N/A
 
 # Designated Index
-nameDesignatedIndex=N/A
-indexIdentifier=N/A
+nameDesignatedIndex=MSCI ACWI Index
+indexIdentifier=MXWD

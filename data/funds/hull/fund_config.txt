@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=HULL ETF
-seriesId=S028819354
+seriesName=Corgi Shipping & Global Logistics ETF
+seriesId=S000102679
 seriesLei=529900UUTEZR8QB18672
-classId=C000265520
+classId=C000273186
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

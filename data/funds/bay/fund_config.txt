@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=BAY ETF
-seriesId=S762805887
+seriesName=Corgi Bay Area Based ETF
+seriesId=S000102693
 seriesLei=529900W5PL67PXDSXQ71
-classId=C000265520
+classId=C000273200
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

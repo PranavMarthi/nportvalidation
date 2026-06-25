@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=SCMY ETF
-seriesId=S588735874
+seriesName=Corgi U.S. Small-Cap 15% Structured Buffer ETF - May Series
+seriesId=S000103101
 seriesLei=529900933EGLXHFNL575
-classId=C000265520
+classId=C000273633
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

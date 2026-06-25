@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=KYC ETF
-seriesId=S310121808
+seriesName=Corgi Digital Banking & Fintech Infrastructure ETF
+seriesId=S000102688
 seriesLei=529900QRLQ383GUT8829
-classId=C000265520
+classId=C000273195
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

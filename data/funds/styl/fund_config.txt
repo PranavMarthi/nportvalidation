@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=STYL ETF
-seriesId=S107246928
+seriesName=Corgi Lifestyle Brands ETF
+seriesId=S000102672
 seriesLei=529900IS7A2RHJU8BE34
-classId=C000265520
+classId=C000273179
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

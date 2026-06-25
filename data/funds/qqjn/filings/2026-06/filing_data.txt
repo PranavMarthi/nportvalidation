@@ -31,27 +31,27 @@ liquidPref=0
 isNonCashCollateral=N
 
 # Returns (monthly total returns, %)
-rtn1=1.7
-rtn2=-0.68
-rtn3=2.03
-netRealizedGainMon1=0.00
-netUnrealizedApprMon1=0.00
-netRealizedGainMon2=-0.00
-netUnrealizedApprMon2=-0.00
-netRealizedGainMon3=-0.00
-netUnrealizedApprMon3=12492.75
+rtn1=N/A
+rtn2=N/A
+rtn3=N/A
+netRealizedGainMon1=N/A
+netUnrealizedApprMon1=N/A
+netRealizedGainMon2=N/A
+netUnrealizedApprMon2=N/A
+netRealizedGainMon3=N/A
+netUnrealizedApprMon3=N/A
 
 # Flows
-mon1Sales=24985.50
-mon1Redemption=24985.50
-mon1Reinvestment=0.00
-mon2Sales=12492.75
-mon2Redemption=0.00
-mon2Reinvestment=0.00
-mon3Sales=12492.75
-mon3Redemption=37478.25
-mon3Reinvestment=0.00
+mon1Sales=N/A
+mon1Redemption=N/A
+mon1Reinvestment=N/A
+mon2Sales=N/A
+mon2Redemption=N/A
+mon2Reinvestment=N/A
+mon3Sales=N/A
+mon3Redemption=N/A
+mon3Reinvestment=N/A
 
 # Designated Index
-nameDesignatedIndex=N/A
-indexIdentifier=N/A
+nameDesignatedIndex=Nasdaq-100 Index
+indexIdentifier=NDX

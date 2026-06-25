@@ -5,7 +5,12 @@ from pathlib import Path
 
 import pytest
 
-from nport.edgar import EdgarClient, extract_filing_summary
+from nport.edgar import (
+    EdgarClient,
+    extract_filing_summary,
+    normalize_fund_name,
+    parse_series_blocks,
+)
 
 _ROOT = Path(__file__).resolve().parent.parent
 
@@ -119,3 +124,59 @@ class TestExtractFilingSummary:
         summary = extract_filing_summary(xml)
         assert summary["reg_name"] == ""
         assert summary["holdings_count"] == 0
+
+
+_HEADER = """\
+<SEC-HEADER>
+<SERIES-AND-CLASSES-CONTRACTS-DATA>
+<SERIES>
+<OWNER-CIK>0002078265
+<SERIES-ID>S000096625
+<SERIES-NAME>Founder-Led ETF
+<CLASS-CONTRACT>
+<CLASS-CONTRACT-ID>C000265520
+<CLASS-CONTRACT-NAME>Shares
+</CLASS-CONTRACT>
+</SERIES>
+<SERIES>
+<SERIES-ID>S000104291
+<SERIES-NAME>Corgi 0-5 Year High Yield Corporate Bond ETF
+<CLASS-CONTRACT>
+<CLASS-CONTRACT-ID>C000274892
+<CLASS-CONTRACT-NAME>Shares
+</CLASS-CONTRACT>
+</SERIES>
+</SERIES-AND-CLASSES-CONTRACTS-DATA>
+</SEC-HEADER>
+"""
+
+
+class TestParseSeriesBlocks:
+    def test_parses_series_and_classes(self):
+        series = parse_series_blocks(_HEADER)
+        assert len(series) == 2
+        a, b = series
+        assert a.series_id == "S000096625" and a.series_name == "Founder-Led ETF"
+        assert a.classes == [("C000265520", "Shares")]
+        assert b.series_id == "S000104291" and b.classes[0][0] == "C000274892"
+
+    def test_ignores_blocks_without_series_id(self):
+        assert parse_series_blocks("<SERIES>\n<SERIES-NAME>No id\n</SERIES>") == []
+
+
+class TestNormalizeFundName:
+    def test_matches_edgar_to_bloomberg(self):
+        # EDGAR drops the "Corgi" prefix on some series; Bloomberg keeps it.
+        assert normalize_fund_name("Corgi Founder-Led ETF") == normalize_fund_name("Founder-Led ETF")
+        # "U.S." vs "US" collapse to the same key.
+        assert normalize_fund_name("Corgi U.S. War Machine ETF") == \
+            normalize_fund_name("Corgi US War Machine ETF")
+        # Corp vs Corporate Bond + ETF suffix normalize together.
+        assert normalize_fund_name("Corgi 0-5 Year High Yield Corp") == \
+            normalize_fund_name("Corgi 0-5 Year High Yield Corporate Bond ETF")
+
+    def test_keeps_real_differences_distinct(self):
+        assert normalize_fund_name("Corgi US Technology 2x Daily ETF") != \
+            normalize_fund_name("Corgi US Healthcare 2x Daily ETF")
+        assert normalize_fund_name("...Buffer ETF - May Series") != \
+            normalize_fund_name("...Buffer ETF - June Series")

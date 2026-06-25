@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=QQMY ETF
-seriesId=S545772500
+seriesName=Corgi Growth & Technology 15% Structured Buffer ETF - May Series
+seriesId=S000102638
 seriesLei=529900RMCEXNXITF7468
-classId=C000265520
+classId=C000273145
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

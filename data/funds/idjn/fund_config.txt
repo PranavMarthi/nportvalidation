@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=IDJN ETF
-seriesId=S142803464
+seriesName=Corgi International Developed Equities 15% Structured Buffer ETF - June Series
+seriesId=S000103090
 seriesLei=529900LR38HUPEQRJC33
-classId=C000265520
+classId=C000273622
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

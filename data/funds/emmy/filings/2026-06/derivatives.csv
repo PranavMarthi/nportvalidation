@@ -1,5 +1,5 @@
-holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
-EEM-C13.08-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,137182.77,Call,Purchased,N/A,13.08,USD,2027-04-30,0.6200,indexBasket,MSCI Emerging Markets Index,MXEF
-EEM-C81.1-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,7705.51,Call,Written,N/A,81.1,USD,2027-04-30,0.7000,indexBasket,MSCI Emerging Markets Index,MXEF
-EEM-P55.59-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,-6647.09,Put,Written,N/A,55.59,USD,2027-04-30,-0.7200,indexBasket,MSCI Emerging Markets Index,MXEF
-EEM-P65.4-20270430,OPT,Options Clearing Corp,T3UUSPI22ZN3MDB3ZK90,7639.88,Put,Purchased,N/A,65.4,USD,2027-04-30,-0.3400,indexBasket,MSCI Emerging Markets Index,MXEF
+holdingId,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+EEM-C13.08-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Purchased,N/A,13.08,USD,2027-04-30,N/A,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM-C81.1-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Written,N/A,81.1,USD,2027-04-30,N/A,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM-P55.59-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Written,N/A,55.59,USD,2027-04-30,N/A,indexBasket,MSCI Emerging Markets Index,MXEF
+EEM-P65.4-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Purchased,N/A,65.4,USD,2027-04-30,N/A,indexBasket,MSCI Emerging Markets Index,MXEF

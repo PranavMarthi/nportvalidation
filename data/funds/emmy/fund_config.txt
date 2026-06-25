@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=EMMY ETF
-seriesId=S109496889
+seriesName=Corgi Emerging Markets Equities 15% Structured Buffer ETF - May Series
+seriesId=S000103094
 seriesLei=529900LORKFRDO5PXJ73
-classId=C000265520
+classId=C000273626
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

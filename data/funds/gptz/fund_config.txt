@@ -20,7 +20,7 @@ regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
 seriesName=GPTZ ETF
-seriesId=S861148312
+seriesId=
 seriesLei=5299008NZHAKYAVRZU52
 classId=C000265520
 

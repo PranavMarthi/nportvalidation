@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XIWC ETF
-seriesId=S222463275
+seriesName=Corgi U.S. Micro-Cap 2x Daily ETF
+seriesId=S000102796
 seriesLei=529900Y7PBZIOU11ZH81
-classId=C000265520
+classId=C000273306
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

@@ -63,19 +63,61 @@ _CONST = {
     "submissionType": "NPORT-P", "liveTestFlag": "TEST", "isFinalFiling": "N",
     "isNonCashCollateral": "N", "nameDesignatedIndex": "N/A", "indexIdentifier": "N/A",
 }
-# Fields defaulted to "0": balance-sheet items (constant 0 for plain ETFs) + the
-# fund-accounting/transfer-agent gains & flows (no feed — operator overrides in the sheet).
+
+# Designated (broad-based) index per fund. Source: Bloomberg FUND_BENCHMARK_PRIM per ticker
+# (gathered via the MCP), resolved to the index name (LONG_COMP_NAME). N-PORT wants the
+# broad-based comparison index, so proprietary/strategy benchmarks (FDRX→FDRI) and funds where
+# Bloomberg returns no benchmark (CTMA, DOCK, MGKX, XEUR, XLIX) are omitted → stay N/A for
+# prospectus fill. Verify against the 497K returns table before going LIVE.
+_INDEX_NAME = {
+    "SPX": "S&P 500 Index", "SPXT": "S&P 500 Total Return Index",
+    "NDX": "Nasdaq-100 Index", "RTY": "Russell 2000 Index",
+    "MXWD": "MSCI ACWI Index", "MXEF": "MSCI Emerging Markets Index", "MXEA": "MSCI EAFE Index",
+    "CFIIBL3P": "FTSE US Treasury Bill 3-12 Months Index",
+    "SBMMTB3": "FTSE 3-Month US Treasury Bill Index",
+    "CFIIH52C": "FTSE US High-Yield Market 0-5 Years 2% Capped Index",
+    "CFIIBD37": "FTSE US Treasury 3-7 Years Index",
+    "SBUSC15U": "FTSE US Broad Investment-Grade Corporate Bond 1-5 Years Index",
+    "SBUST13U": "FTSE US Treasury 1-3 Years Index",
+}
+_BENCHMARK_FUNDS = {
+    "SPX": ("AV BAY BLCK BREW BZZ CBOT CJUN CMAG CQTM CTJN DIPR EUV EUVX EYES GASZ GLAM GNMX "
+            "HJUN HMAY HULL JOUL JUNC KYC LATR NYNY ODDZ OWN PTNT STYL USX VBX VOOX WATS WNDR "
+            "WR XA XAGI XBIX XCOM XHOA XIWC XKRE XLBX XLEX XLFX XLKX XLPX XLUX XLVX XLYX XPAV "
+            "XSEM XVO XVUG YUNG"),
+    "SPXT": "FDRS GPTZ CMAY MAYC",
+    "NDX": "QJN QMY QQJN QQMY",
+    "RTY": "SCJN SCMY",
+    "MXWD": "BRZX CCPX EMXX KRWX TAJX WEBX WX XW XTAI",
+    "MXEF": "EMJN EMMY",
+    "MXEA": "IDJN IDMY",
+    "CFIIBL3P": "CBIL", "SBMMTB3": "CGOV", "CFIIH52C": "CHYG",
+    "CFIIBD37": "CIEI", "SBUSC15U": "CIVG", "SBUST13U": "CUST",
+}
+# ticker -> (index name, index identifier)
+_DESIGNATED_INDEX = {
+    t: (_INDEX_NAME[bench], bench)
+    for bench, funds in _BENCHMARK_FUNDS.items()
+    for t in funds.split()
+}
+# Balance-sheet items: a genuine 0 for plain ETFs (no borrowings/payables) — not fabricated.
 _ZERO_FIELDS = [
     "assetsAttrMiscSec", "assetsInvested",
     "amtPayOneYrBanksBorr", "amtPayOneYrCtrldComp", "amtPayOneYrOthAffil", "amtPayOneYrOther",
     "amtPayAftOneYrBanksBorr", "amtPayAftOneYrCtrldComp", "amtPayAftOneYrOthAffil", "amtPayAftOneYrOther",
     "delayDeliv", "standByCommit", "liquidPref",
+]
+# No data feed exists → honest schema-valid "N/A" (these XSD types are decimal-or-N/A).
+# Realized/unrealized gains come from fund accounting; reinvestment from the transfer agent.
+_NA_FIELDS = [
     "netRealizedGainMon1", "netUnrealizedApprMon1", "netRealizedGainMon2",
     "netUnrealizedApprMon2", "netRealizedGainMon3", "netUnrealizedApprMon3",
-    "mon1Sales", "mon1Redemption", "mon1Reinvestment",
-    "mon2Sales", "mon2Redemption", "mon2Reinvestment",
-    "mon3Sales", "mon3Redemption", "mon3Reinvestment",
+    "mon1Reinvestment", "mon2Reinvestment", "mon3Reinvestment",
 ]
+# Sales/Redemption come from the AP order book. With an order file, absence = a real 0;
+# without one, the value is genuinely unknown → "N/A".
+_FLOW_SR_FIELDS = ["mon1Sales", "mon1Redemption", "mon2Sales", "mon2Redemption",
+                   "mon3Sales", "mon3Redemption"]
 
 
 def _fnum(x) -> float:
@@ -287,6 +329,11 @@ def build_filing_master(
         rec["bbgid"] = f"{acct} US Equity"
         for c in _ZERO_FIELDS:
             rec[c] = "0"
+        for c in _NA_FIELDS:
+            rec[c] = "N/A"
+        sr_default = "0" if ap_orders_path else "N/A"
+        for c in _FLOW_SR_FIELDS:
+            rec[c] = sr_default
         rec.update(_CONST)
         rec["repPdEnd"] = end_date
         rec["repPdDate"] = end_date
@@ -294,6 +341,10 @@ def build_filing_master(
         rec["netAssets"] = f"{net:.2f}"
         rec["totLiabs"] = f"{liabs:.2f}"
         rec["totAssets"] = f"{net + liabs:.2f}"
+        # Designated broad-based index (Bloomberg); funds without one stay the _CONST N/A.
+        idx = _DESIGNATED_INDEX.get(acct)
+        if idx:
+            rec["nameDesignatedIndex"], rec["indexIdentifier"] = idx
         # Capital flows from the AP order book (Sales/Redemption; reinvestment stays 0).
         for k, v in flows.get(acct, {}).items():
             rec[k] = v

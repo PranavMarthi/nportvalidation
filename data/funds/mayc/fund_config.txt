@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=MAYC ETF
-seriesId=S549423687
+seriesName=Corgi U.S. Equities 10% Structured Buffer ETF - May Series
+seriesId=S000102634
 seriesLei=529900AM5MG3ZZIM2K97
-classId=C000265520
+classId=C000273141
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

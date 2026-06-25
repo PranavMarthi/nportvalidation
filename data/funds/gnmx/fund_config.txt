@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=GNMX ETF
-seriesId=S697906525
+seriesName=Corgi Genomics & Precision Medicine ETF
+seriesId=S000102698
 seriesLei=529900U01V74E3830311
-classId=C000265520
+classId=C000273205
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

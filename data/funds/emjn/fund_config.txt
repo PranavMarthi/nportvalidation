@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=EMJN ETF
-seriesId=S169771600
+seriesName=Corgi Emerging Markets Equities 15% Structured Buffer ETF - June Series
+seriesId=S000103095
 seriesLei=529900LIA2UL2VJVL159
-classId=C000265520
+classId=C000273627
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

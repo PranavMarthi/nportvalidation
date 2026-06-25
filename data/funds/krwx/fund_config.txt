@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=KRWX ETF
-seriesId=S372814379
+seriesName=Corgi South Korea 2x Daily ETF
+seriesId=S000102782
 seriesLei=529900OJSQ4DMJ4PXT78
-classId=C000265520
+classId=C000273292
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

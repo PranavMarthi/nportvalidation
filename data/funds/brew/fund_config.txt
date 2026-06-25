@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=BREW ETF
-seriesId=S324184364
+seriesName=Corgi Coffee & Energy Drinks ETF
+seriesId=S000102695
 seriesLei=52990050ULTQ71841068
-classId=C000265520
+classId=C000273202
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

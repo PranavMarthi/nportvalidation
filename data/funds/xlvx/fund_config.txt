@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XLVX ETF
-seriesId=S555886310
+seriesName=Corgi U.S. Healthcare 2x Daily ETF
+seriesId=S000102792
 seriesLei=5299008OY1LKUBM23M40
-classId=C000265520
+classId=C000273302
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

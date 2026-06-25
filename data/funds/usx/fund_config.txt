@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=USX ETF
-seriesId=S130077462
+seriesName=Corgi Total U.S. Market 2x Daily ETF
+seriesId=S000102784
 seriesLei=529900Q2HC5REX0SYU25
-classId=C000265520
+classId=C000273294
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

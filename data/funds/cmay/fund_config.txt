@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=CMAY ETF
-seriesId=S859400730
+seriesName=Corgi U.S. Equities 15% Structured Buffer ETF - May Series
+seriesId=S000102627
 seriesLei=529900D7CSG5CAQNGT51
-classId=C000265520
+classId=C000273134
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

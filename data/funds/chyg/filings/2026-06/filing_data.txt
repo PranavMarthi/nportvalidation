@@ -31,27 +31,27 @@ liquidPref=0
 isNonCashCollateral=N
 
 # Returns (monthly total returns, %)
-rtn1=-0.52
-rtn2=-0.08
-rtn3=1.1
-netRealizedGainMon1=0.00
-netUnrealizedApprMon1=0.00
-netRealizedGainMon2=-0.00
-netUnrealizedApprMon2=55079.86
-netRealizedGainMon3=-0.00
-netUnrealizedApprMon3=-55079.86
+rtn1=N/A
+rtn2=N/A
+rtn3=N/A
+netRealizedGainMon1=N/A
+netUnrealizedApprMon1=N/A
+netRealizedGainMon2=N/A
+netUnrealizedApprMon2=N/A
+netRealizedGainMon3=N/A
+netUnrealizedApprMon3=N/A
 
 # Flows
-mon1Sales=110159.72
-mon1Redemption=55079.86
-mon1Reinvestment=0.00
-mon2Sales=0.00
-mon2Redemption=110159.72
-mon2Reinvestment=0.00
-mon3Sales=165239.58
-mon3Redemption=110159.72
-mon3Reinvestment=0.00
+mon1Sales=N/A
+mon1Redemption=N/A
+mon1Reinvestment=N/A
+mon2Sales=N/A
+mon2Redemption=N/A
+mon2Reinvestment=N/A
+mon3Sales=N/A
+mon3Redemption=N/A
+mon3Reinvestment=N/A
 
 # Designated Index
-nameDesignatedIndex=N/A
-indexIdentifier=N/A
+nameDesignatedIndex=FTSE US High-Yield Market 0-5 Years 2% Capped Index
+indexIdentifier=CFIIH52C

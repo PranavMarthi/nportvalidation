@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=XAGI ETF
-seriesId=S208740753
+seriesName=Corgi AGIX 2x Daily ETF
+seriesId=S000102842
 seriesLei=5299000N6IRUZIT5RM36
-classId=C000265520
+classId=C000273352
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

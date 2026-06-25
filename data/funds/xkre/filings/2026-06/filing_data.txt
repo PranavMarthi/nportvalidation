@@ -31,27 +31,27 @@ liquidPref=0
 isNonCashCollateral=N
 
 # Returns (monthly total returns, %)
-rtn1=1.17
-rtn2=1.98
-rtn3=1.95
-netRealizedGainMon1=6716.30
-netUnrealizedApprMon1=6716.30
-netRealizedGainMon2=-0.00
-netUnrealizedApprMon2=6716.30
-netRealizedGainMon3=0.00
-netUnrealizedApprMon3=0.00
+rtn1=N/A
+rtn2=N/A
+rtn3=N/A
+netRealizedGainMon1=N/A
+netUnrealizedApprMon1=N/A
+netRealizedGainMon2=N/A
+netUnrealizedApprMon2=N/A
+netRealizedGainMon3=N/A
+netUnrealizedApprMon3=N/A
 
 # Flows
-mon1Sales=13432.60
-mon1Redemption=6716.30
-mon1Reinvestment=0.00
-mon2Sales=6716.30
-mon2Redemption=13432.60
-mon2Reinvestment=0.00
-mon3Sales=26865.20
-mon3Redemption=0.00
-mon3Reinvestment=0.00
+mon1Sales=N/A
+mon1Redemption=N/A
+mon1Reinvestment=N/A
+mon2Sales=N/A
+mon2Redemption=N/A
+mon2Reinvestment=N/A
+mon3Sales=N/A
+mon3Redemption=N/A
+mon3Reinvestment=N/A
 
 # Designated Index
-nameDesignatedIndex=N/A
-indexIdentifier=N/A
+nameDesignatedIndex=S&P 500 Index
+indexIdentifier=SPX

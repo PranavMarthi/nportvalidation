@@ -87,7 +87,9 @@ def test_build_read_roundtrip(tmp_path):
     assert a["totAssets"] == "2005000.00"        # net + liabs
     assert a["rtn1"] == "N/A" and a["rtn3"] == "N/A"   # uncalculated off-terminal
     assert a["submissionType"] == "NPORT-P" and a["repPdEnd"] == "2026-06-30"
-    assert a["mon1Sales"] == "0" and a["isNonCashCollateral"] == "N"
+    # no AP order file → flows unknown = N/A; gains have no feed = N/A
+    assert a["mon1Sales"] == "N/A" and a["isNonCashCollateral"] == "N"
+    assert a["netRealizedGainMon1"] == "N/A" and a["mon1Reinvestment"] == "N/A"
 
 
 def test_split_produces_parseable_filing(tmp_path):
@@ -104,7 +106,7 @@ def test_split_produces_parseable_filing(tmp_path):
     assert fd.rep_pd_end == "2026-06-30"
     assert fd.rtn1 == "N/A"
     assert fd.net_assets == "1000000.00"
-    assert fd.mon1_sales == "0"
+    assert fd.mon1_sales == "N/A"            # no AP order file → unknown
 
 
 # ── Capital flows (AP order book) ─────────────────────────────
@@ -125,7 +127,7 @@ def test_build_applies_ap_order_flows(tmp_path):
     assert rec["mon1Sales"] == "1000.00"        # April create
     assert rec["mon3Redemption"] == "250.00"    # June redeem
     assert rec["mon3Sales"] == "0.00"           # cancelled order excluded
-    assert rec["mon1Reinvestment"] == "0"       # never sourced
+    assert rec["mon1Reinvestment"] == "N/A"     # never sourced from an order book
 
 
 # ── B.3 risk metrics ──────────────────────────────────────────

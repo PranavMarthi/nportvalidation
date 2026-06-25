@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=FDRX ETF
-seriesId=S676357935
+seriesName=Founder-Led 2x Daily ETF
+seriesId=S000096626
 seriesLei=5299009IIPGGROZ8QW15
-classId=C000265520
+classId=C000265521
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

@@ -19,10 +19,10 @@ regZipOrPostalCode=94104
 regPhone=855-552-6744
 
 # Series / Class (per-fund synthetic test IDs)
-seriesName=WEBX ETF
-seriesId=S098439135
+seriesName=Corgi Chinese Internet 2x Daily ETF
+seriesId=S000102808
 seriesLei=5299008CZS8G5Q1TRR58
-classId=C000265520
+classId=C000273318
 
 # Signature Block
 signerOrg=Corgi ETF Trust I

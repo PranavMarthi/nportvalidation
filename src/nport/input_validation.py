@@ -142,7 +142,8 @@ def validate_filing(filing: FilingData) -> tuple[list[str], list[str]]:
     for rtn in ["rtn1", "rtn2", "rtn3"]:
         _check_numeric(errors, getattr(filing, rtn), rtn, allow_na=True)
     for field in _MONTHLY_NUMERIC_FIELDS:
-        _check_numeric(errors, getattr(filing, field), field)
+        # All monthly gain/flow fields are decimal-or-N/A in the XSD; N/A = no feed.
+        _check_numeric(errors, getattr(filing, field), field, allow_na=True)
 
     # Cross-field checks (only if individual fields parsed OK)
     try:
