@@ -65,6 +65,52 @@ def parse_series_blocks(header_text: str) -> list[SeriesInfo]:
     return out
 
 
+# Column positions in the trust's series/class spreadsheet export (0-indexed; the
+# file has a blank header row, so columns are fixed by position, not by name):
+#   5=seriesId (S#########)  6=seriesName  7=classId (C#########)  8=className
+_XLSX_SID, _XLSX_SNAME, _XLSX_CID, _XLSX_CNAME = 5, 6, 7, 8
+
+
+def load_trust_series_from_xlsx(path, sheet: str | None = None) -> dict[str, "SeriesInfo"]:
+    """Load ``{normalized_series_name: SeriesInfo}`` from a series/class spreadsheet.
+
+    A static, EDGAR-authoritative alternative to :meth:`EdgarClient.harvest_trust_series`
+    — same shape, no network. Each row is one (series, class); rows sharing a seriesId
+    merge into one SeriesInfo. The first occurrence of a normalized name wins, matching
+    the live-harvest behaviour.
+    """
+    import openpyxl
+
+    wb = openpyxl.load_workbook(path, data_only=True, read_only=True)
+    ws = wb[sheet] if sheet else wb[wb.sheetnames[0]]
+
+    by_sid: dict[str, SeriesInfo] = {}
+    order: list[str] = []
+    for r in ws.iter_rows(values_only=True):
+        if not r or len(r) <= _XLSX_CNAME:
+            continue
+        sid = r[_XLSX_SID]
+        if not (isinstance(sid, str) and sid.strip().startswith("S000")):
+            continue
+        sid = sid.strip()
+        sname = (str(r[_XLSX_SNAME]).strip() if r[_XLSX_SNAME] else "")
+        cid = (str(r[_XLSX_CID]).strip() if r[_XLSX_CID] else "")
+        cname = (str(r[_XLSX_CNAME]).strip() if r[_XLSX_CNAME] else "")
+        if sid not in by_sid:
+            by_sid[sid] = SeriesInfo(sid, sname, [])
+            order.append(sid)
+        if cid:
+            by_sid[sid].classes.append((cid, cname))
+
+    out: dict[str, SeriesInfo] = {}
+    for sid in order:
+        s = by_sid[sid]
+        key = normalize_fund_name(s.series_name)
+        if key and key not in out:
+            out[key] = s
+    return out
+
+
 def normalize_fund_name(name: str) -> str:
     """Canonical key for matching an EDGAR series name to a Bloomberg fund name.
 

@@ -37,7 +37,11 @@ _IDS = [f"{p.name}-{per}" for p, per in _PAIRS]
 # Fields with no data feed that we honestly leave unset rather than fabricate; the SEC
 # schema forbids "N/A" on these, so the affected funds carry expected (not bug) errors
 # until real data arrives: seriesId (EDGAR), derivative unrealizedAppr (fund accounting).
-_KNOWN_GAPS = ("seriesId", "unrealizedAppr")
+# Fields with no data feed (swap confirm / fund accounting / EDGAR) that we honestly
+# leave blank rather than fabricate; the SEC schema forbids "N/A" on these, so affected
+# funds carry expected (not bug) errors until real data arrives.
+_KNOWN_GAPS = ("seriesId", "unrealizedAppr", "pmntFloatingRtSpread",
+               "floatingPmntDesc", "floatingRtSpread")
 
 
 def _unexpected(errors):

@@ -1,18 +1,18 @@
-# CTMA 2026-06 — SYNTHETIC TEST filing data (deterministic). liveTestFlag=TEST.
-# netAssets/totAssets/totLiabs are GROUNDED from the custodian; returns/gains/flows
-# are synthetic but format-valid and internally consistent.
+# CTMA 2026-06 filing data
+# rtn1-3 from Bloomberg; net/total assets from custodian; gains/flows from fund accounting.
 
+# Submission
 submissionType=NPORT-P
 liveTestFlag=TEST
 repPdEnd=2026-06-30
 repPdDate=2026-06-30
 isFinalFiling=N
-dateSigned=2026-07-30
+dateSigned=2026-07-31
 
-# Fund Financials (totAssets/totLiabs/netAssets reconcile: totAssets - totLiabs = netAssets)
-totAssets=4922085.12
-totLiabs=208100.12
-netAssets=4713985.00
+# Fund Financials
+totAssets=4866016.69
+totLiabs=177691.19
+netAssets=4688325.50
 
 # Balance Sheet Items
 assetsAttrMiscSec=0
@@ -30,9 +30,9 @@ standByCommit=0
 liquidPref=0
 isNonCashCollateral=N
 
-# Returns (monthly total returns, %)
+# Returns (rtn1-3 from Bloomberg; gains from fund accounting)
 rtn1=N/A
-rtn2=N/A
+rtn2=1.27
 rtn3=N/A
 netRealizedGainMon1=N/A
 netUnrealizedApprMon1=N/A
@@ -41,17 +41,22 @@ netUnrealizedApprMon2=N/A
 netRealizedGainMon3=N/A
 netUnrealizedApprMon3=N/A
 
-# Flows
-mon1Sales=N/A
-mon1Redemption=N/A
+# Flows (from transfer agent / fund accounting)
+mon1Sales=0.00
+mon1Redemption=0.00
 mon1Reinvestment=N/A
-mon2Sales=N/A
-mon2Redemption=N/A
+mon2Sales=5156498.50
+mon2Redemption=0.00
 mon2Reinvestment=N/A
-mon3Sales=N/A
-mon3Redemption=N/A
+mon3Sales=127986.50
+mon3Redemption=639952.50
 mon3Reinvestment=N/A
 
 # Designated Index
 nameDesignatedIndex=N/A
 indexIdentifier=N/A
+
+# B.3 Risk Metrics (Bloomberg durations × custodian market value)
+curMetricsJson=[{"curCd": "USD", "dv01_3month": "0.00", "dv100_3month": "0.00", "dv01_1year": "69.64", "dv100_1year": "6964.35", "dv01_5year": "0.00", "dv100_5year": "0.00", "dv01_10year": "0.00", "dv100_10year": "0.00", "dv01_30year": "0.00", "dv100_30year": "0.00"}]
+creditSprdRiskIgJson={"3month": "0.00", "1year": "69.49", "5year": "0.00", "10year": "0.00", "30year": "0.00"}
+creditSprdRiskNonigJson={"3month": "0.00", "1year": "0.00", "5year": "0.00", "10year": "0.00", "30year": "0.00"}

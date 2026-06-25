@@ -238,15 +238,46 @@ def _split_positionals(pos: list[str] | None) -> tuple[str | None, str | None]:
     return account, period
 
 
-def _latest_period() -> str | None:
-    """Find the newest data/custodian/<period>_holdings.csv period."""
-    if not _DEFAULT_CUSTODIAN_DIR.is_dir():
+_CUSTODIAN_HEADER_KEYS = {"Date", "Account", "CUSIP", "SecurityName"}
+
+
+def _custodian_period(path: Path) -> str | None:
+    """The reporting period (YYYY-MM) read from a custodian CSV's first Date value.
+
+    Returns None if the file isn't a custodian export. Lets any filename work — the
+    period comes from the data, not the name.
+    """
+    try:
+        with open(path, newline="", encoding="utf-8-sig") as f:
+            reader = csv.reader(f)
+            header = next(reader, [])
+            if not _CUSTODIAN_HEADER_KEYS <= set(header):
+                return None
+            di = header.index("Date")
+            row = next(reader, None)
+            if not row or di >= len(row):
+                return None
+            mo, _da, yr = row[di].split("/")
+            return f"{int(yr):04d}-{int(mo):02d}"
+    except (OSError, ValueError, StopIteration):
         return None
-    periods = []
-    for p in _DEFAULT_CUSTODIAN_DIR.glob("*_holdings.csv"):
-        m = re.match(r"(\d{4}-\d{2})_holdings\.csv$", p.name)
-        if m:
-            periods.append(m.group(1))
+
+
+def _discover_custodians() -> list[tuple[Path, str]]:
+    """Every custodian-format CSV in data/custodian/ paired with its detected period."""
+    if not _DEFAULT_CUSTODIAN_DIR.is_dir():
+        return []
+    out = []
+    for p in sorted(_DEFAULT_CUSTODIAN_DIR.glob("*.csv")):
+        per = _custodian_period(p)
+        if per:
+            out.append((p, per))
+    return out
+
+
+def _latest_period() -> str | None:
+    """The newest period among the custodian CSVs (by their Date column, any filename)."""
+    periods = [per for _, per in _discover_custodians()]
     return max(periods) if periods else None
 
 
@@ -265,10 +296,19 @@ def _resolve_period(period: str | None) -> str:
 
 
 def _resolve_custodian(custodian: str | None, period: str) -> Path:
-    """Return the custodian CSV path, defaulting to data/custodian/<period>_holdings.csv."""
-    path = Path(custodian) if custodian else _DEFAULT_CUSTODIAN_DIR / f"{period}_holdings.csv"
+    """The custodian CSV for a period: an explicit path, the <period>_holdings.csv
+    convention, or — failing that — any custodian-format CSV in data/custodian/ whose
+    Date column matches the period (so the file's name doesn't matter)."""
+    if custodian:
+        path = Path(custodian)
+    else:
+        path = _DEFAULT_CUSTODIAN_DIR / f"{period}_holdings.csv"
+        if not path.is_file():
+            matches = [p for p, per in _discover_custodians() if per == period]
+            if matches:
+                path = max(matches, key=lambda p: p.stat().st_mtime)
     if not path.is_file():
-        print(f"ERROR: Custodian CSV not found: {path}", file=sys.stderr)
+        print(f"ERROR: Custodian CSV not found for {period} in {_DEFAULT_CUSTODIAN_DIR}/", file=sys.stderr)
         sys.exit(1)
     return path
 
@@ -746,15 +786,28 @@ _FILING_MASTER_PATH = Path("data/master/filing_master.xlsx")
 
 
 def _resolve_ap_orders(explicit: str | None, period: str) -> Path | None:
-    """The AP order book CSV: explicit path, else data/orders/<period>_orders.csv if present."""
+    """The AP order book CSV: explicit path, else any AP-order-format CSV in data/orders/
+    (detected by header — the filename doesn't matter). None if there isn't one."""
     if explicit:
         p = Path(explicit)
         if not p.is_file():
             print(f"ERROR: AP order book CSV not found: {p}", file=sys.stderr)
             sys.exit(1)
         return p
-    auto = Path("data/orders") / f"{period}_orders.csv"
-    return auto if auto.is_file() else None
+    orders_dir = Path("data/orders")
+    auto = orders_dir / f"{period}_orders.csv"
+    if auto.is_file():
+        return auto
+    if orders_dir.is_dir():
+        for p in sorted(orders_dir.glob("*.csv")):
+            try:
+                with open(p, newline="", encoding="utf-8-sig") as f:
+                    header = set(next(csv.reader(f), []))
+                if {"Ticker", "Side", "Trade Date", "Notional"} <= header:
+                    return p
+            except (OSError, StopIteration):
+                continue
+    return None
 
 
 def _masters(args) -> None:

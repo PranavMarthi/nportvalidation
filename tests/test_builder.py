@@ -67,3 +67,11 @@ def test_signature_namespace(sample_data):
     assert ds.text == "2026-02-24"
     assert sig.find(f"{{{NS_NPORTCOMMON}}}nameOfApplicant").text == "Corgi ETF Trust I"
     assert sig.find(f"{{{NS_NPORTCOMMON}}}signature").text == "/s/ Emily Yuan"
+
+
+def test_cusip_to_isin_check_digit():
+    from nport.builder import cusip_to_isin
+    # Known ISINs (ISO 6166 check digit)
+    assert cusip_to_isin("037833100") == "US0378331005"   # Apple
+    assert cusip_to_isin("594918104") == "US5949181045"   # Microsoft
+    assert cusip_to_isin("912797UL9") == "US912797UL95"   # T-bill

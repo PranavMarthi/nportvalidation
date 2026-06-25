@@ -286,16 +286,21 @@ def test_seed_then_split_reproduces_per_fund(tmp_path):
         # Split now emits the full uniform master header, so the original
         # (tailored) per-fund columns are a subset of the new header.
         assert set(oh) <= set(nh), fund
-        common = [c for c in oh if c in nh and c not in _BBG_FORMULA_COLUMNS]
+        # Derivative economics are now regenerated deterministically from the custodian
+        # (counterparty=OCC for options, swap legs, notional), so — like the Bloomberg
+        # columns — they don't round-trip a manual value; excluded from the equality.
+        regen = {"counterpartyName", "counterpartyLei", "refIndexName", "refIndexIdentifier"}
+        common = [c for c in oh if c in nh and c not in _BBG_FORMULA_COLUMNS and c not in regen]
         o_by = {r["ticker"]: r for r in orows}
         n_by = {r["ticker"]: r for r in nrows}
         for t in o_by:
             assert {c: o_by[t][c] for c in common} == {c: n_by[t][c] for c in common}, (fund, t)
 
-    # The manual (non-Bloomberg) delta + counterparty survived the round-trip.
+    # The truly-manual delta survives the round-trip; the option counterparty is
+    # regenerated to the OCC (options clear centrally — deterministic, not manual).
     _, buf_rows = _read_csv(out / "buf" / "security_master.csv")
     assert buf_rows[0]["delta"] == "0.72"
-    assert buf_rows[0]["counterpartyName"] == "Goldman Sachs International"
+    assert buf_rows[0]["counterpartyName"] == "The Options Clearing Corporation"
     # Equity Bloomberg fields are unresolved off-terminal: lei/invCountry read
     # back as the schema-valid default (N/A / US), isin (no default) stays empty.
     _, fdrs_rows = _read_csv(out / "fdrs" / "security_master.csv")

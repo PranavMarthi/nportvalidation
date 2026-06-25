@@ -1,18 +1,18 @@
-# CUST 2026-06 — SYNTHETIC TEST filing data (deterministic). liveTestFlag=TEST.
-# netAssets/totAssets/totLiabs are GROUNDED from the custodian; returns/gains/flows
-# are synthetic but format-valid and internally consistent.
+# CUST 2026-06 filing data
+# rtn1-3 from Bloomberg; net/total assets from custodian; gains/flows from fund accounting.
 
+# Submission
 submissionType=NPORT-P
 liveTestFlag=TEST
 repPdEnd=2026-06-30
 repPdDate=2026-06-30
 isFinalFiling=N
-dateSigned=2026-07-30
+dateSigned=2026-07-31
 
-# Fund Financials (totAssets/totLiabs/netAssets reconcile: totAssets - totLiabs = netAssets)
-totAssets=7496910.00
+# Fund Financials
+totAssets=7509930.00
 totLiabs=0.00
-netAssets=7496910.00
+netAssets=7509930.00
 
 # Balance Sheet Items
 assetsAttrMiscSec=0
@@ -30,7 +30,7 @@ standByCommit=0
 liquidPref=0
 isNonCashCollateral=N
 
-# Returns (monthly total returns, %)
+# Returns (rtn1-3 from Bloomberg; gains from fund accounting)
 rtn1=N/A
 rtn2=N/A
 rtn3=N/A
@@ -41,17 +41,22 @@ netUnrealizedApprMon2=N/A
 netRealizedGainMon3=N/A
 netUnrealizedApprMon3=N/A
 
-# Flows
-mon1Sales=N/A
-mon1Redemption=N/A
+# Flows (from transfer agent / fund accounting)
+mon1Sales=0.00
+mon1Redemption=0.00
 mon1Reinvestment=N/A
-mon2Sales=N/A
-mon2Redemption=N/A
+mon2Sales=0.00
+mon2Redemption=0.00
 mon2Reinvestment=N/A
-mon3Sales=N/A
-mon3Redemption=N/A
+mon3Sales=7508946.00
+mon3Redemption=0.00
 mon3Reinvestment=N/A
 
 # Designated Index
 nameDesignatedIndex=FTSE US Treasury 1-3 Years Index
 indexIdentifier=SBUST13U
+
+# B.3 Risk Metrics (Bloomberg durations × custodian market value)
+curMetricsJson=[{"curCd": "USD", "dv01_3month": "0.00", "dv100_3month": "0.00", "dv01_1year": "762.81", "dv100_1year": "76280.73", "dv01_5year": "555.17", "dv100_5year": "55516.63", "dv01_10year": "0.00", "dv100_10year": "0.00", "dv01_30year": "0.00", "dv100_30year": "0.00"}]
+creditSprdRiskIgJson={"3month": "0.00", "1year": "763.10", "5year": "555.60", "10year": "0.00", "30year": "0.00"}
+creditSprdRiskNonigJson={"3month": "0.00", "1year": "0.00", "5year": "0.00", "10year": "0.00", "30year": "0.00"}

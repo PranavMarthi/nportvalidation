@@ -1,0 +1,3 @@
+holdingId,name,lei,title,cusip,isin,ticker,balance,units,curCd,valUSD,pctVal,payoffProfile,assetCat,issuerCat,invCountry,isRestrictedSec,fairValLevel,isCashCollateral,isNonCashCollateral,isLoanByFund,issuerConditionalDesc,otherDesc,otherValue
+49338L103-TRS-12/01/27-L-CANT,N/A,N/A,"KEYSIGHT TECHNOLOGIES, INC.-SWAP-CANT-L",N/A,,49338L103-TRS-12/01/27-L-CANT,1,NC,USD,495684.30,199.66,N/A,DE,OTHER,US,N,2,N,N,N,N/A,USER DEFINED,49338L103-TRS-12/01/27-L-CANT
+FGXXX,First American Government Obli,549300R5MYM6VZF1RM44,First American Government Obligations Fund,31846V336,US31846V3362,FGXXX,26280.00000000,NS,USD,26280.00,10.59,Long,STIV,RF,US,N,1,N,N,N,,,
