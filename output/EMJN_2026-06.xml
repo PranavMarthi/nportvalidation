@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000103095</seriesId>
+        <classId>C000273627</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi Emerging Markets Equities 15% Structured Buffer ETF - June Series</seriesName>
+      <seriesId>S000103095</seriesId>
+      <seriesLei>529900LIA2UL2VJVL159</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>1599841.05</totAssets>
+      <totLiabs>146989.05</totLiabs>
+      <netAssets>1452852.00</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>315.64</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <curMetrics>
+        <curMetric>
+          <curCd>USD</curCd>
+          <intrstRtRiskdv01 period3Mon="0.00" period1Yr="22.52" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+          <intrstRtRiskdv100 period3Mon="0.00" period1Yr="2252.07" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+        </curMetric>
+      </curMetrics>
+      <creditSprdRiskInvstGrade period3Mon="0.00" period1Yr="22.50" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <creditSprdRiskNonInvstGrade period3Mon="0.00" period1Yr="0.00" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273627" rtn1="N/A" rtn2="N/A" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon3 netRealizedGain="-126.36" netUnrealizedAppr="-26368.97"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon3Flow redemption="0.00" reinvestment="N/A" sales="1478270.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>MSCI Emerging Markets Index</nameDesignatedIndex>
+          <indexIdentifier>MXEF</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>EEM 05/28/2027 14.02 C</name>
+        <lei>N/A</lei>
+        <title>EEM 05/28/2027 14.02 C</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="EEM-C14.02-20270528"/>
+          <other otherDesc="USER DEFINED" value="EEM-C14.02-20270528"/>
+        </identifiers>
+        <balance>217.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>1149802.88</valUSD>
+        <pctVal>79.14</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Call</putOrCall>
+            <writtenOrPur>Purchased</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>MSCI Emerging Markets Index</indexName>
+                <indexIdentifier>MXEF</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>14.02</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>-48450.10</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>EEM 05/28/2027 87.03 C</name>
+        <lei>N/A</lei>
+        <title>EEM 05/28/2027 87.03 C</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="EEM-C87.03-20270528"/>
+          <other otherDesc="USER DEFINED" value="EEM-C87.03-20270528"/>
+        </identifiers>
+        <balance>217.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>-55348.37</valUSD>
+        <pctVal>-3.81</pctVal>
+        <payoffProfile>Short</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Call</putOrCall>
+            <writtenOrPur>Written</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>MSCI Emerging Markets Index</indexName>
+                <indexIdentifier>MXEF</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>87.03</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>9820.30</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>EEM 05/28/2027 59.57 P</name>
+        <lei>N/A</lei>
+        <title>EEM 05/28/2027 59.57 P</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="EEM-P59.57-20270528"/>
+          <other otherDesc="USER DEFINED" value="EEM-P59.57-20270528"/>
+        </identifiers>
+        <balance>217.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>-91640.68</valUSD>
+        <pctVal>-6.31</pctVal>
+        <payoffProfile>Short</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Put</putOrCall>
+            <writtenOrPur>Written</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>MSCI Emerging Markets Index</indexName>
+                <indexIdentifier>MXEF</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>59.57</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>370.57</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>EEM 05/28/2027 70.08 P</name>
+        <lei>N/A</lei>
+        <title>EEM 05/28/2027 70.08 P</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="EEM-P70.08-20270528"/>
+          <other otherDesc="USER DEFINED" value="EEM-P70.08-20270528"/>
+        </identifiers>
+        <balance>217.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>185222.19</valUSD>
+        <pctVal>12.75</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Put</putOrCall>
+            <writtenOrPur>Purchased</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>MSCI Emerging Markets Index</indexName>
+                <indexIdentifier>MXEF</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>70.08</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>12191.21</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Note/Bo</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Note/Bond 0.5% 05/31/2027</title>
+        <cusip>912828ZS2</cusip>
+        <identifiers>
+          <isin value="US912828ZS21"/>
+        </identifiers>
+        <balance>256000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>247695.09</valUSD>
+        <pctVal>17.05</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-05-31</maturityDt>
+          <couponKind>Fixed</couponKind>
+          <annualizedRt>0.5</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>17103.15000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>17103.15</valUSD>
+        <pctVal>1.18</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

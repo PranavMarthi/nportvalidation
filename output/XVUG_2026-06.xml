@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000102791</seriesId>
+        <classId>C000273301</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi U.S. Growth 2x Daily ETF</seriesName>
+      <seriesId>S000102791</seriesId>
+      <seriesLei>529900S1PJOVSE9ONQ52</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>865419.84</totAssets>
+      <totLiabs>543521.34</totLiabs>
+      <netAssets>321898.50</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>9812.56</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273301" rtn1="N/A" rtn2="N/A" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon3 netRealizedGain="-6729.54" netUnrealizedAppr="-49966.42"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon3Flow redemption="215947.00" reinvestment="N/A" sales="592565.50"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>S&amp;P 500 Index</nameDesignatedIndex>
+          <indexIdentifier>SPX</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>VANGUARD GROWTH INDEX FUND ETF SHARES-SWAP-CLST-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="922908736-TRS-07/07/27-L-CLST"/>
+          <other otherDesc="USER DEFINED" value="922908736-TRS-07/07/27-L-CLST"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>642556.95</valUSD>
+        <pctVal>199.61</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Clear Street LLC</counterpartyName>
+              <counterpartyLei>549300KNQS43Y7TO3X67</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>VANGUARD GROWTH INDEX FUND ETF SHARES</issuerName>
+                <issueTitle>VANGUARD GROWTH INDEX FUND ETF SHARES</issueTitle>
+                <identifiers>
+                  <cusip value="922908736"/>
+                  <isin value="US9229087369"/>
+                  <ticker value="VUG"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of VANGUARD GROWTH INDEX FUND ETF SHARES</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="642556.95">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-07-07</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>642556.95</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-47004.84</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>222908.07000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>222908.07</valUSD>
+        <pctVal>69.25</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

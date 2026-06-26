@@ -1,0 +1,713 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000102687</seriesId>
+        <classId>C000273194</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi Mag 7 ETF</seriesName>
+      <seriesId>S000102687</seriesId>
+      <seriesLei>529900VPDO1DOBUNEZ81</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>11879494.56</totAssets>
+      <totLiabs>3195524.06</totLiabs>
+      <netAssets>8683970.50</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>9319.20</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273194" rtn1="N/A" rtn2="3.11" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="9654.55" netUnrealizedAppr="70831.31"/>
+        <othMon3 netRealizedGain="-3631.23" netUnrealizedAppr="-512507.24"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="2294757.00"/>
+      <mon3Flow redemption="0.00" reinvestment="N/A" sales="6815911.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>S&amp;P 500 Index</nameDesignatedIndex>
+          <indexIdentifier>SPX</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>ALPHABET INC.-SWAP-CANT-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="02079K305-TRS-05/31/27-L-CANT"/>
+          <other otherDesc="USER DEFINED" value="02079K305-TRS-05/31/27-L-CANT"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>838709.41</valUSD>
+        <pctVal>9.66</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Cantor Fitzgerald &amp; Co.</counterpartyName>
+              <counterpartyLei>5493004J7H4GCPG6OB62</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>ALPHABET INC.</issuerName>
+                <issueTitle>ALPHABET INC.</issueTitle>
+                <identifiers>
+                  <cusip value="02079K305"/>
+                  <isin value="US02079K3059"/>
+                  <ticker value="GOOGL"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of ALPHABET INC.</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="838709.41">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-05-31</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>838709.41</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-54651.54</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>AMAZON.COM, INC.-SWAP-CANT-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="023135106-TRS-05/31/27-L-CANT"/>
+          <other otherDesc="USER DEFINED" value="023135106-TRS-05/31/27-L-CANT"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>476505.18</valUSD>
+        <pctVal>5.49</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Cantor Fitzgerald &amp; Co.</counterpartyName>
+              <counterpartyLei>5493004J7H4GCPG6OB62</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>AMAZON.COM, INC.</issuerName>
+                <issueTitle>AMAZON.COM, INC.</issueTitle>
+                <identifiers>
+                  <cusip value="023135106"/>
+                  <isin value="US0231351067"/>
+                  <ticker value="AMZN"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of AMAZON.COM, INC.</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="476505.18">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-05-31</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>476505.18</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-33192.09</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>APPLE INC.-SWAP-CANT-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="037833100-TRS-05/31/27-L-CANT"/>
+          <other otherDesc="USER DEFINED" value="037833100-TRS-05/31/27-L-CANT"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>874550.72</valUSD>
+        <pctVal>10.07</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Cantor Fitzgerald &amp; Co.</counterpartyName>
+              <counterpartyLei>5493004J7H4GCPG6OB62</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>APPLE INC.</issuerName>
+                <issueTitle>APPLE INC.</issueTitle>
+                <identifiers>
+                  <cusip value="037833100"/>
+                  <isin value="US0378331005"/>
+                  <ticker value="AAPL"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of APPLE INC.</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="874550.72">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-05-31</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>874550.72</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-2681.45</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>META PLATFORMS, INC.-SWAP-CANT-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="30303M102-TRS-05/31/27-L-CANT"/>
+          <other otherDesc="USER DEFINED" value="30303M102-TRS-05/31/27-L-CANT"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>275488.98</valUSD>
+        <pctVal>3.17</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Cantor Fitzgerald &amp; Co.</counterpartyName>
+              <counterpartyLei>5493004J7H4GCPG6OB62</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>META PLATFORMS, INC.</issuerName>
+                <issueTitle>META PLATFORMS, INC.</issueTitle>
+                <identifiers>
+                  <cusip value="30303M102"/>
+                  <isin value="US30303M1027"/>
+                  <ticker value="META"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of META PLATFORMS, INC.</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="275488.98">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-05-31</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>275488.98</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-12970.95</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>MICROSOFT CORPORATION-SWAP-CANT-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="594918104-TRS-05/31/27-L-CANT"/>
+          <other otherDesc="USER DEFINED" value="594918104-TRS-05/31/27-L-CANT"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>560981.10</valUSD>
+        <pctVal>6.46</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Cantor Fitzgerald &amp; Co.</counterpartyName>
+              <counterpartyLei>5493004J7H4GCPG6OB62</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>MICROSOFT CORPORATION</issuerName>
+                <issueTitle>MICROSOFT CORPORATION</issueTitle>
+                <identifiers>
+                  <cusip value="594918104"/>
+                  <isin value="US5949181045"/>
+                  <ticker value="MSFT"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of MICROSOFT CORPORATION</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="560981.10">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-05-31</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>560981.10</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-66723.03</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>NVIDIA CORPORATION-SWAP-CANT-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="67066G104-TRS-05/31/27-L-CANT"/>
+          <other otherDesc="USER DEFINED" value="67066G104-TRS-05/31/27-L-CANT"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>954006.00</valUSD>
+        <pctVal>10.99</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Cantor Fitzgerald &amp; Co.</counterpartyName>
+              <counterpartyLei>5493004J7H4GCPG6OB62</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>NVIDIA CORPORATION</issuerName>
+                <issueTitle>NVIDIA CORPORATION</issueTitle>
+                <identifiers>
+                  <cusip value="67066G104"/>
+                  <isin value="US67066G1040"/>
+                  <ticker value="NVDA"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of NVIDIA CORPORATION</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="954006.00">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-05-31</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>954006.00</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-32803.25</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>N/A</name>
+        <lei>N/A</lei>
+        <title>TESLA, INC.-SWAP-CANT-L</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="88160R101-TRS-05/31/27-L-CANT"/>
+          <other otherDesc="USER DEFINED" value="88160R101-TRS-05/31/27-L-CANT"/>
+        </identifiers>
+        <balance>1</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>259491.23</valUSD>
+        <pctVal>2.99</pctVal>
+        <payoffProfile>N/A</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerConditional desc="N/A" issuerCat="OTHER"/>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <swapDeriv derivCat="SWP">
+            <counterparties>
+              <counterpartyName>Cantor Fitzgerald &amp; Co.</counterpartyName>
+              <counterpartyLei>5493004J7H4GCPG6OB62</counterpartyLei>
+            </counterparties>
+            <descRefInstrmnt>
+              <otherRefInst>
+                <issuerName>TESLA, INC.</issuerName>
+                <issueTitle>TESLA, INC.</issueTitle>
+                <identifiers>
+                  <cusip value="88160R101"/>
+                  <isin value="US88160R1014"/>
+                  <ticker value="TSLA"/>
+                </identifiers>
+              </otherRefInst>
+            </descRefInstrmnt>
+            <swapFlag>Y</swapFlag>
+            <otherRecDesc fixedOrFloating="Other">Total return of TESLA, INC.</otherRecDesc>
+            <floatingPmntDesc fixedOrFloating="Floating" floatingRtIndex="USD-SOFR" floatingRtSpread="0" curCd="USD" pmntAmt="259491.23">
+              <rtResetTenors>
+                <rtResetTenor rateTenor="Month" rateTenorUnit="3" resetDt="Month" resetDtUnit="3"/>
+              </rtResetTenors>
+            </floatingPmntDesc>
+            <terminationDt>2027-05-31</terminationDt>
+            <upfrontPmnt>0</upfrontPmnt>
+            <pmntCurCd>USD</pmntCurCd>
+            <upfrontRcpt>0</upfrontRcpt>
+            <rcptCurCd>USD</rcptCurCd>
+            <notionalAmt>259491.23</notionalAmt>
+            <curCd>USD</curCd>
+            <unrealizedAppr>-12189.34</unrealizedAppr>
+          </swapDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Apple Inc</name>
+        <lei>HWUPKR0MPOU8FGXBT394</lei>
+        <title>Apple Inc</title>
+        <cusip>037833100</cusip>
+        <identifiers>
+          <isin value="US0378331005"/>
+          <ticker value="AAPL"/>
+        </identifiers>
+        <balance>2993.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>877188.44</valUSD>
+        <pctVal>10.10</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Amazon.com Inc</name>
+        <lei>ZXTILKJKG63JELOEG630</lei>
+        <title>Amazon.com Inc</title>
+        <cusip>023135106</cusip>
+        <identifiers>
+          <isin value="US0231351067"/>
+          <ticker value="AMZN"/>
+        </identifiers>
+        <balance>2044.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>478847.88</valUSD>
+        <pctVal>5.51</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>3382033.33000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>3382033.33</valUSD>
+        <pctVal>38.95</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Alphabet Inc</name>
+        <lei>5493006MHB84DD0ZWV18</lei>
+        <title>Alphabet Inc</title>
+        <cusip>02079K305</cusip>
+        <identifiers>
+          <isin value="US02079K3059"/>
+          <ticker value="GOOGL"/>
+        </identifiers>
+        <balance>2420.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>835601.80</valUSD>
+        <pctVal>9.62</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Meta Platforms Inc</name>
+        <lei>BQ4BKCS1HXDV9HN80Z93</lei>
+        <title>Meta Platforms Inc</title>
+        <cusip>30303M102</cusip>
+        <identifiers>
+          <isin value="US30303M1027"/>
+          <ticker value="META"/>
+        </identifiers>
+        <balance>511.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>284969.37</valUSD>
+        <pctVal>3.28</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Microsoft Corp</name>
+        <lei>INR2EJN1ERAN0W5ZP974</lei>
+        <title>Microsoft Corp</title>
+        <cusip>594918104</cusip>
+        <identifiers>
+          <isin value="US5949181045"/>
+          <ticker value="MSFT"/>
+        </identifiers>
+        <balance>1533.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>560250.18</valUSD>
+        <pctVal>6.45</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>NVIDIA Corp</name>
+        <lei>549300S4KLFTLO7GSQ80</lei>
+        <title>NVIDIA Corp</title>
+        <cusip>67066G104</cusip>
+        <identifiers>
+          <isin value="US67066G1040"/>
+          <ticker value="NVDA"/>
+        </identifiers>
+        <balance>4756.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>946444.00</valUSD>
+        <pctVal>10.90</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Tesla Inc</name>
+        <lei>54930043XZGB27CTOV49</lei>
+        <title>Tesla Inc</title>
+        <cusip>88160R101</cusip>
+        <identifiers>
+          <isin value="US88160R1014"/>
+          <ticker value="TSLA"/>
+        </identifiers>
+        <balance>730.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>274136.90</valUSD>
+        <pctVal>3.16</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

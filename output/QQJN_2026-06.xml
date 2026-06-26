@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000102628</seriesId>
+        <classId>C000273135</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi Growth &amp; Technology 15% Structured Buffer ETF - June Series</seriesName>
+      <seriesId>S000102628</seriesId>
+      <seriesLei>MZEBU0MV9UVGXYQ6D568</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>1320451.68</totAssets>
+      <totLiabs>93811.68</totLiabs>
+      <netAssets>1226640.00</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>276.89</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <curMetrics>
+        <curMetric>
+          <curCd>USD</curCd>
+          <intrstRtRiskdv01 period3Mon="0.00" period1Yr="16.71" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+          <intrstRtRiskdv100 period3Mon="0.00" period1Yr="1671.46" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+        </curMetric>
+      </curMetrics>
+      <creditSprdRiskInvstGrade period3Mon="0.00" period1Yr="16.70" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <creditSprdRiskNonInvstGrade period3Mon="0.00" period1Yr="0.00" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273135" rtn1="N/A" rtn2="N/A" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon3 netRealizedGain="-140.40" netUnrealizedAppr="-18633.12"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon3Flow redemption="0.00" reinvestment="N/A" sales="1244876.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>Nasdaq-100 Index</nameDesignatedIndex>
+          <indexIdentifier>NDX</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>QQQ 05/28/2027 148.55 C</name>
+        <lei>N/A</lei>
+        <title>QQQ 05/28/2027 148.55 C</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="QQQ-C148.55-20270528"/>
+          <other otherDesc="USER DEFINED" value="QQQ-C148.55-20270528"/>
+        </identifiers>
+        <balance>16.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>912163.99</valUSD>
+        <pctVal>74.36</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Call</putOrCall>
+            <writtenOrPur>Purchased</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>NASDAQ 100 Index</indexName>
+                <indexIdentifier>NDX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>148.55</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>-34186.38</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>QQQ 05/28/2027 880.22 C</name>
+        <lei>N/A</lei>
+        <title>QQQ 05/28/2027 880.22 C</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="QQQ-C880.22-20270528"/>
+          <other otherDesc="USER DEFINED" value="QQQ-C880.22-20270528"/>
+        </identifiers>
+        <balance>16.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>-37995.29</valUSD>
+        <pctVal>-3.10</pctVal>
+        <payoffProfile>Short</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Call</putOrCall>
+            <writtenOrPur>Written</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>NASDAQ 100 Index</indexName>
+                <indexIdentifier>NDX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>880.22</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>6919.20</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>QQQ 05/28/2027 631.33 P</name>
+        <lei>N/A</lei>
+        <title>QQQ 05/28/2027 631.33 P</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="QQQ-P631.33-20270528"/>
+          <other otherDesc="USER DEFINED" value="QQQ-P631.33-20270528"/>
+        </identifiers>
+        <balance>16.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>-55816.39</valUSD>
+        <pctVal>-4.55</pctVal>
+        <payoffProfile>Short</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Put</putOrCall>
+            <writtenOrPur>Written</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>NASDAQ 100 Index</indexName>
+                <indexIdentifier>NDX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>631.33</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>-11314.97</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>QQQ 05/28/2027 742.74 P</name>
+        <lei>N/A</lei>
+        <title>QQQ 05/28/2027 742.74 P</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="QQQ-P742.74-20270528"/>
+          <other otherDesc="USER DEFINED" value="QQQ-P742.74-20270528"/>
+        </identifiers>
+        <balance>16.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>118067.53</valUSD>
+        <pctVal>9.63</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Put</putOrCall>
+            <writtenOrPur>Purchased</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>NASDAQ 100 Index</indexName>
+                <indexIdentifier>NDX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>742.74</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-05-28</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>20176.16</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Note/Bo</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Note/Bond 0.5% 05/31/2027</title>
+        <cusip>912828ZS2</cusip>
+        <identifiers>
+          <isin value="US912828ZS21"/>
+        </identifiers>
+        <balance>190000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>183836.20</valUSD>
+        <pctVal>14.99</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-05-31</maturityDt>
+          <couponKind>Fixed</couponKind>
+          <annualizedRt>0.5</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>106219.79000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>106219.79</valUSD>
+        <pctVal>8.66</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

@@ -1,5 +1,5 @@
-holdingId,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
-EFA-C20.89-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Purchased,N/A,20.89,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA
-EFA-C120.89-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Written,N/A,120.89,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA
-EFA-P88.77-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Written,N/A,88.77,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA
-EFA-P104.44-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Purchased,N/A,104.44,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+EFA-C20.89-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,-23952.46,Call,Purchased,N/A,20.89,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA
+EFA-C120.89-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,15944.49,Call,Written,N/A,120.89,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA
+EFA-P88.77-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,6946.58,Put,Written,N/A,88.77,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA
+EFA-P104.44-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,4705.90,Put,Purchased,N/A,104.44,USD,2027-05-28,N/A,indexBasket,MSCI EAFE Index,MXEA

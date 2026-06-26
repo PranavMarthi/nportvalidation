@@ -1,5 +1,5 @@
-holdingId,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
-SPY-C143.73-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Purchased,N/A,143.73,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX
-SPY-C815.68-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Written,N/A,815.68,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX
-SPY-P646.79-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Written,N/A,646.79,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX
-SPY-P718.66-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Purchased,N/A,718.66,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+SPY-C143.73-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,116673.43,Call,Purchased,N/A,143.73,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX
+SPY-C815.68-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,-26205.06,Call,Written,N/A,815.68,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX
+SPY-P646.79-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,19848.89,Put,Written,N/A,646.79,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX
+SPY-P718.66-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,1774.13,Put,Purchased,N/A,718.66,USD,2027-04-30,N/A,indexBasket,S&P 500 Index,SPX

@@ -1,0 +1,735 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000102680</seriesId>
+        <classId>C000273187</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi Sports Betting &amp; Gambling ETF</seriesName>
+      <seriesId>S000102680</seriesId>
+      <seriesLei>5299006EY74W072B9Y09</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>1169469.00</totAssets>
+      <totLiabs>0.00</totLiabs>
+      <netAssets>1169469.00</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>379.80</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273187" rtn1="N/A" rtn2="0.24" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="2575.75"/>
+        <othMon3 netRealizedGain="61756.86" netUnrealizedAppr="37289.31"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="1889217.00"/>
+      <mon3Flow redemption="822912.00" reinvestment="N/A" sales="0.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>S&amp;P 500 Index</nameDesignatedIndex>
+          <indexIdentifier>SPX</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>Accel Entertainment Inc</name>
+        <lei>N/A</lei>
+        <title>Accel Entertainment Inc</title>
+        <cusip>00436Q106</cusip>
+        <identifiers>
+          <isin value="US00436Q1067"/>
+          <ticker value="ACEL"/>
+        </identifiers>
+        <balance>2412.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>31500.72</valUSD>
+        <pctVal>2.69</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Bally's Corp</name>
+        <lei>549300NS4D5IK406VT62</lei>
+        <title>Bally's Corp</title>
+        <cusip>05875B304</cusip>
+        <identifiers>
+          <isin value="US05875B3042"/>
+          <ticker value="BALY"/>
+        </identifiers>
+        <balance>1377.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>19911.42</valUSD>
+        <pctVal>1.70</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Brightstar Lottery PLC</name>
+        <lei>549300UQ6KHRCZDRGZ76</lei>
+        <title>Brightstar Lottery PLC</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="GB00BVG7F061"/>
+          <ticker value="BRSL"/>
+        </identifiers>
+        <balance>3006.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>32524.92</valUSD>
+        <pctVal>2.78</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>GB</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Boyd Gaming Corp</name>
+        <lei>254900787YGRYS2A1Z35</lei>
+        <title>Boyd Gaming Corp</title>
+        <cusip>103304101</cusip>
+        <identifiers>
+          <isin value="US1033041013"/>
+          <ticker value="BYD"/>
+        </identifiers>
+        <balance>675.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>58657.50</valUSD>
+        <pctVal>5.02</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Codere Online Luxembourg SA</name>
+        <lei>222100ZJU57ZQLLYNO89</lei>
+        <title>Codere Online Luxembourg SA</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="LU2405144788"/>
+          <ticker value="CDRO"/>
+        </identifiers>
+        <balance>1872.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>17933.76</valUSD>
+        <pctVal>1.53</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>LU</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Churchill Downs Inc</name>
+        <lei>529900FODTBQC8MIS994</lei>
+        <title>Churchill Downs Inc</title>
+        <cusip>171484108</cusip>
+        <identifiers>
+          <isin value="US1714841087"/>
+          <ticker value="CHDN"/>
+        </identifiers>
+        <balance>558.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>47212.38</valUSD>
+        <pctVal>4.04</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Caesars Entertainment Inc</name>
+        <lei>549300FA4CTCW903Y781</lei>
+        <title>Caesars Entertainment Inc</title>
+        <cusip>12769G100</cusip>
+        <identifiers>
+          <isin value="US12769G1004"/>
+          <ticker value="CZR"/>
+        </identifiers>
+        <balance>2016.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>59673.60</valUSD>
+        <pctVal>5.10</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>DraftKings Inc</name>
+        <lei>2549006G33IUL6IVOD83</lei>
+        <title>DraftKings Inc</title>
+        <cusip>26142V105</cusip>
+        <identifiers>
+          <isin value="US26142V1052"/>
+          <ticker value="DKNG"/>
+        </identifiers>
+        <balance>2448.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>60049.44</valUSD>
+        <pctVal>5.13</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>32399.94000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>32399.94</valUSD>
+        <pctVal>2.77</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Full House Resorts Inc</name>
+        <lei>5493009DKIWW0H901Y82</lei>
+        <title>Full House Resorts Inc</title>
+        <cusip>359678109</cusip>
+        <identifiers>
+          <isin value="US3596781092"/>
+          <ticker value="FLL"/>
+        </identifiers>
+        <balance>5742.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>15618.24</valUSD>
+        <pctVal>1.34</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Flutter Entertainment PLC</name>
+        <lei>635400EG4YIJLJMZJ782</lei>
+        <title>Flutter Entertainment PLC</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="IE00BWT6H894"/>
+          <ticker value="FLUT"/>
+        </identifiers>
+        <balance>1008.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>99298.08</valUSD>
+        <pctVal>8.49</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Gambling.com Group Ltd</name>
+        <lei>254900PUNXQ3N26IMU63</lei>
+        <title>Gambling.com Group Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="JE00BL970N11"/>
+          <ticker value="GAMB"/>
+        </identifiers>
+        <balance>3807.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>8337.33</valUSD>
+        <pctVal>0.71</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>JE</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Genius Sports Ltd</name>
+        <lei>N/A</lei>
+        <title>Genius Sports Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="GG00BMF1JR16"/>
+          <ticker value="GENI"/>
+        </identifiers>
+        <balance>8010.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>45336.60</valUSD>
+        <pctVal>3.88</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>GB</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Inspired Entertainment Inc</name>
+        <lei>549300ZUGYK6NBIU6D69</lei>
+        <title>Inspired Entertainment Inc</title>
+        <cusip>45782N108</cusip>
+        <identifiers>
+          <isin value="US45782N1081"/>
+          <ticker value="INSE"/>
+        </identifiers>
+        <balance>2637.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>21227.85</valUSD>
+        <pctVal>1.82</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Las Vegas Sands Corp</name>
+        <lei>549300DUOO1KXOHPM605</lei>
+        <title>Las Vegas Sands Corp</title>
+        <cusip>517834107</cusip>
+        <identifiers>
+          <isin value="US5178341070"/>
+          <ticker value="LVS"/>
+        </identifiers>
+        <balance>2214.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>105740.64</valUSD>
+        <pctVal>9.04</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Monarch Casino &amp; Resort Inc</name>
+        <lei>549300AK5FF7KY11V997</lei>
+        <title>Monarch Casino &amp; Resort Inc</title>
+        <cusip>609027107</cusip>
+        <identifiers>
+          <isin value="US6090271072"/>
+          <ticker value="MCRI"/>
+        </identifiers>
+        <balance>333.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>43326.63</valUSD>
+        <pctVal>3.70</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>MGM Resorts International</name>
+        <lei>54930066VBP7DZEGGJ87</lei>
+        <title>MGM Resorts International</title>
+        <cusip>552953101</cusip>
+        <identifiers>
+          <isin value="US5529531015"/>
+          <ticker value="MGM"/>
+        </identifiers>
+        <balance>1440.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>67809.60</valUSD>
+        <pctVal>5.80</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Melco Resorts &amp; Entertainment </name>
+        <lei>529900NRV6LBR3T6B421</lei>
+        <title>Melco Resorts &amp; Entertainment Ltd</title>
+        <cusip>585464100</cusip>
+        <identifiers>
+          <isin value="US5854641009"/>
+          <ticker value="MLCO"/>
+        </identifiers>
+        <balance>8982.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>49131.54</valUSD>
+        <pctVal>4.20</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>HK</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Penn Entertainment Inc</name>
+        <lei>N/A</lei>
+        <title>Penn Entertainment Inc</title>
+        <cusip>707569109</cusip>
+        <identifiers>
+          <isin value="US7075691094"/>
+          <ticker value="PENN"/>
+        </identifiers>
+        <balance>2745.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>55943.10</valUSD>
+        <pctVal>4.78</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Paysafe Ltd</name>
+        <lei>2138003K6PVDCI5TBN11</lei>
+        <title>Paysafe Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="BMG6964L2062"/>
+          <ticker value="PSFE"/>
+        </identifiers>
+        <balance>2160.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>14580.00</valUSD>
+        <pctVal>1.25</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>GB</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Red Rock Resorts Inc</name>
+        <lei>N/A</lei>
+        <title>Red Rock Resorts Inc</title>
+        <cusip>75700L108</cusip>
+        <identifiers>
+          <isin value="US75700L1089"/>
+          <ticker value="RRR"/>
+        </identifiers>
+        <balance>1008.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>63000.00</valUSD>
+        <pctVal>5.39</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Rush Street Interactive Inc</name>
+        <lei>N/A</lei>
+        <title>Rush Street Interactive Inc</title>
+        <cusip>782011100</cusip>
+        <identifiers>
+          <isin value="US7820111000"/>
+          <ticker value="RSI"/>
+        </identifiers>
+        <balance>2052.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>61211.16</valUSD>
+        <pctVal>5.23</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Super Group SGHC Ltd</name>
+        <lei>N/A</lei>
+        <title>Super Group SGHC Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="GG00BMG42V42"/>
+          <ticker value="SGHC"/>
+        </identifiers>
+        <balance>3717.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>49510.44</valUSD>
+        <pctVal>4.23</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>GG</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Sportradar Group AG</name>
+        <lei>549300H1P33YOAT7Z533</lei>
+        <title>Sportradar Group AG</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="CH1134239669"/>
+          <ticker value="SRAD"/>
+        </identifiers>
+        <balance>3600.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>53208.00</valUSD>
+        <pctVal>4.55</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>CH</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Wynn Resorts Ltd</name>
+        <lei>254900CEKKWIHTEAB172</lei>
+        <title>Wynn Resorts Ltd</title>
+        <cusip>983134107</cusip>
+        <identifiers>
+          <isin value="US9831341071"/>
+          <ticker value="WYNN"/>
+        </identifiers>
+        <balance>540.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>56025.00</valUSD>
+        <pctVal>4.79</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>
