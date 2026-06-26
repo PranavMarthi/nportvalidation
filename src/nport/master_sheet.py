@@ -550,6 +550,7 @@ def _assemble_master_rows(
     ref: dict | None = None,
     formulas: bool = True,
     overwrite_formulas: bool = False,
+    deriv_values: dict[tuple[str, str], dict[str, str]] | None = None,
 ) -> tuple[list[dict[str, str]], int]:
     """Build master rows strictly 1:1 with the custodian (same order, all rows).
 
@@ -574,12 +575,20 @@ def _assemble_master_rows(
             existing = manual_by_key.get((account, key)) if key else None
             if ht in (HoldingType.OPTION, HoldingType.SWAP):
                 # Derivative economics (counterparty/LEI/notional/legs) are deterministic
-                # from the custodian — always rebuild so code fixes propagate; carry over
-                # only the truly-manual fields the operator enters (delta, unrealizedAppr).
+                # from the custodian — always rebuild so code fixes propagate.
                 entry = _build_entry(ht, row, ref)
-                for mf in ("delta", "unrealizedAppr"):
-                    if existing and (existing.get(mf) or "").strip():
-                        entry[mf] = existing[mf]
+                # delta has no data feed (FLEX options don't price) — preserve the
+                # operator's manual entry across runs.
+                if existing and (existing.get("delta") or "").strip():
+                    entry["delta"] = existing["delta"]
+                # unrealizedAppr: EagleSTAR fund accounting is authoritative and refreshes
+                # each run (keyed by the custodian StockTicker = PVal Primary Asset ID);
+                # fall back to the operator's entry only when EagleSTAR has no value.
+                dv = (deriv_values or {}).get((account, (row.stock_ticker or "").strip()))
+                if dv and (dv.get("unrealizedAppr") or "").strip():
+                    entry["unrealizedAppr"] = dv["unrealizedAppr"]
+                elif existing and (existing.get("unrealizedAppr") or "").strip():
+                    entry["unrealizedAppr"] = existing["unrealizedAppr"]
             else:
                 entry = existing if existing is not None else _build_entry(ht, row, ref)
             if entry:
@@ -609,6 +618,7 @@ def refresh_master(
     accounts: list[str] | None = None,
     formulas: bool = True,
     overwrite_formulas: bool = False,
+    deriv_values: dict[tuple[str, str], dict[str, str]] | None = None,
 ) -> dict[str, int]:
     """Rebuild the master workbook 1:1 from the current custodian.
 
@@ -638,7 +648,7 @@ def refresh_master(
     )
 
     result, n_formulas = _assemble_master_rows(
-        custodian_rows, manual_by_key, ref, formulas, overwrite_formulas
+        custodian_rows, manual_by_key, ref, formulas, overwrite_formulas, deriv_values
     )
 
     # Stats over the targeted accounts: which custodian keys are new vs already

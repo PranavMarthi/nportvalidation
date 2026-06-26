@@ -1,6 +1,7 @@
 """Shared test fixtures."""
 
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 
@@ -143,6 +144,15 @@ def _option_holding(**overrides):
     )
     defaults.update(overrides)
     return Holding(**defaults)
+
+
+@pytest.fixture
+def factories():
+    """Holding/config/filing builders for multi-type tests (keyword overrides)."""
+    return SimpleNamespace(
+        config=_test_config, filing=_test_filing, equity=_equity_holding,
+        bond=_bond_holding, option=_option_holding, swap=_swap_holding,
+    )
 
 
 def _swap_holding(**overrides):

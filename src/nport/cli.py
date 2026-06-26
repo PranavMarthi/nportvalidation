@@ -8,6 +8,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+from nport import eaglestar
 from nport.builder import NportBuilder
 from nport.config import _HOLDINGS_KEY_MAP, parse_config, parse_filing, parse_holdings
 from nport.custodian import (
@@ -64,6 +65,8 @@ def main(argv: list[str] | None = None) -> None:
     ms.add_argument("--period", default=None, help="Filing period (default: latest custodian file)")
     ms.add_argument("--custodian", default=None, help="Custodian CSV (default: data/custodian/<period>_holdings.csv)")
     ms.add_argument("--ap-orders", default=None, help="AP order book CSV (default: data/orders/<period>_orders.csv)")
+    ms.add_argument("--fund-accounting", default=None, help="EagleSTAR export .zip/.mbox (default: newest in data/fund_accounting/)")
+    ms.add_argument("--no-fund-accounting", action="store_true", help="Skip EagleSTAR fund-accounting pre-fill")
     ms.add_argument("--dry-run", action="store_true", help="Show what would be built")
 
     sp = sub.add_parser("split", help="STEP 2: write every per-fund file from BOTH workbooks")
@@ -810,6 +813,127 @@ def _resolve_ap_orders(explicit: str | None, period: str) -> Path | None:
     return None
 
 
+_FUND_ACCOUNTING_DIR = Path("data/fund_accounting")
+_MASTER_DIR = Path("data/master")
+
+
+def _fnum(x) -> float:
+    try:
+        return float(str(x).replace(",", "").strip())
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _write_provenance_and_reconciliation(period, custodian_rows, ap_orders, eag) -> None:
+    """Emit the traceability artifacts: a provenance manifest (every EagleSTAR-sourced
+    cell -> source + as-of) and a reconciliation report (the cross-checks that must tie
+    out before LIVE). Mirrors the source-of-truth matrix: each field has one writer; a
+    second source only validates here, it never writes the filing."""
+    from nport.ap_orders import flows_from_csv
+    from nport.master_sheet import HoldingType, classify_holding
+
+    _MASTER_DIR.mkdir(parents=True, exist_ok=True)
+    pval_as_of = eag.as_of.get("pval", "")
+    tb_as_of = (eag.as_of.get("realized_unreal_monthends") or [""])[-1]
+
+    # ── Provenance manifest ──
+    prov = _MASTER_DIR / f"provenance_{period}.csv"
+    with open(prov, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["fund", "field", "source", "as_of", "value"])
+        for (ticker, asset_id), fields in sorted(eag.derivatives.items()):
+            for k, v in fields.items():
+                w.writerow([ticker, f"{k}[{asset_id}]", "EagleSTAR PVal", pval_as_of, v])
+        for ticker, fields in sorted(eag.filing.items()):
+            for k, v in fields.items():
+                w.writerow([ticker, k, "EagleSTAR TrialBalance", tb_as_of, v])
+
+    # ── Reconciliation (X-CHECKs; never overwrites a filed cell) ──
+    cust_net = {}
+    cust_deriv = set()
+    for r in custodian_rows:
+        acct = r.account.upper()
+        cust_net.setdefault(acct, _fnum(r.net_assets))
+        if classify_holding(r) in (HoldingType.OPTION, HoldingType.SWAP):
+            cust_deriv.add((acct, (r.stock_ticker or "").strip()))
+
+    ap_flows = flows_from_csv(ap_orders, period) if ap_orders else {}
+    recon = _MASTER_DIR / f"reconciliation_{period}.csv"
+    flags = {"netAssets": 0, "flows": 0, "liabilities": 0, "deriv_unmatched": 0, "entity": 0}
+    with open(recon, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["check", "fund", "source_a", "value_a", "source_b", "value_b", "diff", "flag"])
+
+        # netAssets: custodian (writer) vs NAV (x-check). As-of differs (NAV ~06-24 vs period-end).
+        for acct, cn in sorted(cust_net.items()):
+            nav = eag.nav_net_assets.get(acct)
+            if nav is None:
+                continue
+            diff = cn - nav
+            flag = "REVIEW" if abs(diff) > max(1.0, 0.01 * abs(cn)) else ""
+            if flag:
+                flags["netAssets"] += 1
+            w.writerow(["netAssets", acct, "custodian", f"{cn:.2f}", f"NAV@{pval_as_of}", f"{nav:.2f}", f"{diff:.2f}", flag])
+
+        # flows: AP order book (writer) vs EagleSTAR TB (x-check).
+        for acct in sorted(set(ap_flows) | set(eag.flows)):
+            for mon in ("mon1", "mon2", "mon3"):
+                for side in ("Sales", "Redemption"):
+                    a = _fnum(ap_flows.get(acct, {}).get(f"{mon}{side}"))
+                    b = _fnum(eag.flows.get(acct, {}).get(f"{mon}{side}"))
+                    diff = a - b
+                    flag = "REVIEW" if abs(diff) > max(1.0, 0.05 * max(abs(a), abs(b))) else ""
+                    if flag:
+                        flags["flows"] += 1
+                    w.writerow([f"flow:{mon}{side}", acct, "AP_orders", f"{a:.2f}",
+                                f"TB@{tb_as_of}", f"{b:.2f}", f"{diff:.2f}", flag])
+
+        # liabilities: mapped amtPayOneYrOther vs TB TOTAL LIABILITIES.
+        for ticker, total in sorted(eag.tb_total_liabs.items()):
+            mapped = _fnum(eag.filing.get(ticker, {}).get("amtPayOneYrOther"))
+            diff = mapped - total
+            flag = "REVIEW" if abs(diff) > max(1.0, 0.01 * abs(total)) else ""
+            if flag:
+                flags["liabilities"] += 1
+            w.writerow(["liabilities", ticker, "mapped_amtPay", f"{mapped:.2f}",
+                        f"TB_total@{tb_as_of}", f"{total:.2f}", f"{diff:.2f}", flag])
+
+        # derivative coverage: every custodian deriv has a PVal value, and vice versa.
+        for acct, aid in sorted(cust_deriv - set(eag.derivatives)):
+            flags["deriv_unmatched"] += 1
+            w.writerow(["deriv_no_pval", acct, "custodian", aid, "EagleSTAR_PVal", "MISSING", "", "REVIEW"])
+        for acct, aid in sorted(set(eag.derivatives) - cust_deriv):
+            flags["deriv_unmatched"] += 1
+            w.writerow(["pval_no_custodian", acct, "EagleSTAR_PVal", aid, "custodian", "MISSING", "", "REVIEW"])
+
+        # entity->ticker: every custodian fund resolves through NAV.
+        resolved = set(eag.entity_ticker.values())
+        for acct in sorted(cust_net):
+            if acct not in resolved:
+                flags["entity"] += 1
+                w.writerow(["entity_unresolved", acct, "custodian", acct, "NAV_NASDAQ", "MISSING", "", "REVIEW"])
+
+    print(f"      provenance -> {prov.name}; reconciliation -> {recon.name}")
+    summary = ", ".join(f"{k}={v}" for k, v in flags.items() if v)
+    if summary:
+        print(f"      ! reconciliation flags: {summary} (see {recon.name}; netAssets/flows gaps "
+              f"include the {pval_as_of} vs period-end as-of difference)")
+    else:
+        print("      reconciliation clean.")
+
+
+def _resolve_fund_accounting(explicit: str | None) -> Path | None:
+    """The EagleSTAR export (.zip/.mbox): explicit path, else newest in
+    data/fund_accounting/. None if there isn't one."""
+    if explicit:
+        p = Path(explicit)
+        if not p.is_file():
+            print(f"ERROR: fund-accounting export not found: {p}", file=sys.stderr)
+            sys.exit(1)
+        return p
+    return eaglestar.resolve_export(_FUND_ACCOUNTING_DIR)
+
+
 def _masters(args) -> None:
     """STEP 1: build BOTH master workbooks (security + filing) from the custodian."""
     _, pos_period = _split_positionals(getattr(args, "pos", None))
@@ -819,18 +943,30 @@ def _masters(args) -> None:
         print(f"ERROR: Custodian CSV not found: {custodian}", file=sys.stderr)
         sys.exit(1)
     ap_orders = _resolve_ap_orders(args.ap_orders, period)
+    export = None if getattr(args, "no_fund_accounting", False) else \
+        _resolve_fund_accounting(getattr(args, "fund_accounting", None))
 
     if args.dry_run:
         flows = f" + {ap_orders}" if ap_orders else " (no AP orders file)"
+        eag = f" + EagleSTAR {export.name}" if export else " (no fund-accounting export)"
         print(f"  DRY RUN masters {period}:")
-        print(f"    [1/2] security master  <- {custodian} -> {_SECURITY_MASTER_PATH}")
-        print(f"    [2/2] filing master    <- {custodian}{flows} -> {_FILING_MASTER_PATH}")
+        print(f"    [1/2] security master  <- {custodian}{eag} -> {_SECURITY_MASTER_PATH}")
+        print(f"    [2/2] filing master    <- {custodian}{flows}{eag} -> {_FILING_MASTER_PATH}")
         return
+
+    eag = None
+    if export:
+        print(f"  Extracting EagleSTAR fund accounting from {export.name} (as-of {period}) ...")
+        eag = eaglestar.load(export, period)
+        as_of = eag.as_of.get("pval")
+        print(f"      {len(eag.derivatives)} derivative unrealizedAppr, {len(eag.filing)} funds' "
+              f"gains/liabilities (PVal/TB as-of {as_of}).")
 
     rows = parse_custodian_csv(custodian)
     try:
         stats = refresh_master(rows, _SECURITY_MASTER_PATH, Path("data/RealXMLs"), None,
-                               formulas=True, overwrite_formulas=False)
+                               formulas=True, overwrite_formulas=False,
+                               deriv_values=eag.derivatives if eag else None)
     except PermissionError:
         print(f"ERROR: can't write {_SECURITY_MASTER_PATH} — close it in Excel and retry.", file=sys.stderr)
         sys.exit(1)
@@ -838,12 +974,18 @@ def _masters(args) -> None:
           f"kept {stats['kept']}, {stats['formulas']} Bloomberg formulas -> {_SECURITY_MASTER_PATH}")
 
     try:
-        n = build_filing_master_from_custodian(custodian, period, _FILING_MASTER_PATH, ap_orders)
+        n = build_filing_master_from_custodian(custodian, period, _FILING_MASTER_PATH, ap_orders,
+                                               fund_acct=eag.filing if eag else None)
     except PermissionError:
         print(f"ERROR: can't write {_FILING_MASTER_PATH} — close it in Excel and retry.", file=sys.stderr)
         sys.exit(1)
     flow_note = f"flows from {ap_orders.name}" if ap_orders else "no AP orders file — flows left 0"
-    print(f"  [2/2] filing master: {n} funds ({flow_note}) -> {_FILING_MASTER_PATH}")
+    eag_note = " + EagleSTAR gains/liabilities" if eag else ""
+    print(f"  [2/2] filing master: {n} funds ({flow_note}{eag_note}) -> {_FILING_MASTER_PATH}")
+
+    if eag:
+        _write_provenance_and_reconciliation(period, rows, ap_orders, eag)
+
     print("\n  Next: open BOTH workbooks on the Bloomberg machine, let them calculate, SAVE"
           " (keep .xlsx), then run `nport split`.")
 
