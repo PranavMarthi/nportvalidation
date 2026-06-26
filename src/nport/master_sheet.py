@@ -571,9 +571,17 @@ def _assemble_master_rows(
         wide = {c: "" for c in MASTER_ENRICHMENT_COLUMNS}
         if ht != HoldingType.CASH:
             key = _sm_lookup_key(ht, row)
-            entry = manual_by_key.get((account, key)) if key else None
-            if entry is None:
+            existing = manual_by_key.get((account, key)) if key else None
+            if ht in (HoldingType.OPTION, HoldingType.SWAP):
+                # Derivative economics (counterparty/LEI/notional/legs) are deterministic
+                # from the custodian — always rebuild so code fixes propagate; carry over
+                # only the truly-manual fields the operator enters (delta, unrealizedAppr).
                 entry = _build_entry(ht, row, ref)
+                for mf in ("delta", "unrealizedAppr"):
+                    if existing and (existing.get(mf) or "").strip():
+                        entry[mf] = existing[mf]
+            else:
+                entry = existing if existing is not None else _build_entry(ht, row, ref)
             if entry:
                 wide.update(entry)
             # Equity ticker is the custodian StockTicker (source of truth) — never

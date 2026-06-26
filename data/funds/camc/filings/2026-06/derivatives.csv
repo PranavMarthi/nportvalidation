@@ -1,0 +1,2 @@
+holdingId,derivCat,counterpartyName,counterpartyLei,refInstType,refIssuerName,refIssueTitle,refCusip,refIsin,refTicker,swapFlag,terminationDt,notionalAmt,swapCurCd,recFixedOrFloating,recDesc,pmntFixedOrFloating,pmntFloatingRtIndex,pmntPmntAmt,pmntCurCdLeg,pmntRateTenor,pmntRateUnit
+M20791105-TRS-12/01/27-L-CANT,SWP,Cantor Fitzgerald & Co.,5493004J7H4GCPG6OB62,otherRefInst,CAMTEK LTD.,CAMTEK LTD.,M20791105,IL0010952641,CAMT,Y,2027-12-01,485845.90,USD,Other,Total return of CAMTEK LTD.,Floating,USD-SOFR,485845.90,USD,Month,3

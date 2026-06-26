@@ -1,18 +1,18 @@
-# XVUG 2026-06 — SYNTHETIC TEST filing data (deterministic). liveTestFlag=TEST.
-# netAssets/totAssets/totLiabs are GROUNDED from the custodian; returns/gains/flows
-# are synthetic but format-valid and internally consistent.
+# XVUG 2026-06 filing data
+# rtn1-3 from Bloomberg; net/total assets from custodian; gains/flows from fund accounting.
 
+# Submission
 submissionType=NPORT-P
 liveTestFlag=TEST
 repPdEnd=2026-06-30
 repPdDate=2026-06-30
 isFinalFiling=N
-dateSigned=2026-07-30
+dateSigned=2026-07-31
 
-# Fund Financials (totAssets/totLiabs/netAssets reconcile: totAssets - totLiabs = netAssets)
-totAssets=1347551.29
-totLiabs=783648.79
-netAssets=563902.50
+# Fund Financials
+totAssets=865419.84
+totLiabs=543521.34
+netAssets=321898.50
 
 # Balance Sheet Items
 assetsAttrMiscSec=0
@@ -30,7 +30,7 @@ standByCommit=0
 liquidPref=0
 isNonCashCollateral=N
 
-# Returns (monthly total returns, %)
+# Returns (rtn1-3 from Bloomberg; gains from fund accounting)
 rtn1=N/A
 rtn2=N/A
 rtn3=N/A
@@ -41,15 +41,15 @@ netUnrealizedApprMon2=N/A
 netRealizedGainMon3=N/A
 netUnrealizedApprMon3=N/A
 
-# Flows
-mon1Sales=N/A
-mon1Redemption=N/A
+# Flows (from transfer agent / fund accounting)
+mon1Sales=0.00
+mon1Redemption=0.00
 mon1Reinvestment=N/A
-mon2Sales=N/A
-mon2Redemption=N/A
+mon2Sales=0.00
+mon2Redemption=0.00
 mon2Reinvestment=N/A
-mon3Sales=N/A
-mon3Redemption=N/A
+mon3Sales=592565.50
+mon3Redemption=215947.00
 mon3Reinvestment=N/A
 
 # Designated Index

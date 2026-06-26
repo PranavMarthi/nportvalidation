@@ -1,0 +1,30 @@
+# Corgi ETF Trust I - Corgi SIMO 2x Daily ETF (SIMX)
+# Static fund configuration
+
+# EDGAR Credentials
+cik=0002078265
+ccc=XXXXXXXX
+
+# Registrant Information
+regName=Corgi ETF Trust I
+regFileNumber=811-24117
+regCik=0002078265
+regLei=529900HSQC73ZP7RGT16
+regStreet1=425 Bush St.
+regStreet2=Suite 500
+regCity=San Francisco
+regState=US-CA
+regCountry=US
+regZipOrPostalCode=94104
+regPhone=855-552-6744
+
+# Series / Class (seriesId/classId/seriesName from EDGAR via backfill_series_ids.py)
+seriesName=Corgi SIMO 2x Daily ETF
+seriesId=S000104887
+seriesLei=529900F5CZ2UFJ9IW106
+classId=C000275538
+
+# Signature Block
+signerOrg=Corgi ETF Trust I
+signerName=Emily Yuan
+signerTitle=President & PEO

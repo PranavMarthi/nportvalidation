@@ -1,23 +1,27 @@
 """Write each fund's REAL seriesId + classId (and seriesName) from EDGAR.
 
 Source chain — nothing fabricated:
-  * EDGAR filing headers (CIK 0002078265) give the authoritative
-    (seriesId, classId, seriesName) for every registered series of the trust.
+  * The trust's series/class spreadsheet (data/reference/series_guide.xlsx, an EDGAR
+    export) gives the authoritative (seriesId, classId, seriesName) for every registered
+    series. This is the default source: deterministic, offline, every series single-class
+    (no ambiguous drops). Pass --from-edgar to instead harvest live from EDGAR filing
+    headers (CIK 0002078265).
   * Bloomberg ``LONG_COMP_NAME`` (gathered live via the MCP; embedded below with
     provenance) is the ticker -> official-name bridge, since our config seriesNames
     were placeholders.
-  * We match Bloomberg name -> EDGAR series name (exact after normalization). A fund is
+  * We match Bloomberg name -> series name (exact after normalization). A fund is
     written ONLY on a confident single match; everything else is left blank and reported.
 
-Run:  uv run python scripts/backfill_series_ids.py [--dry-run]
+Run:  uv run python scripts/backfill_series_ids.py [--dry-run] [--from-edgar]
 """
 import re
 import sys
 from pathlib import Path
 
-from nport.edgar import EdgarClient, normalize_fund_name
+from nport.edgar import EdgarClient, load_trust_series_from_xlsx, normalize_fund_name
 
 FUNDS = Path("data/funds")
+SERIES_GUIDE = Path("data/reference/series_guide.xlsx")
 CIK = "0002078265"
 USER_AGENT = "Corgi ETF Trust nport-tool@example.com"
 
@@ -114,6 +118,15 @@ BBG_NAME = {
     "XVUG": "Corgi US Growth 2x Daily ETF",
     "XW": "Corgi Ex-US Equities 2x Daily ETF",
     "YUNG": "Corgi Longevity Consumer ETF",
+    # 2026-06 new launches
+    "ACLZ": "Corgi ACLS 2x Daily ETF", "ACMM": "Corgi ACMR 2x Daily ETF",
+    "CAMC": "Corgi CAMT 2x Daily ETF", "CARX": "Corgi CART 2x Daily ETF",
+    "CRUC": "Corgi CRUS 2x Daily ETF", "KEYX": "Corgi KEYS 2x Daily ETF",
+    "LASC": "Corgi LASR 2x Daily ETF", "LRNX": "Corgi LRN 2x Daily ETF",
+    "MNSX": "Corgi MNST 2x Daily ETF", "MSIX": "Corgi MSI 2x Daily ETF",
+    "ONTX": "Corgi ONTO 2x Daily ETF", "RMBC": "Corgi RMBS 2x Daily ETF",
+    "SIMX": "Corgi SIMO 2x Daily ETF", "TPLX": "Corgi TPL 2x Daily ETF",
+    "UMCX": "Corgi UMC 2x Daily ETF",
 }
 
 
@@ -125,10 +138,18 @@ def _set_kv(text: str, key: str, value: str) -> str:
 
 def main() -> None:
     dry = "--dry-run" in sys.argv
-    client = EdgarClient(USER_AGENT)
-    print(f"Harvesting series for CIK {CIK} from EDGAR filing headers ...")
-    by_name = client.harvest_trust_series(CIK)
-    print(f"  {len(by_name)} distinct series harvested.\n")
+    from_edgar = "--from-edgar" in sys.argv
+    if from_edgar:
+        print(f"Harvesting series for CIK {CIK} from EDGAR filing headers ...")
+        by_name = EdgarClient(USER_AGENT).harvest_trust_series(CIK)
+        print(f"  {len(by_name)} distinct series harvested from EDGAR.\n")
+    else:
+        if not SERIES_GUIDE.is_file():
+            sys.exit(f"ERROR: series guide not found: {SERIES_GUIDE}\n"
+                     f"  (place the export there, or pass --from-edgar to use live EDGAR.)")
+        print(f"Loading series from {SERIES_GUIDE} ...")
+        by_name = load_trust_series_from_xlsx(SERIES_GUIDE)
+        print(f"  {len(by_name)} distinct series loaded from spreadsheet.\n")
 
     matched, unmatched, ambiguous = [], [], []
     for d in sorted(FUNDS.iterdir()):

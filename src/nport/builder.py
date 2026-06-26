@@ -14,6 +14,31 @@ from nport.constants import NS_NPORT, NS_NPORTCOMMON, NSMAP
 from nport.models import FilingData, FundConfig, Holding
 
 
+def cusip_to_isin(cusip: str, country: str = "US") -> str:
+    """The ISIN of a security from its CUSIP: country prefix + CUSIP + Luhn check digit.
+
+    Deterministic (ISO 6166) — this is the security's real ISIN, computed, not fetched.
+    Only valid for the given country (default US, for digit-leading US CUSIPs).
+    """
+    base = country + cusip
+    digits: list[int] = []
+    for ch in base:
+        if ch.isdigit():
+            digits.append(int(ch))
+        else:                          # A=10 … Z=35, split into two digits
+            v = ord(ch.upper()) - 55
+            digits.append(v // 10)
+            digits.append(v % 10)
+    total = 0
+    for i, d in enumerate(reversed(digits)):
+        if i % 2 == 0:                 # double every second digit from the right
+            d *= 2
+            if d > 9:
+                d -= 9
+        total += d
+    return base + str((10 - total % 10) % 10)
+
+
 class NportBuilder:
     def __init__(
         self,
@@ -271,7 +296,7 @@ class NportBuilder:
 
         # Identifiers
         ids = SubElement(sec, "identifiers")
-        if h.isin:
+        if h.isin and h.isin != "N/A":
             SubElement(ids, "isin", attrib={"value": h.isin})
         if h.ticker:
             SubElement(ids, "ticker", attrib={"value": h.ticker})
@@ -280,6 +305,14 @@ class NportBuilder:
                 "otherDesc": h.other_desc,
                 "value": h.other_value,
             })
+        # XSD requires >=1 identifier. Bonds have a CUSIP but often no ISIN/ticker; the
+        # ISIN of a US security is the CUSIP with a country prefix + check digit (deterministic,
+        # not fabricated). Foreign CINS (letter-leading) fall back to the CUSIP as "other".
+        if len(ids) == 0 and h.cusip and h.cusip not in ("N/A", "000000000"):
+            if h.cusip[0].isdigit():
+                SubElement(ids, "isin", attrib={"value": cusip_to_isin(h.cusip)})
+            else:
+                SubElement(ids, "other", attrib={"otherDesc": "CUSIP", "value": h.cusip})
 
         SubElement(sec, "balance").text = h.balance
         SubElement(sec, "units").text = h.units

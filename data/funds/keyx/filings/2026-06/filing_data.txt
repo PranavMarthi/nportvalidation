@@ -1,0 +1,57 @@
+# KEYX 2026-06 filing data
+# rtn1-3 from Bloomberg; net/total assets from custodian; gains/flows from fund accounting.
+
+# Submission
+submissionType=NPORT-P
+liveTestFlag=TEST
+repPdEnd=2026-06-30
+repPdDate=2026-06-30
+isFinalFiling=N
+dateSigned=2026-07-31
+
+# Fund Financials
+totAssets=522050.94
+totLiabs=273781.94
+netAssets=248269.00
+
+# Balance Sheet Items
+assetsAttrMiscSec=0
+assetsInvested=0
+amtPayOneYrBanksBorr=0
+amtPayOneYrCtrldComp=0
+amtPayOneYrOthAffil=0
+amtPayOneYrOther=0
+amtPayAftOneYrBanksBorr=0
+amtPayAftOneYrCtrldComp=0
+amtPayAftOneYrOthAffil=0
+amtPayAftOneYrOther=0
+delayDeliv=0
+standByCommit=0
+liquidPref=0
+isNonCashCollateral=N
+
+# Returns (rtn1-3 from Bloomberg; gains from fund accounting)
+rtn1=N/A
+rtn2=N/A
+rtn3=N/A
+netRealizedGainMon1=N/A
+netUnrealizedApprMon1=N/A
+netRealizedGainMon2=N/A
+netUnrealizedApprMon2=N/A
+netRealizedGainMon3=N/A
+netUnrealizedApprMon3=N/A
+
+# Flows (from transfer agent / fund accounting)
+mon1Sales=0.00
+mon1Redemption=0.00
+mon1Reinvestment=N/A
+mon2Sales=0.00
+mon2Redemption=0.00
+mon2Reinvestment=N/A
+mon3Sales=250000.00
+mon3Redemption=0.00
+mon3Reinvestment=N/A
+
+# Designated Index
+nameDesignatedIndex=S&P 500 Index
+indexIdentifier=SPX
