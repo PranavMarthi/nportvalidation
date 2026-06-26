@@ -1,0 +1,1593 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000102682</seriesId>
+        <classId>C000273189</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi Travel &amp; Leisure ETF</seriesName>
+      <seriesId>S000102682</seriesId>
+      <seriesLei>529900PPRQAWCJHF5127</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>1554773.00</totAssets>
+      <totLiabs>0.00</totLiabs>
+      <netAssets>1554773.00</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>340.20</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273189" rtn1="N/A" rtn2="0.88" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="30555.85"/>
+        <othMon3 netRealizedGain="0.00" netUnrealizedAppr="99110.55"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="1423514.00"/>
+      <mon3Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>S&amp;P 500 Index</nameDesignatedIndex>
+          <indexIdentifier>SPX</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>American Airlines Group Inc</name>
+        <lei>IWUQB36BXD6OWD6X4T14</lei>
+        <title>American Airlines Group Inc</title>
+        <cusip>02376R102</cusip>
+        <identifiers>
+          <isin value="US02376R1023"/>
+          <ticker value="AAL"/>
+        </identifiers>
+        <balance>1441.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>25131.04</valUSD>
+        <pctVal>1.62</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Airbnb Inc</name>
+        <lei>549300HMUDNO0RY56D37</lei>
+        <title>Airbnb Inc</title>
+        <cusip>009066101</cusip>
+        <identifiers>
+          <isin value="US0090661010"/>
+          <ticker value="ABNB"/>
+        </identifiers>
+        <balance>330.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>47652.00</valUSD>
+        <pctVal>3.06</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Allegiant Travel Co</name>
+        <lei>549300JM9OZXOHWL2K18</lei>
+        <title>Allegiant Travel Co</title>
+        <cusip>01748X102</cusip>
+        <identifiers>
+          <isin value="US01748X1028"/>
+          <ticker value="ALGT"/>
+        </identifiers>
+        <balance>99.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>10624.68</valUSD>
+        <pctVal>0.68</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Alaska Air Group Inc</name>
+        <lei>529900G48RT4KWLC6C27</lei>
+        <title>Alaska Air Group Inc</title>
+        <cusip>011659109</cusip>
+        <identifiers>
+          <isin value="US0116591092"/>
+          <ticker value="ALK"/>
+        </identifiers>
+        <balance>319.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>16447.64</valUSD>
+        <pctVal>1.06</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Grupo Aeroportuario del Surest</name>
+        <lei>5299001W7JIDXCUOUC82</lei>
+        <title>Grupo Aeroportuario del Sureste SAB de CV</title>
+        <cusip>40051E202</cusip>
+        <identifiers>
+          <isin value="US40051E2028"/>
+          <ticker value="ASR"/>
+        </identifiers>
+        <balance>66.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>19952.46</valUSD>
+        <pctVal>1.28</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>MX</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>American Express Co</name>
+        <lei>R4PP93JZOLY261QX3811</lei>
+        <title>American Express Co</title>
+        <cusip>025816109</cusip>
+        <identifiers>
+          <isin value="US0258161092"/>
+          <ticker value="AXP"/>
+        </identifiers>
+        <balance>264.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>90435.84</valUSD>
+        <pctVal>5.82</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Booking Holdings Inc</name>
+        <lei>FXM8FAOHMYDIPD38UZ17</lei>
+        <title>Booking Holdings Inc</title>
+        <cusip>09857L108</cusip>
+        <identifiers>
+          <isin value="US09857L1089"/>
+          <ticker value="BKNG"/>
+        </identifiers>
+        <balance>374.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>67787.50</valUSD>
+        <pctVal>4.36</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Avis Budget Group Inc</name>
+        <lei>529900E95812SYWMCE44</lei>
+        <title>Avis Budget Group Inc</title>
+        <cusip>053774105</cusip>
+        <identifiers>
+          <isin value="US0537741052"/>
+          <ticker value="CAR"/>
+        </identifiers>
+        <balance>44.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>7712.76</valUSD>
+        <pctVal>0.50</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Carnival Corp Ltd</name>
+        <lei>F1OF2ZSX47CR0BCWA982</lei>
+        <title>Carnival Corp Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="BMG2004J1036"/>
+          <ticker value="CCL"/>
+        </identifiers>
+        <balance>1342.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>38797.22</valUSD>
+        <pctVal>2.50</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Choice Hotels International In</name>
+        <lei>5493003CYRY5RFGTIR97</lei>
+        <title>Choice Hotels International Inc</title>
+        <cusip>169905106</cusip>
+        <identifiers>
+          <isin value="US1699051066"/>
+          <ticker value="CHH"/>
+        </identifiers>
+        <balance>88.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>9859.52</valUSD>
+        <pctVal>0.63</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Copa Holdings SA</name>
+        <lei>529900BB9UQJV6QQHA59</lei>
+        <title>Copa Holdings SA</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="PAP310761054"/>
+          <ticker value="CPA"/>
+        </identifiers>
+        <balance>99.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>15529.14</valUSD>
+        <pctVal>1.00</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>PA</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Caesars Entertainment Inc</name>
+        <lei>549300FA4CTCW903Y781</lei>
+        <title>Caesars Entertainment Inc</title>
+        <cusip>12769G100</cusip>
+        <identifiers>
+          <isin value="US12769G1004"/>
+          <ticker value="CZR"/>
+        </identifiers>
+        <balance>528.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>15628.80</valUSD>
+        <pctVal>1.01</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Delta Air Lines Inc</name>
+        <lei>Q2CCMS6R0AS67HJMBN42</lei>
+        <title>Delta Air Lines Inc</title>
+        <cusip>247361702</cusip>
+        <identifiers>
+          <isin value="US2473617023"/>
+          <ticker value="DAL"/>
+        </identifiers>
+        <balance>649.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>58831.85</valUSD>
+        <pctVal>3.78</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Walt Disney Co/The</name>
+        <lei>549300GZKULIZ0WOW665</lei>
+        <title>Walt Disney Co/The</title>
+        <cusip>254687106</cusip>
+        <identifiers>
+          <isin value="US2546871060"/>
+          <ticker value="DIS"/>
+        </identifiers>
+        <balance>880.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>88985.60</valUSD>
+        <pctVal>5.72</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>DiamondRock Hospitality Co</name>
+        <lei>529900KKD4BPVBUAQ734</lei>
+        <title>DiamondRock Hospitality Co</title>
+        <cusip>252784301</cusip>
+        <identifiers>
+          <isin value="US2527843013"/>
+          <ticker value="DRH"/>
+        </identifiers>
+        <balance>891.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>10861.29</valUSD>
+        <pctVal>0.70</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Expedia Group Inc</name>
+        <lei>2549009GW3Z3DQCB8H87</lei>
+        <title>Expedia Group Inc</title>
+        <cusip>30212P303</cusip>
+        <identifiers>
+          <isin value="US30212P3038"/>
+          <ticker value="EXPE"/>
+        </identifiers>
+        <balance>132.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>34603.80</valUSD>
+        <pctVal>2.23</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>64886.28000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>64886.28</valUSD>
+        <pctVal>4.17</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Flywire Corp</name>
+        <lei>54930055DSV7NNY4VY66</lei>
+        <title>Flywire Corp</title>
+        <cusip>302492103</cusip>
+        <identifiers>
+          <isin value="US3024921039"/>
+          <ticker value="FLYW"/>
+        </identifiers>
+        <balance>550.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>9097.00</valUSD>
+        <pctVal>0.59</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Shift4 Payments Inc</name>
+        <lei>N/A</lei>
+        <title>Shift4 Payments Inc</title>
+        <cusip>82452J109</cusip>
+        <identifiers>
+          <isin value="US82452J1097"/>
+          <ticker value="FOUR"/>
+        </identifiers>
+        <balance>231.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>10214.82</valUSD>
+        <pctVal>0.66</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Six Flags Entertainment Corp</name>
+        <lei>529900AS2CYWYFHRS781</lei>
+        <title>Six Flags Entertainment Corp</title>
+        <cusip>83001C108</cusip>
+        <identifiers>
+          <isin value="US83001C1080"/>
+          <ticker value="FUN"/>
+        </identifiers>
+        <balance>462.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>10635.24</valUSD>
+        <pctVal>0.68</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Global Business Travel Group I</name>
+        <lei>N/A</lei>
+        <title>Global Business Travel Group I</title>
+        <cusip>37890B100</cusip>
+        <identifiers>
+          <isin value="US37890B1008"/>
+          <ticker value="GBTG"/>
+        </identifiers>
+        <balance>1133.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>10627.54</valUSD>
+        <pctVal>0.68</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Hyatt Hotels Corp</name>
+        <lei>T27JQIMTYSH41TCD5186</lei>
+        <title>Hyatt Hotels Corp</title>
+        <cusip>448579102</cusip>
+        <identifiers>
+          <isin value="US4485791028"/>
+          <ticker value="H"/>
+        </identifiers>
+        <balance>99.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>19534.68</valUSD>
+        <pctVal>1.26</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Hilton Grand Vacations Inc</name>
+        <lei>549300O9K6MFD8D07574</lei>
+        <title>Hilton Grand Vacations Inc</title>
+        <cusip>43283X105</cusip>
+        <identifiers>
+          <isin value="US43283X1054"/>
+          <ticker value="HGV"/>
+        </identifiers>
+        <balance>220.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>12027.40</valUSD>
+        <pctVal>0.77</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Hilton Worldwide Holdings Inc</name>
+        <lei>549300HVGPK36ICB0B89</lei>
+        <title>Hilton Worldwide Holdings Inc</title>
+        <cusip>43300A203</cusip>
+        <identifiers>
+          <isin value="US43300A2033"/>
+          <ticker value="HLT"/>
+        </identifiers>
+        <balance>165.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>56664.30</valUSD>
+        <pctVal>3.64</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Host Hotels &amp; Resorts Inc</name>
+        <lei>N6EL63S0K3PB1YFTDI24</lei>
+        <title>Host Hotels &amp; Resorts Inc</title>
+        <cusip>44107P104</cusip>
+        <identifiers>
+          <isin value="US44107P1049"/>
+          <ticker value="HST"/>
+        </identifiers>
+        <balance>1144.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>28119.52</valUSD>
+        <pctVal>1.81</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>H World Group Ltd</name>
+        <lei>549300Y5ML31FVN83730</lei>
+        <title>H World Group Ltd</title>
+        <cusip>44332N106</cusip>
+        <identifiers>
+          <isin value="US44332N1063"/>
+          <ticker value="HTHT"/>
+        </identifiers>
+        <balance>506.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>21135.62</valUSD>
+        <pctVal>1.36</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>CN</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Hertz Global Holdings Inc</name>
+        <lei>549300NBK3K85MH1EX16</lei>
+        <title>Hertz Global Holdings Inc</title>
+        <cusip>42806J700</cusip>
+        <identifiers>
+          <isin value="US42806J7000"/>
+          <ticker value="HTZ"/>
+        </identifiers>
+        <balance>869.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>2607.00</valUSD>
+        <pctVal>0.17</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>InterContinental Hotels Group </name>
+        <lei>2138007ZFQYRUSLU3J98</lei>
+        <title>InterContinental Hotels Group PLC</title>
+        <cusip>45857P806</cusip>
+        <identifiers>
+          <isin value="US45857P8068"/>
+          <ticker value="IHG"/>
+        </identifiers>
+        <balance>209.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>36094.30</valUSD>
+        <pctVal>2.32</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>GB</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>JetBlue Airways Corp</name>
+        <lei>54930070J9H97ZO93T57</lei>
+        <title>JetBlue Airways Corp</title>
+        <cusip>477143101</cusip>
+        <identifiers>
+          <isin value="US4771431016"/>
+          <ticker value="JBLU"/>
+        </identifiers>
+        <balance>1452.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>8407.08</valUSD>
+        <pctVal>0.54</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Lindblad Expeditions Holdings </name>
+        <lei>549300GSPW24GZE6R597</lei>
+        <title>Lindblad Expeditions Holdings Inc</title>
+        <cusip>535219109</cusip>
+        <identifiers>
+          <isin value="US5352191093"/>
+          <ticker value="LIND"/>
+        </identifiers>
+        <balance>330.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>8903.40</valUSD>
+        <pctVal>0.57</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Southwest Airlines Co</name>
+        <lei>UDTZ87G0STFETI6HGH41</lei>
+        <title>Southwest Airlines Co</title>
+        <cusip>844741108</cusip>
+        <identifiers>
+          <isin value="US8447411088"/>
+          <ticker value="LUV"/>
+        </identifiers>
+        <balance>726.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>36982.44</valUSD>
+        <pctVal>2.38</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Las Vegas Sands Corp</name>
+        <lei>549300DUOO1KXOHPM605</lei>
+        <title>Las Vegas Sands Corp</title>
+        <cusip>517834107</cusip>
+        <identifiers>
+          <isin value="US5178341070"/>
+          <ticker value="LVS"/>
+        </identifiers>
+        <balance>506.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>24166.56</valUSD>
+        <pctVal>1.55</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Lyft Inc</name>
+        <lei>549300H7I5VN334XVZ52</lei>
+        <title>Lyft Inc</title>
+        <cusip>55087P104</cusip>
+        <identifiers>
+          <isin value="US55087P1049"/>
+          <ticker value="LYFT"/>
+        </identifiers>
+        <balance>1045.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>15048.00</valUSD>
+        <pctVal>0.97</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Live Nation Entertainment Inc</name>
+        <lei>5493007B9BM9ZXJINO78</lei>
+        <title>Live Nation Entertainment Inc</title>
+        <cusip>538034109</cusip>
+        <identifiers>
+          <isin value="US5380341090"/>
+          <ticker value="LYV"/>
+        </identifiers>
+        <balance>209.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>35837.23</valUSD>
+        <pctVal>2.30</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Marriott International Inc/MD</name>
+        <lei>225YDZ14ZO8E1TXUSU86</lei>
+        <title>Marriott International Inc/MD</title>
+        <cusip>571903202</cusip>
+        <identifiers>
+          <isin value="US5719032022"/>
+          <ticker value="MAR"/>
+        </identifiers>
+        <balance>154.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>59068.24</valUSD>
+        <pctVal>3.80</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>MGM Resorts International</name>
+        <lei>54930066VBP7DZEGGJ87</lei>
+        <title>MGM Resorts International</title>
+        <cusip>552953101</cusip>
+        <identifiers>
+          <isin value="US5529531015"/>
+          <ticker value="MGM"/>
+        </identifiers>
+        <balance>429.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>20201.61</valUSD>
+        <pctVal>1.30</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>MakeMyTrip Ltd</name>
+        <lei>529900DNT8HNJ7RYUO60</lei>
+        <title>MakeMyTrip Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="MU0295S00016"/>
+          <ticker value="MMYT"/>
+        </identifiers>
+        <balance>242.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>12506.56</valUSD>
+        <pctVal>0.80</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>IN</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Vail Resorts Inc</name>
+        <lei>529900PSZHRNU9HKH870</lei>
+        <title>Vail Resorts Inc</title>
+        <cusip>91879Q109</cusip>
+        <identifiers>
+          <isin value="US91879Q1094"/>
+          <ticker value="MTN"/>
+        </identifiers>
+        <balance>121.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>17184.42</valUSD>
+        <pctVal>1.11</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Navan Inc</name>
+        <lei>254900RHRK35UPHTGY05</lei>
+        <title>Navan Inc</title>
+        <cusip>639193101</cusip>
+        <identifiers>
+          <isin value="US6391931010"/>
+          <ticker value="NAVN"/>
+        </identifiers>
+        <balance>308.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>6708.24</valUSD>
+        <pctVal>0.43</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Norwegian Cruise Line Holdings</name>
+        <lei>N/A</lei>
+        <title>Norwegian Cruise Line Holdings Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="BMG667211046"/>
+          <ticker value="NCLH"/>
+        </identifiers>
+        <balance>1045.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>21955.45</valUSD>
+        <pctVal>1.41</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Grupo Aeroportuario del Pacifi</name>
+        <lei>4469000001BZ368XFI90</lei>
+        <title>Grupo Aeroportuario del Pacifico SAB de CV</title>
+        <cusip>400506101</cusip>
+        <identifiers>
+          <isin value="US4005061019"/>
+          <ticker value="PAC"/>
+        </identifiers>
+        <balance>88.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>21611.04</valUSD>
+        <pctVal>1.39</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>MX</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Pebblebrook Hotel Trust</name>
+        <lei>5493004Q1NNH6JXCSI52</lei>
+        <title>Pebblebrook Hotel Trust</title>
+        <cusip>70509V100</cusip>
+        <identifiers>
+          <isin value="US70509V1008"/>
+          <ticker value="PEB"/>
+        </identifiers>
+        <balance>561.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>10445.82</valUSD>
+        <pctVal>0.67</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Park Hotels &amp; Resorts Inc</name>
+        <lei>5493005UZ5TQN0H6HS73</lei>
+        <title>Park Hotels &amp; Resorts Inc</title>
+        <cusip>700517105</cusip>
+        <identifiers>
+          <isin value="US7005171050"/>
+          <ticker value="PK"/>
+        </identifiers>
+        <balance>825.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>11830.50</valUSD>
+        <pctVal>0.76</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United Parks &amp; Resorts Inc</name>
+        <lei>529900G0H4NV3IIK3269</lei>
+        <title>United Parks &amp; Resorts Inc</title>
+        <cusip>81282V100</cusip>
+        <identifiers>
+          <isin value="US81282V1008"/>
+          <ticker value="PRKS"/>
+        </identifiers>
+        <balance>154.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>7217.98</valUSD>
+        <pctVal>0.46</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Royal Caribbean Cruises Ltd</name>
+        <lei>K2NEH8QNVW44JIWK7Z55</lei>
+        <title>Royal Caribbean Cruises Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="LR0008862868"/>
+          <ticker value="RCL"/>
+        </identifiers>
+        <balance>209.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>67078.55</valUSD>
+        <pctVal>4.31</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Ryman Hospitality Properties I</name>
+        <lei>529900GCCWW9SRMPJR11</lei>
+        <title>Ryman Hospitality Properties Inc</title>
+        <cusip>78377T107</cusip>
+        <identifiers>
+          <isin value="US78377T1079"/>
+          <ticker value="RHP"/>
+        </identifiers>
+        <balance>154.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>19984.58</valUSD>
+        <pctVal>1.29</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>RLJ Lodging Trust</name>
+        <lei>N/A</lei>
+        <title>RLJ Lodging Trust</title>
+        <cusip>74965L101</cusip>
+        <identifiers>
+          <isin value="US74965L1017"/>
+          <ticker value="RLJ"/>
+        </identifiers>
+        <balance>836.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>9463.52</valUSD>
+        <pctVal>0.61</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Ryanair Holdings PLC</name>
+        <lei>635400BR2ROC1FVEBQ56</lei>
+        <title>Ryanair Holdings PLC</title>
+        <cusip>783513203</cusip>
+        <identifiers>
+          <isin value="US7835132033"/>
+          <ticker value="RYAAY"/>
+        </identifiers>
+        <balance>660.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>42061.80</valUSD>
+        <pctVal>2.71</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>IE</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>SkyWest Inc</name>
+        <lei>529900UYS2KGS6Z42P09</lei>
+        <title>SkyWest Inc</title>
+        <cusip>830879102</cusip>
+        <identifiers>
+          <isin value="US8308791024"/>
+          <ticker value="SKYW"/>
+        </identifiers>
+        <balance>143.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>13828.10</valUSD>
+        <pctVal>0.89</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>TRIP.COM GROUP</name>
+        <lei>2549004RMYDSRQL4KW41</lei>
+        <title>TRIP.COM GROUP</title>
+        <cusip>89677Q107</cusip>
+        <identifiers>
+          <isin value="US89677Q1076"/>
+          <ticker value="TCOM"/>
+        </identifiers>
+        <balance>726.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>33613.80</valUSD>
+        <pctVal>2.16</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>SG</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Travel + Leisure Co</name>
+        <lei>T4VNTWMFQ7JQB65L7T35</lei>
+        <title>Travel + Leisure Co</title>
+        <cusip>894164102</cusip>
+        <identifiers>
+          <isin value="US8941641024"/>
+          <ticker value="TNL"/>
+        </identifiers>
+        <balance>198.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>15182.64</valUSD>
+        <pctVal>0.98</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>TripAdvisor Inc</name>
+        <lei>549300XVG45PT5BART17</lei>
+        <title>TripAdvisor Inc</title>
+        <cusip>896945201</cusip>
+        <identifiers>
+          <isin value="US8969452015"/>
+          <ticker value="TRIP"/>
+        </identifiers>
+        <balance>649.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>8424.02</valUSD>
+        <pctVal>0.54</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United Airlines Holdings Inc</name>
+        <lei>98450079DA0B78DD6764</lei>
+        <title>United Airlines Holdings Inc</title>
+        <cusip>910047109</cusip>
+        <identifiers>
+          <isin value="US9100471096"/>
+          <ticker value="UAL"/>
+        </identifiers>
+        <balance>396.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>51693.84</valUSD>
+        <pctVal>3.32</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Uber Technologies Inc</name>
+        <lei>549300B2FTG34FILDR98</lei>
+        <title>Uber Technologies Inc</title>
+        <cusip>90353T100</cusip>
+        <identifiers>
+          <isin value="US90353T1007"/>
+          <ticker value="UBER"/>
+        </identifiers>
+        <balance>902.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>66612.70</valUSD>
+        <pctVal>4.28</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Marriott Vacations Worldwide C</name>
+        <lei>549300WA6BT5H4F7IO94</lei>
+        <title>Marriott Vacations Worldwide Corp</title>
+        <cusip>57164Y107</cusip>
+        <identifiers>
+          <isin value="US57164Y1073"/>
+          <ticker value="VAC"/>
+        </identifiers>
+        <balance>132.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>13087.80</valUSD>
+        <pctVal>0.84</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Viking Holdings Ltd</name>
+        <lei>52990032GOPN7BVQMN13</lei>
+        <title>Viking Holdings Ltd</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="BMG93A5A1010"/>
+          <ticker value="VIK"/>
+        </identifiers>
+        <balance>297.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>30605.85</valUSD>
+        <pctVal>1.97</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>BM</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Controladora Vuela Cia de Avia</name>
+        <lei>549300G8NLCMP9Z44X52</lei>
+        <title>Controladora Vuela Cia de Aviacion SAB de CV</title>
+        <cusip>21240E105</cusip>
+        <identifiers>
+          <isin value="US21240E1055"/>
+          <ticker value="VLRS"/>
+        </identifiers>
+        <balance>814.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>7513.22</valUSD>
+        <pctVal>0.48</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>MX</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Wyndham Hotels &amp; Resorts Inc</name>
+        <lei>549300FE3MQ4RVXXC673</lei>
+        <title>Wyndham Hotels &amp; Resorts Inc</title>
+        <cusip>98311A105</cusip>
+        <identifiers>
+          <isin value="US98311A1051"/>
+          <ticker value="WH"/>
+        </identifiers>
+        <balance>187.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>16046.47</valUSD>
+        <pctVal>1.03</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

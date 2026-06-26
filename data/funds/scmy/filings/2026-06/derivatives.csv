@@ -1,5 +1,5 @@
-holdingId,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
-IWM-C56.52-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Purchased,N/A,56.52,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY
-IWM-C333.47-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Written,N/A,333.47,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY
-IWM-P240.21-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Written,N/A,240.21,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY
-IWM-P282.6-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Purchased,N/A,282.6,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+IWM-C56.52-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,194396.24,Call,Purchased,N/A,56.52,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY
+IWM-C333.47-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,-49783.47,Call,Written,N/A,333.47,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY
+IWM-P240.21-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,42168.76,Put,Written,N/A,240.21,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY
+IWM-P282.6-20270430,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,-78853.85,Put,Purchased,N/A,282.6,USD,2027-04-30,N/A,indexBasket,Russell 2000 Index,RTY

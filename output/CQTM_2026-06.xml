@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000102677</seriesId>
+        <classId>C000273184</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi Quantum Computing ETF</seriesName>
+      <seriesId>S000102677</seriesId>
+      <seriesLei>529900IZDAH8EQQN6G09</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>15845049.15</totAssets>
+      <totLiabs>2340.65</totLiabs>
+      <netAssets>15842708.50</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>2440.07</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273184" rtn1="N/A" rtn2="22.88" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="749259.68"/>
+        <othMon3 netRealizedGain="-70957.76" netUnrealizedAppr="-348713.56"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="7884070.00"/>
+      <mon3Flow redemption="0.00" reinvestment="N/A" sales="7630580.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>S&amp;P 500 Index</nameDesignatedIndex>
+          <indexIdentifier>SPX</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>Arqit Quantum Inc</name>
+        <lei>254900G93Z1SN49J9J68</lei>
+        <title>Arqit Quantum Inc</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="KYG0567U1278"/>
+          <ticker value="ARQQ"/>
+        </identifiers>
+        <balance>42824.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>1226479.36</valUSD>
+        <pctVal>7.74</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>GB</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>BTQ Technologies Corp</name>
+        <lei>9845009I0C867C156D63</lei>
+        <title>BTQ Technologies Corp</title>
+        <cusip>055869101</cusip>
+        <identifiers>
+          <isin value="CA0558691014"/>
+          <ticker value="BTQ"/>
+        </identifiers>
+        <balance>144963.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>798021.32</valUSD>
+        <pctVal>5.04</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>CA</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>157569.23000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>157569.23</valUSD>
+        <pctVal>0.99</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>FormFactor Inc</name>
+        <lei>549300YCEEO6SZD1ZR61</lei>
+        <title>FormFactor Inc</title>
+        <cusip>346375108</cusip>
+        <identifiers>
+          <isin value="US3463751087"/>
+          <ticker value="FORM"/>
+        </identifiers>
+        <balance>2626.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>371368.92</valUSD>
+        <pctVal>2.34</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Alphabet Inc</name>
+        <lei>5493006MHB84DD0ZWV18</lei>
+        <title>Alphabet Inc</title>
+        <cusip>02079K305</cusip>
+        <identifiers>
+          <isin value="US02079K3059"/>
+          <ticker value="GOOGL"/>
+        </identifiers>
+        <balance>1436.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>495836.44</valUSD>
+        <pctVal>3.13</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Honeywell International Inc</name>
+        <lei>ISRPG12PN4EIEOEMW547</lei>
+        <title>Honeywell International Inc</title>
+        <cusip>438516106</cusip>
+        <identifiers>
+          <isin value="US4385161066"/>
+          <ticker value="HON"/>
+        </identifiers>
+        <balance>2929.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>666113.18</valUSD>
+        <pctVal>4.20</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Horizon Quantum Holdings LTD</name>
+        <lei>N/A</lei>
+        <title>Horizon Quantum Holdings LTD</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="SGXZ31642911"/>
+          <ticker value="HQ"/>
+        </identifiers>
+        <balance>54742.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>1555220.22</valUSD>
+        <pctVal>9.82</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>SG</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>International Business Machine</name>
+        <lei>VGRQXHF3J8VDLUA7XE92</lei>
+        <title>International Business Machines Corp</title>
+        <cusip>459200101</cusip>
+        <identifiers>
+          <isin value="US4592001014"/>
+          <ticker value="IBM"/>
+        </identifiers>
+        <balance>2626.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>690532.96</valUSD>
+        <pctVal>4.36</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Infleqtion Inc</name>
+        <lei>N/A</lei>
+        <title>Infleqtion Inc</title>
+        <cusip>45676K103</cusip>
+        <identifiers>
+          <isin value="US45676K1034"/>
+          <ticker value="INFQ"/>
+        </identifiers>
+        <balance>46864.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>660782.40</valUSD>
+        <pctVal>4.17</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>IonQ Inc</name>
+        <lei>529900RB2VEFGLQS7G28</lei>
+        <title>IonQ Inc</title>
+        <cusip>46222L108</cusip>
+        <identifiers>
+          <isin value="US46222L1089"/>
+          <ticker value="IONQ"/>
+        </identifiers>
+        <balance>58277.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>3123647.20</valUSD>
+        <pctVal>19.72</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>SEALSQ Corp</name>
+        <lei>894500UBT7U7WMV2PG59</lei>
+        <title>SEALSQ Corp</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <isin value="VGG794831062"/>
+          <ticker value="LAES"/>
+        </identifiers>
+        <balance>27674.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>89387.02</valUSD>
+        <pctVal>0.56</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>CH</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>D-Wave Quantum Inc</name>
+        <lei>5493001U37G4PRD4GW95</lei>
+        <title>D-Wave Quantum Inc</title>
+        <cusip>26740W109</cusip>
+        <identifiers>
+          <isin value="US26740W1099"/>
+          <ticker value="QBTS"/>
+        </identifiers>
+        <balance>134532.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>3091545.36</valUSD>
+        <pctVal>19.51</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Quantum Emotion Corp</name>
+        <lei>984500T1YCBEAFFA0495</lei>
+        <title>Quantum Emotion Corp</title>
+        <cusip>74767K103</cusip>
+        <identifiers>
+          <isin value="CA74767K1030"/>
+          <ticker value="QNC"/>
+        </identifiers>
+        <balance>231088.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>707129.28</valUSD>
+        <pctVal>4.46</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>CA</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Quantinuum Inc</name>
+        <lei>529900XVZ9SO3PH40230</lei>
+        <title>Quantinuum Inc</title>
+        <cusip>74768A104</cusip>
+        <identifiers>
+          <isin value="US74768A1043"/>
+          <ticker value="QNT"/>
+        </identifiers>
+        <balance>9002.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>640042.20</valUSD>
+        <pctVal>4.04</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Quantum Computing Inc</name>
+        <lei>N/A</lei>
+        <title>Quantum Computing Inc</title>
+        <cusip>74766W108</cusip>
+        <identifiers>
+          <isin value="US74766W1080"/>
+          <ticker value="QUBT"/>
+        </identifiers>
+        <balance>69488.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>674033.60</valUSD>
+        <pctVal>4.25</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Rigetti Computing Inc</name>
+        <lei>52990024JHY459DH8W71</lei>
+        <title>Rigetti Computing Inc</title>
+        <cusip>76655K103</cusip>
+        <identifiers>
+          <isin value="US76655K1034"/>
+          <ticker value="RGTI"/>
+        </identifiers>
+        <balance>26183.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>511353.99</valUSD>
+        <pctVal>3.23</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>SkyWater Technology Inc</name>
+        <lei>N/A</lei>
+        <title>SkyWater Technology Inc</title>
+        <cusip>83089J108</cusip>
+        <identifiers>
+          <isin value="US83089J1088"/>
+          <ticker value="SKYT"/>
+        </identifiers>
+        <balance>4242.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>148682.10</valUSD>
+        <pctVal>0.94</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Xanadu Quantum Technologies Lt</name>
+        <lei>254900ERDXSXKJDE3515</lei>
+        <title>Xanadu Quantum Technologies Ltd</title>
+        <cusip>98390R102</cusip>
+        <identifiers>
+          <isin value="CA98390R1029"/>
+          <ticker value="XNDU"/>
+        </identifiers>
+        <balance>20099.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>237168.20</valUSD>
+        <pctVal>1.50</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>CA</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

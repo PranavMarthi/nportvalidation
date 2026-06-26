@@ -20,7 +20,7 @@ assetsInvested=0
 amtPayOneYrBanksBorr=0
 amtPayOneYrCtrldComp=0
 amtPayOneYrOthAffil=0
-amtPayOneYrOther=0
+amtPayOneYrOther=694.78
 amtPayAftOneYrBanksBorr=0
 amtPayAftOneYrCtrldComp=0
 amtPayAftOneYrOthAffil=0
@@ -34,12 +34,12 @@ isNonCashCollateral=N
 rtn1=N/A
 rtn2=N/A
 rtn3=N/A
-netRealizedGainMon1=N/A
-netUnrealizedApprMon1=N/A
-netRealizedGainMon2=N/A
-netUnrealizedApprMon2=N/A
-netRealizedGainMon3=N/A
-netUnrealizedApprMon3=N/A
+netRealizedGainMon1=0.00
+netUnrealizedApprMon1=0.00
+netRealizedGainMon2=0.00
+netUnrealizedApprMon2=0.00
+netRealizedGainMon3=3378.43
+netUnrealizedApprMon3=-77612.56
 
 # Flows (from transfer agent / fund accounting)
 mon1Sales=0.00

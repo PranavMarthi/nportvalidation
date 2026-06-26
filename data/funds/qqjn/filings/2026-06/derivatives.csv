@@ -1,5 +1,5 @@
-holdingId,derivCat,counterpartyName,counterpartyLei,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
-QQQ-C148.55-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Purchased,N/A,148.55,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX
-QQQ-C880.22-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Call,Written,N/A,880.22,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX
-QQQ-P631.33-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Written,N/A,631.33,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX
-QQQ-P742.74-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,Put,Purchased,N/A,742.74,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX
+holdingId,derivCat,counterpartyName,counterpartyLei,unrealizedAppr,putOrCall,writtenOrPur,shareNo,exercisePrice,exercisePriceCurCd,expDt,delta,refInstType,refIndexName,refIndexIdentifier
+QQQ-C148.55-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,-34186.38,Call,Purchased,N/A,148.55,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX
+QQQ-C880.22-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,6919.20,Call,Written,N/A,880.22,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX
+QQQ-P631.33-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,-11314.97,Put,Written,N/A,631.33,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX
+QQQ-P742.74-20270528,OPT,The Options Clearing Corporation,549300CII6SLYGKNHA04,20176.16,Put,Purchased,N/A,742.74,USD,2027-05-28,N/A,indexBasket,NASDAQ 100 Index,NDX

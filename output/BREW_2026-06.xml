@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000102695</seriesId>
+        <classId>C000273202</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi Coffee &amp; Energy Drinks ETF</seriesName>
+      <seriesId>S000102695</seriesId>
+      <seriesLei>52990050ULTQ71841068</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>1611138.00</totAssets>
+      <totLiabs>0.00</totLiabs>
+      <netAssets>1611138.00</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>449.41</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273202" rtn1="N/A" rtn2="3.40" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="49140.16"/>
+        <othMon3 netRealizedGain="0.00" netUnrealizedAppr="25555.20"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="1530895.00"/>
+      <mon3Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>S&amp;P 500 Index</nameDesignatedIndex>
+          <indexIdentifier>SPX</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>BRC Inc</name>
+        <lei>N/A</lei>
+        <title>BRC Inc</title>
+        <cusip>05601U105</cusip>
+        <identifiers>
+          <isin value="US05601U1051"/>
+          <ticker value="BRCC"/>
+        </identifiers>
+        <balance>67776.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>84720.00</valUSD>
+        <pctVal>5.26</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Dutch Bros Inc</name>
+        <lei>N/A</lei>
+        <title>Dutch Bros Inc</title>
+        <cusip>26701L100</cusip>
+        <identifiers>
+          <isin value="US26701L1008"/>
+          <ticker value="BROS"/>
+        </identifiers>
+        <balance>1284.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>86220.60</valUSD>
+        <pctVal>5.35</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Celsius Holdings Inc</name>
+        <lei>N/A</lei>
+        <title>Celsius Holdings Inc</title>
+        <cusip>15118V207</cusip>
+        <identifiers>
+          <isin value="US15118V2079"/>
+          <ticker value="CELH"/>
+        </identifiers>
+        <balance>2136.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>60918.72</valUSD>
+        <pctVal>3.78</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Krispy Kreme Inc</name>
+        <lei>N/A</lei>
+        <title>Krispy Kreme Inc</title>
+        <cusip>50101L106</cusip>
+        <identifiers>
+          <isin value="US50101L1061"/>
+          <ticker value="DNUT"/>
+        </identifiers>
+        <balance>756.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>2819.88</valUSD>
+        <pctVal>0.18</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>11041.90000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>11041.90</valUSD>
+        <pctVal>0.69</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>International Flavors &amp; Fragra</name>
+        <lei>BZLRL03D3GPGMOGFO832</lei>
+        <title>International Flavors &amp; Fragrances Inc</title>
+        <cusip>459506101</cusip>
+        <identifiers>
+          <isin value="US4595061015"/>
+          <ticker value="IFF"/>
+        </identifiers>
+        <balance>960.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>72796.80</valUSD>
+        <pctVal>4.52</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Ingredion Inc</name>
+        <lei>PKSTQ48QDN0XSVS7YK88</lei>
+        <title>Ingredion Inc</title>
+        <cusip>457187102</cusip>
+        <identifiers>
+          <isin value="US4571871023"/>
+          <ticker value="INGR"/>
+        </identifiers>
+        <balance>396.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>38851.56</valUSD>
+        <pctVal>2.41</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Keurig Dr Pepper Inc</name>
+        <lei>DYTQ8KRTKO7Y2BVU5K74</lei>
+        <title>Keurig Dr Pepper Inc</title>
+        <cusip>49271V100</cusip>
+        <identifiers>
+          <isin value="US49271V1008"/>
+          <ticker value="KDP"/>
+        </identifiers>
+        <balance>2532.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>79504.80</valUSD>
+        <pctVal>4.93</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Coca-Cola Co/The</name>
+        <lei>UWJKFUJFZ02DKWI3RY53</lei>
+        <title>Coca-Cola Co/The</title>
+        <cusip>191216100</cusip>
+        <identifiers>
+          <isin value="US1912161007"/>
+          <ticker value="KO"/>
+        </identifiers>
+        <balance>3852.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>310471.20</valUSD>
+        <pctVal>19.27</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Monster Beverage Corp</name>
+        <lei>52990090AP0E7HCB6F33</lei>
+        <title>Monster Beverage Corp</title>
+        <cusip>61174X109</cusip>
+        <identifiers>
+          <isin value="US61174X1090"/>
+          <ticker value="MNST"/>
+        </identifiers>
+        <balance>948.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>89775.60</valUSD>
+        <pctVal>5.57</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>PepsiCo Inc</name>
+        <lei>FJSUNZKFNQ5YPJ5OT455</lei>
+        <title>PepsiCo Inc</title>
+        <cusip>713448108</cusip>
+        <identifiers>
+          <isin value="US7134481081"/>
+          <ticker value="PEP"/>
+        </identifiers>
+        <balance>480.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>68289.60</valUSD>
+        <pctVal>4.24</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Restaurant Brands Internationa</name>
+        <lei>5299009RXTX9DN9AKJ98</lei>
+        <title>Restaurant Brands International Inc</title>
+        <cusip>76131D103</cusip>
+        <identifiers>
+          <isin value="CA76131D1033"/>
+          <ticker value="QSR"/>
+        </identifiers>
+        <balance>912.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>66357.12</valUSD>
+        <pctVal>4.12</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Starbucks Corp</name>
+        <lei>OQSJ1DU9TAOC51A47K68</lei>
+        <title>Starbucks Corp</title>
+        <cusip>855244109</cusip>
+        <identifiers>
+          <isin value="US8552441094"/>
+          <ticker value="SBUX"/>
+        </identifiers>
+        <balance>3000.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>310590.00</valUSD>
+        <pctVal>19.28</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>J M Smucker Co/The</name>
+        <lei>5493000WDH6A0LHDJD55</lei>
+        <title>J M Smucker Co/The</title>
+        <cusip>832696405</cusip>
+        <identifiers>
+          <isin value="US8326964058"/>
+          <ticker value="SJM"/>
+        </identifiers>
+        <balance>768.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>85731.84</valUSD>
+        <pctVal>5.32</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Sensient Technologies Corp</name>
+        <lei>CMMZHMFZQG86EI7WZU92</lei>
+        <title>Sensient Technologies Corp</title>
+        <cusip>81725T100</cusip>
+        <identifiers>
+          <isin value="US81725T1007"/>
+          <ticker value="SXT"/>
+        </identifiers>
+        <balance>252.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>30466.80</valUSD>
+        <pctVal>1.89</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Westrock Coffee Co</name>
+        <lei>N/A</lei>
+        <title>Westrock Coffee Co</title>
+        <cusip>96145W103</cusip>
+        <identifiers>
+          <isin value="US96145W1036"/>
+          <ticker value="WEST"/>
+        </identifiers>
+        <balance>12864.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>124523.52</valUSD>
+        <pctVal>7.73</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>Zevia PBC</name>
+        <lei>N/A</lei>
+        <title>Zevia PBC</title>
+        <cusip>98955K104</cusip>
+        <identifiers>
+          <isin value="US98955K1043"/>
+          <ticker value="ZVIA"/>
+        </identifiers>
+        <balance>57264.00000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>84750.72</valUSD>
+        <pctVal>5.26</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>EC</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

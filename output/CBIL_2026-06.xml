@@ -1,0 +1,879 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000104287</seriesId>
+        <classId>C000274888</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi 3-12 Month T-Bill ETF</seriesName>
+      <seriesId>S000104287</seriesId>
+      <seriesLei>529900N4HGGNS73UTA37</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>17030246.20</totAssets>
+      <totLiabs>326.20</totLiabs>
+      <netAssets>17029920.00</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>305.48</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <curMetrics>
+        <curMetric>
+          <curCd>USD</curCd>
+          <intrstRtRiskdv01 period3Mon="412.67" period1Yr="178.32" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+          <intrstRtRiskdv100 period3Mon="41266.68" period1Yr="17832.44" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+        </curMetric>
+      </curMetrics>
+      <creditSprdRiskInvstGrade period3Mon="409.43" period1Yr="177.73" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <creditSprdRiskNonInvstGrade period3Mon="0.00" period1Yr="0.00" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000274888" rtn1="N/A" rtn2="N/A" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon3 netRealizedGain="-45.54" netUnrealizedAppr="-5067.72"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon3Flow redemption="0.00" reinvestment="N/A" sales="17009188.00"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>FTSE US Treasury Bill 3-12 Months Index</nameDesignatedIndex>
+          <indexIdentifier>CFIIBL3P</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/03/2026</title>
+        <cusip>912797RS8</cusip>
+        <identifiers>
+          <isin value="US912797RS85"/>
+        </identifiers>
+        <balance>1287000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>1277822.08</valUSD>
+        <pctVal>7.50</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-03</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 10</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 10/01/2026</title>
+        <cusip>912797SA6</cusip>
+        <identifiers>
+          <isin value="US912797SA68"/>
+        </identifiers>
+        <balance>1271000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>1258306.15</valUSD>
+        <pctVal>7.39</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-10-01</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 10</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 10/29/2026</title>
+        <cusip>912797SK4</cusip>
+        <identifiers>
+          <isin value="US912797SK41"/>
+        </identifiers>
+        <balance>1290000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>1273056.89</valUSD>
+        <pctVal>7.48</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-10-29</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 11</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 11/27/2026</title>
+        <cusip>912797SU2</cusip>
+        <identifiers>
+          <isin value="US912797SU23"/>
+        </identifiers>
+        <balance>409000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>402361.05</valUSD>
+        <pctVal>2.36</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-11-27</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 12</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 12/24/2026</title>
+        <cusip>912797TC1</cusip>
+        <identifiers>
+          <isin value="US912797TC16"/>
+        </identifiers>
+        <balance>474000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>464869.97</valUSD>
+        <pctVal>2.73</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-12-24</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 01</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 01/21/2027</title>
+        <cusip>912797TM9</cusip>
+        <identifiers>
+          <isin value="US912797TM97"/>
+        </identifiers>
+        <balance>538000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>526393.40</valUSD>
+        <pctVal>3.09</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-01-21</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 02</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 02/18/2027</title>
+        <cusip>912797TV9</cusip>
+        <identifiers>
+          <isin value="US912797TV96"/>
+        </identifiers>
+        <balance>476000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>464238.03</valUSD>
+        <pctVal>2.73</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-02-18</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 03</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 03/18/2027</title>
+        <cusip>912797UD7</cusip>
+        <identifiers>
+          <isin value="US912797UD79"/>
+        </identifiers>
+        <balance>542000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>527019.33</valUSD>
+        <pctVal>3.09</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-03-18</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 04</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 04/15/2027</title>
+        <cusip>912797UE5</cusip>
+        <identifiers>
+          <isin value="US912797UE52"/>
+        </identifiers>
+        <balance>477000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>462287.99</valUSD>
+        <pctVal>2.71</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-04-15</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/10/2026</title>
+        <cusip>912797UF2</cusip>
+        <identifiers>
+          <isin value="US912797UF28"/>
+        </identifiers>
+        <balance>814000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>807592.92</valUSD>
+        <pctVal>4.74</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-10</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/17/2026</title>
+        <cusip>912797UG0</cusip>
+        <identifiers>
+          <isin value="US912797UG01"/>
+        </identifiers>
+        <balance>815000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>807992.36</valUSD>
+        <pctVal>4.74</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-17</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/24/2026</title>
+        <cusip>912797UH8</cusip>
+        <identifiers>
+          <isin value="US912797UH83"/>
+        </identifiers>
+        <balance>815000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>807392.94</valUSD>
+        <pctVal>4.74</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-24</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 10</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 10/08/2026</title>
+        <cusip>912797UJ4</cusip>
+        <identifiers>
+          <isin value="US912797UJ40"/>
+        </identifiers>
+        <balance>816000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>807248.74</valUSD>
+        <pctVal>4.74</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-10-08</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 10</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 10/15/2026</title>
+        <cusip>912797UK1</cusip>
+        <identifiers>
+          <isin value="US912797UK13"/>
+        </identifiers>
+        <balance>816000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>806599.32</valUSD>
+        <pctVal>4.74</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-10-15</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 10</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 10/22/2026</title>
+        <cusip>912797UL9</cusip>
+        <identifiers>
+          <isin value="US912797UL95"/>
+        </identifiers>
+        <balance>814000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>803970.33</valUSD>
+        <pctVal>4.72</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-10-22</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 11</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 11/05/2026</title>
+        <cusip>912797UM7</cusip>
+        <identifiers>
+          <isin value="US912797UM78"/>
+        </identifiers>
+        <balance>805000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>793834.01</valUSD>
+        <pctVal>4.66</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-11-05</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/01/2026</title>
+        <cusip>912797UW5</cusip>
+        <identifiers>
+          <isin value="US912797UW50"/>
+        </identifiers>
+        <balance>454000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>450891.64</valUSD>
+        <pctVal>2.65</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-01</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 05</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 05/13/2027</title>
+        <cusip>912797UX3</cusip>
+        <identifiers>
+          <isin value="US912797UX34"/>
+        </identifiers>
+        <balance>537000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>518937.69</valUSD>
+        <pctVal>3.05</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-05-13</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 11</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 11/12/2026</title>
+        <cusip>912797UY1</cusip>
+        <identifiers>
+          <isin value="US912797UY17"/>
+        </identifiers>
+        <balance>816000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>804084.13</valUSD>
+        <pctVal>4.72</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-11-12</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 11</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 11/19/2026</title>
+        <cusip>912797UZ8</cusip>
+        <identifiers>
+          <isin value="US912797UZ81"/>
+        </identifiers>
+        <balance>815000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>802539.67</valUSD>
+        <pctVal>4.71</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-11-19</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/08/2026</title>
+        <cusip>912797VB0</cusip>
+        <identifiers>
+          <isin value="US912797VB05"/>
+        </identifiers>
+        <balance>681000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>675800.28</valUSD>
+        <pctVal>3.97</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-08</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/15/2026</title>
+        <cusip>912797VC8</cusip>
+        <identifiers>
+          <isin value="US912797VC87"/>
+        </identifiers>
+        <balance>747000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>740809.94</valUSD>
+        <pctVal>4.35</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-15</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Bill 09</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Bill 09/22/2026</title>
+        <cusip>912797VD6</cusip>
+        <identifiers>
+          <isin value="US912797VD60"/>
+        </identifiers>
+        <balance>747000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>740259.36</valUSD>
+        <pctVal>4.35</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2026-09-22</maturityDt>
+          <couponKind>None</couponKind>
+          <annualizedRt>0</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>5915.42000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>5915.42</valUSD>
+        <pctVal>0.03</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>

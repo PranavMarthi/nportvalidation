@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edgarSubmission xmlns="http://www.sec.gov/edgar/nport" xmlns:com="http://www.sec.gov/edgar/common" xmlns:ncom="http://www.sec.gov/edgar/nportcommon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <headerData>
+    <submissionType>NPORT-P</submissionType>
+    <isConfidential>false</isConfidential>
+    <filerInfo>
+      <liveTestFlag>TEST</liveTestFlag>
+      <filer>
+        <issuerCredentials>
+          <cik>0002078265</cik>
+          <ccc>C0rgi#26</ccc>
+        </issuerCredentials>
+      </filer>
+      <seriesClassInfo>
+        <seriesId>S000103104</seriesId>
+        <classId>C000273636</classId>
+      </seriesClassInfo>
+    </filerInfo>
+  </headerData>
+  <formData>
+    <genInfo>
+      <regName>Corgi ETF Trust I</regName>
+      <regFileNumber>811-24117</regFileNumber>
+      <regCik>0002078265</regCik>
+      <regLei>529900HSQC73ZP7RGT16</regLei>
+      <regStreet1>425 Bush St.</regStreet1>
+      <regStreet2>Suite 500</regStreet2>
+      <regCity>San Francisco</regCity>
+      <regStateConditional regCountry="US" regState="US-CA"/>
+      <regZipOrPostalCode>94104</regZipOrPostalCode>
+      <regPhone>855-552-6744</regPhone>
+      <seriesName>Corgi U.S. Equities 30% Structured Buffer ETF - May Series</seriesName>
+      <seriesId>S000103104</seriesId>
+      <seriesLei>5299006CIU3J62M43O75</seriesLei>
+      <repPdEnd>2026-06-30</repPdEnd>
+      <repPdDate>2026-06-30</repPdDate>
+      <isFinalFiling>N</isFinalFiling>
+    </genInfo>
+    <fundInfo>
+      <totAssets>4866016.69</totAssets>
+      <totLiabs>177691.19</totLiabs>
+      <netAssets>4688325.50</netAssets>
+      <assetsAttrMiscSec>0</assetsAttrMiscSec>
+      <assetsInvested>0</assetsInvested>
+      <amtPayOneYrBanksBorr>0</amtPayOneYrBanksBorr>
+      <amtPayOneYrCtrldComp>0</amtPayOneYrCtrldComp>
+      <amtPayOneYrOthAffil>0</amtPayOneYrOthAffil>
+      <amtPayOneYrOther>597.71</amtPayOneYrOther>
+      <amtPayAftOneYrBanksBorr>0</amtPayAftOneYrBanksBorr>
+      <amtPayAftOneYrCtrldComp>0</amtPayAftOneYrCtrldComp>
+      <amtPayAftOneYrOthAffil>0</amtPayAftOneYrOthAffil>
+      <amtPayAftOneYrOther>0</amtPayAftOneYrOther>
+      <delayDeliv>0</delayDeliv>
+      <standByCommit>0</standByCommit>
+      <liquidPref>0</liquidPref>
+      <curMetrics>
+        <curMetric>
+          <curCd>USD</curCd>
+          <intrstRtRiskdv01 period3Mon="0.00" period1Yr="69.64" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+          <intrstRtRiskdv100 period3Mon="0.00" period1Yr="6964.35" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+        </curMetric>
+      </curMetrics>
+      <creditSprdRiskInvstGrade period3Mon="0.00" period1Yr="69.49" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <creditSprdRiskNonInvstGrade period3Mon="0.00" period1Yr="0.00" period5Yr="0.00" period10Yr="0.00" period30Yr="0.00"/>
+      <isNonCashCollateral>N</isNonCashCollateral>
+      <returnInfo>
+        <monthlyTotReturns>
+          <monthlyTotReturn classId="C000273636" rtn1="N/A" rtn2="1.27" rtn3="N/A"/>
+        </monthlyTotReturns>
+        <othMon1 netRealizedGain="0.00" netUnrealizedAppr="0.00"/>
+        <othMon2 netRealizedGain="0.00" netUnrealizedAppr="81427.05"/>
+        <othMon3 netRealizedGain="-1286.37" netUnrealizedAppr="-42194.66"/>
+      </returnInfo>
+      <mon1Flow redemption="0.00" reinvestment="N/A" sales="0.00"/>
+      <mon2Flow redemption="0.00" reinvestment="N/A" sales="5156498.50"/>
+      <mon3Flow redemption="639952.50" reinvestment="N/A" sales="127986.50"/>
+      <varInfo>
+        <fundsDesignatedInfo>
+          <nameDesignatedIndex>N/A</nameDesignatedIndex>
+          <indexIdentifier>N/A</indexIdentifier>
+        </fundsDesignatedInfo>
+      </varInfo>
+    </fundInfo>
+    <invstOrSecs>
+      <invstOrSec>
+        <name>SPY 04/30/2027 144.74 C</name>
+        <lei>N/A</lei>
+        <title>SPY 04/30/2027 144.74 C</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="SPY-C144.74-20270430"/>
+          <other otherDesc="USER DEFINED" value="SPY-C144.74-20270430"/>
+        </identifiers>
+        <balance>64.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>3796543.93</valUSD>
+        <pctVal>80.98</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Call</putOrCall>
+            <writtenOrPur>Purchased</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>S&amp;P 500 Index</indexName>
+                <indexIdentifier>SPX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>144.74</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-04-30</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>34645.76</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>SPY 04/30/2027 806.94 C</name>
+        <lei>N/A</lei>
+        <title>SPY 04/30/2027 806.94 C</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="SPY-C806.94-20270430"/>
+          <other otherDesc="USER DEFINED" value="SPY-C806.94-20270430"/>
+        </identifiers>
+        <balance>64.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>-147350.40</valUSD>
+        <pctVal>-3.14</pctVal>
+        <payoffProfile>Short</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Call</putOrCall>
+            <writtenOrPur>Written</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>S&amp;P 500 Index</indexName>
+                <indexIdentifier>SPX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>806.94</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-04-30</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>21318.01</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>SPY 04/30/2027 470.41 P</name>
+        <lei>N/A</lei>
+        <title>SPY 04/30/2027 470.41 P</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="SPY-P470.41-20270430"/>
+          <other otherDesc="USER DEFINED" value="SPY-P470.41-20270430"/>
+        </identifiers>
+        <balance>64.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>-30340.79</valUSD>
+        <pctVal>-0.65</pctVal>
+        <payoffProfile>Short</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Put</putOrCall>
+            <writtenOrPur>Written</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>S&amp;P 500 Index</indexName>
+                <indexIdentifier>SPX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>470.41</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-04-30</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>9369.43</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>SPY 04/30/2027 687.52 P</name>
+        <lei>N/A</lei>
+        <title>SPY 04/30/2027 687.52 P</title>
+        <cusip>N/A</cusip>
+        <identifiers>
+          <ticker value="SPY-P687.52-20270430"/>
+          <other otherDesc="USER DEFINED" value="SPY-P687.52-20270430"/>
+        </identifiers>
+        <balance>64.0</balance>
+        <units>NC</units>
+        <curCd>USD</curCd>
+        <valUSD>168966.39</valUSD>
+        <pctVal>3.60</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DE</assetCat>
+        <issuerCat>CORP</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <derivativeInfo>
+          <optionSwaptionWarrantDeriv derivCat="OPT">
+            <counterparties>
+              <counterpartyName>The Options Clearing Corporation</counterpartyName>
+              <counterpartyLei>549300CII6SLYGKNHA04</counterpartyLei>
+            </counterparties>
+            <putOrCall>Put</putOrCall>
+            <writtenOrPur>Purchased</writtenOrPur>
+            <descRefInstrmnt>
+              <indexBasketInfo>
+                <indexName>S&amp;P 500 Index</indexName>
+                <indexIdentifier>SPX</indexIdentifier>
+              </indexBasketInfo>
+            </descRefInstrmnt>
+            <shareNo>N/A</shareNo>
+            <exercisePrice>687.52</exercisePrice>
+            <exercisePriceCurCd>USD</exercisePriceCurCd>
+            <expDt>2027-04-30</expDt>
+            <delta>N/A</delta>
+            <unrealizedAppr>-23732.97</unrealizedAppr>
+          </optionSwaptionWarrantDeriv>
+        </derivativeInfo>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>United States Treasury Note/Bo</name>
+        <lei>254900HROIFWPRGM1V77</lei>
+        <title>United States Treasury Note/Bond 3.75% 04/30/2027</title>
+        <cusip>91282CMY4</cusip>
+        <identifiers>
+          <isin value="US91282CMY48"/>
+        </identifiers>
+        <balance>852000.00000000</balance>
+        <units>PA</units>
+        <curCd>USD</curCd>
+        <valUSD>849940.26</valUSD>
+        <pctVal>18.13</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>DBT</assetCat>
+        <issuerCat>UST</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>2</fairValLevel>
+        <debtSec>
+          <maturityDt>2027-04-30</maturityDt>
+          <couponKind>Fixed</couponKind>
+          <annualizedRt>3.75</annualizedRt>
+          <isDefault>N</isDefault>
+          <areIntrstPmntsInArrs>N</areIntrstPmntsInArrs>
+          <isPaidKind>N</isPaidKind>
+        </debtSec>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+      <invstOrSec>
+        <name>First American Government Obli</name>
+        <lei>549300R5MYM6VZF1RM44</lei>
+        <title>First American Government Obligations Fund</title>
+        <cusip>31846V336</cusip>
+        <identifiers>
+          <isin value="US31846V3362"/>
+          <ticker value="FGXXX"/>
+        </identifiers>
+        <balance>46401.33000000</balance>
+        <units>NS</units>
+        <curCd>USD</curCd>
+        <valUSD>46401.33</valUSD>
+        <pctVal>0.99</pctVal>
+        <payoffProfile>Long</payoffProfile>
+        <assetCat>STIV</assetCat>
+        <issuerCat>RF</issuerCat>
+        <invCountry>US</invCountry>
+        <isRestrictedSec>N</isRestrictedSec>
+        <fairValLevel>1</fairValLevel>
+        <securityLending>
+          <isCashCollateral>N</isCashCollateral>
+          <isNonCashCollateral>N</isNonCashCollateral>
+          <isLoanByFund>N</isLoanByFund>
+        </securityLending>
+      </invstOrSec>
+    </invstOrSecs>
+    <signature>
+      <ncom:dateSigned>2026-07-31</ncom:dateSigned>
+      <ncom:nameOfApplicant>Corgi ETF Trust I</ncom:nameOfApplicant>
+      <ncom:signature>/s/ Emily Yuan</ncom:signature>
+      <ncom:signerName>Emily Yuan</ncom:signerName>
+      <ncom:title>President &amp; PEO</ncom:title>
+    </signature>
+  </formData>
+</edgarSubmission>
