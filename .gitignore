@@ -11,3 +11,8 @@ output/
 
 # Excel lock files
 ~$*
+
+# EagleSTAR fund-accounting: build cache + dropped client archives (never committed)
+data/fund_accounting/.cache/
+data/fund_accounting/*.zip
+data/fund_accounting/*.mbox

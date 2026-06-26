@@ -300,13 +300,18 @@ def _write_risk_sheet(wb, custodian_rows: list) -> None:
 def build_filing_master(
     custodian_rows: list, period: str, path: Path,
     ap_orders_path: Path | None = None,
+    fund_acct: dict[str, dict[str, str]] | None = None,
 ) -> int:
     """Write the per-period filing master workbook. Returns the fund count.
 
     When ``ap_orders_path`` is given, monthly Sales/Redemption flows are aggregated
     from the AP creation/redemption order book and written as literal cells (the
-    operator can still override). A ``risk`` worksheet of per-debt-holding Bloomberg
-    duration ``=BDP`` formulas is always emitted for B.3 aggregation at split time.
+    operator can still override). When ``fund_acct`` (``{ticker: {field: value}}``,
+    from ``eaglestar.load``) is given, the EagleSTAR-owned fields it carries (monthly
+    realized/unrealized gains, real balance-sheet liabilities) override the ``N/A``/
+    ``0`` defaults — additively, only where a value is present. A ``risk`` worksheet of
+    per-debt-holding Bloomberg duration ``=BDP`` formulas is always emitted for B.3
+    aggregation at split time.
     """
     from openpyxl.utils import get_column_letter
 
@@ -315,6 +320,7 @@ def build_filing_master(
     signed = _signed_date(period)
 
     flows = flows_from_csv(Path(ap_orders_path), period) if ap_orders_path else {}
+    fund_acct = fund_acct or {}
 
     by_acct: dict[str, list] = defaultdict(list)
     for r in custodian_rows:
@@ -349,6 +355,11 @@ def build_filing_master(
         # Capital flows from the AP order book (Sales/Redemption; reinvestment stays 0).
         for k, v in flows.get(acct, {}).items():
             rec[k] = v
+        # EagleSTAR fund-accounting fills (gains, real liabilities) — override the
+        # _NA_FIELDS/_ZERO_FIELDS defaults only where a real value is present.
+        for k, v in fund_acct.get(acct, {}).items():
+            if v not in (None, "", "N/A"):
+                rec[k] = v
         rows.append(rec)
 
     wb = Workbook()
@@ -393,9 +404,10 @@ def build_filing_master(
 def build_filing_master_from_custodian(
     custodian_path: Path, period: str, path: Path,
     ap_orders_path: Path | None = None,
+    fund_acct: dict[str, dict[str, str]] | None = None,
 ) -> int:
     return build_filing_master(
-        parse_custodian_csv(Path(custodian_path)), period, path, ap_orders_path)
+        parse_custodian_csv(Path(custodian_path)), period, path, ap_orders_path, fund_acct)
 
 
 # ── Read + split (filing master → filing_data.txt) ────────────
